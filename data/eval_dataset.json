@@ -9,27 +9,48 @@
     "rationale": "Technician describes repeated failure to crank with no engine response. This maps to SC10000AMM 6.3.10 'Engine does not start'. Multiple probable causes from the table could apply \u2014 the technician suspects battery despite overnight charging, but fouled spark plugs, incorrect starter adjustment, or insufficient fuel are also candidates from the same troubleshooting entry.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "59094173-d746-40b9-9df0-d1cf1da59a9c",
+    "ground_truth_chunk_id": "f87c946a-899b-4ff1-90c5-0741e822df9f",
     "origin": "table",
     "ground_truth_chunk_id_original": "59094173-d746-40b9-9df0-d1cf1da59a9c",
     "ground_truth_chunk_ids": [
-      "9804d62e-c73a-40d0-a6c1-d8cd6aecba05",
-      "f7f87b6a-6725-4f79-9a9f-3d6558b0154c",
-      "a87540f2-9595-4e1c-a77c-5d20b75df3b3",
-      "59094173-d746-40b9-9df0-d1cf1da59a9c",
-      "2b4383ca-dd03-4148-845c-25c8dae69c93",
-      "2a18d2e2-b9e6-406e-818e-e18933fd0ec9",
-      "8db08d8b-c9ae-419f-b4ef-4e260e062094",
-      "39e2cc28-83c4-48cf-8f9d-72c6981db5d2",
-      "1caa4676-f762-4ae9-8bfe-0c070c526a44",
-      "959f63e8-72b7-4d87-bb45-0b152567102b",
-      "bab05110-0eb9-41d3-ab45-52842d9d2d2e",
-      "c054e933-d541-4d7d-92d1-79067d076eb0",
-      "1d642b1e-d0b2-460a-9220-82a298b7f18b",
-      "07df179e-2a4d-454c-9d17-c25c7eb7574c",
-      "ed72bcd6-6ed3-480a-8898-c17d01c868d6",
-      "a60cef72-1203-497a-862b-397eaa987d8b",
-      "10112346-93b1-432f-9655-317430eab9bb"
+      "f87c946a-899b-4ff1-90c5-0741e822df9f",
+      "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+      "163cccfa-b7d3-4b64-b7f1-0d67b17bedf0",
+      "a6690a90-eb11-4c60-941f-fc174fcf3e54",
+      "c10f0de0-3c8c-4722-a5c7-190658bb8e60",
+      "44990d38-3171-4561-908f-40104c5bdc75",
+      "bc3f8f10-7444-44e2-b63a-68aa2e37d8c0",
+      "285544ac-61cd-4215-8fca-731981b6d2b9",
+      "c834ca22-736d-459f-9489-d5fb31ea256a",
+      "a7f286a3-645f-4815-8286-b3b300aab1d9",
+      "a9e32da8-8ae5-40e0-b010-ed4e308d521c",
+      "f5895eb4-813d-468f-a316-8221a89667af",
+      "2f2df66e-4c4f-4e8c-aa3d-19f43135c317",
+      "14ce9aa7-2724-453f-9fac-bc5dee4c458b",
+      "d7bf5d90-6013-4210-b0a9-3172b8208d18",
+      "c5d9f844-1868-4b7d-aeda-99da2f25493d",
+      "1a5b744c-8f2e-4fd8-a4c9-f7f125f9006e",
+      "802aed4e-3e5b-4eb5-bd8b-4e82ade59494",
+      "d6467427-3b79-4b72-8a61-f94f72bca733",
+      "fa93e416-de29-4374-af5c-bea7deb23bb1",
+      "13a9aaf6-f7de-4aef-8fd3-0829b7f15a23",
+      "b9d97cda-eb32-4e32-80d3-1684e6a06918",
+      "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+      "789eaa1c-218f-42e8-a52e-7f5920513800",
+      "42c0de94-3703-4ae9-8f22-fc3f622cfe4c",
+      "8375d654-2701-4425-8348-6223f0d23ece",
+      "e8442f1c-c4f4-4628-8c19-81bcf0a72f81",
+      "937a7a45-5db1-49a0-a0f2-6e6760af55a5",
+      "34e79cd6-233d-4aa2-8f86-2502894436fb",
+      "25af2c4b-11ec-4a50-8a3f-463d1f105efe",
+      "e1a8741c-0737-4be4-842a-2787ff5e409d",
+      "5424a0c9-16a6-4c1d-a555-49601b0384bb",
+      "b7967d8d-1370-4497-ad9f-3c0adb3f4c83",
+      "03f1e62a-beb9-4913-818c-31dbe19ecd46",
+      "f0e4e246-1c15-4866-a12e-292b2ea92bb9",
+      "b7b94507-5ea3-4bc1-b83f-b26a8c638f2b",
+      "3b2adbec-938c-460b-80d9-26d54cd74c84",
+      "544b8aaf-b849-4554-b697-83f98f84a7e4"
     ]
   },
   {
@@ -42,12 +63,12 @@
     "rationale": "Zero RPM display with engine running maps directly to AS-AMM Ch 77 'No RPM indication' with probable cause 'Defective RPM indicator'. Mention of SkyView is consistent with the Dynon SV-D1000 EMS system described in Ch 77.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "d5806f35-c989-4fc3-a227-632cb131c6ac",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "d5806f35-c989-4fc3-a227-632cb131c6ac",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "d5806f35-c989-4fc3-a227-632cb131c6ac"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "db35392b-d956-44ef-b0e7-a5137f1f529e"
     ]
   },
   {
@@ -60,12 +81,12 @@
     "rationale": "Single position light failure with breaker confirmed set matches AS-AMM Ch 33 'One position light does not operate'. Since breaker is confirmed OK, probable cause narrows to defective wiring",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ee92ccae-31f3-4202-96cb-26ed6415d3e5",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "ee92ccae-31f3-4202-96cb-26ed6415d3e5",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "ee92ccae-31f3-4202-96cb-26ed6415d3e5"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "63f55b59-abd9-4c86-b19c-77378846572f"
     ]
   },
   {
@@ -82,16 +103,16 @@
       "Insufficient fuel flow",
       "No fuel flow to the engine fuel pump"
     ],
-    "ground_truth_chunk_id": "208efff0-b245-4388-8157-a975169abe36",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "208efff0-b245-4388-8157-a975169abe36",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "f548e88b-f1a5-4083-85c7-97af14f8ada3",
-      "77a8d08b-529d-4977-a514-4d9724e248f2",
-      "a2ca282a-7b72-43ff-bbb1-f9fe1120478c",
-      "72480e23-ef2e-41b5-8d1e-2689f37edbb4",
-      "208efff0-b245-4388-8157-a975169abe36"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
+      "72804ee6-198a-46d5-aedc-4818204ffa4d",
+      "5d0067f0-16a3-4da7-8120-7acd3c037e43",
+      "1a5f12ef-785f-44c2-9523-86ee3100bf1d",
+      "e7f84438-880e-4f7f-aa92-83f7404590dd"
     ]
   },
   {
@@ -104,16 +125,16 @@
     "rationale": "Lateral tail oscillation during taxi is a textbook shimmy. SC10000AMM 6.3.7 lists 'Tail Wheel Shimmies' with causes including weakened steering springs, worn tire, and loose tail wheel assembly. Progressive worsening suggests mechanical wear.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "268de7e1-f66e-4613-aecc-71115a64cda9",
-      "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
-      "7d1eaede-fd93-4e59-9391-723315258185",
-      "2f699998-562a-41b4-8b77-5c32377c2a5e",
-      "e81d3823-95a7-402b-bdfb-98358b301408"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "0596e9fc-b665-4eca-9b0d-10ce411b8986",
+      "945b48fa-8063-4404-9b45-f24617d7c719",
+      "dbaacec4-ac69-4aa2-b92e-20d42a0b4674",
+      "b5a598bb-5660-43be-8e46-0393d6e5dac6",
+      "47619f78-eca8-4771-a397-7941f3683b10"
     ]
   },
   {
@@ -126,12 +147,12 @@
     "rationale": "Burning smell correlating with heating system activation directly maps to AS-AMM Ch 21 'Burning smell in the cockpit' with probable cause 'Exhaust heat-exchanger cracked'. This is a safety-critical finding as exhaust gases may be entering the cockpit.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "a0fe309d-ec2a-41da-8647-5a9d058e9789",
+    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
     "origin": "table",
     "ground_truth_chunk_id_original": "a0fe309d-ec2a-41da-8647-5a9d058e9789",
     "ground_truth_chunk_ids": [
-      "b52f0fa9-77fe-4fdb-a210-32c3d96ff6a2",
-      "a0fe309d-ec2a-41da-8647-5a9d058e9789"
+      "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+      "5679c582-44f4-4eea-b198-5f3138e46263"
     ]
   },
   {
@@ -147,15 +168,15 @@
     "ambiguous_alternatives": [
       "Engine idles rough after warm-up period, smoky exhaust emission"
     ],
-    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "55e5b17f-2ce3-4b34-aaf0-98ab7661cc3e",
-      "1c5b3734-74b6-4bd6-83a8-2e4f90352091",
-      "322331f8-5dbe-40ad-a845-71e0e5d91470",
-      "47f087cb-8616-4ff5-9ed2-7e50dccf14d0"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "551669f6-8321-44dd-8419-9181a78dc284",
+      "add19a96-5d94-410b-9ecb-ef0865259de1",
+      "a4c7e840-20c9-4e05-958f-b8eb8653fe96",
+      "a4ecb69f-dc28-4cc2-955b-98e9bf8e39de"
     ]
   },
   {
@@ -168,16 +189,16 @@
     "rationale": "Voltage reading of 15.2V exceeds normal charging range (~13.8V) and maps to SC10000AMM 6.3.17 'High Voltage' with probable cause 'Bad regulator'.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "74c0abbe-e7ae-44b2-817d-aac7956a0721",
+    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
     "origin": "table",
     "ground_truth_chunk_id_original": "74c0abbe-e7ae-44b2-817d-aac7956a0721",
     "ground_truth_chunk_ids": [
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "93a9f788-7c5a-4acc-ad76-b8c70876ffd5",
-      "c97c33fc-ec0a-42a1-ab15-8512762776e5",
-      "df36fa51-da20-49a8-bff2-d2a3d5e01ccd",
-      "5fa18ec7-1eea-49e5-89cc-ab536748c37f",
-      "74c0abbe-e7ae-44b2-817d-aac7956a0721"
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+      "c16de0e0-95f4-407f-80a2-b12188804b67",
+      "dfcd5cec-7291-4a5b-b183-3866c7407a94",
+      "4cd4da8b-b8fc-477b-81b8-5429e50123a8",
+      "e000416d-a963-4c72-a251-a7764f4d5991"
     ]
   },
   {
@@ -190,12 +211,12 @@
     "rationale": "Single click with no engine rotation and good panel lights matches SC10000AMM 6.3.17 'When the starter is engaged, there is a click and the engine does not turn'. Good battery indication rules out low charge, pointing to starter solenoid defective or voltage not reaching starter.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "27e71605-c40f-48d0-8999-380ea5b96f7f",
+    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
     "origin": "table",
     "ground_truth_chunk_id_original": "27e71605-c40f-48d0-8999-380ea5b96f7f",
     "ground_truth_chunk_ids": [
-      "0495f8d1-75c2-4c73-ae72-6c6dec67d6c9",
-      "27e71605-c40f-48d0-8999-380ea5b96f7f"
+      "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+      "f4219e19-e981-4c6d-90ed-65a4bfd678b3"
     ]
   },
   {
@@ -208,12 +229,12 @@
     "rationale": "Spongy pedals with excessive travel directly matches SC10000AMM 6.3.7 'Unable to obtain sufficient hydraulic brake pressure, excessive toe pedal travel, or spongy pedal'. Most likely cause is air in hydraulic system.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "efbad69a-c880-47d0-bd43-9ce5bdf8533e"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "b108fcd6-dd5f-4c1f-8b2f-4730969b6d71"
     ]
   },
   {
@@ -229,16 +250,16 @@
     "ambiguous_alternatives": [
       "High oil temperature indication"
     ],
-    "ground_truth_chunk_id": "02edd04c-7fe2-4be8-8fd0-e63512ec87e1",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "02edd04c-7fe2-4be8-8fd0-e63512ec87e1",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "3bfe4728-3654-4503-b160-0df8d965b248",
-      "787462d3-a612-4666-a3eb-a0336cb2484d",
-      "5e4907d7-3bde-4c7a-8a81-c9d98a2aa68b",
-      "4e6ed9f6-0bd4-41a5-a3e4-35209c2f9de5",
-      "02edd04c-7fe2-4be8-8fd0-e63512ec87e1"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+      "cc2e8d91-52c4-436a-a18c-99907c2a88be",
+      "32072713-4686-4df9-a901-cd1b880882ae",
+      "731cb8d5-e812-4074-bebd-f0977f05b676",
+      "7fa2b576-b928-4453-a737-52bdb4742f12"
     ]
   },
   {
@@ -255,13 +276,13 @@
       "Fuel quantity indicator reading incorrect",
       "Erratic fuel quantity indicator readings"
     ],
-    "ground_truth_chunk_id": "d9fc20fd-555a-4213-b5d7-444dd714cef3",
+    "ground_truth_chunk_id": "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "d9fc20fd-555a-4213-b5d7-444dd714cef3",
     "ground_truth_chunk_ids": [
-      "f548e88b-f1a5-4083-85c7-97af14f8ada3",
-      "d9fc20fd-555a-4213-b5d7-444dd714cef3",
-      "4a92517a-311e-400a-a5c4-268e0dc9346c"
+      "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
+      "436e76df-c553-4ea1-ad40-7738b55ae857",
+      "712bf55d-9008-479d-8ac5-06373444fbf1"
     ]
   },
   {
@@ -274,14 +295,14 @@
     "rationale": "Free play in control stick before aileron response is 'Lost motion in control sticks' per SC10000AMM 6.3.6. Causes include loose control cables, broken pulley, or worn holes in control stick stub/torque tube.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "dc552490-9caf-42cf-9b71-4b99010a19b9",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "dc552490-9caf-42cf-9b71-4b99010a19b9",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "9d9cf3eb-f526-4a78-807c-89d5b20b72fa",
-      "dc552490-9caf-42cf-9b71-4b99010a19b9",
-      "bcfdcc0e-844d-4513-b109-c4db685f7ac7"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e138093f-7427-4b46-90bb-1a65650ec359",
+      "da6c0a5b-3806-47c7-9353-8ed507a29c1c",
+      "91bbe118-ecc3-4b02-8cf5-b775036ce5f1"
     ]
   },
   {
@@ -294,12 +315,12 @@
     "rationale": "Metal grinding on starter engagement matches SC10000AMM 6.3.17 'When starter engages, it makes a loud grinding noise'. The mention of a previous engine kickback directly correlates with the listed probable cause 'Starter damaged by engine kicking back'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "81ef2e97-2be3-40ee-8913-19930de97003",
+    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
     "origin": "table",
     "ground_truth_chunk_id_original": "81ef2e97-2be3-40ee-8913-19930de97003",
     "ground_truth_chunk_ids": [
-      "0495f8d1-75c2-4c73-ae72-6c6dec67d6c9",
-      "81ef2e97-2be3-40ee-8913-19930de97003"
+      "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+      "e97e8d17-814b-4239-844a-ffb5a7f02f45"
     ]
   },
   {
@@ -312,12 +333,12 @@
     "rationale": "Soot streaks on cowling indicating exhaust gas leakage directly maps to AS-AMM Ch 78 'Indication of exhaust gas leaks on the engine cowling' with probable cause 'Defective exhaust tube gaskets'.",
     "difficulty_tier": "hard",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
     "ground_truth_chunk_ids": [
-      "b1955e2f-340b-4fef-9175-5712dc5150e3",
-      "a9c7716f-c123-45c1-a596-0aa2cb42e031"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "848a7376-e73c-45cc-8206-abe716f2fba5"
     ]
   },
   {
@@ -330,12 +351,12 @@
     "rationale": "Aircraft rolling despite parking brake being set is 'Parking brake inoperative' per SC10000AMM 6.3.7. Probable causes include defective master cylinder, leaky brake line connections, or parking brake valve defective.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "0e58cfce-8f0d-41f2-b738-e74300f4ece3"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "b2ebcb3f-5e72-427d-9892-5e8348a9cba4"
     ]
   },
   {
@@ -348,12 +369,12 @@
     "rationale": "ASI reading zero with functional altimeter and VSI isolates the fault to the total (pitot) pressure line only, matching AS-AMM Ch 34 'Low or sluggish airspeed indication. Normal altimeter and vertical speed indication'. Wasp observation suggests obstruction in total line, a listed probable cause.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "e7a2343b-7998-4cae-a117-6ef4d12a352e",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "e7a2343b-7998-4cae-a117-6ef4d12a352e",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "e7a2343b-7998-4cae-a117-6ef4d12a352e"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "6bbb918c-4ddd-445e-9a7a-149268011463"
     ]
   },
   {
@@ -366,12 +387,12 @@
     "rationale": "Symmetrical low gear strut position matches SC10000AMM 6.3.7 'Landing Gear Sags' with cause 'Bungees are no longer strong enough to return the landing gear to its stops'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "61090d96-724f-4912-8024-7e6b38acbb4f",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "61090d96-724f-4912-8024-7e6b38acbb4f",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "61090d96-724f-4912-8024-7e6b38acbb4f"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "e09838c3-7a6b-4606-b1e2-e0be7fbcd8aa"
     ]
   },
   {
@@ -388,15 +409,15 @@
       "Starting speed low",
       "Starter turns engine slowly when cold"
     ],
-    "ground_truth_chunk_id": "62957b04-2111-48fb-b32c-1d84c5a74a5e",
+    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
     "origin": "table",
     "ground_truth_chunk_id_original": "62957b04-2111-48fb-b32c-1d84c5a74a5e",
     "ground_truth_chunk_ids": [
-      "590454c9-1f65-4709-be6a-5781ed5d04f5",
-      "62957b04-2111-48fb-b32c-1d84c5a74a5e",
-      "5efce331-8731-48d1-ad08-c1b503d8fb66",
-      "6cd3d899-da8e-4b6b-b0a5-45139fa892a0",
-      "7ed8e9d4-26ea-45e4-b36e-9590710d1598"
+      "76fe6522-28e5-4fb8-b352-34202475039d",
+      "d10f71ed-1ad8-4f66-a366-6d3625cd56b8",
+      "958cdce4-557e-42cb-826d-e96442372d06",
+      "868bd00f-9928-4255-aeeb-8a6a5bc774c7",
+      "c9c5e147-11bf-4e1d-91d8-3973e69fc463"
     ]
   },
   {
@@ -412,12 +433,12 @@
     "ambiguous_alternatives": [
       "Burning smell in the cockpit"
     ],
-    "ground_truth_chunk_id": "cea72be0-dc56-4865-b0a4-f42302d04235",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "cea72be0-dc56-4865-b0a4-f42302d04235",
     "ground_truth_chunk_ids": [
-      "b1955e2f-340b-4fef-9175-5712dc5150e3",
-      "cea72be0-dc56-4865-b0a4-f42302d04235"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "f4162b3a-5ff0-486d-92aa-4b04d6752b93"
     ]
   },
   {
@@ -430,12 +451,12 @@
     "rationale": "Compass card oscillation in smooth conditions matches AS-AMM Ch 34 'Excessive card oscillation' with causes including insufficient fluid, weak card magnet, or excessive pivot friction/broken jewel.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "37dace3e-4f2a-4ae9-9faa-4452a3c56871",
+    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
     "origin": "table",
     "ground_truth_chunk_id_original": "37dace3e-4f2a-4ae9-9faa-4452a3c56871",
     "ground_truth_chunk_ids": [
-      "2bda2792-e1c8-459a-8824-233df9564dbb",
-      "37dace3e-4f2a-4ae9-9faa-4452a3c56871"
+      "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+      "56ed20ff-ae08-4e96-a2b4-5f6ecfd2811f"
     ]
   },
   {
@@ -448,12 +469,12 @@
     "rationale": "Flaps not holding detent positions maps directly to SC10000AMM 6.3.6 'Flaps won't stay in position at second or third notch' with cause 'Flap handle lock has been bent'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
+    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
     "origin": "table",
     "ground_truth_chunk_id_original": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
     "ground_truth_chunk_ids": [
-      "12c92217-2705-497f-b866-2519a712edcb",
-      "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1"
+      "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+      "9691e504-cae0-4d0c-9dd5-a3a73050c1dd"
     ]
   },
   {
@@ -466,17 +487,17 @@
     "rationale": "Zero alternator output with ammeter showing discharge at 2000 RPM, fuses visually intact. Per SC10000AMM 6.3.17 alternator troubleshooting table, 'No Operation' is the matching PROBLEM entry. The 2000 RPM check excludes 'Engine speed too low'. Visual fuse check does not conclusively exclude 'Blown fuse(s)'. Remaining probable causes per manual: Blown fuse(s) (visual check inconclusive), Bad Wire Connections, Shear coupling broken, Regulator Faulty, Alternator Faulty.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "9014f701-4dcf-4961-9ef5-db9100cfd292",
+    "ground_truth_chunk_id": "bc6aff2d-bb19-4ee3-b1d7-183031514835",
     "origin": "table",
     "ground_truth_chunk_id_original": "9014f701-4dcf-4961-9ef5-db9100cfd292",
     "ground_truth_chunk_ids": [
-      "93a9f788-7c5a-4acc-ad76-b8c70876ffd5",
-      "f931d4aa-4fb1-4b83-bfe7-8a549a94e3f0",
-      "9014f701-4dcf-4961-9ef5-db9100cfd292",
-      "66ba0334-c88f-4537-a8a2-a027f5ca9eb5",
-      "62b7ec6c-ab32-4962-8855-964ff523fbd2",
-      "cc3fa677-ea08-4347-8ecb-45fb743e4c1d",
-      "c726d4d8-6b46-4070-b5f9-5744e43f8c24"
+      "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+      "ecc3b5b5-c7d4-496f-a3c1-864c6552e6d7",
+      "63ff3384-4bb4-412d-81cc-478923c26d3d",
+      "61d43972-5763-43ae-b7b8-68c8abd04ef6",
+      "1791f9e6-b14d-43db-80ec-dc4eb575d743",
+      "d61abe8b-b09c-4e5f-adf5-59eca9a21995",
+      "1354c871-3c84-4ab3-8608-5764fd6840ec"
     ]
   },
   {
@@ -489,12 +510,12 @@
     "rationale": "Knocking under load with MOGAS usage directly matches AS-AMM Ch 71 'Knocking under load' with probable cause 'Octane rating of fuel too low'. MOGAS may have insufficient octane for the Rotax 912.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "9fb93f03-c77f-4632-bdc6-3dc17fda70fb",
+    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
     "origin": "table",
     "ground_truth_chunk_id_original": "9fb93f03-c77f-4632-bdc6-3dc17fda70fb",
     "ground_truth_chunk_ids": [
-      "590454c9-1f65-4709-be6a-5781ed5d04f5",
-      "9fb93f03-c77f-4632-bdc6-3dc17fda70fb"
+      "76fe6522-28e5-4fb8-b352-34202475039d",
+      "4b69f7af-7541-4118-ada6-b2ca52944904"
     ]
   },
   {
@@ -507,13 +528,13 @@
     "rationale": "GNC 255A dark with popped breaker matches AS-AMM Ch 23 'GNC 255A does not power on' with probable cause 'No power to the GNC 255A'. The tripped breaker explains the power loss.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "72980066-0c23-48ec-8339-03869d83d304",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "72980066-0c23-48ec-8339-03869d83d304",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "72980066-0c23-48ec-8339-03869d83d304",
-      "4e3dd6ea-ead2-4a91-b0a6-02dcac7bca76"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "ed478e27-dfdb-4c60-86a3-369679e9a0f3",
+      "23845dfd-b5a7-4707-a70b-17c173be10c9"
     ]
   },
   {
@@ -529,15 +550,15 @@
     "ambiguous_alternatives": [
       "Low oil pressure"
     ],
-    "ground_truth_chunk_id": "1e875927-7645-4493-97c8-fa821d1e8a74",
+    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
     "origin": "table",
     "ground_truth_chunk_id_original": "1e875927-7645-4493-97c8-fa821d1e8a74",
     "ground_truth_chunk_ids": [
-      "b652ab9c-6d80-47fd-abb3-628d38d831af",
-      "17b63240-589e-4c63-a936-9fa32a268e38",
-      "fe701c64-7414-4d9b-b7ed-4330d78eca4f",
-      "1e875927-7645-4493-97c8-fa821d1e8a74",
-      "46b13860-ed13-4693-9032-c05d9f95d146"
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+      "a7180a44-0c2f-4972-abd8-5b0994aceb1e",
+      "1b4da245-43b6-4406-8d75-9181fe22145f",
+      "a4716c94-a737-4e84-8873-310c2f779ca5"
     ]
   },
   {
@@ -550,14 +571,14 @@
     "rationale": "Motor running without stabilizer movement with confirmed wiring maps to SC10000AMM 6.3.6 'Stabilizer does not move up or down when actuating the trim switch'. Since the motor runs (eliminating loose wiring and broken switch), the probable cause is 'Inoperative electric servo' \u2014 the motor may have a mechanical disconnect from the jackscrew.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "57d2ed1f-2148-41af-bfc3-2f9446963d0a",
-      "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
-      "49b9fe73-5adb-4b14-a16c-e4ab1a78806f"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e8194a47-144e-4b40-bab7-4f70255d51dd",
+      "59dff85b-8d38-4ee3-b346-fd6581a0d05c",
+      "929cd763-35d5-4c08-ae71-cf7e764d25fd"
     ]
   },
   {
@@ -570,12 +591,12 @@
     "rationale": "Increased exhaust noise correlating with RPM matches AS-AMM Ch 78 'The exhaust system makes too much noise' with cause 'A damaged muffler'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "af010050-f2df-4a06-999b-45eb47aad806",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "af010050-f2df-4a06-999b-45eb47aad806",
     "ground_truth_chunk_ids": [
-      "b1955e2f-340b-4fef-9175-5712dc5150e3",
-      "af010050-f2df-4a06-999b-45eb47aad806"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "e12177ed-5696-42cd-acfd-b4cf31797b65"
     ]
   },
   {
@@ -592,12 +613,12 @@
       "Irregular idling",
       "Cannot control the engine"
     ],
-    "ground_truth_chunk_id": "fa03e605-7997-46b4-99a7-9d5889a28c59",
+    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
     "origin": "table",
     "ground_truth_chunk_id_original": "fa03e605-7997-46b4-99a7-9d5889a28c59",
     "ground_truth_chunk_ids": [
-      "fa8bedeb-52fa-433b-96f2-eb1dcb6936fa",
-      "fa03e605-7997-46b4-99a7-9d5889a28c59"
+      "b456fdc9-a271-403e-85c6-66f287e34cac",
+      "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f"
     ]
   },
   {
@@ -610,19 +631,19 @@
     "rationale": "Unilateral brake drag causing taxi pull with thermal indication (warm wheel) maps to SC10000AMM 6.3.7 'Brakes drag'. Probable causes include pressure build up, foreign matter, pistons cocked in cylinder, or warped disc. The thermal signature confirms friction is present on the affected side.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "4843d09c-6e5a-4801-a594-6dc12e29b349",
-      "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
-      "dc94043c-abc7-4f02-b249-4656eeb35465",
-      "74b78b47-89bc-483f-945c-a770306952d9",
-      "2e356e79-7c76-452e-b532-210629abde63",
-      "0d0eca51-b2ab-4384-aeba-40fbaa274300",
-      "2c775cf9-fc38-41de-b58f-319110b11d7f"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "3c64b612-7388-44a6-917f-577009e730a6",
+      "6ed7f932-3565-42e2-a6cc-bd017460d28d",
+      "51763ff0-0a1e-4172-aa5a-3d0c56c8024f",
+      "f90dad81-12d6-4682-8268-f1008267c35a",
+      "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+      "3c233fe2-5d01-4384-b319-a8962807940b",
+      "b61292d4-7e7d-409d-87b1-ab9c73dc413b"
     ]
   },
   {
@@ -635,12 +656,12 @@
     "rationale": "Complete absence of stall warning activation during stall maneuvers maps to SC10000AMM 6.3.6 'Stall warning does not work' with probable cause 'Problem in the electric circuit, switches or horn'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "fc2acb6b-0f34-477b-b5dd-005c1d655960",
+    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
     "origin": "table",
     "ground_truth_chunk_id_original": "fc2acb6b-0f34-477b-b5dd-005c1d655960",
     "ground_truth_chunk_ids": [
-      "12c92217-2705-497f-b866-2519a712edcb",
-      "fc2acb6b-0f34-477b-b5dd-005c1d655960"
+      "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+      "2b4fb53a-dbbf-4176-8586-42b6ba0b4b9b"
     ]
   },
   {
@@ -656,13 +677,13 @@
     "ambiguous_alternatives": [
       "Insufficient fuel pressure"
     ],
-    "ground_truth_chunk_id": "f18e0c6f-5ebf-405a-bee0-0960e7f8b2a4",
+    "ground_truth_chunk_id": "cbec64af-1300-4646-aff7-7f75ee66709f",
     "origin": "table",
     "ground_truth_chunk_id_original": "f18e0c6f-5ebf-405a-bee0-0960e7f8b2a4",
     "ground_truth_chunk_ids": [
-      "ef58a684-fe53-4f49-8ed5-b1c659b64ba9",
-      "ef52e7fc-522c-4127-be89-a8b1cf8cbb69",
-      "f18e0c6f-5ebf-405a-bee0-0960e7f8b2a4"
+      "cbec64af-1300-4646-aff7-7f75ee66709f",
+      "63a764bb-ba45-4652-90a8-4bc1b1ddb19f",
+      "b42621ea-ed02-458b-90c1-005947c47cff"
     ]
   },
   {
@@ -675,13 +696,13 @@
     "rationale": "Hobbs meter not advancing with engine running directly maps to AS-AMM Ch 31 'Hobbs meter does not operate'. Probable causes: defective Hobbs meter or defective wiring.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "fc9ea881-1df2-4daa-8a4e-0053a3b7d5da",
+    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
     "origin": "table",
     "ground_truth_chunk_id_original": "fc9ea881-1df2-4daa-8a4e-0053a3b7d5da",
     "ground_truth_chunk_ids": [
-      "4a6768cc-785a-4581-87b5-2d53a5e8b5e4",
-      "fc9ea881-1df2-4daa-8a4e-0053a3b7d5da",
-      "3c764906-166f-486d-b9b7-c0c0cf568e72"
+      "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+      "24ead004-c82b-4865-9ad0-7e48a16292d3",
+      "ab79d5cd-b071-4795-86a9-4c4cbc6a45e7"
     ]
   },
   {
@@ -697,16 +718,16 @@
     "ambiguous_alternatives": [
       "Rough running"
     ],
-    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
+    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "ground_truth_chunk_ids": [
-      "cc1b461f-8ff8-480a-b878-d8a0e1f1afd2",
-      "eca173a0-5058-4026-94ce-6bd5317decdd",
-      "a783f034-9b86-4422-aee4-40e528729691",
-      "008fba72-ee33-4fb9-b890-2ecbc4e80bd9",
-      "526a859e-292f-450a-9a20-66cdee7b7f35",
-      "c9fabc71-4c7a-437e-bea0-2791540dd053"
+      "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+      "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+      "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+      "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+      "96d9e2da-8d77-4d81-aa5c-6b9062e1b7b7",
+      "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3"
     ]
   },
   {
@@ -719,13 +740,13 @@
     "rationale": "Receive-only capability with no transmit maps to AS-AMM Ch 23 'GNC 255A does not transmit'. Good receive rules out total power loss. Probable causes: no power to Com or mic key connection issue.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "92ad880c-ced5-4240-b55f-460ea6c48049",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "92ad880c-ced5-4240-b55f-460ea6c48049",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "92ad880c-ced5-4240-b55f-460ea6c48049",
-      "79c05701-b4af-4b54-be44-29c42c24ab96"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "a811aef7-b1eb-43ec-a96b-30fe4c35eac3",
+      "5af46b80-0752-48f8-a752-42b720d59643"
     ]
   },
   {
@@ -738,12 +759,12 @@
     "rationale": "Full gear compression on landing maps to SC10000AMM 6.3.7 'Shocks Bottom on Landing' with probable cause 'Inspect for weak bungee cords'. The hard landing may have been exacerbated by already-weak bungees.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "cdffc282-877c-47c7-ab16-de15ef29632c",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "cdffc282-877c-47c7-ab16-de15ef29632c",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "cdffc282-877c-47c7-ab16-de15ef29632c"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "1bd4bc09-9c7b-47e4-b5c9-9049208d0ec9"
     ]
   },
   {
@@ -756,14 +777,14 @@
     "rationale": "Stick shaker inoperative with other stall warning components functional narrows the fault to the shaker unit itself or its wiring, matching AS-AMM Ch 31 'Control stick shaker (stall warning system) does not operate'. Since ACI stall warner and lamp are working, the ACI is not the primary cause \u2014 defective control stick shaker or defective wiring to it are the probable causes.",
     "difficulty_tier": "hard",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "b81bb2c8-146a-4b93-ac91-08429d9792e1",
+    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
     "origin": "table",
     "ground_truth_chunk_id_original": "b81bb2c8-146a-4b93-ac91-08429d9792e1",
     "ground_truth_chunk_ids": [
-      "3bb14b48-7e96-41b1-9703-8761605ca5c4",
-      "08b9f231-8cfa-44c0-a615-bfd0b4cbcb8d",
-      "40904003-d853-4903-a8f7-b5c06f6d9daa",
-      "b81bb2c8-146a-4b93-ac91-08429d9792e1"
+      "b9aa5087-52d1-4415-a7f5-740f053f788f",
+      "06aeccbb-5691-4fdb-987c-a8bbd6a63cba",
+      "23999cae-a37f-4af9-877d-dfcc6ea82a0d",
+      "886cfb14-c0ca-492b-bd9c-f50c707b2740"
     ]
   },
   {
@@ -779,16 +800,16 @@
     "ambiguous_alternatives": [
       "Engine does not start"
     ],
-    "ground_truth_chunk_id": "62b2762e-5e02-4c6d-8fb5-06f241029a71",
+    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
     "origin": "table",
     "ground_truth_chunk_id_original": "62b2762e-5e02-4c6d-8fb5-06f241029a71",
     "ground_truth_chunk_ids": [
-      "30bf6377-72e7-4f86-85d8-aea7a1fdf5aa",
-      "1c63a082-e49e-4385-8e58-09de787d5aff",
-      "f3967766-bc11-4569-bf6d-ad448420974a",
-      "62b2762e-5e02-4c6d-8fb5-06f241029a71",
-      "7666fc1a-11c8-4bf5-9fb2-b47d313b09d6",
-      "f3705e39-9eae-4e60-8593-3daab020beaf"
+      "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+      "1a5b744c-8f2e-4fd8-a4c9-f7f125f9006e",
+      "802aed4e-3e5b-4eb5-bd8b-4e82ade59494",
+      "d6467427-3b79-4b72-8a61-f94f72bca733",
+      "fa93e416-de29-4374-af5c-bea7deb23bb1",
+      "13a9aaf6-f7de-4aef-8fd3-0829b7f15a23"
     ]
   },
   {
@@ -801,15 +822,15 @@
     "rationale": "High oil consumption without external leaks plus blue exhaust (oil burning) maps to AS-AMM Ch 71 'Excessive oil consumption'. Blue exhaust indicates oil passing into combustion chamber, suggesting worn/broken piston rings or worn valve guides \u2014 both listed probable causes.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "e1820de0-4dce-4677-82ec-3b24e3ecd901",
+    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
     "origin": "table",
     "ground_truth_chunk_id_original": "e1820de0-4dce-4677-82ec-3b24e3ecd901",
     "ground_truth_chunk_ids": [
-      "590454c9-1f65-4709-be6a-5781ed5d04f5",
-      "0145cd0d-7c3a-4622-94a8-12503e9ebb56",
-      "91ab005e-7abd-48a2-a51d-a06d52f8e23b",
-      "ac961a86-b32a-4f2a-a282-a0cf25359242",
-      "e1820de0-4dce-4677-82ec-3b24e3ecd901"
+      "76fe6522-28e5-4fb8-b352-34202475039d",
+      "43758276-8bca-485b-9ee4-baca615b101c",
+      "ee26ef42-7511-4935-9093-aa0d782a8ab4",
+      "80bd90a7-5985-4d60-adf3-2c1d506dfbf3",
+      "2c8338ea-eaf2-4313-98e0-ef9f2a04d11d"
     ]
   },
   {
@@ -822,13 +843,13 @@
     "rationale": "Ground-only steering failure with functional airborne rudder isolates the fault to the tail wheel steering mechanism, matching SC10000AMM 6.3.7 'Tail Wheel does not respond to rudder pedal'. Probable causes: broken steering chains, links or springs.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "5f453921-1b14-4fc5-b457-2c468b4d434b",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "5f453921-1b14-4fc5-b457-2c468b4d434b",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "67ee19fe-fee1-4df1-b778-52ba4e124aa1",
-      "5f453921-1b14-4fc5-b457-2c468b4d434b"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "2325e5b0-e050-429c-b183-cb388f301338",
+      "694498fb-0727-4362-a752-0ecb98dded01"
     ]
   },
   {
@@ -841,12 +862,12 @@
     "rationale": "VSI showing a fixed non-zero reading on the ground maps to AS-AMM Ch 34 'Pointer does not set on zero' (vertical speed indicator). Probable cause: leaking or ruptured diaphragm.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "9739819d-0aea-4f72-ab6f-bfade7f9fda5",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "9739819d-0aea-4f72-ab6f-bfade7f9fda5",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "9739819d-0aea-4f72-ab6f-bfade7f9fda5"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "693d44a9-f162-41a0-9ffa-6ada5bc93ca4"
     ]
   },
   {
@@ -859,16 +880,16 @@
     "rationale": "Vibration with spinner wobble maps to AS-AMM Ch 61 'Engine vibration'. Spinner wobble suggests propeller mounting bolts are loose or blade tracking not correct. The buzz-frequency vibration is characteristic of propeller imbalance or misalignment.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
+    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "ground_truth_chunk_ids": [
-      "cc1b461f-8ff8-480a-b878-d8a0e1f1afd2",
-      "eca173a0-5058-4026-94ce-6bd5317decdd",
-      "a783f034-9b86-4422-aee4-40e528729691",
-      "008fba72-ee33-4fb9-b890-2ecbc4e80bd9",
-      "526a859e-292f-450a-9a20-66cdee7b7f35",
-      "c9fabc71-4c7a-437e-bea0-2791540dd053"
+      "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+      "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+      "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+      "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+      "96d9e2da-8d77-4d81-aa5c-6b9062e1b7b7",
+      "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3"
     ]
   },
   {
@@ -885,12 +906,12 @@
       "Low power",
       "Cannot control the engine"
     ],
-    "ground_truth_chunk_id": "724d37e4-c9c8-4928-86a5-a919f08bec09",
+    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
     "origin": "table",
     "ground_truth_chunk_id_original": "724d37e4-c9c8-4928-86a5-a919f08bec09",
     "ground_truth_chunk_ids": [
-      "fa8bedeb-52fa-433b-96f2-eb1dcb6936fa",
-      "724d37e4-c9c8-4928-86a5-a919f08bec09"
+      "b456fdc9-a271-403e-85c6-66f287e34cac",
+      "27fcdb28-fbe8-44c6-ab35-382fd8856b3a"
     ]
   },
   {
@@ -903,12 +924,12 @@
     "rationale": "Cold air through vents despite OFF setting maps to AS-AMM Ch 21 'Ventilating system supplies cold air when set to OFF' with probable cause 'Control cable out of adjustment'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "fd79ab2b-6f1d-4212-b504-0b7196f56a5d",
+    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
     "origin": "table",
     "ground_truth_chunk_id_original": "fd79ab2b-6f1d-4212-b504-0b7196f56a5d",
     "ground_truth_chunk_ids": [
-      "b52f0fa9-77fe-4fdb-a210-32c3d96ff6a2",
-      "fd79ab2b-6f1d-4212-b504-0b7196f56a5d"
+      "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+      "a6ad05ba-5742-4d3d-b332-e425bedd7b10"
     ]
   },
   {
@@ -921,16 +942,16 @@
     "rationale": "Poor braking after lining replacement maps to SC10000AMM 6.3.7 'Brakes will not hold'. Post-replacement context suggests 'New lining installed with old disc, lining not seated in wear track creating partial contact with disc' or 'Brake lining plate installed backwards'.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "38a87f39-73e8-4756-bc67-736563ecc0b9",
+    "ground_truth_chunk_id": "b436f789-ee6a-4c86-9337-545280a3a536",
     "origin": "table",
     "ground_truth_chunk_id_original": "38a87f39-73e8-4756-bc67-736563ecc0b9",
     "ground_truth_chunk_ids": [
-      "7e38835b-be2e-4fbc-ba69-a0c870df6c9d",
-      "fd64edcb-2e30-4f34-8d79-6182b4c5084f",
-      "f6f7d76d-dadf-484f-a5a5-7e6d8711697f",
-      "38a87f39-73e8-4756-bc67-736563ecc0b9",
-      "f2c0930a-17fd-40d4-9c10-62ab9aea7153",
-      "2f1e8244-f7c9-424f-96bf-c0a5653ffbb3"
+      "b436f789-ee6a-4c86-9337-545280a3a536",
+      "d6f6a87a-d88d-49cf-81ff-9018a7b34c64",
+      "b076bb87-0f26-48d3-a514-770a4fdc7aae",
+      "c53158e6-fa8e-43a2-a50c-6d9bf509862f",
+      "3948d1eb-bec5-4b09-984e-47a197531d42",
+      "2d98ce33-9afa-4ca9-9a34-5511172a2dbc"
     ]
   },
   {
@@ -943,14 +964,14 @@
     "rationale": "Zero coolant temp with functional EGT maps to AS-AMM Ch 77 'No coolant temperature indication'. Since both use the same display system (Dynon SV-D1000), the fault is isolated to the coolant-specific components: defective coolant sensor or defective electrical cable to the sensor.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "25614b96-3eb5-45fa-a891-d797c43cab3c",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "25614b96-3eb5-45fa-a891-d797c43cab3c",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "25614b96-3eb5-45fa-a891-d797c43cab3c",
-      "8f8259b1-ba38-4d91-b77c-dca0c5be9d65",
-      "5b887e38-9699-4f28-8f75-23d858c892cf"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "e0a892c6-9b05-4c37-90d6-cd3951e95976",
+      "ca874885-6c58-417f-b8c7-b8592547199d",
+      "5a03b176-fe1e-410b-81ba-c2f8eee6ae66"
     ]
   },
   {
@@ -966,14 +987,18 @@
     "ambiguous_alternatives": [
       "Filler Cap Leaks"
     ],
-    "ground_truth_chunk_id": "537610bf-a527-4458-8392-9fcf542ede63",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "537610bf-a527-4458-8392-9fcf542ede63",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "aa7ecacb-7183-483e-9ae4-220203d743e4",
-      "ec8e921e-dffa-491d-9807-6a490b4edf79",
-      "537610bf-a527-4458-8392-9fcf542ede63"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "979e0601-01d2-4aba-85bf-c77d34012973",
+      "b1fc3a2d-48bc-4b7d-b77b-aef50d5a605f",
+      "36ccf9cb-03a7-4288-89da-502e05ffa782",
+      "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
+      "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+      "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+      "90350c2e-4145-4def-827f-e5f7adace4b0"
     ]
   },
   {
@@ -989,22 +1014,26 @@
     "ambiguous_alternatives": [
       "Engine vibration"
     ],
-    "ground_truth_chunk_id": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
+    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
     "origin": "table",
     "ground_truth_chunk_id_original": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
     "ground_truth_chunk_ids": [
-      "9804d62e-c73a-40d0-a6c1-d8cd6aecba05",
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "a87540f2-9595-4e1c-a77c-5d20b75df3b3",
-      "f85f4978-3555-4dd2-9fe9-863df56a5cdd",
-      "5d71b9f2-cb80-43fa-ae84-ba81b4080b7f",
-      "c97c33fc-ec0a-42a1-ab15-8512762776e5",
-      "41966f10-0b46-4c35-96fa-3cc3cd291ba5",
-      "ee33b90c-4dc6-44e3-8492-1f9ead1ce657",
-      "6d9f456b-1b96-4f04-ba4e-a3e57bc71a2e",
-      "6998f4de-5fa5-447d-b087-a046a033dbe5",
-      "967d5b9b-a9fd-4ae9-9841-e61550b03884",
-      "8ac21ad7-ab13-4c97-a61b-ffc5507f5ebe"
+      "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+      "111fa8f6-f913-4e87-ac49-4b3b41e5489d",
+      "c436096a-b29a-4742-be81-3bbe494df9f5",
+      "3e2f4eee-3e11-4221-83c1-86add8fbb14d",
+      "b9d97cda-eb32-4e32-80d3-1684e6a06918",
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "789eaa1c-218f-42e8-a52e-7f5920513800",
+      "fcac48c0-8541-4462-8dd6-594966428436",
+      "98b33c90-f939-4bae-9de6-036b4b7b47a5",
+      "ab83118e-c2b6-40dc-a2dd-8ee4d146cc8e",
+      "32bd63c6-be53-48a7-8e6a-ebc5cb60265f",
+      "aa159997-a295-4a2b-91d2-017732b92339",
+      "e000416d-a963-4c72-a251-a7764f4d5991",
+      "beef10b4-389e-4526-a2a8-2705013b08cb",
+      "b9b90f54-0ec8-4219-b82f-9402a97292b9",
+      "c195fc9b-162d-4e27-b5fe-1afea7c2e3c6"
     ]
   },
   {
@@ -1017,12 +1046,12 @@
     "rationale": "Stick offset with ailerons neutral directly matches SC10000AMM 6.3.6 'Control sticks are displaced when ailerons are in neutral' with probable cause 'Control cables improperly rigged'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "42f45ec7-465b-4069-95f5-66b67cf2717a",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "42f45ec7-465b-4069-95f5-66b67cf2717a",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "42f45ec7-465b-4069-95f5-66b67cf2717a"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "2c2cb9a4-325e-4f99-9891-7a7ff951938c"
     ]
   },
   {
@@ -1035,13 +1064,13 @@
     "rationale": "Engine continuing to run with ignition switched off is a classic hot-running / dieseling condition matching AS-AMM Ch 71 'Engine keeps running with ignition off'. Probable causes: overheating of engine or defective ignition switch (switch not actually grounding the mags).",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "30ebd95f-7dbf-4cf7-993e-93038e6884ab",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "30ebd95f-7dbf-4cf7-993e-93038e6884ab",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "30ebd95f-7dbf-4cf7-993e-93038e6884ab",
-      "d1d222c7-d4ca-4e9f-8189-4b54b83a886f"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+      "b3fe44b7-6545-427b-9f2c-1a41fc498345"
     ]
   },
   {
@@ -1054,12 +1083,12 @@
     "rationale": "Restricted elevator travel matches SC10000AMM 6.3.6 'Full elevator travel cannot be achieved' with probable cause 'Pulleys binding'. The one-direction-only limitation suggests a pulley is seizing at a specific cable wrap angle.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "2e1acdc2-7201-46ef-891f-74838d803601",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "2e1acdc2-7201-46ef-891f-74838d803601",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "2e1acdc2-7201-46ef-891f-74838d803601"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "28852a62-f1b4-47b2-a56c-ade1fb1fc457"
     ]
   },
   {
@@ -1072,14 +1101,14 @@
     "rationale": "All EGT readings dropping simultaneously to zero with engine running normally maps to AS-AMM Ch 77 'No exhaust gas temperature indication'. All channels failing together suggests a common point failure \u2014 defective electrical cable or connector to the EMS module rather than individual sensor failures.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "91b0cad2-0b40-4978-80a1-46e4e8217353",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "91b0cad2-0b40-4978-80a1-46e4e8217353",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "91b0cad2-0b40-4978-80a1-46e4e8217353",
-      "003d5382-931a-410c-aa60-8c4b9165d9cf",
-      "c66e3fa2-0e02-4827-9fd0-52ac4fb20e76"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "7ccc9b6c-0a7e-4ecf-9381-afb41e1f0786",
+      "9ec79fdb-0a37-41a6-a819-892b89fa584a",
+      "21da0b61-74ba-41d4-93f3-3a928a70f269"
     ]
   },
   {
@@ -1092,13 +1121,13 @@
     "rationale": "Intercom failure with functional radio maps to AS-AMM Ch 23 'Intercom does not work'. The intercom can be enabled/disabled via remote switch or menu \u2014 probable cause is configuration or connection issue.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "d04ae4f8-0d79-44be-a9c6-efa68b11b960",
-      "3e401823-e76e-4ead-b7d8-5bde135f4aec"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "5ac335c5-a3f8-409f-9d02-d9dcd64b8f0e",
+      "54626e2d-b3b9-450d-9fca-d5c3e015126e"
     ]
   },
   {
@@ -1111,15 +1140,15 @@
     "rationale": "Disagreement between standby fuel pressure indicator and Dynon display maps to AS-AMM Ch 73 'Insufficient fuel pressure' \u2014 one instrument is reading incorrectly. Probable causes include defective fuel pressure sensor or defective fuel pressure indicator. Since the engine runs normally, actual fuel pressure is likely adequate and one sensor/indicator is faulty.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "12e7aac5-ca6d-40a0-b582-31e474ef72ba",
+    "ground_truth_chunk_id": "cbec64af-1300-4646-aff7-7f75ee66709f",
     "origin": "table",
     "ground_truth_chunk_id_original": "12e7aac5-ca6d-40a0-b582-31e474ef72ba",
     "ground_truth_chunk_ids": [
-      "ef58a684-fe53-4f49-8ed5-b1c659b64ba9",
-      "12e7aac5-ca6d-40a0-b582-31e474ef72ba",
-      "95856386-8697-42b7-ba00-3d1ca9fe73b1",
-      "77cce22c-aa5f-478e-b339-71c02b67fc69",
-      "b3e4d4c6-ad8f-473e-a510-24d408aae3e9"
+      "cbec64af-1300-4646-aff7-7f75ee66709f",
+      "9953cf83-2c6c-4e37-93a2-98ab1cfe2097",
+      "3a0c4ef5-0725-4b41-8eee-0d1da720b850",
+      "099b582c-e74e-43a8-bac6-99d6809c2143",
+      "e6d0507b-901c-4892-a45b-2440760bf78f"
     ]
   },
   {
@@ -1132,16 +1161,16 @@
     "rationale": "Landing light failure with breaker and switch confirmed OK maps to AS-AMM Ch 33 'Landing light not operate'. Remaining probable causes: defective wiring or loose connector next to the light.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
-      "a0503c2f-12b2-4399-9979-d13fa3482396",
-      "d48c1c45-335d-445a-aebf-4b560d363117",
-      "69a34228-478e-427b-a427-f73563d1d72d",
-      "ce574671-96f8-4212-afa8-b35b0c53609d"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+      "484e0364-8e46-48fb-9205-4f702c13dfd0",
+      "8ad45165-2dfd-42c0-92ce-ec9fa2d99da7",
+      "457725e3-b33b-47af-ad7d-1bb3342ea923",
+      "be1224b8-4657-4899-a798-9c11a5eb0b3c"
     ]
   },
   {
@@ -1154,18 +1183,18 @@
     "rationale": "Hesitation on rapid throttle advance maps to SC10000AMM 6.3.10 'Poor acceleration'. The fact it occurs when warm rules out 'engine not warm enough'. Probable causes include idling mixture too lean, plugged air filter, or water in fuel.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
+    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
     "origin": "table",
     "ground_truth_chunk_id_original": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
     "ground_truth_chunk_ids": [
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
-      "2f079b8d-0933-452a-9931-e872f1e95914",
-      "2c360ea6-dad7-4033-9934-95f20ee37487",
-      "94f69fc3-639b-4d27-80ed-f23e40659039",
-      "c33e07dc-68c5-48a9-8a89-6109247c7165",
-      "1fecb1ed-d269-4373-bfbe-7ff28e4948c0",
-      "b509b22f-e908-4114-92a0-efa128642ec2"
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "38324c61-a6d9-47c3-b381-be98a652ad5f",
+      "f923f2b7-d7dd-40f9-990e-ad2bb5a28c2b",
+      "56fbb038-a2b5-45c2-a3bd-aa53d07e5049",
+      "4e4efd8a-896b-40aa-8fc5-dd153819cd49",
+      "2855ef5f-53f0-45dd-8201-da4928b43820",
+      "a5b19afe-a5c7-477a-952a-cd5f56a6434a",
+      "b57db2c6-d383-47d5-b79c-13155aef5ba6"
     ]
   },
   {
@@ -1178,13 +1207,13 @@
     "rationale": "Stall warning lamp not activating during actual stall conditions despite functional buzzer maps to AS-AMM Ch 31 'Warning lamp (stall warning system) does not operate'. The lamp illuminating during self-test but not during actual warnings suggests defective wiring in the warning activation circuit (self-test may use a different path) or the lamp is intermittently defective.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "2653a782-8452-41e2-a220-27e55d93ed9e",
+    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
     "origin": "table",
     "ground_truth_chunk_id_original": "2653a782-8452-41e2-a220-27e55d93ed9e",
     "ground_truth_chunk_ids": [
-      "4a6768cc-785a-4581-87b5-2d53a5e8b5e4",
-      "2653a782-8452-41e2-a220-27e55d93ed9e",
-      "2258567c-eb75-4c76-9d50-04b05a29876a"
+      "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+      "87d04015-ec5d-46b6-9a2e-e40a68feae43",
+      "5b7f7471-928d-4165-a881-870919dec390"
     ]
   },
   {
@@ -1200,12 +1229,12 @@
     "ambiguous_alternatives": [
       "Excessive card error"
     ],
-    "ground_truth_chunk_id": "767c4416-eda2-4e62-99e5-f7d7a812eff3",
+    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
     "origin": "table",
     "ground_truth_chunk_id_original": "767c4416-eda2-4e62-99e5-f7d7a812eff3",
     "ground_truth_chunk_ids": [
-      "2bda2792-e1c8-459a-8824-233df9564dbb",
-      "767c4416-eda2-4e62-99e5-f7d7a812eff3"
+      "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+      "ce2fde25-58c7-474a-a6bc-9b0748b530aa"
     ]
   },
   {
@@ -1218,13 +1247,13 @@
     "rationale": "Asymmetric flap deployment causing roll maps to SC10000AMM 6.3.6 'Flaps do not move in unison'. Probable causes: flap actuator tube bent/misrigged or flap actuator tube rod end broken.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "f8a262e8-6063-4332-901d-6110987fa207",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "f8a262e8-6063-4332-901d-6110987fa207",
-      "d44da100-a32d-40b4-b3e8-84c837b83c69"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e5f9e379-aa85-4340-8c07-42ae4fd397cb",
+      "f85eac83-05a5-46e0-a8c3-c5b96e160c19"
     ]
   },
   {
@@ -1240,14 +1269,14 @@
     "ambiguous_alternatives": [
       "Leak in Fuel Line"
     ],
-    "ground_truth_chunk_id": "ce9fc82f-8dd7-4fad-8c1a-355e18528f5e",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "ce9fc82f-8dd7-4fad-8c1a-355e18528f5e",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "9e3435b7-68ef-4835-a265-a001e17b1067",
-      "ce9fc82f-8dd7-4fad-8c1a-355e18528f5e",
-      "eda1471d-b758-48f6-8702-472dd812511c"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "aae8bf46-d570-402a-8fa7-c52ae5a1f3a7",
+      "8b465b0c-18e2-4774-a513-78eb99bd5c2b",
+      "edf3bd8f-7f7e-41ae-afad-8e6515cf160a"
     ]
   },
   {
@@ -1260,13 +1289,13 @@
     "rationale": "Post-replacement ACI failure maps to Ch 31 'ACI stall warner does not operate'. Both downstream devices dead and test button fails \u2014 ACI unit itself or its wiring is root cause.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "be2c5b70-aa7b-44f3-b8e7-d564b3624784",
+    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
     "origin": "table",
     "ground_truth_chunk_id_original": "be2c5b70-aa7b-44f3-b8e7-d564b3624784",
     "ground_truth_chunk_ids": [
-      "3bb14b48-7e96-41b1-9703-8761605ca5c4",
-      "be2c5b70-aa7b-44f3-b8e7-d564b3624784",
-      "3ec2f07f-706a-4cf6-8b84-d844866f7c38"
+      "b9aa5087-52d1-4415-a7f5-740f053f788f",
+      "153410ae-e847-4d34-8173-22a66b203e0f",
+      "d6b4c792-f03b-4272-9203-7773d53f1450"
     ]
   },
   {
@@ -1279,14 +1308,14 @@
     "rationale": "All position lights failing simultaneously with tripped breaker maps to Ch 33 'Both position lights do not operate' with cause 'Circuit-breaker not set or defective'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "a813fea8-e63a-4a77-8a45-3de1328055b9",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "a813fea8-e63a-4a77-8a45-3de1328055b9",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "6c552eb2-dc32-4478-b981-97a50bf9754e",
-      "a813fea8-e63a-4a77-8a45-3de1328055b9",
-      "b7084a86-1eda-4cc8-ae53-e0d6b23e1f6e"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "9f359620-8648-4e79-8b72-997c0ba83bbe",
+      "c49a9745-8456-410a-a923-2be518247c5d",
+      "956a810f-5332-4276-90db-495c36cd700f"
     ]
   },
   {
@@ -1299,12 +1328,12 @@
     "rationale": "Complete brake failure with empty fluid reservoir maps to SC10000AMM 6.3.7 'Brakes inoperative' with cause 'Brake fluid level low'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "3bf565e6-2b88-4939-a8ce-2f9a98b33d28"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "31be8bd6-5213-4529-a71f-411f5d468c54"
     ]
   },
   {
@@ -1317,14 +1346,14 @@
     "rationale": "Light failure persisting after bulb replacement maps to SC10000AMM 6.3.19 'Bulb does not light up'. With new bulb and good breaker, remaining cause is 'Loose wiring'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "9d326e3c-ec77-43b8-bf8c-8a6accff82eb",
+    "ground_truth_chunk_id": "dbf09be5-4651-436e-acea-8947c4367582",
     "origin": "table",
     "ground_truth_chunk_id_original": "9d326e3c-ec77-43b8-bf8c-8a6accff82eb",
     "ground_truth_chunk_ids": [
-      "7d5874f3-b8f0-4c1e-a54d-b6f471a64651",
-      "9d326e3c-ec77-43b8-bf8c-8a6accff82eb",
-      "89c28af9-c659-4554-bc17-5dcdb6b8bfc5",
-      "5e461d32-d552-4fca-a897-f433c67f5b64"
+      "dbf09be5-4651-436e-acea-8947c4367582",
+      "44d3d401-42f9-49eb-a877-a515ba51a62d",
+      "6aed5509-7b7a-4fd1-9112-1695f6d4a5aa",
+      "cc5973ef-8125-4c76-8e75-28fab39a8166"
     ]
   },
   {
@@ -1337,13 +1366,13 @@
     "rationale": "Buzzer-only failure with lamp and shaker functional isolates fault to the buzzer or its wiring, matching Ch 31 'Buzzer (stall warning system) does not operate'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "0785ea13-d669-43bd-be6b-3b7798a3ca90",
+    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
     "origin": "table",
     "ground_truth_chunk_id_original": "0785ea13-d669-43bd-be6b-3b7798a3ca90",
     "ground_truth_chunk_ids": [
-      "4a6768cc-785a-4581-87b5-2d53a5e8b5e4",
-      "0785ea13-d669-43bd-be6b-3b7798a3ca90",
-      "f5519d95-50a3-4be1-a3c1-8b249e249848"
+      "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+      "7fc0beb1-36f8-43d0-8c4f-13e3d23724db",
+      "aad3b2b9-dbe1-4fbf-a4c8-f49bfe53943e"
     ]
   },
   {
@@ -1356,14 +1385,14 @@
     "rationale": "Throttle movement with zero RPM response maps to Ch 76 'Cannot control the engine'. Free lever movement strongly suggests 'Broken throttle bowden cable'.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "a51bfe69-a2fa-4446-aab6-21aff4fe50c1",
+    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
     "origin": "table",
     "ground_truth_chunk_id_original": "a51bfe69-a2fa-4446-aab6-21aff4fe50c1",
     "ground_truth_chunk_ids": [
-      "fa8bedeb-52fa-433b-96f2-eb1dcb6936fa",
-      "d6ab7a9a-602b-4a9a-b130-dfcc5d0a2374",
-      "c0db3c60-a251-485b-bd9f-061165e57a3a",
-      "a51bfe69-a2fa-4446-aab6-21aff4fe50c1"
+      "b456fdc9-a271-403e-85c6-66f287e34cac",
+      "6a274cc7-6b1c-458e-b2da-a190caf7800a",
+      "72123d39-1fa4-41f7-9f08-788bab6fb14c",
+      "a546f55c-2c41-40c9-9ae0-9c15e45f9e14"
     ]
   },
   {
@@ -1376,12 +1405,12 @@
     "rationale": "Non-rotating compass card with cloudy fluid maps to Ch 34 'Card sticks'. Cloudy fluid suggests collapsed altitude compensating diaphragm.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "f9b19eb6-e042-4ea2-92d4-e3e63ee39ee2",
+    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
     "origin": "table",
     "ground_truth_chunk_id_original": "f9b19eb6-e042-4ea2-92d4-e3e63ee39ee2",
     "ground_truth_chunk_ids": [
-      "2bda2792-e1c8-459a-8824-233df9564dbb",
-      "f9b19eb6-e042-4ea2-92d4-e3e63ee39ee2"
+      "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+      "1ce07908-0d8d-47cb-9dee-e52eac6a0f39"
     ]
   },
   {
@@ -1394,12 +1423,12 @@
     "rationale": "Milky/foggy light lens reducing transmission matches Ch 33 'Decrease of light transmission (milky appearance)' \u2014 'Degradation of light cover surface'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "56cc0ba3-8232-4279-9396-271ad21ced27",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "56cc0ba3-8232-4279-9396-271ad21ced27",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "56cc0ba3-8232-4279-9396-271ad21ced27"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "4eea3a57-9caf-4a15-889f-c5877b8608a4"
     ]
   },
   {
@@ -1412,15 +1441,15 @@
     "rationale": "Rough warm idle with smoky exhaust matches Ch 71 'Engine idles rough after warm-up period, smoky exhaust emission'. Probable causes: CHOKE activated, carburettors inadequately synchronized.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "3d8075a1-ab15-4aef-a242-8a69d5612f7c",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "3d8075a1-ab15-4aef-a242-8a69d5612f7c",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "3d8075a1-ab15-4aef-a242-8a69d5612f7c",
-      "27cca1d3-4a2f-4b34-9be0-bbec5196571a",
-      "7570abb8-0434-43c1-bb9f-17bcda88560f",
-      "10f846ff-1a68-4184-868b-c8159262d2ee"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "557e14fb-6855-4608-8ecf-2f574fea05c5",
+      "f3a5cb46-a679-4567-b710-4354244c40ea",
+      "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+      "19e8bf4b-8249-4122-889a-a26f622ee20d"
     ]
   },
   {
@@ -1433,15 +1462,15 @@
     "rationale": "Intermittent misfire after ignition component replacement maps to Ch 74 'Engine runs irregularly or misfires'. Post-replacement context suggests incorrect spark plug gap or a lead not fully seated.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "55e5b17f-2ce3-4b34-aaf0-98ab7661cc3e",
-      "1c5b3734-74b6-4bd6-83a8-2e4f90352091",
-      "322331f8-5dbe-40ad-a845-71e0e5d91470",
-      "47f087cb-8616-4ff5-9ed2-7e50dccf14d0"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "551669f6-8321-44dd-8419-9181a78dc284",
+      "add19a96-5d94-410b-9ecb-ef0865259de1",
+      "a4c7e840-20c9-4e05-958f-b8eb8653fe96",
+      "a4ecb69f-dc28-4cc2-955b-98e9bf8e39de"
     ]
   },
   {
@@ -1454,12 +1483,12 @@
     "rationale": "No-start with dry plugs despite fuel ON maps to Ch 76 'Engine will not start' \u2014 choke control not correctly adjusted or fuel delivery path fault.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "2acac2c6-728f-46f1-b6fc-78ba264ded77",
+    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
     "origin": "table",
     "ground_truth_chunk_id_original": "2acac2c6-728f-46f1-b6fc-78ba264ded77",
     "ground_truth_chunk_ids": [
-      "fa8bedeb-52fa-433b-96f2-eb1dcb6936fa",
-      "2acac2c6-728f-46f1-b6fc-78ba264ded77"
+      "b456fdc9-a271-403e-85c6-66f287e34cac",
+      "ab90d392-c4a6-4f73-bbc2-c016f4d328a7"
     ]
   },
   {
@@ -1472,13 +1501,13 @@
     "rationale": "Randomly fluctuating fuel quantity with no correlation to flight condition matches Ch 28 'Erratic fuel quantity indicator readings'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "826b2876-56f5-462c-b877-a1f406d9cbc7",
+    "ground_truth_chunk_id": "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "826b2876-56f5-462c-b877-a1f406d9cbc7",
     "ground_truth_chunk_ids": [
-      "f548e88b-f1a5-4083-85c7-97af14f8ada3",
-      "da6f1be8-73a6-4618-84b1-4b1a0cf50747",
-      "826b2876-56f5-462c-b877-a1f406d9cbc7"
+      "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
+      "2b595ed9-f26e-4b4b-8b93-921bbca01343",
+      "d36a6da2-4879-40ac-a002-5a8515f96d88"
     ]
   },
   {
@@ -1491,13 +1520,13 @@
     "rationale": "Consistent 15-degree compass error on all headings maps to Ch 34 'Excessive card error'. Probable cause: compass not properly compensated or external magnetic interference.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "ce053436-5a16-451f-bddf-c883ccd52b6d",
+    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
     "origin": "table",
     "ground_truth_chunk_id_original": "ce053436-5a16-451f-bddf-c883ccd52b6d",
     "ground_truth_chunk_ids": [
-      "2bda2792-e1c8-459a-8824-233df9564dbb",
-      "ce053436-5a16-451f-bddf-c883ccd52b6d",
-      "f9081932-3897-4771-a864-c4af076fdcfd"
+      "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+      "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+      "b6b7611d-1dbe-488c-9ff4-0ff1fcc66d4c"
     ]
   },
   {
@@ -1510,13 +1539,13 @@
     "rationale": "High stick forces maps to SC10000AMM 6.3.6 'Excessive resistance to movement of control sticks'. Causes: control cables too taut or pulleys binding.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "38f39db8-58f6-412c-9f5f-06d556e23e8b",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "38f39db8-58f6-412c-9f5f-06d556e23e8b",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "4c75d77c-e6d0-42c2-a8ae-5aa43b036471",
-      "38f39db8-58f6-412c-9f5f-06d556e23e8b"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "ea6aac52-0f0f-4c4b-834a-7da497c5c13f",
+      "20b8193b-8c53-4ea4-be2b-1746c78c1a01"
     ]
   },
   {
@@ -1529,14 +1558,18 @@
     "rationale": "Fuel leak at cap despite correct seating maps to SC10000AMM 6.3.15 'Filler Cap Leaks'. Probable cause: 'Deteriorated Seal'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
     "ground_truth_chunk_ids": [
-      "95990fa9-c8c2-47fd-aa64-82477437c852",
-      "d20d7c38-707e-4f38-a223-f87c2ff4f498",
-      "730b6e51-617a-4cb7-a8b3-0d4ff82683fa",
-      "e346c531-2bef-4feb-b7e1-c98658b01f2a"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "979e0601-01d2-4aba-85bf-c77d34012973",
+      "b1fc3a2d-48bc-4b7d-b77b-aef50d5a605f",
+      "36ccf9cb-03a7-4288-89da-502e05ffa782",
+      "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
+      "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+      "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+      "90350c2e-4145-4def-827f-e5f7adace4b0"
     ]
   },
   {
@@ -1549,12 +1582,12 @@
     "rationale": "Mechanically locked flap handle maps to SC10000AMM 6.3.6 'Flap control arm cannot be actuated' \u2014 'Flap control arm release button not working properly'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "cfc64172-75fd-4c45-9fe0-a3bf060d65f2",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "cfc64172-75fd-4c45-9fe0-a3bf060d65f2",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "cfc64172-75fd-4c45-9fe0-a3bf060d65f2"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "a4018a94-2ef0-47de-b920-38be8d5bd97e"
     ]
   },
   {
@@ -1567,12 +1600,12 @@
     "rationale": "No flap response with disconnected pushrod visible maps to SC10000AMM 6.3.6 'Flaps do not move when flap control arm is actuated' \u2014 'Flap actuator tubes broken/disconnected'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "64c9c975-80b4-447e-ab94-58298b90d44a",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "64c9c975-80b4-447e-ab94-58298b90d44a",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "64c9c975-80b4-447e-ab94-58298b90d44a"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "286984d9-4c3a-4493-a88e-62caaac75868"
     ]
   },
   {
@@ -1585,15 +1618,15 @@
     "rationale": "Consistent over-reading after sensor replacement maps to Ch 28 'Fuel quantity indicator reading incorrect' \u2014 'Incorrectly adjusted fuel sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "6548c637-39ab-497f-8120-94ea278af1a1",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "6548c637-39ab-497f-8120-94ea278af1a1",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "6548c637-39ab-497f-8120-94ea278af1a1",
-      "8e3a3e21-3158-406f-9f0f-eb3d27252d99",
-      "c97dd7e8-c7aa-4b1e-a782-227db2baea42",
-      "4d15e746-899e-43bb-9133-1a6bbf60fa62"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "aa828a1f-0dca-4590-bb84-a63e02620328",
+      "556e77ec-43f9-4803-a4b5-38355a4aa138",
+      "d3d9c914-6252-43e1-a99e-4258268cc139",
+      "53171e65-9d49-44c5-bce9-8c6ab95dc32c"
     ]
   },
   {
@@ -1606,12 +1639,12 @@
     "rationale": "Heating output despite OFF setting maps to Ch 21 'Heating system supplies warm air when set to OFF' \u2014 'Control cable out of adjustment'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "5a97f78a-e1b9-48f3-89e1-220d9e0d58a6",
+    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
     "origin": "table",
     "ground_truth_chunk_id_original": "5a97f78a-e1b9-48f3-89e1-220d9e0d58a6",
     "ground_truth_chunk_ids": [
-      "b52f0fa9-77fe-4fdb-a210-32c3d96ff6a2",
-      "5a97f78a-e1b9-48f3-89e1-220d9e0d58a6"
+      "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+      "639ae4b7-7f42-405e-acbb-6f4a12ed804d"
     ]
   },
   {
@@ -1624,13 +1657,13 @@
     "rationale": "Single-cylinder high temperature indication maps to Ch 77 'High coolant temperature indication'. One-cylinder-only pattern could be defective engine condition or defective sensor for that channel.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "001c5d45-354b-460a-8aa0-337efb11d225",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "001c5d45-354b-460a-8aa0-337efb11d225",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "001c5d45-354b-460a-8aa0-337efb11d225",
-      "f6f980ce-f61e-440e-9aca-1c17e03fc108"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "e0540beb-eff4-4e50-ab0f-5c16a3ab55fe",
+      "cf335ca7-1b4a-4536-a7bb-94a256bcf277"
     ]
   },
   {
@@ -1643,13 +1676,13 @@
     "rationale": "Elevated EGT on specific cylinders maps to Ch 77 'High exhaust gas temperature indication'. Could be defective engine or defective EGT indicators.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "df888e8f-e0cb-4795-bbab-118f5b423109",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "df888e8f-e0cb-4795-bbab-118f5b423109",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "df888e8f-e0cb-4795-bbab-118f5b423109",
-      "6afe6633-06e5-41ab-b856-574a187cdf5d"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "568c8ac5-7b5a-4f04-848e-4aa08dd56fcc",
+      "3c0bd751-bd23-4c5b-b25a-9e1c665954bf"
     ]
   },
   {
@@ -1662,14 +1695,14 @@
     "rationale": "Oil pressure spike at cold start maps to Ch 71 'High oil pressure'. Probable causes: 'Too cold oil' or 'Wrong viscosity of oil'.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "2c8655fd-0376-4318-bc70-fed15d5ff034",
+    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
     "origin": "table",
     "ground_truth_chunk_id_original": "2c8655fd-0376-4318-bc70-fed15d5ff034",
     "ground_truth_chunk_ids": [
-      "590454c9-1f65-4709-be6a-5781ed5d04f5",
-      "2c8655fd-0376-4318-bc70-fed15d5ff034",
-      "4c1b91d4-f575-4444-a983-f6d7f65a020a",
-      "6cd3d899-da8e-4b6b-b0a5-45139fa892a0"
+      "76fe6522-28e5-4fb8-b352-34202475039d",
+      "d4c5456f-cc9d-4119-9aa3-d131e34498cf",
+      "b2cd0efa-85ae-4bf6-be75-9a94dc480d76",
+      "868bd00f-9928-4255-aeeb-8a6a5bc774c7"
     ]
   },
   {
@@ -1682,16 +1715,24 @@
     "rationale": "High oil temperature with low oil level maps to SC10000AMM 6.3.10 'High oil temperature' \u2014 'Low oil supply'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
+    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
     "origin": "table",
     "ground_truth_chunk_id_original": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
     "ground_truth_chunk_ids": [
-      "56d07651-4673-4724-978c-9a4ab0edbb91",
-      "1738bf30-2d8e-40e5-b436-90c9b284acbe",
-      "8900b648-591a-4d02-a7a2-e8072d717132",
-      "209f9ac4-af0f-4f58-b089-49f4298bcb45",
-      "ab8373fa-7723-4352-bcdd-8344c84b03f9",
-      "956203df-177f-453b-8203-df1f4ac408a5"
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "c49944b6-dc69-4d54-94da-8eac158fb887",
+      "2934c68a-42a6-4c5b-813e-d815eb65feb7",
+      "886a25d9-da97-4aee-bdf1-93ed84baeefc",
+      "20008291-cf98-4315-8d54-ef0223140d4d",
+      "f4dd58c5-2cc7-46dd-af91-8255399b2816",
+      "3a29c1f3-1a1d-47a1-bc0e-f15334c7b722",
+      "3d3171ad-2122-49fa-84b0-98c932c2dac1",
+      "e803bbdb-d350-4be7-9e13-0730df181cac",
+      "4a19b812-8b23-4bb6-ba0f-b63bc6a7fcc6",
+      "967729a5-eb9a-4b3c-8a06-120d2f9d3588",
+      "6064718c-0836-44ee-a9db-6299f6d7a6a9",
+      "9f8802e4-e8a7-4bce-97e5-b5530de3913a",
+      "3a490e57-ac51-4dae-91c2-05eed69d15ad"
     ]
   },
   {
@@ -1704,18 +1745,18 @@
     "rationale": "False high reading after sensor replacement that drops to zero when disconnected maps to Ch 79 'High oil temperature indication' \u2014 'Malfunctioning sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "773a99dc-e7b2-48d8-9473-1ee531e3c022",
+    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
     "origin": "table",
     "ground_truth_chunk_id_original": "773a99dc-e7b2-48d8-9473-1ee531e3c022",
     "ground_truth_chunk_ids": [
-      "b652ab9c-6d80-47fd-abb3-628d38d831af",
-      "577d673e-850a-4a52-bdd9-cef576da35b3",
-      "1a584860-a9ed-45db-a775-0ad56bfd7dee",
-      "aafa1e07-7c59-40a4-ab4c-535f01adabfa",
-      "8260b221-eced-4be6-bea8-fb2fdd0b7c46",
-      "773a99dc-e7b2-48d8-9473-1ee531e3c022",
-      "846a668a-3970-4592-911d-327575397258",
-      "42d7e735-f9b5-47b1-b455-fed0d719b898"
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "c49944b6-dc69-4d54-94da-8eac158fb887",
+      "2934c68a-42a6-4c5b-813e-d815eb65feb7",
+      "886a25d9-da97-4aee-bdf1-93ed84baeefc",
+      "20008291-cf98-4315-8d54-ef0223140d4d",
+      "f4dd58c5-2cc7-46dd-af91-8255399b2816",
+      "3a29c1f3-1a1d-47a1-bc0e-f15334c7b722",
+      "3d3171ad-2122-49fa-84b0-98c932c2dac1"
     ]
   },
   {
@@ -1728,13 +1769,13 @@
     "rationale": "Asymmetric aileron deflection measured at 12 vs spec 18 matches SC10000AMM 6.3.6 'Improper aileron travel'. Causes: cables improperly rigged or torque tube incorrectly adjusted.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "025ba8c4-2300-478a-bc52-63760039bfdb",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "025ba8c4-2300-478a-bc52-63760039bfdb",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "e16212cc-7bdf-4880-9617-7d0b9b49089a",
-      "025ba8c4-2300-478a-bc52-63760039bfdb"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "c745a578-cbd6-4746-9481-68c762aae843",
+      "81a2687e-157a-412c-9ae8-dad40c9d5862"
     ]
   },
   {
@@ -1747,12 +1788,12 @@
     "rationale": "Consistent RPM over-reading compared to known-good reference maps to Ch 77 'Incorrect RPM indication' \u2014 'Defective RPM indicator'.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "394ef76f-b630-4d68-b0cf-38cc027a4d0d",
+    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
     "origin": "table",
     "ground_truth_chunk_id_original": "394ef76f-b630-4d68-b0cf-38cc027a4d0d",
     "ground_truth_chunk_ids": [
-      "84192df7-1a57-44fa-ac90-e61d91b26730",
-      "394ef76f-b630-4d68-b0cf-38cc027a4d0d"
+      "9669a2ac-29a4-49c4-9148-e951c57230d3",
+      "472eab56-ca43-4508-a5e5-364604aee8b5"
     ]
   },
   {
@@ -1765,13 +1806,13 @@
     "rationale": "ASI oscillation in stable air with minor VSI swing maps to Ch 34 'Incorrect indication or pointer oscillates' (airspeed). Probable cause: leaking or ruptured diaphragm.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "7ff185e9-6199-4862-ab44-2e96dbdb8260",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "7ff185e9-6199-4862-ab44-2e96dbdb8260",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "7ff185e9-6199-4862-ab44-2e96dbdb8260",
-      "22ac7bbc-f2ad-4b06-85fc-d9bf555e7044"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "a3dc72ef-e75c-4b22-814b-9957cf928c7f",
+      "c8690608-72df-40a4-8bb3-1eae8dabe03b"
     ]
   },
   {
@@ -1784,11 +1825,12 @@
     "rationale": "Sluggish altimeter and VSI together map to Ch 34 'Incorrect or sluggish response on all three pitot-static instruments' \u2014 'Leaks or obstruction in static line'.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "384aeb06-cd2a-422f-89c5-21b17950459d",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "384aeb06-cd2a-422f-89c5-21b17950459d",
     "ground_truth_chunk_ids": [
-      "384aeb06-cd2a-422f-89c5-21b17950459d"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "5968dd3b-18ec-412a-abb9-7106b2bafdba"
     ]
   },
   {
@@ -1801,14 +1843,14 @@
     "rationale": "Post-maintenance fuel leak at a fitting can reduce delivered fuel and maps to Ch 28 'Insufficient fuel flow'. Probable cause is cracked fuel line or improperly tightened connector.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "63c4ed67-4c78-49c8-a750-fe584cc87b50",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "63c4ed67-4c78-49c8-a750-fe584cc87b50",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "63c4ed67-4c78-49c8-a750-fe584cc87b50",
-      "f86b9cd8-c7d3-49a3-9ad2-122714e6b3cc",
-      "a8bb0e88-95b6-4300-bff0-0c91d26f734f"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "7d915aaa-6ca7-4819-bcc0-1648a6b45cba",
+      "2b6625aa-b9f1-4ffc-be41-db739e9842be",
+      "410e75f6-7ee1-4f40-8ec0-8a1062bcd651"
     ]
   },
   {
@@ -1821,15 +1863,15 @@
     "rationale": "Idle RPM hunting maps to SC10000AMM 6.3.10 'Irregular idling'. Causes: incorrect idle mixture adjustment, air induction leak, or carburetor idle air bleed plugged.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "85c39b19-143c-4438-83e8-7d615d83df30",
+    "ground_truth_chunk_id": "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
     "origin": "table",
     "ground_truth_chunk_id_original": "85c39b19-143c-4438-83e8-7d615d83df30",
     "ground_truth_chunk_ids": [
-      "f7f87b6a-6725-4f79-9a9f-3d6558b0154c",
-      "1654aa5d-481b-46d2-b409-98174cbd3392",
-      "df7e51ae-e8a5-4273-9778-9865f712d808",
-      "85c39b19-143c-4438-83e8-7d615d83df30",
-      "d33f80eb-13e8-43c0-ad1b-d0641d0ca180"
+      "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+      "c7166598-e32b-4935-b183-38603aa463b5",
+      "b0ca03f9-0a7a-4c97-89f2-b2eb888b716f",
+      "12c5f59b-3d1c-4746-a05c-ae5ea7c96a4c",
+      "f8a40af1-f5fb-4f2d-85d2-c088a75dd514"
     ]
   },
   {
@@ -1842,14 +1884,14 @@
     "rationale": "Cracked fuel line causing a drip matches SC10000AMM 6.3.15 'Leak in Fuel Line' \u2014 cause 'Chaffing'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "120a1b4d-0c98-4d7f-aecb-47b014d6efb0",
+    "ground_truth_chunk_id": "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
     "origin": "table",
     "ground_truth_chunk_id_original": "120a1b4d-0c98-4d7f-aecb-47b014d6efb0",
     "ground_truth_chunk_ids": [
-      "95990fa9-c8c2-47fd-aa64-82477437c852",
-      "bbfa781f-f6ee-4ef6-be48-04af6d83bfbf",
-      "120a1b4d-0c98-4d7f-aecb-47b014d6efb0",
-      "ab757f1c-f26b-4b23-af49-eaf667dd5149"
+      "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
+      "801e1230-aaab-4311-bb77-0dfc35430a40",
+      "91727b20-ee1d-4514-bd53-601fe910c1e3",
+      "b87b0c6b-d354-44a4-aad9-fb19409359e0"
     ]
   },
   {
@@ -1862,15 +1904,16 @@
     "rationale": "In-flight discharge with dimming under load maps to SC10000AMM 6.3.17 'Low Voltage'. Causes: engine speed too low, load exceeds alternator output, or bad battery.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "dd139b15-6a84-4756-b4be-179bb7767e47",
+    "ground_truth_chunk_id": "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
     "origin": "table",
     "ground_truth_chunk_id_original": "dd139b15-6a84-4756-b4be-179bb7767e47",
     "ground_truth_chunk_ids": [
-      "93a9f788-7c5a-4acc-ad76-b8c70876ffd5",
-      "a09282a1-5050-4d2b-b8d0-60a162f2a084",
-      "dd139b15-6a84-4756-b4be-179bb7767e47",
-      "fa5db7b6-3145-4baa-b6c2-84d8dcf3bc44",
-      "03efa819-2857-4f89-9621-1c2178c6945e"
+      "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
+      "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+      "c5320ecb-e5ed-4fc1-8bd7-861f5a0f5ac0",
+      "5fd7ef4d-c7d2-4ec2-8ccf-a1d30b602dbb",
+      "ecebf36e-a279-41fc-ae5a-fcafff7a1dec",
+      "d53f82ca-8881-4c1d-a400-82ef8c14b950"
     ]
   },
   {
@@ -1883,22 +1926,36 @@
     "rationale": "Progressive oil pressure drop with correct level and grade maps to SC10000AMM 6.3.10 'Low oil pressure'. Narrows to plugged oil screen, relief valve issues, worn bearings, or defective gauge.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "47cf4f9f-8124-4d3e-ad0c-71fff5abe30b",
+    "ground_truth_chunk_id": "aa9fb3e0-a373-4ed8-89dd-1675528fe8a0",
     "origin": "table",
     "ground_truth_chunk_id_original": "47cf4f9f-8124-4d3e-ad0c-71fff5abe30b",
     "ground_truth_chunk_ids": [
-      "56d07651-4673-4724-978c-9a4ab0edbb91",
-      "47cf4f9f-8124-4d3e-ad0c-71fff5abe30b",
-      "827d519b-62f0-4472-aff4-3a18db0016e1",
-      "9eb9b88c-8dd8-45a8-a7aa-8659220a3765",
-      "8118bb4c-e7bd-4400-8b54-239b8329191b",
-      "f298f4ac-bfad-4c04-bf80-ada5797e8f06",
-      "fd02a26c-9f73-4388-962e-f0f69bbb4013",
-      "7f8c71a4-62a0-4a3f-890b-e702b4850ea0",
-      "3c8ecfcd-69e4-4ca3-94c3-8f58a9044b0d",
-      "9ef890ec-48dc-4357-80cf-e00839b4b12e",
-      "27ba662c-65b1-47ff-93f1-fd005f8c3d5c",
-      "85f9e3fc-69bd-47a2-a2c0-959178cf8e97"
+      "aa9fb3e0-a373-4ed8-89dd-1675528fe8a0",
+      "72c6a3dd-6d93-4da3-b429-c8619837ba1a",
+      "76fe6522-28e5-4fb8-b352-34202475039d",
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "f5c7395a-2422-4b49-9815-14ac33ad0278",
+      "f2fc8fcc-b66f-4e6d-a3bb-e92759c5457f",
+      "4613648f-80e1-4622-b6a3-2a8433bdddea",
+      "1c143d2c-39fd-498d-9c33-f6928451e886",
+      "7ccf4b8f-e8cf-4032-b9d2-caf60552b70c",
+      "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+      "a7180a44-0c2f-4972-abd8-5b0994aceb1e",
+      "1b4da245-43b6-4406-8d75-9181fe22145f",
+      "a4716c94-a737-4e84-8873-310c2f779ca5",
+      "63c15faf-9698-48e6-81e5-3817d5d0cad3",
+      "e803bbdb-d350-4be7-9e13-0730df181cac",
+      "593958c1-c6c4-4fd9-854c-1c9b297f0efc",
+      "8076353f-9fce-4e6d-9f15-a215864e4cb7",
+      "4c614c6d-8626-4df8-8e2c-e443d13df5b5",
+      "b6504adb-de7a-43b3-aa78-a8718ad1395e",
+      "c92fdde8-fe64-41d6-8373-603e655246d0",
+      "c5753179-0a87-4073-ac29-e4ce2de6067d",
+      "342ce75d-b336-46f9-9230-3f99900b1ea8",
+      "bd3dde3a-6e48-43a3-9b31-58b943a42bb3",
+      "c9603adf-7942-46a0-a2b2-86954e37ddff",
+      "984ef2d0-c29d-479d-996b-4c463d4b50ae",
+      "d7194248-7d39-43ec-81d7-b071b52db9dd"
     ]
   },
   {
@@ -1911,22 +1968,22 @@
     "rationale": "Significant power loss evident from reduced climb rate maps to SC10000AMM 6.3.10 'Low power'. Many possible causes including throttle not fully open, plugged filter, restricted fuel flow.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "aeab3589-5415-4371-84f6-754139a111bb",
+    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
     "origin": "table",
     "ground_truth_chunk_id_original": "aeab3589-5415-4371-84f6-754139a111bb",
     "ground_truth_chunk_ids": [
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "df36fa51-da20-49a8-bff2-d2a3d5e01ccd",
-      "d0817551-9d1c-4312-9876-7b1f156d2ee5",
-      "57100fad-618a-4180-ae15-e9adf6649d88",
-      "54e40615-e333-47b7-b2b4-75900b5650ee",
-      "fba7269d-1164-4f3e-9180-bcc69a9dfb0e",
-      "86fdcb9f-a445-42e1-8087-3e42a96ecac8",
-      "aeab3589-5415-4371-84f6-754139a111bb",
-      "1ff802f1-e82e-417d-9f00-c74f62c36a2e",
-      "35d437fe-dc65-4e1e-907f-6f9f30224da7",
-      "235c6622-03cb-4f57-a083-68c0d7738db2",
-      "6298dbaf-574f-44f2-b8f2-d9ae6e56d7e3"
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "9b1a4fb7-1750-4ee8-a922-66ef766924a5",
+      "dd4a72f6-961a-430e-812d-073b499eb75e",
+      "499b1e01-284b-4764-a9fd-4450c86eab67",
+      "cdfad467-fe84-4b4a-84b1-cf069ffae8f7",
+      "88d9c3f2-dc31-4af1-acb6-4e765c69180c",
+      "2b7cc450-d5ba-44da-8f9d-8b51c6ffd3b5",
+      "d2dccc3d-34b4-4ee6-8581-e84b1820e26a",
+      "b38737e3-c929-4af3-ba88-d57a8d68aee3",
+      "401078fa-9492-47b3-9a6b-05e11683eee1",
+      "b5827b11-5988-481d-be05-1c62e43621f2",
+      "4cd4da8b-b8fc-477b-81b8-5429e50123a8"
     ]
   },
   {
@@ -1939,12 +1996,12 @@
     "rationale": "Nav audio absent with functional Com audio maps to Ch 23 'No Nav audio' \u2014 'Output disabled or set to a low level'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "92ba45b8-63c1-42d0-acb0-ece2e2e5d4f4",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "92ba45b8-63c1-42d0-acb0-ece2e2e5d4f4",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "92ba45b8-63c1-42d0-acb0-ece2e2e5d4f4"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "e279b26c-684f-4684-b0ab-6ecf34c208df"
     ]
   },
   {
@@ -1957,12 +2014,12 @@
     "rationale": "Single-radio audio loss persisting after headset swap maps to Ch 23 'No audio in Com'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "2555579f-d222-48e7-a18f-96ee67169447",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "2555579f-d222-48e7-a18f-96ee67169447",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "2555579f-d222-48e7-a18f-96ee67169447"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "ea52e412-30ef-4729-b477-c84704034d69"
     ]
   },
   {
@@ -1975,15 +2032,15 @@
     "rationale": "Engine dying without electric pump assist indicates no fuel reaching the engine-driven pump, matching Ch 28 'No fuel flow to the engine fuel pump'. Causes: defective selector valve or plugged line.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "9b31eb9e-3499-4b9c-8ca0-a25492121699",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "9b31eb9e-3499-4b9c-8ca0-a25492121699",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "59a34f9d-b0e4-4315-a9e2-21c6084a9d60",
-      "9b31eb9e-3499-4b9c-8ca0-a25492121699",
-      "cf18f1f6-70d1-4adc-8753-22b94a9db38e",
-      "1e4117ac-0920-4200-87e4-c8bf2d991be2"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "0c8bcac6-e677-470b-88e0-2b15758246de",
+      "86041670-c2af-4f92-abb0-6728cdae5a46",
+      "1d5ccc59-208d-45d9-9e7b-6e025f2942bc",
+      "012af17f-8f08-46e8-aa09-0d67b246d342"
     ]
   },
   {
@@ -1996,12 +2053,12 @@
     "rationale": "High VOX threshold despite squelch adjustment maps to Ch 23 'No voice activation, or must talk too loud'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
+    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
     "ground_truth_chunk_ids": [
-      "73b7ef80-dedb-4c1e-88a0-d06868d8f161",
-      "3e401823-e76e-4ead-b7d8-5bde135f4aec"
+      "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+      "54626e2d-b3b9-450d-9fca-d5c3e015126e"
     ]
   },
   {
@@ -2014,12 +2071,12 @@
     "rationale": "Pistons failing to retract during brake work maps to SC10000AMM 6.3.7 'Piston Does Not Retract'. Causes: back pressure from master cylinder/parking valve, or water/ice in hydraulic system.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "74b78b47-89bc-483f-945c-a770306952d9",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "74b78b47-89bc-483f-945c-a770306952d9",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "74b78b47-89bc-483f-945c-a770306952d9"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "f90dad81-12d6-4682-8268-f1008267c35a"
     ]
   },
   {
@@ -2032,14 +2089,14 @@
     "rationale": "VSI showing zero in all flight conditions with other instruments working maps to Ch 34 'Pointer fails to respond' (VSI). Causes: obstruction/leaks in static line or defective instrument.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "5d74dbfe-5085-40b0-bcfc-cf25d09ffea8",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "5d74dbfe-5085-40b0-bcfc-cf25d09ffea8",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "5d74dbfe-5085-40b0-bcfc-cf25d09ffea8",
-      "c48d99af-80c6-40d9-bd30-cf091a820907",
-      "58e2d3a4-0070-4afa-81fc-fc3b03e0e930"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "12c28364-e616-4fe5-b0a7-7f42d7abeb54",
+      "ec2a7d55-baa5-4fc5-9ae2-468ae3835a55",
+      "1be06a65-3094-4df4-8ee0-d1c31f7cf092"
     ]
   },
   {
@@ -2052,13 +2109,13 @@
     "rationale": "ASI failure after replacement maps to Ch 34 'Pointer fails to respond or indicates improperly'. Post-installation zero reading suggests line left disconnected or kinked.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "c48d99af-80c6-40d9-bd30-cf091a820907",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "c48d99af-80c6-40d9-bd30-cf091a820907",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "c48d99af-80c6-40d9-bd30-cf091a820907",
-      "58e2d3a4-0070-4afa-81fc-fc3b03e0e930"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "ec2a7d55-baa5-4fc5-9ae2-468ae3835a55",
+      "1be06a65-3094-4df4-8ee0-d1c31f7cf092"
     ]
   },
   {
@@ -2071,15 +2128,15 @@
     "rationale": "VSI oscillation in smooth air maps to Ch 34 'Pointer oscillates or fails to respond'. Causes: excessive vibration from loose mounting bolts or tube vibration.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "2a3a0900-75cc-4767-b517-228277c1b73f",
+    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
     "origin": "table",
     "ground_truth_chunk_id_original": "2a3a0900-75cc-4767-b517-228277c1b73f",
     "ground_truth_chunk_ids": [
-      "3dd5ee41-d948-455e-a929-ff0837e70605",
-      "2a3a0900-75cc-4767-b517-228277c1b73f",
-      "ceb5b85f-63d7-4bf5-92ac-fec50d277530",
-      "3614e719-b950-440e-8db8-d6865b520ed7",
-      "b3b6043c-d02b-408e-bcc0-c8061fa4ae31"
+      "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+      "b041b1cd-7091-4673-8b20-51613c6638a9",
+      "b233c4c0-2e03-4346-9c63-45c2256015a2",
+      "1d47e442-4cbf-4497-ad40-0bc1a6c6eeaa",
+      "d45a1ad9-564c-40df-b5a3-af50767ccf14"
     ]
   },
   {
@@ -2092,13 +2149,13 @@
     "rationale": "Accelerated lining wear after refurbishment maps to SC10000AMM 6.3.7 'Rapid disc and lining wear'. Uneven pad wear suggests back plate deflection from bent/over-torqued bolts.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "a726a072-16d7-4a7c-9744-ffc8f08f6eb7",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "a726a072-16d7-4a7c-9744-ffc8f08f6eb7",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "a726a072-16d7-4a7c-9744-ffc8f08f6eb7",
-      "055057f6-cc8a-4e78-9b19-0bc776cec157"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "9555df29-0912-404d-abd8-71cd4ff654b4",
+      "f4be3f80-7ff8-4d86-8949-24e0874725f0"
     ]
   },
   {
@@ -2111,12 +2168,12 @@
     "rationale": "Premature stall warning well above stall speed maps to SC10000AMM 6.3.6 'Stall warning comes on well above stalling speed' \u2014 vane not calibrated properly. Wing work may have displaced it.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "ac7d93a8-d11a-4707-b008-02fa5487f917",
+    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
     "origin": "table",
     "ground_truth_chunk_id_original": "ac7d93a8-d11a-4707-b008-02fa5487f917",
     "ground_truth_chunk_ids": [
-      "12c92217-2705-497f-b866-2519a712edcb",
-      "ac7d93a8-d11a-4707-b008-02fa5487f917"
+      "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+      "f451e7e3-d4c3-4ed9-a081-816b9787bb24"
     ]
   },
   {
@@ -2129,12 +2186,12 @@
     "rationale": "Stall horn activation less than 6 mph above stall matches SC10000AMM 6.3.6 verbatim. Cause: stall warning vane not calibrated properly.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "1374a7b9-88c6-449b-88dc-d09fb1f12d50",
+    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
     "origin": "table",
     "ground_truth_chunk_id_original": "1374a7b9-88c6-449b-88dc-d09fb1f12d50",
     "ground_truth_chunk_ids": [
-      "12c92217-2705-497f-b866-2519a712edcb",
-      "1374a7b9-88c6-449b-88dc-d09fb1f12d50"
+      "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+      "b822bedd-5ee9-47d8-a36c-6911616cf0ba"
     ]
   },
   {
@@ -2147,14 +2204,14 @@
     "rationale": "Self-test pass but operational failure maps exactly to Ch 31 'Stall warning transducer does not operate (Test button activates the system)'. Self-test bypasses the transducer; causes: defective transducer, defective wiring, defective pitot-static hoses, or wrong Dynon setting.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "9b6dc942-a01e-412c-9889-a798547c3008",
+    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
     "origin": "table",
     "ground_truth_chunk_id_original": "9b6dc942-a01e-412c-9889-a798547c3008",
     "ground_truth_chunk_ids": [
-      "3bb14b48-7e96-41b1-9703-8761605ca5c4",
-      "9b6dc942-a01e-412c-9889-a798547c3008",
-      "f4afd72e-035f-4cc5-8423-928c6a08bdcb",
-      "3e673a99-319f-475f-98ac-847394ffd878"
+      "b9aa5087-52d1-4415-a7f5-740f053f788f",
+      "2c34b81d-2bf7-4123-ae4e-433535cd62c9",
+      "3736fe5c-c4f0-4cae-8bc5-ab2cd822f86c",
+      "568e2cc7-934a-4c88-b195-c99999dc9fed"
     ]
   },
   {
@@ -2167,12 +2224,12 @@
     "rationale": "Delayed starter disengagement after button release matches SC10000AMM 6.3.17 verbatim.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "5e43cbbd-1200-419d-a19b-b65a8aafac0d",
+    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
     "origin": "table",
     "ground_truth_chunk_id_original": "5e43cbbd-1200-419d-a19b-b65a8aafac0d",
     "ground_truth_chunk_ids": [
-      "0495f8d1-75c2-4c73-ae72-6c6dec67d6c9",
-      "5e43cbbd-1200-419d-a19b-b65a8aafac0d"
+      "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+      "b5cfb55b-8202-4242-a8aa-d04e27283656"
     ]
   },
   {
@@ -2185,12 +2242,12 @@
     "rationale": "Slow cranking in cold with confirmed charged battery maps to SC10000AMM 6.3.17 'Starter turns engine slowly when cold'. Cold reduces CCA output \u2014 cause is still 'Weak battery'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "c99907c8-aa9f-4cbd-9c68-296824a10ae4",
+    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
     "origin": "table",
     "ground_truth_chunk_id_original": "c99907c8-aa9f-4cbd-9c68-296824a10ae4",
     "ground_truth_chunk_ids": [
-      "0495f8d1-75c2-4c73-ae72-6c6dec67d6c9",
-      "c99907c8-aa9f-4cbd-9c68-296824a10ae4"
+      "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+      "0c46ac93-913e-4126-95dc-b405eb5f414b"
     ]
   },
   {
@@ -2203,12 +2260,12 @@
     "rationale": "Hot-soak cranking difficulty after normal cold-start maps to SC10000AMM 6.3.17 'Starter turns engine slowly when hot' \u2014 'Bad connection, cable, or solenoid'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "fee1da7b-a8b0-45e6-a4c3-0568ba46e8ea",
+    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
     "origin": "table",
     "ground_truth_chunk_id_original": "fee1da7b-a8b0-45e6-a4c3-0568ba46e8ea",
     "ground_truth_chunk_ids": [
-      "0495f8d1-75c2-4c73-ae72-6c6dec67d6c9",
-      "fee1da7b-a8b0-45e6-a4c3-0568ba46e8ea"
+      "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+      "17e8f2d7-c3e9-4573-821c-f0eaa8e6fc35"
     ]
   },
   {
@@ -2224,13 +2281,13 @@
     "ambiguous_alternatives": [
       "Engine does not start"
     ],
-    "ground_truth_chunk_id": "f22801e8-4123-4485-8a57-fe2505ff620a",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "f22801e8-4123-4485-8a57-fe2505ff620a",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "f22801e8-4123-4485-8a57-fe2505ff620a",
-      "bb102b4e-8ace-467b-8ec0-92853144d099"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "8372bf18-4042-4128-b94f-c44dcb672a5a",
+      "5a94f7c8-4a54-4a8f-a74c-b2ad909d62b3"
     ]
   },
   {
@@ -2243,12 +2300,12 @@
     "rationale": "Seized tail wheel fork maps to SC10000AMM 6.3.7 'Tail Wheel does not Swivel' \u2014 'Fork binds in bracket because of dirt or lack of lubricant'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "068de687-c636-4d21-8488-c6f01431a063",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "068de687-c636-4d21-8488-c6f01431a063",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "068de687-c636-4d21-8488-c6f01431a063"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "7598902c-9aba-4093-8933-f445743ba533"
     ]
   },
   {
@@ -2261,13 +2318,13 @@
     "rationale": "No shock absorption with cracked leaf spring maps to SC10000AMM 6.3.7 'Tail Wheel does not absorb shock' \u2014 'Broken leaf spring'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "22d3ad35-dcca-4822-bfc2-d15294010dc8",
-      "1df45a0b-0fb6-4951-be68-2c3899262ca4"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "06be3877-2778-44fb-840d-cd14c64c5f65",
+      "5d1b7a25-9616-49a1-8936-f176f90a2538"
     ]
   },
   {
@@ -2280,11 +2337,12 @@
     "rationale": "Exhaust-specific vibration felt through rudder pedals maps to Ch 78 'Too much vibration' \u2014 'Cracks in the exhaust tube'. Internal cracks may not be externally visible.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "fce9171d-a0b0-48a4-86f8-7cd35a643431",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "fce9171d-a0b0-48a4-86f8-7cd35a643431",
     "ground_truth_chunk_ids": [
-      "fce9171d-a0b0-48a4-86f8-7cd35a643431"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "2becf6bc-063e-43b3-9813-c13dd2c7a944"
     ]
   },
   {
@@ -2300,13 +2358,13 @@
     "ambiguous_alternatives": [
       "Insufficient fuel pressure"
     ],
-    "ground_truth_chunk_id": "6fc97800-d46a-425a-8bd0-a3a0c154da9c",
+    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
     "origin": "table",
     "ground_truth_chunk_id_original": "6fc97800-d46a-425a-8bd0-a3a0c154da9c",
     "ground_truth_chunk_ids": [
-      "4a6768cc-785a-4581-87b5-2d53a5e8b5e4",
-      "6fc97800-d46a-425a-8bd0-a3a0c154da9c",
-      "cb179a9c-c296-49f8-9460-8c29d3d29eb5"
+      "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+      "82bf0ee4-d53e-48ff-a77c-10e167b96de6",
+      "5c2b8fec-7aa9-46d5-9476-fd023d4c6234"
     ]
   },
   {
@@ -2319,17 +2377,17 @@
     "rationale": "Zero output after regulator replacement maps to SC10000AMM 6.3.17 'No Operation'. Post-replacement context suggests bad connections or the original problem was actually the alternator.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "9014f701-4dcf-4961-9ef5-db9100cfd292",
+    "ground_truth_chunk_id": "bc6aff2d-bb19-4ee3-b1d7-183031514835",
     "origin": "table",
     "ground_truth_chunk_id_original": "9014f701-4dcf-4961-9ef5-db9100cfd292",
     "ground_truth_chunk_ids": [
-      "93a9f788-7c5a-4acc-ad76-b8c70876ffd5",
-      "f931d4aa-4fb1-4b83-bfe7-8a549a94e3f0",
-      "9014f701-4dcf-4961-9ef5-db9100cfd292",
-      "66ba0334-c88f-4537-a8a2-a027f5ca9eb5",
-      "62b7ec6c-ab32-4962-8855-964ff523fbd2",
-      "cc3fa677-ea08-4347-8ecb-45fb743e4c1d",
-      "c726d4d8-6b46-4070-b5f9-5744e43f8c24"
+      "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+      "ecc3b5b5-c7d4-496f-a3c1-864c6552e6d7",
+      "63ff3384-4bb4-412d-81cc-478923c26d3d",
+      "61d43972-5763-43ae-b7b8-68c8abd04ef6",
+      "1791f9e6-b14d-43db-80ec-dc4eb575d743",
+      "d61abe8b-b09c-4e5f-adf5-59eca9a21995",
+      "1354c871-3c84-4ab3-8608-5764fd6840ec"
     ]
   },
   {
@@ -2342,14 +2400,18 @@
     "rationale": "Pressure-dependent cap leak maps to SC10000AMM 6.3.15 'Filler Cap Leaks' \u2014 seal fails under full-tank hydrostatic head.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
     "ground_truth_chunk_ids": [
-      "95990fa9-c8c2-47fd-aa64-82477437c852",
-      "d20d7c38-707e-4f38-a223-f87c2ff4f498",
-      "730b6e51-617a-4cb7-a8b3-0d4ff82683fa",
-      "e346c531-2bef-4feb-b7e1-c98658b01f2a"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "979e0601-01d2-4aba-85bf-c77d34012973",
+      "b1fc3a2d-48bc-4b7d-b77b-aef50d5a605f",
+      "36ccf9cb-03a7-4288-89da-502e05ffa782",
+      "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
+      "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+      "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+      "90350c2e-4145-4def-827f-e5f7adace4b0"
     ]
   },
   {
@@ -2362,16 +2424,16 @@
     "rationale": "Post-pad-replacement failure maps to SC10000AMM 6.3.7 'Brakes will not hold' \u2014 'Brake lining plate installed backwards' or new lining not seated.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "38a87f39-73e8-4756-bc67-736563ecc0b9",
+    "ground_truth_chunk_id": "b436f789-ee6a-4c86-9337-545280a3a536",
     "origin": "table",
     "ground_truth_chunk_id_original": "38a87f39-73e8-4756-bc67-736563ecc0b9",
     "ground_truth_chunk_ids": [
-      "7e38835b-be2e-4fbc-ba69-a0c870df6c9d",
-      "fd64edcb-2e30-4f34-8d79-6182b4c5084f",
-      "f6f7d76d-dadf-484f-a5a5-7e6d8711697f",
-      "38a87f39-73e8-4756-bc67-736563ecc0b9",
-      "f2c0930a-17fd-40d4-9c10-62ab9aea7153",
-      "2f1e8244-f7c9-424f-96bf-c0a5653ffbb3"
+      "b436f789-ee6a-4c86-9337-545280a3a536",
+      "d6f6a87a-d88d-49cf-81ff-9018a7b34c64",
+      "b076bb87-0f26-48d3-a514-770a4fdc7aae",
+      "c53158e6-fa8e-43a2-a50c-6d9bf509862f",
+      "3948d1eb-bec5-4b09-984e-47a197531d42",
+      "2d98ce33-9afa-4ca9-9a34-5511172a2dbc"
     ]
   },
   {
@@ -2384,19 +2446,19 @@
     "rationale": "Post-caliper-rebuild drag maps to SC10000AMM 6.3.7 'Brakes drag' \u2014 'Pistons cocked in cylinder' during reassembly.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "4843d09c-6e5a-4801-a594-6dc12e29b349",
-      "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
-      "dc94043c-abc7-4f02-b249-4656eeb35465",
-      "74b78b47-89bc-483f-945c-a770306952d9",
-      "2e356e79-7c76-452e-b532-210629abde63",
-      "0d0eca51-b2ab-4384-aeba-40fbaa274300",
-      "2c775cf9-fc38-41de-b58f-319110b11d7f"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "3c64b612-7388-44a6-917f-577009e730a6",
+      "6ed7f932-3565-42e2-a6cc-bd017460d28d",
+      "51763ff0-0a1e-4172-aa5a-3d0c56c8024f",
+      "f90dad81-12d6-4682-8268-f1008267c35a",
+      "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+      "3c233fe2-5d01-4384-b319-a8962807940b",
+      "b61292d4-7e7d-409d-87b1-ab9c73dc413b"
     ]
   },
   {
@@ -2409,12 +2471,12 @@
     "rationale": "Persistent asymmetric sag after bungee replacement corresponds to the SC10000AMM 6.3.7 entry \u201cLanding Gear Sags,\u201d where the stated probable cause is that the bungees are no longer strong enough to return the landing gear to its stops. Since the symptom remains after replacement, the fault remains consistent with insufficient effective bungee return force on the affected side, as defined by the manual.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "61090d96-724f-4912-8024-7e6b38acbb4f",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "61090d96-724f-4912-8024-7e6b38acbb4f",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "61090d96-724f-4912-8024-7e6b38acbb4f"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "e09838c3-7a6b-4606-b1e2-e0be7fbcd8aa"
     ]
   },
   {
@@ -2427,13 +2489,13 @@
     "rationale": "consistent with SC10000AMM 6.3.6 \u2018Tail Wheel does not respond to rudder pedal\u2019, where probable causes include broken or disconnected steering chains, links, or springs.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "5f453921-1b14-4fc5-b457-2c468b4d434b",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "5f453921-1b14-4fc5-b457-2c468b4d434b",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "67ee19fe-fee1-4df1-b778-52ba4e124aa1",
-      "5f453921-1b14-4fc5-b457-2c468b4d434b"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "2325e5b0-e050-429c-b183-cb388f301338",
+      "694498fb-0727-4362-a752-0ecb98dded01"
     ]
   },
   {
@@ -2446,13 +2508,13 @@
     "rationale": "Poor shock absorption after spring replacement maps to SC10000AMM 6.3.7 'Tail Wheel does not absorb shock'. Check tire inflation \u2014 may have been overinflated during maintenance.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "22d3ad35-dcca-4822-bfc2-d15294010dc8",
-      "1df45a0b-0fb6-4951-be68-2c3899262ca4"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "06be3877-2778-44fb-840d-cd14c64c5f65",
+      "5d1b7a25-9616-49a1-8936-f176f90a2538"
     ]
   },
   {
@@ -2465,15 +2527,15 @@
     "rationale": "Post-overhaul rough idle with blue smoke maps to SC10000AMM 6.3.10 'Irregular idling'. Oil burning during break-in or magneto timing needing adjustment.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "85c39b19-143c-4438-83e8-7d615d83df30",
+    "ground_truth_chunk_id": "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
     "origin": "table",
     "ground_truth_chunk_id_original": "85c39b19-143c-4438-83e8-7d615d83df30",
     "ground_truth_chunk_ids": [
-      "f7f87b6a-6725-4f79-9a9f-3d6558b0154c",
-      "1654aa5d-481b-46d2-b409-98174cbd3392",
-      "df7e51ae-e8a5-4273-9778-9865f712d808",
-      "85c39b19-143c-4438-83e8-7d615d83df30",
-      "d33f80eb-13e8-43c0-ad1b-d0641d0ca180"
+      "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+      "c7166598-e32b-4935-b183-38603aa463b5",
+      "b0ca03f9-0a7a-4c97-89f2-b2eb888b716f",
+      "12c5f59b-3d1c-4746-a05c-ae5ea7c96a4c",
+      "f8a40af1-f5fb-4f2d-85d2-c088a75dd514"
     ]
   },
   {
@@ -2486,22 +2548,22 @@
     "rationale": "RPM-limited power with normal ignition and fuel maps to SC10000AMM 6.3.10 'Low power'. Post-filter-work suggests carb heat valve may have been disturbed.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "aeab3589-5415-4371-84f6-754139a111bb",
+    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
     "origin": "table",
     "ground_truth_chunk_id_original": "aeab3589-5415-4371-84f6-754139a111bb",
     "ground_truth_chunk_ids": [
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "df36fa51-da20-49a8-bff2-d2a3d5e01ccd",
-      "d0817551-9d1c-4312-9876-7b1f156d2ee5",
-      "57100fad-618a-4180-ae15-e9adf6649d88",
-      "54e40615-e333-47b7-b2b4-75900b5650ee",
-      "fba7269d-1164-4f3e-9180-bcc69a9dfb0e",
-      "86fdcb9f-a445-42e1-8087-3e42a96ecac8",
-      "aeab3589-5415-4371-84f6-754139a111bb",
-      "1ff802f1-e82e-417d-9f00-c74f62c36a2e",
-      "35d437fe-dc65-4e1e-907f-6f9f30224da7",
-      "235c6622-03cb-4f57-a083-68c0d7738db2",
-      "6298dbaf-574f-44f2-b8f2-d9ae6e56d7e3"
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "9b1a4fb7-1750-4ee8-a922-66ef766924a5",
+      "dd4a72f6-961a-430e-812d-073b499eb75e",
+      "499b1e01-284b-4764-a9fd-4450c86eab67",
+      "cdfad467-fe84-4b4a-84b1-cf069ffae8f7",
+      "88d9c3f2-dc31-4af1-acb6-4e765c69180c",
+      "2b7cc450-d5ba-44da-8f9d-8b51c6ffd3b5",
+      "d2dccc3d-34b4-4ee6-8581-e84b1820e26a",
+      "b38737e3-c929-4af3-ba88-d57a8d68aee3",
+      "401078fa-9492-47b3-9a6b-05e11683eee1",
+      "b5827b11-5988-481d-be05-1c62e43621f2",
+      "4cd4da8b-b8fc-477b-81b8-5429e50123a8"
     ]
   },
   {
@@ -2514,22 +2576,26 @@
     "rationale": "Post-plug-install misfire isolated to one mag maps to SC10000AMM 6.3.10 'Rough running'. Suggests defective cable on left magneto circuit or incorrect gap.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
+    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
     "origin": "table",
     "ground_truth_chunk_id_original": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
     "ground_truth_chunk_ids": [
-      "9804d62e-c73a-40d0-a6c1-d8cd6aecba05",
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "a87540f2-9595-4e1c-a77c-5d20b75df3b3",
-      "f85f4978-3555-4dd2-9fe9-863df56a5cdd",
-      "5d71b9f2-cb80-43fa-ae84-ba81b4080b7f",
-      "c97c33fc-ec0a-42a1-ab15-8512762776e5",
-      "41966f10-0b46-4c35-96fa-3cc3cd291ba5",
-      "ee33b90c-4dc6-44e3-8492-1f9ead1ce657",
-      "6d9f456b-1b96-4f04-ba4e-a3e57bc71a2e",
-      "6998f4de-5fa5-447d-b087-a046a033dbe5",
-      "967d5b9b-a9fd-4ae9-9841-e61550b03884",
-      "8ac21ad7-ab13-4c97-a61b-ffc5507f5ebe"
+      "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+      "111fa8f6-f913-4e87-ac49-4b3b41e5489d",
+      "c436096a-b29a-4742-be81-3bbe494df9f5",
+      "3e2f4eee-3e11-4221-83c1-86add8fbb14d",
+      "b9d97cda-eb32-4e32-80d3-1684e6a06918",
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "789eaa1c-218f-42e8-a52e-7f5920513800",
+      "fcac48c0-8541-4462-8dd6-594966428436",
+      "98b33c90-f939-4bae-9de6-036b4b7b47a5",
+      "ab83118e-c2b6-40dc-a2dd-8ee4d146cc8e",
+      "32bd63c6-be53-48a7-8e6a-ebc5cb60265f",
+      "aa159997-a295-4a2b-91d2-017732b92339",
+      "e000416d-a963-4c72-a251-a7764f4d5991",
+      "beef10b4-389e-4526-a2a8-2705013b08cb",
+      "b9b90f54-0ec8-4219-b82f-9402a97292b9",
+      "c195fc9b-162d-4e27-b5fe-1afea7c2e3c6"
     ]
   },
   {
@@ -2542,12 +2608,12 @@
     "rationale": "Zero brake pressure after master cylinder replacement despite bleeding maps to SC10000AMM 6.3.7 'Brakes inoperative'. Probable: defective new master cylinder.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "3bf565e6-2b88-4939-a8ce-2f9a98b33d28"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "31be8bd6-5213-4529-a71f-411f5d468c54"
     ]
   },
   {
@@ -2560,14 +2626,14 @@
     "rationale": "Post-servo replacement with motor running but no movement maps to SC10000AMM 6.3.6 'Stabilizer does not move up or down when actuating the trim switch'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "57d2ed1f-2148-41af-bfc3-2f9446963d0a",
-      "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
-      "49b9fe73-5adb-4b14-a16c-e4ab1a78806f"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e8194a47-144e-4b40-bab7-4f70255d51dd",
+      "59dff85b-8d38-4ee3-b346-fd6581a0d05c",
+      "929cd763-35d5-4c08-ae71-cf7e764d25fd"
     ]
   },
   {
@@ -2580,18 +2646,18 @@
     "rationale": "Transition flat spot after carb overhaul maps to SC10000AMM 6.3.10 'Poor acceleration'. Post-carb-work points to idle mixture adjustment or accelerator pump issue.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
+    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
     "origin": "table",
     "ground_truth_chunk_id_original": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
     "ground_truth_chunk_ids": [
-      "2184987f-1079-4bc1-8196-8496028e65bc",
-      "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
-      "2f079b8d-0933-452a-9931-e872f1e95914",
-      "2c360ea6-dad7-4033-9934-95f20ee37487",
-      "94f69fc3-639b-4d27-80ed-f23e40659039",
-      "c33e07dc-68c5-48a9-8a89-6109247c7165",
-      "1fecb1ed-d269-4373-bfbe-7ff28e4948c0",
-      "b509b22f-e908-4114-92a0-efa128642ec2"
+      "339135c2-c999-437e-baab-f836c10b2edb",
+      "38324c61-a6d9-47c3-b381-be98a652ad5f",
+      "f923f2b7-d7dd-40f9-990e-ad2bb5a28c2b",
+      "56fbb038-a2b5-45c2-a3bd-aa53d07e5049",
+      "4e4efd8a-896b-40aa-8fc5-dd153819cd49",
+      "2855ef5f-53f0-45dd-8201-da4928b43820",
+      "a5b19afe-a5c7-477a-952a-cd5f56a6434a",
+      "b57db2c6-d383-47d5-b79c-13155aef5ba6"
     ]
   },
   {
@@ -2604,15 +2670,15 @@
     "rationale": "Intermittent RPM drops after lead replacement maps to Ch 71 'Engine runs irregularly or misfires occasionally'. Post-replacement suggests spark discharge over cables if poorly routed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
+    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
     "origin": "table",
     "ground_truth_chunk_id_original": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "ground_truth_chunk_ids": [
-      "d0e245fd-afb4-4a2e-b91d-8a4e36f8fd77",
-      "55e5b17f-2ce3-4b34-aaf0-98ab7661cc3e",
-      "1c5b3734-74b6-4bd6-83a8-2e4f90352091",
-      "322331f8-5dbe-40ad-a845-71e0e5d91470",
-      "47f087cb-8616-4ff5-9ed2-7e50dccf14d0"
+      "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+      "551669f6-8321-44dd-8419-9181a78dc284",
+      "add19a96-5d94-410b-9ecb-ef0865259de1",
+      "a4c7e840-20c9-4e05-958f-b8eb8653fe96",
+      "a4ecb69f-dc28-4cc2-955b-98e9bf8e39de"
     ]
   },
   {
@@ -2625,14 +2691,14 @@
     "rationale": "Persistent failure after switch replacement with switch testing good maps to Ch 33 'Both position lights do not operate' \u2014 remaining cause is defective wiring.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "a813fea8-e63a-4a77-8a45-3de1328055b9",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "a813fea8-e63a-4a77-8a45-3de1328055b9",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "6c552eb2-dc32-4478-b981-97a50bf9754e",
-      "a813fea8-e63a-4a77-8a45-3de1328055b9",
-      "b7084a86-1eda-4cc8-ae53-e0d6b23e1f6e"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "9f359620-8648-4e79-8b72-997c0ba83bbe",
+      "c49a9745-8456-410a-a923-2be518247c5d",
+      "956a810f-5332-4276-90db-495c36cd700f"
     ]
   },
   {
@@ -2645,27 +2711,48 @@
     "rationale": "No-start after mag overhaul maps to SC10000AMM 6.3.10 'Engine does not start'. Cause: 'Magnetos incorrectly timed internally or to engine'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59094173-d746-40b9-9df0-d1cf1da59a9c",
+    "ground_truth_chunk_id": "f87c946a-899b-4ff1-90c5-0741e822df9f",
     "origin": "table",
     "ground_truth_chunk_id_original": "59094173-d746-40b9-9df0-d1cf1da59a9c",
     "ground_truth_chunk_ids": [
-      "9804d62e-c73a-40d0-a6c1-d8cd6aecba05",
-      "f7f87b6a-6725-4f79-9a9f-3d6558b0154c",
-      "a87540f2-9595-4e1c-a77c-5d20b75df3b3",
-      "59094173-d746-40b9-9df0-d1cf1da59a9c",
-      "2b4383ca-dd03-4148-845c-25c8dae69c93",
-      "2a18d2e2-b9e6-406e-818e-e18933fd0ec9",
-      "8db08d8b-c9ae-419f-b4ef-4e260e062094",
-      "39e2cc28-83c4-48cf-8f9d-72c6981db5d2",
-      "1caa4676-f762-4ae9-8bfe-0c070c526a44",
-      "959f63e8-72b7-4d87-bb45-0b152567102b",
-      "bab05110-0eb9-41d3-ab45-52842d9d2d2e",
-      "c054e933-d541-4d7d-92d1-79067d076eb0",
-      "1d642b1e-d0b2-460a-9220-82a298b7f18b",
-      "07df179e-2a4d-454c-9d17-c25c7eb7574c",
-      "ed72bcd6-6ed3-480a-8898-c17d01c868d6",
-      "a60cef72-1203-497a-862b-397eaa987d8b",
-      "10112346-93b1-432f-9655-317430eab9bb"
+      "f87c946a-899b-4ff1-90c5-0741e822df9f",
+      "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+      "163cccfa-b7d3-4b64-b7f1-0d67b17bedf0",
+      "a6690a90-eb11-4c60-941f-fc174fcf3e54",
+      "c10f0de0-3c8c-4722-a5c7-190658bb8e60",
+      "44990d38-3171-4561-908f-40104c5bdc75",
+      "bc3f8f10-7444-44e2-b63a-68aa2e37d8c0",
+      "285544ac-61cd-4215-8fca-731981b6d2b9",
+      "c834ca22-736d-459f-9489-d5fb31ea256a",
+      "a7f286a3-645f-4815-8286-b3b300aab1d9",
+      "a9e32da8-8ae5-40e0-b010-ed4e308d521c",
+      "f5895eb4-813d-468f-a316-8221a89667af",
+      "2f2df66e-4c4f-4e8c-aa3d-19f43135c317",
+      "14ce9aa7-2724-453f-9fac-bc5dee4c458b",
+      "d7bf5d90-6013-4210-b0a9-3172b8208d18",
+      "c5d9f844-1868-4b7d-aeda-99da2f25493d",
+      "1a5b744c-8f2e-4fd8-a4c9-f7f125f9006e",
+      "802aed4e-3e5b-4eb5-bd8b-4e82ade59494",
+      "d6467427-3b79-4b72-8a61-f94f72bca733",
+      "fa93e416-de29-4374-af5c-bea7deb23bb1",
+      "13a9aaf6-f7de-4aef-8fd3-0829b7f15a23",
+      "b9d97cda-eb32-4e32-80d3-1684e6a06918",
+      "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+      "789eaa1c-218f-42e8-a52e-7f5920513800",
+      "42c0de94-3703-4ae9-8f22-fc3f622cfe4c",
+      "8375d654-2701-4425-8348-6223f0d23ece",
+      "e8442f1c-c4f4-4628-8c19-81bcf0a72f81",
+      "937a7a45-5db1-49a0-a0f2-6e6760af55a5",
+      "34e79cd6-233d-4aa2-8f86-2502894436fb",
+      "25af2c4b-11ec-4a50-8a3f-463d1f105efe",
+      "e1a8741c-0737-4be4-842a-2787ff5e409d",
+      "5424a0c9-16a6-4c1d-a555-49601b0384bb",
+      "b7967d8d-1370-4497-ad9f-3c0adb3f4c83",
+      "03f1e62a-beb9-4913-818c-31dbe19ecd46",
+      "f0e4e246-1c15-4866-a12e-292b2ea92bb9",
+      "b7b94507-5ea3-4bc1-b83f-b26a8c638f2b",
+      "3b2adbec-938c-460b-80d9-26d54cd74c84",
+      "544b8aaf-b849-4554-b697-83f98f84a7e4"
     ]
   },
   {
@@ -2678,16 +2765,16 @@
     "rationale": "Persistent shimmy after spring replacement with thin tire maps to SC10000AMM 6.3.7 'Tail Wheel Shimmies' \u2014 'Tire worn'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "268de7e1-f66e-4613-aecc-71115a64cda9",
-      "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
-      "7d1eaede-fd93-4e59-9391-723315258185",
-      "2f699998-562a-41b4-8b77-5c32377c2a5e",
-      "e81d3823-95a7-402b-bdfb-98358b301408"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "0596e9fc-b665-4eca-9b0d-10ce411b8986",
+      "945b48fa-8063-4404-9b45-f24617d7c719",
+      "dbaacec4-ac69-4aa2-b92e-20d42a0b4674",
+      "b5a598bb-5660-43be-8e46-0393d6e5dac6",
+      "47619f78-eca8-4771-a397-7941f3683b10"
     ]
   },
   {
@@ -2700,15 +2787,15 @@
     "rationale": "Zero reading after sensor replacement with adequate oil flow maps to Ch 79 'Low oil pressure indication' \u2014 'Malfunctioning sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "1e875927-7645-4493-97c8-fa821d1e8a74",
+    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
     "origin": "table",
     "ground_truth_chunk_id_original": "1e875927-7645-4493-97c8-fa821d1e8a74",
     "ground_truth_chunk_ids": [
-      "b652ab9c-6d80-47fd-abb3-628d38d831af",
-      "17b63240-589e-4c63-a936-9fa32a268e38",
-      "fe701c64-7414-4d9b-b7ed-4330d78eca4f",
-      "1e875927-7645-4493-97c8-fa821d1e8a74",
-      "46b13860-ed13-4693-9032-c05d9f95d146"
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+      "a7180a44-0c2f-4972-abd8-5b0994aceb1e",
+      "1b4da245-43b6-4406-8d75-9181fe22145f",
+      "a4716c94-a737-4e84-8873-310c2f779ca5"
     ]
   },
   {
@@ -2721,16 +2808,16 @@
     "rationale": "Light failure resolved by finding disconnected connector maps to Ch 33 'Landing light not operate' \u2014 'Loose connector next to the light'.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
+    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
     "origin": "table",
     "ground_truth_chunk_id_original": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
     "ground_truth_chunk_ids": [
-      "0a24e022-2991-4373-a423-7a5023b13795",
-      "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
-      "a0503c2f-12b2-4399-9979-d13fa3482396",
-      "d48c1c45-335d-445a-aebf-4b560d363117",
-      "69a34228-478e-427b-a427-f73563d1d72d",
-      "ce574671-96f8-4212-afa8-b35b0c53609d"
+      "1051a566-3502-4fff-9962-c6b5fdfd862f",
+      "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+      "484e0364-8e46-48fb-9205-4f702c13dfd0",
+      "8ad45165-2dfd-42c0-92ce-ec9fa2d99da7",
+      "457725e3-b33b-47af-ad7d-1bb3342ea923",
+      "be1224b8-4657-4899-a798-9c11a5eb0b3c"
     ]
   },
   {
@@ -2743,12 +2830,12 @@
     "rationale": "High idle after cable replacement maps to Ch 76 'Engine does not get to idle' \u2014 'Throttle control not adjusted correctly'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "fa03e605-7997-46b4-99a7-9d5889a28c59",
+    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
     "origin": "table",
     "ground_truth_chunk_id_original": "fa03e605-7997-46b4-99a7-9d5889a28c59",
     "ground_truth_chunk_ids": [
-      "fa8bedeb-52fa-433b-96f2-eb1dcb6936fa",
-      "fa03e605-7997-46b4-99a7-9d5889a28c59"
+      "b456fdc9-a271-403e-85c6-66f287e34cac",
+      "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f"
     ]
   },
   {
@@ -2761,16 +2848,16 @@
     "rationale": "New vibration at specific RPM after balancing maps to Ch 61 'Engine vibration'. Spinner bolts may have been disturbed or blade tracking is off.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
+    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
     "origin": "table",
     "ground_truth_chunk_id_original": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "ground_truth_chunk_ids": [
-      "cc1b461f-8ff8-480a-b878-d8a0e1f1afd2",
-      "eca173a0-5058-4026-94ce-6bd5317decdd",
-      "a783f034-9b86-4422-aee4-40e528729691",
-      "008fba72-ee33-4fb9-b890-2ecbc4e80bd9",
-      "526a859e-292f-450a-9a20-66cdee7b7f35",
-      "c9fabc71-4c7a-437e-bea0-2791540dd053"
+      "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+      "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+      "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+      "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+      "96d9e2da-8d77-4d81-aa5c-6b9062e1b7b7",
+      "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3"
     ]
   },
   {
@@ -2783,16 +2870,24 @@
     "rationale": "Higher temps after oil grade change maps to SC10000AMM 6.3.10 'High oil temperature'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
+    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
     "origin": "table",
     "ground_truth_chunk_id_original": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
     "ground_truth_chunk_ids": [
-      "56d07651-4673-4724-978c-9a4ab0edbb91",
-      "1738bf30-2d8e-40e5-b436-90c9b284acbe",
-      "8900b648-591a-4d02-a7a2-e8072d717132",
-      "209f9ac4-af0f-4f58-b089-49f4298bcb45",
-      "ab8373fa-7723-4352-bcdd-8344c84b03f9",
-      "956203df-177f-453b-8203-df1f4ac408a5"
+      "bc685804-f191-4df6-b23c-90f7b889235b",
+      "c49944b6-dc69-4d54-94da-8eac158fb887",
+      "2934c68a-42a6-4c5b-813e-d815eb65feb7",
+      "886a25d9-da97-4aee-bdf1-93ed84baeefc",
+      "20008291-cf98-4315-8d54-ef0223140d4d",
+      "f4dd58c5-2cc7-46dd-af91-8255399b2816",
+      "3a29c1f3-1a1d-47a1-bc0e-f15334c7b722",
+      "3d3171ad-2122-49fa-84b0-98c932c2dac1",
+      "e803bbdb-d350-4be7-9e13-0730df181cac",
+      "4a19b812-8b23-4bb6-ba0f-b63bc6a7fcc6",
+      "967729a5-eb9a-4b3c-8a06-120d2f9d3588",
+      "6064718c-0836-44ee-a9db-6299f6d7a6a9",
+      "9f8802e4-e8a7-4bce-97e5-b5530de3913a",
+      "3a490e57-ac51-4dae-91c2-05eed69d15ad"
     ]
   },
   {
@@ -2805,15 +2900,15 @@
     "rationale": "Incorrect single-tank reading after sensor work maps to Ch 28 'Fuel quantity indicator reading incorrect' \u2014 incorrectly adjusted sensor.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "6548c637-39ab-497f-8120-94ea278af1a1",
+    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
     "origin": "table",
     "ground_truth_chunk_id_original": "6548c637-39ab-497f-8120-94ea278af1a1",
     "ground_truth_chunk_ids": [
-      "6c27a938-b78c-48f3-b63e-1e61ff279f76",
-      "6548c637-39ab-497f-8120-94ea278af1a1",
-      "8e3a3e21-3158-406f-9f0f-eb3d27252d99",
-      "c97dd7e8-c7aa-4b1e-a782-227db2baea42",
-      "4d15e746-899e-43bb-9133-1a6bbf60fa62"
+      "d48a862b-fadd-48ac-85de-19be5152f0b6",
+      "aa828a1f-0dca-4590-bb84-a63e02620328",
+      "556e77ec-43f9-4803-a4b5-38355a4aa138",
+      "d3d9c914-6252-43e1-a99e-4258268cc139",
+      "53171e65-9d49-44c5-bce9-8c6ab95dc32c"
     ]
   },
   {
@@ -2826,15 +2921,16 @@
     "rationale": "Post-belt-replacement low voltage maps to SC10000AMM 6.3.17 'Low Voltage'. Belt may be wrong profile or alternator damaged during change.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "dd139b15-6a84-4756-b4be-179bb7767e47",
+    "ground_truth_chunk_id": "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
     "origin": "table",
     "ground_truth_chunk_id_original": "dd139b15-6a84-4756-b4be-179bb7767e47",
     "ground_truth_chunk_ids": [
-      "93a9f788-7c5a-4acc-ad76-b8c70876ffd5",
-      "a09282a1-5050-4d2b-b8d0-60a162f2a084",
-      "dd139b15-6a84-4756-b4be-179bb7767e47",
-      "fa5db7b6-3145-4baa-b6c2-84d8dcf3bc44",
-      "03efa819-2857-4f89-9621-1c2178c6945e"
+      "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
+      "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+      "c5320ecb-e5ed-4fc1-8bd7-861f5a0f5ac0",
+      "5fd7ef4d-c7d2-4ec2-8ccf-a1d30b602dbb",
+      "ecebf36e-a279-41fc-ae5a-fcafff7a1dec",
+      "d53f82ca-8881-4c1d-a400-82ef8c14b950"
     ]
   },
   {
@@ -2847,13 +2943,13 @@
     "rationale": "Asymmetric flap deployment after rod end replacement maps to SC10000AMM 6.3.6 'Flaps do not move in unison' \u2014 re-rigging needed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "f8a262e8-6063-4332-901d-6110987fa207",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "f8a262e8-6063-4332-901d-6110987fa207",
-      "d44da100-a32d-40b4-b3e8-84c837b83c69"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e5f9e379-aa85-4340-8c07-42ae4fd397cb",
+      "f85eac83-05a5-46e0-a8c3-c5b96e160c19"
     ]
   },
   {
@@ -2866,12 +2962,12 @@
     "rationale": "Post-turnbuckle-replacement stick offset maps to SC10000AMM 6.3.6 'Control sticks are displaced when ailerons are in neutral' \u2014 cables improperly rigged.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "42f45ec7-465b-4069-95f5-66b67cf2717a",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "42f45ec7-465b-4069-95f5-66b67cf2717a",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "42f45ec7-465b-4069-95f5-66b67cf2717a"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "2c2cb9a4-325e-4f99-9891-7a7ff951938c"
     ]
   },
   {
@@ -2884,12 +2980,12 @@
     "rationale": "Restricted elevator down travel after cable replacement maps to SC10000AMM 6.3.6 'Full elevator travel cannot be achieved'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "2e1acdc2-7201-46ef-891f-74838d803601",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "2e1acdc2-7201-46ef-891f-74838d803601",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "2e1acdc2-7201-46ef-891f-74838d803601"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "28852a62-f1b4-47b2-a56c-ade1fb1fc457"
     ]
   },
   {
@@ -2902,12 +2998,12 @@
     "rationale": "Parking brake failure after valve rebuild maps to SC10000AMM 6.3.7 'Parking brake inoperative' \u2014 valve not properly sealed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "0e58cfce-8f0d-41f2-b738-e74300f4ece3"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "b2ebcb3f-5e72-427d-9892-5e8348a9cba4"
     ]
   },
   {
@@ -2920,12 +3016,12 @@
     "rationale": "Leak at new line fitting will reintroduce air and reduce pressure, mapping to SC10000AMM 6.3.7 'Unable to obtain sufficient hydraulic brake pressure, excessive toe pedal travel, or spongy pedal'.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
+    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
     "origin": "table",
     "ground_truth_chunk_id_original": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
     "ground_truth_chunk_ids": [
-      "3fc92619-7f14-4acf-b895-a95cdb8b6084",
-      "efbad69a-c880-47d0-bd43-9ce5bdf8533e"
+      "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+      "b108fcd6-dd5f-4c1f-8b2f-4730969b6d71"
     ]
   },
   {
@@ -2938,14 +3034,14 @@
     "rationale": "Post-pulley-replacement stick play maps to SC10000AMM 6.3.6 'Lost motion in control sticks'. Cable tension needs readjustment.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "dc552490-9caf-42cf-9b71-4b99010a19b9",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "dc552490-9caf-42cf-9b71-4b99010a19b9",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "9d9cf3eb-f526-4a78-807c-89d5b20b72fa",
-      "dc552490-9caf-42cf-9b71-4b99010a19b9",
-      "bcfdcc0e-844d-4513-b109-c4db685f7ac7"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e138093f-7427-4b46-90bb-1a65650ec359",
+      "da6c0a5b-3806-47c7-9353-8ed507a29c1c",
+      "91bbe118-ecc3-4b02-8cf5-b775036ce5f1"
     ]
   },
   {
@@ -2958,12 +3054,12 @@
     "rationale": "Post-lock-replacement detent failure maps to SC10000AMM 6.3.6 'Flaps won't stay in position at second or third notch'. New lock may need adjustment or was bent during installation.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
+    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
     "origin": "table",
     "ground_truth_chunk_id_original": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
     "ground_truth_chunk_ids": [
-      "12c92217-2705-497f-b866-2519a712edcb",
-      "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1"
+      "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+      "9691e504-cae0-4d0c-9dd5-a3a73050c1dd"
     ]
   },
   {
@@ -2976,12 +3072,12 @@
     "rationale": "Persistent soot after gasket replacement maps to Ch 78 'Indication of exhaust gas leaks on the engine cowling'. Exhaust nuts may need torquing to 12-20 Nm.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
     "ground_truth_chunk_ids": [
-      "b1955e2f-340b-4fef-9175-5712dc5150e3",
-      "a9c7716f-c123-45c1-a596-0aa2cb42e031"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "848a7376-e73c-45cc-8206-abe716f2fba5"
     ]
   },
   {
@@ -2994,13 +3090,13 @@
     "rationale": "Asymmetric deployment after actuator tube replacement maps to SC10000AMM 6.3.6 'Flaps do not move in unison' \u2014 misrigged.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "f8a262e8-6063-4332-901d-6110987fa207",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "f8a262e8-6063-4332-901d-6110987fa207",
-      "d44da100-a32d-40b4-b3e8-84c837b83c69"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "e5f9e379-aa85-4340-8c07-42ae4fd397cb",
+      "f85eac83-05a5-46e0-a8c3-c5b96e160c19"
     ]
   },
   {
@@ -3013,16 +3109,16 @@
     "rationale": "Post-maintenance onset of vibration during taxi maps to SC10000AMM 6.3.7 \u2018Tail Wheel Shimmies\u2019. Since the symptom began immediately after tire replacement, likely causes include incorrect tail wheel assembly, looseness in the assembly, or improper spring/chain tension.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
+    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
     "origin": "table",
     "ground_truth_chunk_id_original": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "ground_truth_chunk_ids": [
-      "020a0662-1299-450c-8468-c77b43d60c7a",
-      "268de7e1-f66e-4613-aecc-71115a64cda9",
-      "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
-      "7d1eaede-fd93-4e59-9391-723315258185",
-      "2f699998-562a-41b4-8b77-5c32377c2a5e",
-      "e81d3823-95a7-402b-bdfb-98358b301408"
+      "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+      "0596e9fc-b665-4eca-9b0d-10ce411b8986",
+      "945b48fa-8063-4404-9b45-f24617d7c719",
+      "dbaacec4-ac69-4aa2-b92e-20d42a0b4674",
+      "b5a598bb-5660-43be-8e46-0393d6e5dac6",
+      "47619f78-eca8-4771-a397-7941f3683b10"
     ]
   },
   {
@@ -3035,13 +3131,13 @@
     "rationale": "Post-cable-installation asymmetric travel maps to SC10000AMM 6.3.6 'Improper aileron travel' \u2014 cables improperly rigged.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "025ba8c4-2300-478a-bc52-63760039bfdb",
+    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
     "origin": "table",
     "ground_truth_chunk_id_original": "025ba8c4-2300-478a-bc52-63760039bfdb",
     "ground_truth_chunk_ids": [
-      "86b1cab2-f1fe-49b9-961e-fe5f3edbfdee",
-      "e16212cc-7bdf-4880-9617-7d0b9b49089a",
-      "025ba8c4-2300-478a-bc52-63760039bfdb"
+      "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+      "c745a578-cbd6-4746-9481-68c762aae843",
+      "81a2687e-157a-412c-9ae8-dad40c9d5862"
     ]
   },
   {
@@ -3054,12 +3150,12 @@
     "rationale": "Persistent cockpit exhaust after muffler replacement maps to Ch 78 'Exhaust gas leaks into the cockpit'. Heat exchanger on the muffler may also have cracks.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "cea72be0-dc56-4865-b0a4-f42302d04235",
+    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
     "origin": "table",
     "ground_truth_chunk_id_original": "cea72be0-dc56-4865-b0a4-f42302d04235",
     "ground_truth_chunk_ids": [
-      "b1955e2f-340b-4fef-9175-5712dc5150e3",
-      "cea72be0-dc56-4865-b0a4-f42302d04235"
+      "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+      "f4162b3a-5ff0-486d-92aa-4b04d6752b93"
     ]
   }
 ]
