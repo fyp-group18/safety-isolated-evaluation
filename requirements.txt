@@ -1,0 +1,12 @@
+google-genai>=1.0.0
+chromadb>=0.5.0
+scikit-learn>=1.5.0
+scipy>=1.14.0
+numpy>=1.26.0
+pandas>=2.2.0
+tqdm>=4.66.0
+rich>=13.7.0
+tabulate>=0.9.0
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+tiktoken>=0.7.0

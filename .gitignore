@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+data/vector_store/
+results/*.jsonl
+results/*.json
+results/*.md
+.idea/
+.venv/
+*.egg-info/
+dist/
+build/
