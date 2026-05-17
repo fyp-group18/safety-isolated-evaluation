@@ -1,0 +1,10 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "sync_gate_model": "gemini-2.5-flash-lite",
+  "async_eval_model": "gemini-2.5-flash",
+  "safety_eval_model": "gemini-2.5-flash",
+  "top_k": 5,
+  "random_seed": 42,
+  "total_records": 150,
+  "total_time_s": 145.3614251613617
+}

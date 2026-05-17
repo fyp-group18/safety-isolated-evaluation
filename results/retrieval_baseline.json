@@ -1,0 +1,3657 @@
+{
+  "overall_hit_rate": 0.62,
+  "overall_mrr": 0.5008888888888889,
+  "miss_rate": 0.38,
+  "ci_95": [
+    0.5398333333333335,
+    0.7
+  ],
+  "tier_metrics": {
+    "easy": {
+      "hit_rate": 0.7435897435897436,
+      "count": 39
+    },
+    "hard": {
+      "hit_rate": 0.6052631578947368,
+      "count": 38
+    },
+    "medium": {
+      "hit_rate": 0.5616438356164384,
+      "count": 73
+    }
+  },
+  "type_metrics": {
+    "inspection_finding": {
+      "hit_rate": 0.6,
+      "count": 20
+    },
+    "operational_anomaly": {
+      "hit_rate": 0.5714285714285714,
+      "count": 42
+    },
+    "part_replacement": {
+      "hit_rate": 0.6,
+      "count": 45
+    },
+    "symptom_report": {
+      "hit_rate": 0.6976744186046512,
+      "count": 43
+    }
+  },
+  "verdicts": {
+    "R1": {
+      "pass": true,
+      "value": 0.62
+    },
+    "R2": {
+      "pass": true,
+      "value": 13.832658569500678
+    },
+    "R3": {
+      "pass": true,
+      "value": 0.38
+    }
+  },
+  "records": [
+    {
+      "id": "EVAL-001",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6304624080657959,
+        0.5279257893562317,
+        0.5249602198600769,
+        0.5225142240524292,
+        0.5176907181739807
+      ],
+      "latency_ms": 12976.234250003472,
+      "retrieved_ids": [
+        "8372bf18-4042-4128-b94f-c44dcb672a5a",
+        "b3fe44b7-6545-427b-9f2c-1a41fc498345",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "63f55b59-abd9-4c86-b19c-77378846572f",
+        "551669f6-8321-44dd-8419-9181a78dc284"
+      ]
+    },
+    {
+      "id": "EVAL-002",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5825840830802917,
+        0.5480223894119263,
+        0.5309278964996338,
+        0.47860538959503174,
+        0.4657665491104126
+      ],
+      "latency_ms": 24.025666003581136,
+      "retrieved_ids": [
+        "db35392b-d956-44ef-b0e7-a5137f1f529e",
+        "472eab56-ca43-4508-a5e5-364604aee8b5",
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "1354c871-3c84-4ab3-8608-5764fd6840ec",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5"
+      ]
+    },
+    {
+      "id": "EVAL-003",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5139907598495483,
+        0.4872697591781616,
+        0.4743006229400635,
+        0.44918912649154663,
+        0.4474465847015381
+      ],
+      "latency_ms": 57.5112079968676,
+      "retrieved_ids": [
+        "9f359620-8648-4e79-8b72-997c0ba83bbe",
+        "e279b26c-684f-4684-b0ab-6ecf34c208df",
+        "484e0364-8e46-48fb-9205-4f702c13dfd0",
+        "956a810f-5332-4276-90db-495c36cd700f",
+        "f251d688-0c79-49d7-8dc0-8a36f49d5475"
+      ]
+    },
+    {
+      "id": "EVAL-004",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5427876114845276,
+        0.5082396268844604,
+        0.4645780324935913,
+        0.45752203464508057,
+        0.4436776638031006
+      ],
+      "latency_ms": 58.21720801759511,
+      "retrieved_ids": [
+        "5d0067f0-16a3-4da7-8120-7acd3c037e43",
+        "72804ee6-198a-46d5-aedc-4818204ffa4d",
+        "44990d38-3171-4561-908f-40104c5bdc75",
+        "d7bf5d90-6013-4210-b0a9-3172b8208d18",
+        "2b6625aa-b9f1-4ffc-be41-db739e9842be"
+      ]
+    },
+    {
+      "id": "EVAL-005",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.47414135932922363,
+        0.44055551290512085,
+        0.429451048374176,
+        0.42425286769866943,
+        0.42230141162872314
+      ],
+      "latency_ms": 68.24012502329424,
+      "retrieved_ids": [
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "945b48fa-8063-4404-9b45-f24617d7c719",
+        "391c7493-59a8-48fc-aaf1-d58b6a0d6b87",
+        "1bd4bc09-9c7b-47e4-b5c9-9049208d0ec9",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2"
+      ]
+    },
+    {
+      "id": "EVAL-006",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5372772812843323,
+        0.45396023988723755,
+        0.39904099702835083,
+        0.3757188320159912,
+        0.352497398853302
+      ],
+      "latency_ms": 66.08883297303692,
+      "retrieved_ids": [
+        "5679c582-44f4-4eea-b198-5f3138e46263",
+        "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+        "639ae4b7-7f42-405e-acbb-6f4a12ed804d",
+        "a6ad05ba-5742-4d3d-b332-e425bedd7b10",
+        "b01c254b-930d-4aac-8e8b-1845d9e82104"
+      ]
+    },
+    {
+      "id": "EVAL-007",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5070959329605103,
+        0.48358649015426636,
+        0.4755929708480835,
+        0.4658053517341614,
+        0.4638826847076416
+      ],
+      "latency_ms": 63.71283298358321,
+      "retrieved_ids": [
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "d95b16a1-74fe-4261-b825-9bf648b11981",
+        "fcac48c0-8541-4462-8dd6-594966428436",
+        "0375823a-25be-4395-87d7-a59e25f6c641",
+        "a9e32da8-8ae5-40e0-b010-ed4e308d521c"
+      ]
+    },
+    {
+      "id": "EVAL-008",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5032393932342529,
+        0.5008625984191895,
+        0.499134361743927,
+        0.4920003414154053,
+        0.4857657551765442
+      ],
+      "latency_ms": 20.316417037975043,
+      "retrieved_ids": [
+        "9ffaed67-04f7-4178-bc6c-b3979af485af",
+        "33136b19-742c-4793-bc49-8136fe935a69",
+        "b0983444-5042-4988-901c-b6686c4bfd7a",
+        "e53f630e-25d3-4804-8df4-e1a0bb341872",
+        "8efb3804-187c-49d0-93a8-21fa7ec1ea76"
+      ]
+    },
+    {
+      "id": "EVAL-009",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5039884448051453,
+        0.4883970022201538,
+        0.48648619651794434,
+        0.4797133207321167,
+        0.46655023097991943
+      ],
+      "latency_ms": 59.291375044267625,
+      "retrieved_ids": [
+        "f4219e19-e981-4c6d-90ed-65a4bfd678b3",
+        "d6467427-3b79-4b72-8a61-f94f72bca733",
+        "d7bf5d90-6013-4210-b0a9-3172b8208d18",
+        "c834ca22-736d-459f-9489-d5fb31ea256a",
+        "b7967d8d-1370-4497-ad9f-3c0adb3f4c83"
+      ]
+    },
+    {
+      "id": "EVAL-010",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.467989444732666,
+        0.4593571424484253,
+        0.4376422166824341,
+        0.4308786988258362,
+        0.42908865213394165
+      ],
+      "latency_ms": 59.18270896654576,
+      "retrieved_ids": [
+        "2ed3d31d-83ba-4e33-b943-0d7cb876dba3",
+        "3c233fe2-5d01-4384-b319-a8962807940b",
+        "b61292d4-7e7d-409d-87b1-ab9c73dc413b",
+        "6ed7f932-3565-42e2-a6cc-bd017460d28d",
+        "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e"
+      ]
+    },
+    {
+      "id": "EVAL-011",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5078608989715576,
+        0.5057426691055298,
+        0.5025656223297119,
+        0.49825507402420044,
+        0.4894024729728699
+      ],
+      "latency_ms": 17.91466702707112,
+      "retrieved_ids": [
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+        "7fa2b576-b928-4453-a737-52bdb4742f12",
+        "32072713-4686-4df9-a901-cd1b880882ae",
+        "cc2e8d91-52c4-436a-a18c-99907c2a88be",
+        "d4c5456f-cc9d-4119-9aa3-d131e34498cf"
+      ]
+    },
+    {
+      "id": "EVAL-012",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5379971861839294,
+        0.5374764204025269,
+        0.5335312485694885,
+        0.531489372253418,
+        0.5271297097206116
+      ],
+      "latency_ms": 64.62783401366323,
+      "retrieved_ids": [
+        "592dbcf5-19c4-432e-853a-1e30e0cdd648",
+        "90f972b9-eced-49cd-a494-cb70273de554",
+        "aa828a1f-0dca-4590-bb84-a63e02620328",
+        "ae54252a-3c2a-44c3-8440-fdfcdb755aab",
+        "2f4e4fcf-44a8-4ee0-bc02-b1f1e2ecffb1"
+      ]
+    },
+    {
+      "id": "EVAL-013",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.20639008283615112,
+        0.2051054835319519,
+        0.20503675937652588,
+        0.20475947856903076,
+        0.20458996295928955
+      ],
+      "latency_ms": 21.169083018321544,
+      "retrieved_ids": [
+        "84e9d58c-9fe8-4e09-9806-65d176890ce5",
+        "0c1a4580-9238-4d77-8045-d69cf8f80729",
+        "f649d3e7-2081-4f82-9acb-01e132c6ef25",
+        "3863c76c-b85b-469c-95bd-e6ae049709bd",
+        "39021fb8-2287-4847-b87d-3f6f7867a716"
+      ]
+    },
+    {
+      "id": "EVAL-014",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5194146037101746,
+        0.44210898876190186,
+        0.40245652198791504,
+        0.38631129264831543,
+        0.3862190246582031
+      ],
+      "latency_ms": 52.583166980184615,
+      "retrieved_ids": [
+        "e97e8d17-814b-4239-844a-ffb5a7f02f45",
+        "f5895eb4-813d-468f-a316-8221a89667af",
+        "d7bf5d90-6013-4210-b0a9-3172b8208d18",
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+        "fa93e416-de29-4374-af5c-bea7deb23bb1"
+      ]
+    },
+    {
+      "id": "EVAL-015",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.4969618320465088,
+        0.48161381483078003,
+        0.4784820079803467,
+        0.43147796392440796,
+        0.42417919635772705
+      ],
+      "latency_ms": 55.475124972872436,
+      "retrieved_ids": [
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "c1289633-fe37-4648-80b6-8ca728451b18",
+        "e12177ed-5696-42cd-acfd-b4cf31797b65",
+        "2ca3d872-fb82-4dae-845f-752e4087f55b",
+        "ce97b2be-2461-4b48-9c7e-751e6c134340"
+      ]
+    },
+    {
+      "id": "EVAL-016",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.46209555864334106,
+        0.4563237428665161,
+        0.44311952590942383,
+        0.43651115894317627,
+        0.42173218727111816
+      ],
+      "latency_ms": 19.90341703640297,
+      "retrieved_ids": [
+        "9a62cd6f-0996-4ad6-a27a-d0867d8a7364",
+        "7eb22629-46c5-419f-a6a5-31846b467d0c",
+        "b4cc0e33-0355-4d93-a8c6-c4fccd61e5fa",
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "e508d450-64fa-4d48-9e0c-06a44b106853"
+      ]
+    },
+    {
+      "id": "EVAL-017",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5955896377563477,
+        0.5695892572402954,
+        0.48873817920684814,
+        0.48379576206207275,
+        0.46285736560821533
+      ],
+      "latency_ms": 59.85308298841119,
+      "retrieved_ids": [
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "bd01c8ec-add6-4e19-81d2-b5ac89de490f",
+        "7f7b9322-dab3-494d-a657-6cc6aae38611",
+        "e36ac4d6-8c45-4729-aa78-ad6c6842b2c1",
+        "539fe8ba-7e2b-4ade-9070-49d93cb36781"
+      ]
+    },
+    {
+      "id": "EVAL-018",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.47636914253234863,
+        0.4694957733154297,
+        0.4616295099258423,
+        0.46098077297210693,
+        0.45289623737335205
+      ],
+      "latency_ms": 55.77700003050268,
+      "retrieved_ids": [
+        "01775149-557f-48c2-97e0-845c4accce83",
+        "8a6e58f1-520c-4ae9-8c59-50244528073a",
+        "5c425acb-269f-462c-887d-067f2977bf0b",
+        "85b19ea5-8dcd-436e-ac27-a66e064d7e98",
+        "5f2d21c0-c384-4328-8ec1-d5c45027674b"
+      ]
+    },
+    {
+      "id": "EVAL-019",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.597957193851471,
+        0.5354904532432556,
+        0.507870614528656,
+        0.49809980392456055,
+        0.48681533336639404
+      ],
+      "latency_ms": 13.10883299447596,
+      "retrieved_ids": [
+        "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+        "25af2c4b-11ec-4a50-8a3f-463d1f105efe",
+        "5a94f7c8-4a54-4a8f-a74c-b2ad909d62b3"
+      ]
+    },
+    {
+      "id": "EVAL-020",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5364437103271484,
+        0.4742974042892456,
+        0.47282713651657104,
+        0.4638547897338867,
+        0.45110654830932617
+      ],
+      "latency_ms": 61.683917010668665,
+      "retrieved_ids": [
+        "5679c582-44f4-4eea-b198-5f3138e46263",
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+        "e12177ed-5696-42cd-acfd-b4cf31797b65",
+        "3c0bd751-bd23-4c5b-b25a-9e1c665954bf"
+      ]
+    },
+    {
+      "id": "EVAL-021",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5833689570426941,
+        0.510777473449707,
+        0.5089064836502075,
+        0.48496347665786743,
+        0.4640939235687256
+      ],
+      "latency_ms": 58.93649999052286,
+      "retrieved_ids": [
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+        "f649ee26-7ca5-428a-bedc-420e4af9a67c",
+        "1be99c97-650f-475e-86be-c34f46916c65",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2",
+        "64632bf2-e0b5-4aeb-ab86-bafcd110a654"
+      ]
+    },
+    {
+      "id": "EVAL-022",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6184355616569519,
+        0.6179527044296265,
+        0.5688409805297852,
+        0.5451564788818359,
+        0.5312684774398804
+      ],
+      "latency_ms": 16.250499989837408,
+      "retrieved_ids": [
+        "9691e504-cae0-4d0c-9dd5-a3a73050c1dd",
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "956a632f-0f3c-489d-a44f-ce6af91516ed",
+        "7497b4d6-c797-483a-a3dc-0801793d0fa9",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19"
+      ]
+    },
+    {
+      "id": "EVAL-023",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5287017226219177,
+        0.4853079319000244,
+        0.46649467945098877,
+        0.41555333137512207,
+        0.35064053535461426
+      ],
+      "latency_ms": 12.771250039804727,
+      "retrieved_ids": [
+        "ecc3b5b5-c7d4-496f-a3c1-864c6552e6d7",
+        "c5320ecb-e5ed-4fc1-8bd7-861f5a0f5ac0",
+        "d61abe8b-b09c-4e5f-adf5-59eca9a21995",
+        "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+        "1354c871-3c84-4ab3-8608-5764fd6840ec"
+      ]
+    },
+    {
+      "id": "EVAL-024",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.4533694386482239,
+        0.39292407035827637,
+        0.3896282911300659,
+        0.3784472942352295,
+        0.37490588426589966
+      ],
+      "latency_ms": 11.301040998660028,
+      "retrieved_ids": [
+        "557e14fb-6855-4608-8ecf-2f574fea05c5",
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+        "f3a5cb46-a679-4567-b710-4354244c40ea"
+      ]
+    },
+    {
+      "id": "EVAL-025",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6618219017982483,
+        0.6564512848854065,
+        0.6057758331298828,
+        0.5188027620315552,
+        0.5153273940086365
+      ],
+      "latency_ms": 53.64624998765066,
+      "retrieved_ids": [
+        "23845dfd-b5a7-4707-a70b-17c173be10c9",
+        "ed478e27-dfdb-4c60-86a3-369679e9a0f3",
+        "a811aef7-b1eb-43ec-a96b-30fe4c35eac3",
+        "5af46b80-0752-48f8-a752-42b720d59643",
+        "e8ac4fbb-9c23-4e63-b8dd-a77fcf7468e5"
+      ]
+    },
+    {
+      "id": "EVAL-026",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5166397094726562,
+        0.48813509941101074,
+        0.48524409532546997,
+        0.47839832305908203,
+        0.4726320505142212
+      ],
+      "latency_ms": 12.540250027086586,
+      "retrieved_ids": [
+        "e5c8d678-ec6e-4c3b-b725-2ae9f9453e84",
+        "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+        "e9386215-d2a8-4c40-93bb-23243d098b3f",
+        "a4716c94-a737-4e84-8873-310c2f779ca5",
+        "a7180a44-0c2f-4972-abd8-5b0994aceb1e"
+      ]
+    },
+    {
+      "id": "EVAL-027",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.7616745829582214,
+        0.637537956237793,
+        0.6128039360046387,
+        0.44891035556793213,
+        0.44287049770355225
+      ],
+      "latency_ms": 12.315124971792102,
+      "retrieved_ids": [
+        "e8194a47-144e-4b40-bab7-4f70255d51dd",
+        "929cd763-35d5-4c08-ae71-cf7e764d25fd",
+        "59dff85b-8d38-4ee3-b346-fd6581a0d05c",
+        "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9"
+      ]
+    },
+    {
+      "id": "EVAL-028",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6861513257026672,
+        0.4400012493133545,
+        0.38900935649871826,
+        0.3843653202056885,
+        0.37389588356018066
+      ],
+      "latency_ms": 13.31820897758007,
+      "retrieved_ids": [
+        "e12177ed-5696-42cd-acfd-b4cf31797b65",
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "2c84acee-6f7e-4b21-a7d7-0bcd52c5b1f7",
+        "2becf6bc-063e-43b3-9813-c13dd2c7a944",
+        "3b5af79c-843a-4358-863b-e92a048fb9e8"
+      ]
+    },
+    {
+      "id": "EVAL-029",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6232785582542419,
+        0.5941467881202698,
+        0.5222168564796448,
+        0.48017990589141846,
+        0.44782161712646484
+      ],
+      "latency_ms": 10.562292009126395,
+      "retrieved_ids": [
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+        "72123d39-1fa4-41f7-9f08-788bab6fb14c",
+        "1354c871-3c84-4ab3-8608-5764fd6840ec"
+      ]
+    },
+    {
+      "id": "EVAL-030",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.45639240741729736,
+        0.42848384380340576,
+        0.41320252418518066,
+        0.38995397090911865,
+        0.3725804090499878
+      ],
+      "latency_ms": 10.828666971065104,
+      "retrieved_ids": [
+        "3c233fe2-5d01-4384-b319-a8962807940b",
+        "6ed7f932-3565-42e2-a6cc-bd017460d28d",
+        "3c64b612-7388-44a6-917f-577009e730a6",
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "f76d787c-00e6-448e-bb2a-6829151e2bb3"
+      ]
+    },
+    {
+      "id": "EVAL-031",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.4877328872680664,
+        0.4612182378768921,
+        0.44484686851501465,
+        0.4281853437423706,
+        0.4263763427734375
+      ],
+      "latency_ms": 57.01654095901176,
+      "retrieved_ids": [
+        "aad3b2b9-dbe1-4fbf-a4c8-f49bfe53943e",
+        "3736f110-b623-4469-9af5-02b535e10582",
+        "7fc0beb1-36f8-43d0-8c4f-13e3d23724db",
+        "5b7f7471-928d-4165-a881-870919dec390",
+        "e279b26c-684f-4684-b0ab-6ecf34c208df"
+      ]
+    },
+    {
+      "id": "EVAL-032",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5740506052970886,
+        0.4386463165283203,
+        0.43504977226257324,
+        0.4219672679901123,
+        0.4206509590148926
+      ],
+      "latency_ms": 14.486957981716841,
+      "retrieved_ids": [
+        "b31a7725-bb59-4605-b316-50b226b080ad",
+        "e6d0507b-901c-4892-a45b-2440760bf78f",
+        "410e75f6-7ee1-4f40-8ec0-8a1062bcd651",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5",
+        "099b582c-e74e-43a8-bac6-99d6809c2143"
+      ]
+    },
+    {
+      "id": "EVAL-033",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5652876496315002,
+        0.5617548823356628,
+        0.5203484892845154,
+        0.39637458324432373,
+        0.3819613456726074
+      ],
+      "latency_ms": 14.376375009305775,
+      "retrieved_ids": [
+        "ab79d5cd-b071-4795-86a9-4c4cbc6a45e7",
+        "ac57ac02-134f-46a7-bb34-fda79fa283ce",
+        "24ead004-c82b-4865-9ad0-7e48a16292d3",
+        "ad8c0537-4cc8-4944-9ee2-178db7569547",
+        "7c9f34d9-fb19-474c-9c4c-f3d478508504"
+      ]
+    },
+    {
+      "id": "EVAL-034",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5468471646308899,
+        0.52248215675354,
+        0.5154086947441101,
+        0.5148741006851196,
+        0.5126873850822449
+      ],
+      "latency_ms": 12.629915960133076,
+      "retrieved_ids": [
+        "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+        "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+        "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+        "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3"
+      ]
+    },
+    {
+      "id": "EVAL-035",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5242003202438354,
+        0.5136145949363708,
+        0.41869544982910156,
+        0.41233593225479126,
+        0.3965890407562256
+      ],
+      "latency_ms": 10.899749991949648,
+      "retrieved_ids": [
+        "54626e2d-b3b9-450d-9fca-d5c3e015126e",
+        "5af46b80-0752-48f8-a752-42b720d59643",
+        "e8ac4fbb-9c23-4e63-b8dd-a77fcf7468e5",
+        "fb2f24cc-4985-4fb6-ad9b-0c08e274c762",
+        "5ac335c5-a3f8-409f-9d02-d9dcd64b8f0e"
+      ]
+    },
+    {
+      "id": "EVAL-036",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5094848871231079,
+        0.48917531967163086,
+        0.4799116253852844,
+        0.46779632568359375,
+        0.4643603563308716
+      ],
+      "latency_ms": 63.92983300611377,
+      "retrieved_ids": [
+        "1bd4bc09-9c7b-47e4-b5c9-9049208d0ec9",
+        "752ff439-e80f-4a18-bb2a-78df2d24551e",
+        "940ffdcb-f613-44b2-9fa8-12df86a87a84",
+        "01d63994-6700-421a-81f0-ba9ea5bf6efd",
+        "82a57629-2b51-4e9f-bfe0-5243ee18a7c4"
+      ]
+    },
+    {
+      "id": "EVAL-037",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5355151891708374,
+        0.49967479705810547,
+        0.46989619731903076,
+        0.4262840747833252,
+        0.42591702938079834
+      ],
+      "latency_ms": 60.198499995749444,
+      "retrieved_ids": [
+        "886cfb14-c0ca-492b-bd9c-f50c707b2740",
+        "06aeccbb-5691-4fdb-987c-a8bbd6a63cba",
+        "23999cae-a37f-4af9-877d-dfcc6ea82a0d",
+        "131bba5a-6a62-42b8-8a0d-fe6a64327a7b",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2"
+      ]
+    },
+    {
+      "id": "EVAL-038",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6176789999008179,
+        0.5933554172515869,
+        0.5661436319351196,
+        0.5409518480300903,
+        0.5326017737388611
+      ],
+      "latency_ms": 11.15670899162069,
+      "retrieved_ids": [
+        "c834ca22-736d-459f-9489-d5fb31ea256a",
+        "1a5b744c-8f2e-4fd8-a4c9-f7f125f9006e",
+        "802aed4e-3e5b-4eb5-bd8b-4e82ade59494",
+        "f5895eb4-813d-468f-a316-8221a89667af",
+        "d6467427-3b79-4b72-8a61-f94f72bca733"
+      ]
+    },
+    {
+      "id": "EVAL-039",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.46964573860168457,
+        0.4546307325363159,
+        0.41744399070739746,
+        0.4126155376434326,
+        0.4099770188331604
+      ],
+      "latency_ms": 14.52774996869266,
+      "retrieved_ids": [
+        "92f914bf-b8a8-4401-a61c-24d5e888ee65",
+        "a7180a44-0c2f-4972-abd8-5b0994aceb1e",
+        "3a29c1f3-1a1d-47a1-bc0e-f15334c7b722",
+        "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+        "2934c68a-42a6-4c5b-813e-d815eb65feb7"
+      ]
+    },
+    {
+      "id": "EVAL-040",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6442018151283264,
+        0.6436864137649536,
+        0.5680790543556213,
+        0.48339152336120605,
+        0.4679740071296692
+      ],
+      "latency_ms": 14.469999994616956,
+      "retrieved_ids": [
+        "694498fb-0727-4362-a752-0ecb98dded01",
+        "2325e5b0-e050-429c-b183-cb388f301338",
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "fd68f904-3311-4fb9-8c2d-035410f3598a"
+      ]
+    },
+    {
+      "id": "EVAL-041",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.3893989324569702,
+        0.3609086275100708,
+        0.3455747365951538,
+        0.3439199924468994,
+        0.33776986598968506
+      ],
+      "latency_ms": 16.261499957181513,
+      "retrieved_ids": [
+        "ad345f88-5b46-4795-b5c7-83d62668e9ef",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2",
+        "0be106ef-67cc-4146-baf3-d32cadfae9ef",
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "ffc0b005-c7c4-4462-a763-d88d9ede126f"
+      ]
+    },
+    {
+      "id": "EVAL-042",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5099558234214783,
+        0.4906347990036011,
+        0.4775660037994385,
+        0.46013307571411133,
+        0.44613516330718994
+      ],
+      "latency_ms": 61.947459005750716,
+      "retrieved_ids": [
+        "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+        "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+        "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+        "955a17b0-7386-4e2a-a635-6b586130e943",
+        "9afebb14-df63-4fcf-9c54-02dc508aa1ea"
+      ]
+    },
+    {
+      "id": "EVAL-043",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.23633849620819092,
+        0.23532497882843018,
+        0.23376071453094482,
+        0.23308920860290527,
+        0.23211216926574707
+      ],
+      "latency_ms": 15.472832950763404,
+      "retrieved_ids": [
+        "3ec1b1c8-295b-4787-ac15-192573ced335",
+        "0c1a4580-9238-4d77-8045-d69cf8f80729",
+        "edbed156-c391-44e8-a834-6d2de6998a1a",
+        "6c041941-b0da-4339-9fa3-68c5df38a9d5",
+        "1b38f5fd-e640-44da-9a08-b05ce368e09e"
+      ]
+    },
+    {
+      "id": "EVAL-044",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5949812531471252,
+        0.4627160429954529,
+        0.4242374897003174,
+        0.41971778869628906,
+        0.4185144305229187
+      ],
+      "latency_ms": 11.183249996975064,
+      "retrieved_ids": [
+        "a6ad05ba-5742-4d3d-b332-e425bedd7b10",
+        "5679c582-44f4-4eea-b198-5f3138e46263",
+        "dc2a6b90-406f-45f4-9204-e7df583084da",
+        "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93"
+      ]
+    },
+    {
+      "id": "EVAL-045",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5094011425971985,
+        0.4888575077056885,
+        0.46462154388427734,
+        0.4580041170120239,
+        0.4572761058807373
+      ],
+      "latency_ms": 13.72720900690183,
+      "retrieved_ids": [
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "d6f6a87a-d88d-49cf-81ff-9018a7b34c64",
+        "c53158e6-fa8e-43a2-a50c-6d9bf509862f",
+        "2d98ce33-9afa-4ca9-9a34-5511172a2dbc",
+        "b076bb87-0f26-48d3-a514-770a4fdc7aae"
+      ]
+    },
+    {
+      "id": "EVAL-046",
+      "hit": true,
+      "rank": 3,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6182975769042969,
+        0.6012141108512878,
+        0.5882090330123901,
+        0.5709201693534851,
+        0.5706049799919128
+      ],
+      "latency_ms": 51.86708300607279,
+      "retrieved_ids": [
+        "7ccc9b6c-0a7e-4ecf-9381-afb41e1f0786",
+        "21da0b61-74ba-41d4-93f3-3a928a70f269",
+        "e0a892c6-9b05-4c37-90d6-cd3951e95976",
+        "3c0bd751-bd23-4c5b-b25a-9e1c665954bf",
+        "ca874885-6c58-417f-b8c7-b8592547199d"
+      ]
+    },
+    {
+      "id": "EVAL-047",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5604163408279419,
+        0.559583842754364,
+        0.5032565593719482,
+        0.5016160607337952,
+        0.4704546332359314
+      ],
+      "latency_ms": 53.35954198380932,
+      "retrieved_ids": [
+        "979e0601-01d2-4aba-85bf-c77d34012973",
+        "36ccf9cb-03a7-4288-89da-502e05ffa782",
+        "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+        "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+        "a9e32da8-8ae5-40e0-b010-ed4e308d521c"
+      ]
+    },
+    {
+      "id": "EVAL-048",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6056569814682007,
+        0.5854122042655945,
+        0.5221978425979614,
+        0.5209262371063232,
+        0.4929550886154175
+      ],
+      "latency_ms": 16.049958008807153,
+      "retrieved_ids": [
+        "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+        "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3",
+        "9afebb14-df63-4fcf-9c54-02dc508aa1ea",
+        "de90a9c1-150f-49e7-a4cb-83e32f8f24b0"
+      ]
+    },
+    {
+      "id": "EVAL-049",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6693351864814758,
+        0.5977924466133118,
+        0.5455014705657959,
+        0.5143630504608154,
+        0.5134769082069397
+      ],
+      "latency_ms": 16.3556250045076,
+      "retrieved_ids": [
+        "2c2cb9a4-325e-4f99-9891-7a7ff951938c",
+        "a43182da-cefb-4fcc-8106-53bde4feb51f",
+        "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+        "9d6b864f-1e9d-4a47-b0f1-f2d0ae586bd5",
+        "dd8e6eaa-bed0-4f41-a465-474b644a33cc"
+      ]
+    },
+    {
+      "id": "EVAL-050",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5196330547332764,
+        0.4717724323272705,
+        0.4636881351470947,
+        0.4576296806335449,
+        0.45559269189834595
+      ],
+      "latency_ms": 13.507333991583437,
+      "retrieved_ids": [
+        "b3fe44b7-6545-427b-9f2c-1a41fc498345",
+        "f5895eb4-813d-468f-a316-8221a89667af",
+        "c834ca22-736d-459f-9489-d5fb31ea256a",
+        "44990d38-3171-4561-908f-40104c5bdc75",
+        "5d0067f0-16a3-4da7-8120-7acd3c037e43"
+      ]
+    },
+    {
+      "id": "EVAL-051",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6346531510353088,
+        0.5146859884262085,
+        0.5022743940353394,
+        0.49136096239089966,
+        0.48338210582733154
+      ],
+      "latency_ms": 19.259958004113287,
+      "retrieved_ids": [
+        "28852a62-f1b4-47b2-a56c-ade1fb1fc457",
+        "85a4dc25-2666-400f-a1e0-8d8ea0630360",
+        "e6c68b85-1283-4ce4-b07a-1a217d29984b",
+        "578348a9-0861-48e4-b370-b13c8f6e1ba2",
+        "41eb4d4f-7f38-4ca8-a1be-80b9d85c7774"
+      ]
+    },
+    {
+      "id": "EVAL-052",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5887851119041443,
+        0.546503484249115,
+        0.5388501882553101,
+        0.4528028964996338,
+        0.44175970554351807
+      ],
+      "latency_ms": 10.792541957926005,
+      "retrieved_ids": [
+        "7ccc9b6c-0a7e-4ecf-9381-afb41e1f0786",
+        "21da0b61-74ba-41d4-93f3-3a928a70f269",
+        "3c0bd751-bd23-4c5b-b25a-9e1c665954bf",
+        "868bd00f-9928-4255-aeeb-8a6a5bc774c7",
+        "a6690a90-eb11-4c60-941f-fc174fcf3e54"
+      ]
+    },
+    {
+      "id": "EVAL-053",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6628857254981995,
+        0.6135697960853577,
+        0.47963595390319824,
+        0.45996689796447754,
+        0.4401068687438965
+      ],
+      "latency_ms": 31.987917027436197,
+      "retrieved_ids": [
+        "54626e2d-b3b9-450d-9fca-d5c3e015126e",
+        "5ac335c5-a3f8-409f-9d02-d9dcd64b8f0e",
+        "e279b26c-684f-4684-b0ab-6ecf34c208df",
+        "e8ac4fbb-9c23-4e63-b8dd-a77fcf7468e5",
+        "bf70aab6-f35d-42b9-8e35-49bdb523cc5f"
+      ]
+    },
+    {
+      "id": "EVAL-054",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6426414251327515,
+        0.6289416551589966,
+        0.6265106797218323,
+        0.5512125492095947,
+        0.5412711501121521
+      ],
+      "latency_ms": 22.539582976605743,
+      "retrieved_ids": [
+        "410e75f6-7ee1-4f40-8ec0-8a1062bcd651",
+        "099b582c-e74e-43a8-bac6-99d6809c2143",
+        "e6d0507b-901c-4892-a45b-2440760bf78f",
+        "dc0dc98a-b1d9-4f98-9075-70fb62f31fb5",
+        "d3d9c914-6252-43e1-a99e-4258268cc139"
+      ]
+    },
+    {
+      "id": "EVAL-055",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.7704540491104126,
+        0.7449346780776978,
+        0.7350441217422485,
+        0.7151729464530945,
+        0.7018457055091858
+      ],
+      "latency_ms": 16.67458302108571,
+      "retrieved_ids": [
+        "484e0364-8e46-48fb-9205-4f702c13dfd0",
+        "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+        "8ad45165-2dfd-42c0-92ce-ec9fa2d99da7",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "be1224b8-4657-4899-a798-9c11a5eb0b3c"
+      ]
+    },
+    {
+      "id": "EVAL-056",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5779682993888855,
+        0.5268247127532959,
+        0.5243496298789978,
+        0.5067160725593567,
+        0.4814501404762268
+      ],
+      "latency_ms": 24.278583994600922,
+      "retrieved_ids": [
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "72123d39-1fa4-41f7-9f08-788bab6fb14c",
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "f3a5cb46-a679-4567-b710-4354244c40ea",
+        "19e8bf4b-8249-4122-889a-a26f622ee20d"
+      ]
+    },
+    {
+      "id": "EVAL-057",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6436273455619812,
+        0.6297034025192261,
+        0.6073300838470459,
+        0.5955291390419006,
+        0.5301434397697449
+      ],
+      "latency_ms": 17.54954201169312,
+      "retrieved_ids": [
+        "aad3b2b9-dbe1-4fbf-a4c8-f49bfe53943e",
+        "5b7f7471-928d-4165-a881-870919dec390",
+        "7fc0beb1-36f8-43d0-8c4f-13e3d23724db",
+        "87d04015-ec5d-46b6-9a2e-e40a68feae43",
+        "131bba5a-6a62-42b8-8a0d-fe6a64327a7b"
+      ]
+    },
+    {
+      "id": "EVAL-058",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6724241375923157,
+        0.608544647693634,
+        0.5677171945571899,
+        0.5581915378570557,
+        0.5473618507385254
+      ],
+      "latency_ms": 13.443208998069167,
+      "retrieved_ids": [
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+        "1be99c97-650f-475e-86be-c34f46916c65",
+        "64632bf2-e0b5-4aeb-ab86-bafcd110a654",
+        "a2b4972d-a14f-4cd7-b0a8-938bcd43d584",
+        "f649ee26-7ca5-428a-bedc-420e4af9a67c"
+      ]
+    },
+    {
+      "id": "EVAL-059",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5549298524856567,
+        0.5280747413635254,
+        0.5221242904663086,
+        0.49557989835739136,
+        0.4649457335472107
+      ],
+      "latency_ms": 17.979207972530276,
+      "retrieved_ids": [
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19",
+        "1ba7dc97-fa7f-4436-a0d7-5c695cb92ce8",
+        "7497b4d6-c797-483a-a3dc-0801793d0fa9",
+        "9691e504-cae0-4d0c-9dd5-a3a73050c1dd"
+      ]
+    },
+    {
+      "id": "EVAL-060",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5492385029792786,
+        0.4903552532196045,
+        0.48062562942504883,
+        0.4801478385925293,
+        0.477638840675354
+      ],
+      "latency_ms": 19.449833023827523,
+      "retrieved_ids": [
+        "ad84019d-09db-4162-9ab5-17454b3666f9",
+        "8b465b0c-18e2-4774-a513-78eb99bd5c2b",
+        "285544ac-61cd-4215-8fca-731981b6d2b9",
+        "012af17f-8f08-46e8-aa09-0d67b246d342",
+        "b42621ea-ed02-458b-90c1-005947c47cff"
+      ]
+    },
+    {
+      "id": "EVAL-061",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5842615365982056,
+        0.568995475769043,
+        0.5564897060394287,
+        0.5167927742004395,
+        0.47127366065979004
+      ],
+      "latency_ms": 57.01962497550994,
+      "retrieved_ids": [
+        "aad3b2b9-dbe1-4fbf-a4c8-f49bfe53943e",
+        "886cfb14-c0ca-492b-bd9c-f50c707b2740",
+        "7fc0beb1-36f8-43d0-8c4f-13e3d23724db",
+        "131bba5a-6a62-42b8-8a0d-fe6a64327a7b",
+        "06aeccbb-5691-4fdb-987c-a8bbd6a63cba"
+      ]
+    },
+    {
+      "id": "EVAL-062",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.531602144241333,
+        0.5236971974372864,
+        0.5130800604820251,
+        0.4824415445327759,
+        0.4813389778137207
+      ],
+      "latency_ms": 11.39329100260511,
+      "retrieved_ids": [
+        "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "484e0364-8e46-48fb-9205-4f702c13dfd0",
+        "be1224b8-4657-4899-a798-9c11a5eb0b3c",
+        "8ad45165-2dfd-42c0-92ce-ec9fa2d99da7"
+      ]
+    },
+    {
+      "id": "EVAL-063",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5026722550392151,
+        0.4977046251296997,
+        0.47707414627075195,
+        0.46699202060699463,
+        0.45341217517852783
+      ],
+      "latency_ms": 17.787958960980177,
+      "retrieved_ids": [
+        "31be8bd6-5213-4529-a71f-411f5d468c54",
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "6ed7f932-3565-42e2-a6cc-bd017460d28d",
+        "7a210514-169d-48d3-b9c6-fbd8c6027b20",
+        "3e7be615-738a-4e99-9ff6-6461f776a24d"
+      ]
+    },
+    {
+      "id": "EVAL-064",
+      "hit": true,
+      "rank": 4,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.519247829914093,
+        0.5175537467002869,
+        0.5050061345100403,
+        0.4929502010345459,
+        0.491207480430603
+      ],
+      "latency_ms": 53.1552080065012,
+      "retrieved_ids": [
+        "484e0364-8e46-48fb-9205-4f702c13dfd0",
+        "9f359620-8648-4e79-8b72-997c0ba83bbe",
+        "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+        "6aed5509-7b7a-4fd1-9112-1695f6d4a5aa",
+        "be1224b8-4657-4899-a798-9c11a5eb0b3c"
+      ]
+    },
+    {
+      "id": "EVAL-065",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6925444006919861,
+        0.6866232752799988,
+        0.5995559692382812,
+        0.5877247452735901,
+        0.5253119468688965
+      ],
+      "latency_ms": 13.767875032499433,
+      "retrieved_ids": [
+        "7fc0beb1-36f8-43d0-8c4f-13e3d23724db",
+        "aad3b2b9-dbe1-4fbf-a4c8-f49bfe53943e",
+        "5b7f7471-928d-4165-a881-870919dec390",
+        "87d04015-ec5d-46b6-9a2e-e40a68feae43",
+        "d752a380-9768-49c9-8a14-8ebd21415153"
+      ]
+    },
+    {
+      "id": "EVAL-066",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5276386141777039,
+        0.4852609634399414,
+        0.4414435625076294,
+        0.4356001615524292,
+        0.43150854110717773
+      ],
+      "latency_ms": 13.60495900735259,
+      "retrieved_ids": [
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "72123d39-1fa4-41f7-9f08-788bab6fb14c",
+        "5c79e6f4-7bab-4f6b-a5cd-d02c72f7f974",
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "b456fdc9-a271-403e-85c6-66f287e34cac"
+      ]
+    },
+    {
+      "id": "EVAL-067",
+      "hit": true,
+      "rank": 5,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6535621881484985,
+        0.5875574350357056,
+        0.565968930721283,
+        0.5381385087966919,
+        0.5008585453033447
+      ],
+      "latency_ms": 11.101833020802587,
+      "retrieved_ids": [
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+        "b6b7611d-1dbe-488c-9ff4-0ff1fcc66d4c",
+        "f99c97a9-c3dc-49fa-9ac2-b1e9ad86916d",
+        "ce2fde25-58c7-474a-a6bc-9b0748b530aa",
+        "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8"
+      ]
+    },
+    {
+      "id": "EVAL-068",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5923526287078857,
+        0.517454981803894,
+        0.5129871368408203,
+        0.4872274398803711,
+        0.4709557294845581
+      ],
+      "latency_ms": 11.162666021846235,
+      "retrieved_ids": [
+        "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+        "be1224b8-4657-4899-a798-9c11a5eb0b3c",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "8ad45165-2dfd-42c0-92ce-ec9fa2d99da7",
+        "484e0364-8e46-48fb-9205-4f702c13dfd0"
+      ]
+    },
+    {
+      "id": "EVAL-069",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.601372241973877,
+        0.5790546536445618,
+        0.5520929098129272,
+        0.5314804911613464,
+        0.43202638626098633
+      ],
+      "latency_ms": 11.739915993530303,
+      "retrieved_ids": [
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+        "557e14fb-6855-4608-8ecf-2f574fea05c5",
+        "f3a5cb46-a679-4567-b710-4354244c40ea",
+        "19e8bf4b-8249-4122-889a-a26f622ee20d",
+        "f8a40af1-f5fb-4f2d-85d2-c088a75dd514"
+      ]
+    },
+    {
+      "id": "EVAL-070",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5300185680389404,
+        0.5287699103355408,
+        0.5133168697357178,
+        0.5015243291854858,
+        0.47937047481536865
+      ],
+      "latency_ms": 10.795375041197985,
+      "retrieved_ids": [
+        "0c181f54-94f2-4cf7-b53d-9a307fcd9236",
+        "c436096a-b29a-4742-be81-3bbe494df9f5",
+        "d95b16a1-74fe-4261-b825-9bf648b11981",
+        "0375823a-25be-4395-87d7-a59e25f6c641",
+        "111fa8f6-f913-4e87-ac49-4b3b41e5489d"
+      ]
+    },
+    {
+      "id": "EVAL-071",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.7026748061180115,
+        0.6966373324394226,
+        0.6389046311378479,
+        0.6226617693901062,
+        0.4972364902496338
+      ],
+      "latency_ms": 11.394708999432623,
+      "retrieved_ids": [
+        "c5d9f844-1868-4b7d-aeda-99da2f25493d",
+        "a7f286a3-645f-4815-8286-b3b300aab1d9",
+        "568c8ac5-7b5a-4f04-848e-4aa08dd56fcc",
+        "e0540beb-eff4-4e50-ab0f-5c16a3ab55fe",
+        "b6a41c1d-a9f7-4e90-b54a-bb2890643a0b"
+      ]
+    },
+    {
+      "id": "EVAL-072",
+      "hit": true,
+      "rank": 5,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5759599804878235,
+        0.5573054552078247,
+        0.5313921570777893,
+        0.5227645039558411,
+        0.5222090482711792
+      ],
+      "latency_ms": 52.598917041905224,
+      "retrieved_ids": [
+        "d3d9c914-6252-43e1-a99e-4258268cc139",
+        "aa828a1f-0dca-4590-bb84-a63e02620328",
+        "436e76df-c553-4ea1-ad40-7738b55ae857",
+        "53171e65-9d49-44c5-bce9-8c6ab95dc32c",
+        "b44ee2df-cc92-4961-8ce8-d9d2006691b6"
+      ]
+    },
+    {
+      "id": "EVAL-073",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5527352690696716,
+        0.5303560495376587,
+        0.5276057124137878,
+        0.5143312811851501,
+        0.5137421488761902
+      ],
+      "latency_ms": 12.39279197761789,
+      "retrieved_ids": [
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+        "171257bb-5906-4ad6-a83c-b2330ed84415",
+        "52a42e5c-b1a5-457e-820b-db5609a235cd",
+        "720c0591-170f-4de3-80cf-e3d744d8b557",
+        "bd7ec1ad-d5e4-4dc8-9aed-b4081dfa6640"
+      ]
+    },
+    {
+      "id": "EVAL-074",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5825663805007935,
+        0.5392192602157593,
+        0.5292770266532898,
+        0.4869685173034668,
+        0.4823840856552124
+      ],
+      "latency_ms": 17.28429098147899,
+      "retrieved_ids": [
+        "2c2cb9a4-325e-4f99-9891-7a7ff951938c",
+        "20b8193b-8c53-4ea4-be2b-1746c78c1a01",
+        "8d5f8c7c-ec1f-4c57-a3b9-a47ed0ba497a",
+        "f6105e0d-1817-4f14-a7a5-a380ecfb62ee",
+        "9d6b864f-1e9d-4a47-b0f1-f2d0ae586bd5"
+      ]
+    },
+    {
+      "id": "EVAL-075",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5720988512039185,
+        0.5695570707321167,
+        0.5431748032569885,
+        0.5430200695991516,
+        0.5147206783294678
+      ],
+      "latency_ms": 15.249291027430445,
+      "retrieved_ids": [
+        "979e0601-01d2-4aba-85bf-c77d34012973",
+        "36ccf9cb-03a7-4288-89da-502e05ffa782",
+        "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+        "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+        "8b465b0c-18e2-4774-a513-78eb99bd5c2b"
+      ]
+    },
+    {
+      "id": "EVAL-076",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6576913595199585,
+        0.49212396144866943,
+        0.4634745121002197,
+        0.46253180503845215,
+        0.4588196277618408
+      ],
+      "latency_ms": 12.241415970493108,
+      "retrieved_ids": [
+        "a4018a94-2ef0-47de-b920-38be8d5bd97e",
+        "9691e504-cae0-4d0c-9dd5-a3a73050c1dd",
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "30948180-ac1d-4fb5-882d-1d72badc9447",
+        "956a632f-0f3c-489d-a44f-ce6af91516ed"
+      ]
+    },
+    {
+      "id": "EVAL-077",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6280907988548279,
+        0.6138230562210083,
+        0.5956332683563232,
+        0.5915417671203613,
+        0.578718364238739
+      ],
+      "latency_ms": 10.87291695876047,
+      "retrieved_ids": [
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "286984d9-4c3a-4493-a88e-62caaac75868",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19",
+        "a4018a94-2ef0-47de-b920-38be8d5bd97e",
+        "e5f9e379-aa85-4340-8c07-42ae4fd397cb"
+      ]
+    },
+    {
+      "id": "EVAL-078",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6312081217765808,
+        0.6291520595550537,
+        0.5818300843238831,
+        0.5791791677474976,
+        0.550748884677887
+      ],
+      "latency_ms": 11.402249976526946,
+      "retrieved_ids": [
+        "d3d9c914-6252-43e1-a99e-4258268cc139",
+        "aa828a1f-0dca-4590-bb84-a63e02620328",
+        "410e75f6-7ee1-4f40-8ec0-8a1062bcd651",
+        "099b582c-e74e-43a8-bac6-99d6809c2143",
+        "53171e65-9d49-44c5-bce9-8c6ab95dc32c"
+      ]
+    },
+    {
+      "id": "EVAL-079",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.36092090606689453,
+        0.3585456609725952,
+        0.3440394401550293,
+        0.32318544387817383,
+        0.3211366534233093
+      ],
+      "latency_ms": 14.820125012192875,
+      "retrieved_ids": [
+        "b01c254b-930d-4aac-8e8b-1845d9e82104",
+        "2c1b4d20-355c-4a06-936e-b46a246f1f6a",
+        "40e41132-5d05-46ce-b727-4d199f62c10d",
+        "ae063af7-f2bc-4e85-8e92-cf5c33ad5975",
+        "0a79778f-1c33-4799-94f9-ce98360a5d59"
+      ]
+    },
+    {
+      "id": "EVAL-080",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5779433250427246,
+        0.56853187084198,
+        0.5604592561721802,
+        0.5505985021591187,
+        0.5286409854888916
+      ],
+      "latency_ms": 10.990832990501076,
+      "retrieved_ids": [
+        "876e51ca-97cb-47ec-a1af-0abfb0a072b6",
+        "0a79778f-1c33-4799-94f9-ce98360a5d59",
+        "e9386215-d2a8-4c40-93bb-23243d098b3f",
+        "73e886db-5496-4590-aef0-10f5ff5a84bf",
+        "9f08d7ca-e578-425d-8b77-68ebdb08881f"
+      ]
+    },
+    {
+      "id": "EVAL-081",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5336958169937134,
+        0.5162325501441956,
+        0.5134376883506775,
+        0.5091224312782288,
+        0.4773613214492798
+      ],
+      "latency_ms": 10.489625041373074,
+      "retrieved_ids": [
+        "3c0bd751-bd23-4c5b-b25a-9e1c665954bf",
+        "7ccc9b6c-0a7e-4ecf-9381-afb41e1f0786",
+        "c12a21e8-c98b-4f6e-8893-45b014ee910a",
+        "a441e3ff-c0c2-4e5d-8a3f-3d6498ddabb0",
+        "21da0b61-74ba-41d4-93f3-3a928a70f269"
+      ]
+    },
+    {
+      "id": "EVAL-082",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.557584822177887,
+        0.5244989395141602,
+        0.5183782577514648,
+        0.5010491609573364,
+        0.46724969148635864
+      ],
+      "latency_ms": 14.966582995839417,
+      "retrieved_ids": [
+        "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+        "1b4da245-43b6-4406-8d75-9181fe22145f",
+        "a4716c94-a737-4e84-8873-310c2f779ca5",
+        "4c614c6d-8626-4df8-8e2c-e443d13df5b5",
+        "c786f65b-5693-47dc-ba6f-a2f91b1839bd"
+      ]
+    },
+    {
+      "id": "EVAL-083",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.567361056804657,
+        0.5515698790550232,
+        0.5488908886909485,
+        0.5310810208320618,
+        0.5287238359451294
+      ],
+      "latency_ms": 11.048416025005281,
+      "retrieved_ids": [
+        "32072713-4686-4df9-a901-cd1b880882ae",
+        "cc2e8d91-52c4-436a-a18c-99907c2a88be",
+        "731cb8d5-e812-4074-bebd-f0977f05b676",
+        "7fa2b576-b928-4453-a737-52bdb4742f12",
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9"
+      ]
+    },
+    {
+      "id": "EVAL-084",
+      "hit": true,
+      "rank": 5,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.600959062576294,
+        0.5885305404663086,
+        0.58171147108078,
+        0.5765522122383118,
+        0.5657452940940857
+      ],
+      "latency_ms": 11.820250016171485,
+      "retrieved_ids": [
+        "d4c5456f-cc9d-4119-9aa3-d131e34498cf",
+        "4613648f-80e1-4622-b6a3-2a8433bdddea",
+        "c9c5e147-11bf-4e1d-91d8-3973e69fc463",
+        "868bd00f-9928-4255-aeeb-8a6a5bc774c7",
+        "3d3171ad-2122-49fa-84b0-98c932c2dac1"
+      ]
+    },
+    {
+      "id": "EVAL-085",
+      "hit": true,
+      "rank": 4,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6791714429855347,
+        0.6070954203605652,
+        0.5589790940284729,
+        0.5528530478477478,
+        0.5525103211402893
+      ],
+      "latency_ms": 13.003874977584928,
+      "retrieved_ids": [
+        "6ca6b3e7-db3b-4e63-a1f5-3abef78b9658",
+        "624f97ae-f95e-4629-934e-bf453dd0c69d",
+        "94bba8ff-a0f6-4709-b831-388fa2b79cc7",
+        "81a2687e-157a-412c-9ae8-dad40c9d5862",
+        "f89cfdc2-f44a-4e57-82db-e68e49277a30"
+      ]
+    },
+    {
+      "id": "EVAL-086",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.409251868724823,
+        0.4008975625038147,
+        0.39749670028686523,
+        0.38585734367370605,
+        0.3793933391571045
+      ],
+      "latency_ms": 58.92241699621081,
+      "retrieved_ids": [
+        "530cf539-d0ee-4d19-ae69-c8f75b4fbdaf",
+        "934ec632-9ed3-4997-a4ff-1afb3bae62e3",
+        "539fe8ba-7e2b-4ade-9070-49d93cb36781",
+        "d282849b-13bf-4a4e-9f78-d8110f3e8f84",
+        "7f7b9322-dab3-494d-a657-6cc6aae38611"
+      ]
+    },
+    {
+      "id": "EVAL-087",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.4202355146408081,
+        0.4099619388580322,
+        0.4031938314437866,
+        0.3916698694229126,
+        0.3866701126098633
+      ],
+      "latency_ms": 13.657874951604754,
+      "retrieved_ids": [
+        "7f7b9322-dab3-494d-a657-6cc6aae38611",
+        "94fca3a3-b327-4867-b9d4-84b3604ce087",
+        "539fe8ba-7e2b-4ade-9070-49d93cb36781",
+        "20008291-cf98-4315-8d54-ef0223140d4d",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2"
+      ]
+    },
+    {
+      "id": "EVAL-088",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5011946558952332,
+        0.45786434412002563,
+        0.4373985528945923,
+        0.4286070466041565,
+        0.39604318141937256
+      ],
+      "latency_ms": 10.913959005847573,
+      "retrieved_ids": [
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "7248fe1a-a276-4e7d-b357-a5bf70c947c6",
+        "ab8551aa-fc96-4353-aedb-b148fae85281",
+        "539fe8ba-7e2b-4ade-9070-49d93cb36781",
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef"
+      ]
+    },
+    {
+      "id": "EVAL-089",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6919481158256531,
+        0.666093647480011,
+        0.645172655582428,
+        0.6445478796958923,
+        0.6361775398254395
+      ],
+      "latency_ms": 11.852083029225469,
+      "retrieved_ids": [
+        "8b465b0c-18e2-4774-a513-78eb99bd5c2b",
+        "36ccf9cb-03a7-4288-89da-502e05ffa782",
+        "979e0601-01d2-4aba-85bf-c77d34012973",
+        "aae8bf46-d570-402a-8fa7-c52ae5a1f3a7",
+        "edf3bd8f-7f7e-41ae-afad-8e6515cf160a"
+      ]
+    },
+    {
+      "id": "EVAL-090",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6553797125816345,
+        0.6255377531051636,
+        0.5070899724960327,
+        0.5034613609313965,
+        0.4878096580505371
+      ],
+      "latency_ms": 10.117917030584067,
+      "retrieved_ids": [
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "d95b16a1-74fe-4261-b825-9bf648b11981",
+        "72123d39-1fa4-41f7-9f08-788bab6fb14c",
+        "0375823a-25be-4395-87d7-a59e25f6c641"
+      ]
+    },
+    {
+      "id": "EVAL-091",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.4307975769042969,
+        0.4291583299636841,
+        0.4281795024871826,
+        0.41691315174102783,
+        0.4150163531303406
+      ],
+      "latency_ms": 10.66829200135544,
+      "retrieved_ids": [
+        "a4ecb69f-dc28-4cc2-955b-98e9bf8e39de",
+        "ad84019d-09db-4162-9ab5-17454b3666f9",
+        "edf3bd8f-7f7e-41ae-afad-8e6515cf160a",
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "aae8bf46-d570-402a-8fa7-c52ae5a1f3a7"
+      ]
+    },
+    {
+      "id": "EVAL-092",
+      "hit": true,
+      "rank": 4,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.519384503364563,
+        0.40437400341033936,
+        0.4039860963821411,
+        0.3959249258041382,
+        0.3934730291366577
+      ],
+      "latency_ms": 9.824042033869773,
+      "retrieved_ids": [
+        "8372bf18-4042-4128-b94f-c44dcb672a5a",
+        "20008291-cf98-4315-8d54-ef0223140d4d",
+        "ab79d5cd-b071-4795-86a9-4c4cbc6a45e7",
+        "ecebf36e-a279-41fc-ae5a-fcafff7a1dec",
+        "5c2b8fec-7aa9-46d5-9476-fd023d4c6234"
+      ]
+    },
+    {
+      "id": "EVAL-093",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5250736474990845,
+        0.5168361663818359,
+        0.5012884736061096,
+        0.4693410396575928,
+        0.4630244970321655
+      ],
+      "latency_ms": 10.469250031746924,
+      "retrieved_ids": [
+        "08ca6e99-b300-4e68-9637-56e8dd2622d1",
+        "1b4da245-43b6-4406-8d75-9181fe22145f",
+        "a4716c94-a737-4e84-8873-310c2f779ca5",
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+        "a7180a44-0c2f-4972-abd8-5b0994aceb1e"
+      ]
+    },
+    {
+      "id": "EVAL-094",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5193237066268921,
+        0.5118476152420044,
+        0.5074817538261414,
+        0.5006152391433716,
+        0.49291253089904785
+      ],
+      "latency_ms": 11.186541989445686,
+      "retrieved_ids": [
+        "5a94f7c8-4a54-4a8f-a74c-b2ad909d62b3",
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+        "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+        "731cb8d5-e812-4074-bebd-f0977f05b676",
+        "32072713-4686-4df9-a901-cd1b880882ae"
+      ]
+    },
+    {
+      "id": "EVAL-095",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5077093839645386,
+        0.4450979232788086,
+        0.4148980379104614,
+        0.4144970178604126,
+        0.3093780279159546
+      ],
+      "latency_ms": 14.282416959758848,
+      "retrieved_ids": [
+        "e279b26c-684f-4684-b0ab-6ecf34c208df",
+        "ea52e412-30ef-4729-b477-c84704034d69",
+        "5c6859f0-b276-4f35-b16c-97d7818a5d50",
+        "751de92b-cfa4-423d-850f-04ebb001f4a1",
+        "54626e2d-b3b9-450d-9fca-d5c3e015126e"
+      ]
+    },
+    {
+      "id": "EVAL-096",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5820422768592834,
+        0.4305177927017212,
+        0.40793633460998535,
+        0.3956311345100403,
+        0.35254770517349243
+      ],
+      "latency_ms": 9.985667013097554,
+      "retrieved_ids": [
+        "ea52e412-30ef-4729-b477-c84704034d69",
+        "e8ac4fbb-9c23-4e63-b8dd-a77fcf7468e5",
+        "e279b26c-684f-4684-b0ab-6ecf34c208df",
+        "5af46b80-0752-48f8-a752-42b720d59643",
+        "a811aef7-b1eb-43ec-a96b-30fe4c35eac3"
+      ]
+    },
+    {
+      "id": "EVAL-097",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6099395751953125,
+        0.5980098247528076,
+        0.5803754925727844,
+        0.5784723162651062,
+        0.5779957175254822
+      ],
+      "latency_ms": 11.303917039185762,
+      "retrieved_ids": [
+        "0c8bcac6-e677-470b-88e0-2b15758246de",
+        "c10f0de0-3c8c-4722-a5c7-190658bb8e60",
+        "1d5ccc59-208d-45d9-9e7b-6e025f2942bc",
+        "012af17f-8f08-46e8-aa09-0d67b246d342",
+        "86041670-c2af-4f92-abb0-6728cdae5a46"
+      ]
+    },
+    {
+      "id": "EVAL-098",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6106727719306946,
+        0.5769194960594177,
+        0.5063919425010681,
+        0.476010799407959,
+        0.4610636234283447
+      ],
+      "latency_ms": 20.035916997585446,
+      "retrieved_ids": [
+        "54626e2d-b3b9-450d-9fca-d5c3e015126e",
+        "10a0ebb2-63cc-4955-be80-97e954d62b75",
+        "fb2f24cc-4985-4fb6-ad9b-0c08e274c762",
+        "e18bfd25-46fd-4a57-a731-ef7d22af7160",
+        "c02fadf2-44a9-4c5c-a2d7-51c3b522dbce"
+      ]
+    },
+    {
+      "id": "EVAL-099",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6607879996299744,
+        0.450478196144104,
+        0.44916093349456787,
+        0.4420693516731262,
+        0.42051804065704346
+      ],
+      "latency_ms": 67.48829199932516,
+      "retrieved_ids": [
+        "f90dad81-12d6-4682-8268-f1008267c35a",
+        "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+        "fda17051-840b-41af-a026-8cc85cb43a34",
+        "740f2329-0df6-49ae-bf18-e82db0c222c3",
+        "4ec11cc3-15d3-44c5-8421-83c105155f6b"
+      ]
+    },
+    {
+      "id": "EVAL-100",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.47594475746154785,
+        0.4329339265823364,
+        0.42986738681793213,
+        0.3991868495941162,
+        0.393588662147522
+      ],
+      "latency_ms": 10.896791005507112,
+      "retrieved_ids": [
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "1ce07908-0d8d-47cb-9dee-e52eac6a0f39",
+        "88c958da-29ec-4e2d-b831-b4e0858a78ef",
+        "693d44a9-f162-41a0-9ffa-6ada5bc93ca4",
+        "d45a1ad9-564c-40df-b5a3-af50767ccf14"
+      ]
+    },
+    {
+      "id": "EVAL-101",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5788261890411377,
+        0.5722780227661133,
+        0.4925349950790405,
+        0.4515232443809509,
+        0.4306833744049072
+      ],
+      "latency_ms": 12.279209040571004,
+      "retrieved_ids": [
+        "5968dd3b-18ec-412a-abb9-7106b2bafdba",
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "bf2073a2-6ec3-40e1-8d7c-f8fd3b0e15b9",
+        "561c1ddd-ce3a-4384-8632-9af71d947238",
+        "693d44a9-f162-41a0-9ffa-6ada5bc93ca4"
+      ]
+    },
+    {
+      "id": "EVAL-102",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.42443645000457764,
+        0.41273248195648193,
+        0.40726733207702637,
+        0.40131717920303345,
+        0.39014720916748047
+      ],
+      "latency_ms": 15.01825003651902,
+      "retrieved_ids": [
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "4c7e0a19-ac63-43bb-8264-bd4acdeca2ac",
+        "56ed20ff-ae08-4e96-a2b4-5f6ecfd2811f",
+        "20008291-cf98-4315-8d54-ef0223140d4d",
+        "1ce07908-0d8d-47cb-9dee-e52eac6a0f39"
+      ]
+    },
+    {
+      "id": "EVAL-103",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5607833862304688,
+        0.5230864882469177,
+        0.5055669546127319,
+        0.5009319186210632,
+        0.48580092191696167
+      ],
+      "latency_ms": 11.351916007697582,
+      "retrieved_ids": [
+        "b076bb87-0f26-48d3-a514-770a4fdc7aae",
+        "f4be3f80-7ff8-4d86-8949-24e0874725f0",
+        "2d98ce33-9afa-4ca9-9a34-5511172a2dbc",
+        "3948d1eb-bec5-4b09-984e-47a197531d42",
+        "c53158e6-fa8e-43a2-a50c-6d9bf509862f"
+      ]
+    },
+    {
+      "id": "EVAL-104",
+      "hit": true,
+      "rank": 5,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5689065456390381,
+        0.3992452621459961,
+        0.3953680992126465,
+        0.38318514823913574,
+        0.37834542989730835
+      ],
+      "latency_ms": 11.030749999918044,
+      "retrieved_ids": [
+        "3736f110-b623-4469-9af5-02b535e10582",
+        "7d658dc3-0f9f-48a0-ba49-b57405621f51",
+        "b822bedd-5ee9-47d8-a36c-6911616cf0ba",
+        "d752a380-9768-49c9-8a14-8ebd21415153",
+        "f451e7e3-d4c3-4ed9-a081-816b9787bb24"
+      ]
+    },
+    {
+      "id": "EVAL-105",
+      "hit": true,
+      "rank": 3,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6215675473213196,
+        0.4267321825027466,
+        0.41517019271850586,
+        0.40836817026138306,
+        0.37143373489379883
+      ],
+      "latency_ms": 10.160582954995334,
+      "retrieved_ids": [
+        "3736f110-b623-4469-9af5-02b535e10582",
+        "d752a380-9768-49c9-8a14-8ebd21415153",
+        "b822bedd-5ee9-47d8-a36c-6911616cf0ba",
+        "7d658dc3-0f9f-48a0-ba49-b57405621f51",
+        "866965f7-bcd7-410b-958c-d2bbd5f29237"
+      ]
+    },
+    {
+      "id": "EVAL-106",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6419075727462769,
+        0.636498212814331,
+        0.5895686745643616,
+        0.588231086730957,
+        0.5624232888221741
+      ],
+      "latency_ms": 68.93112498801202,
+      "retrieved_ids": [
+        "568e2cc7-934a-4c88-b195-c99999dc9fed",
+        "6bbb918c-4ddd-445e-9a7a-149268011463",
+        "bf2073a2-6ec3-40e1-8d7c-f8fd3b0e15b9",
+        "5968dd3b-18ec-412a-abb9-7106b2bafdba",
+        "ad345f88-5b46-4795-b5c7-83d62668e9ef"
+      ]
+    },
+    {
+      "id": "EVAL-107",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6301271915435791,
+        0.40778642892837524,
+        0.37710273265838623,
+        0.35754430294036865,
+        0.3544120192527771
+      ],
+      "latency_ms": 12.033874983899295,
+      "retrieved_ids": [
+        "b5cfb55b-8202-4242-a8aa-d04e27283656",
+        "e97e8d17-814b-4239-844a-ffb5a7f02f45",
+        "9afebb14-df63-4fcf-9c54-02dc508aa1ea",
+        "570bda66-9ca1-4b35-8993-d592db5ae5f1",
+        "17e8f2d7-c3e9-4573-821c-f0eaa8e6fc35"
+      ]
+    },
+    {
+      "id": "EVAL-108",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6010193228721619,
+        0.5223779082298279,
+        0.4972251057624817,
+        0.48445796966552734,
+        0.476723313331604
+      ],
+      "latency_ms": 16.427750000730157,
+      "retrieved_ids": [
+        "0c46ac93-913e-4126-95dc-b405eb5f414b",
+        "5e09ff16-fbfd-43ae-98fe-b315cf9f87f9",
+        "17e8f2d7-c3e9-4573-821c-f0eaa8e6fc35",
+        "e2f9f6ec-4f7b-4521-8b29-4383ca8d8234",
+        "25af2c4b-11ec-4a50-8a3f-463d1f105efe"
+      ]
+    },
+    {
+      "id": "EVAL-109",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5944191217422485,
+        0.54621821641922,
+        0.5393367409706116,
+        0.5357984900474548,
+        0.5319455862045288
+      ],
+      "latency_ms": 13.893374998588115,
+      "retrieved_ids": [
+        "0c46ac93-913e-4126-95dc-b405eb5f414b",
+        "c834ca22-736d-459f-9489-d5fb31ea256a",
+        "d6467427-3b79-4b72-8a61-f94f72bca733",
+        "e97e8d17-814b-4239-844a-ffb5a7f02f45",
+        "802aed4e-3e5b-4eb5-bd8b-4e82ade59494"
+      ]
+    },
+    {
+      "id": "EVAL-110",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5540022850036621,
+        0.549155056476593,
+        0.548223614692688,
+        0.5403800010681152,
+        0.3961505889892578
+      ],
+      "latency_ms": 11.810417054221034,
+      "retrieved_ids": [
+        "568c8ac5-7b5a-4f04-848e-4aa08dd56fcc",
+        "c5d9f844-1868-4b7d-aeda-99da2f25493d",
+        "a7f286a3-645f-4815-8286-b3b300aab1d9",
+        "e0540beb-eff4-4e50-ab0f-5c16a3ab55fe",
+        "f99c97a9-c3dc-49fa-9ac2-b1e9ad86916d"
+      ]
+    },
+    {
+      "id": "EVAL-111",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.7676907777786255,
+        0.6380663514137268,
+        0.5886556506156921,
+        0.5693987607955933,
+        0.5679614543914795
+      ],
+      "latency_ms": 18.391292018350214,
+      "retrieved_ids": [
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "49d6c1a8-66f1-459b-9ce1-d6921e2d0731",
+        "7a964647-7b73-4677-a3fb-6c1f8a053903",
+        "0efd1060-6841-4136-93cd-b5da227a7a50",
+        "4544de0e-1939-402b-abf9-c02b0cee87e2"
+      ]
+    },
+    {
+      "id": "EVAL-112",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "inspection_finding",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.4427521228790283,
+        0.4390847682952881,
+        0.42635059356689453,
+        0.42450928688049316,
+        0.4195748567581177
+      ],
+      "latency_ms": 11.88100001309067,
+      "retrieved_ids": [
+        "5d1b7a25-9616-49a1-8936-f176f90a2538",
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "085bf008-5ede-4431-9010-a1d6ced58321",
+        "0efd1060-6841-4136-93cd-b5da227a7a50",
+        "06be3877-2778-44fb-840d-cd14c64c5f65"
+      ]
+    },
+    {
+      "id": "EVAL-113",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6458535194396973,
+        0.5992413759231567,
+        0.5140613317489624,
+        0.4642910957336426,
+        0.4519549012184143
+      ],
+      "latency_ms": 16.15658402442932,
+      "retrieved_ids": [
+        "2becf6bc-063e-43b3-9813-c13dd2c7a944",
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "e12177ed-5696-42cd-acfd-b4cf31797b65",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+        "5679c582-44f4-4eea-b198-5f3138e46263"
+      ]
+    },
+    {
+      "id": "EVAL-114",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "operational_anomaly",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6031299233436584,
+        0.6028823852539062,
+        0.6014751195907593,
+        0.5951865315437317,
+        0.5909279584884644
+      ],
+      "latency_ms": 20.96808300120756,
+      "retrieved_ids": [
+        "dc0dc98a-b1d9-4f98-9075-70fb62f31fb5",
+        "099b582c-e74e-43a8-bac6-99d6809c2143",
+        "1896f7b4-9568-47de-909a-63b5b145b297",
+        "e6d0507b-901c-4892-a45b-2440760bf78f",
+        "410e75f6-7ee1-4f40-8ec0-8a1062bcd651"
+      ]
+    },
+    {
+      "id": "EVAL-115",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6235653758049011,
+        0.570858895778656,
+        0.5691077709197998,
+        0.5612503886222839,
+        0.5395247936248779
+      ],
+      "latency_ms": 27.9549999977462,
+      "retrieved_ids": [
+        "dd4a72f6-961a-430e-812d-073b499eb75e",
+        "d2dccc3d-34b4-4ee6-8581-e84b1820e26a",
+        "cdfad467-fe84-4b4a-84b1-cf069ffae8f7",
+        "bb54de66-2ab6-459e-957c-74e80d6781eb",
+        "499b1e01-284b-4764-a9fd-4450c86eab67"
+      ]
+    },
+    {
+      "id": "EVAL-116",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "symptom_report",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6489909291267395,
+        0.6393613815307617,
+        0.6094487309455872,
+        0.6022500395774841,
+        0.527580738067627
+      ],
+      "latency_ms": 15.371999994385988,
+      "retrieved_ids": [
+        "979e0601-01d2-4aba-85bf-c77d34012973",
+        "36ccf9cb-03a7-4288-89da-502e05ffa782",
+        "721f0cf9-3f4f-4aaa-b82e-431bd740704a",
+        "f9ff18e2-84cd-40a3-9769-e0286e1a833e",
+        "8b465b0c-18e2-4774-a513-78eb99bd5c2b"
+      ]
+    },
+    {
+      "id": "EVAL-117",
+      "hit": true,
+      "rank": 3,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5592573285102844,
+        0.5375039577484131,
+        0.5036033987998962,
+        0.5012634992599487,
+        0.4996345639228821
+      ],
+      "latency_ms": 17.743624979630113,
+      "retrieved_ids": [
+        "f76d787c-00e6-448e-bb2a-6829151e2bb3",
+        "b61292d4-7e7d-409d-87b1-ab9c73dc413b",
+        "d6f6a87a-d88d-49cf-81ff-9018a7b34c64",
+        "51763ff0-0a1e-4172-aa5a-3d0c56c8024f",
+        "6ed7f932-3565-42e2-a6cc-bd017460d28d"
+      ]
+    },
+    {
+      "id": "EVAL-118",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6056679487228394,
+        0.5395476222038269,
+        0.5206102132797241,
+        0.4911540746688843,
+        0.48980873823165894
+      ],
+      "latency_ms": 17.558125022333115,
+      "retrieved_ids": [
+        "f90dad81-12d6-4682-8268-f1008267c35a",
+        "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "be29e6fd-1da1-4c77-952e-a4bda235cb55",
+        "6ed7f932-3565-42e2-a6cc-bd017460d28d"
+      ]
+    },
+    {
+      "id": "EVAL-119",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6103702783584595,
+        0.4516422748565674,
+        0.43631482124328613,
+        0.434667706489563,
+        0.4201969504356384
+      ],
+      "latency_ms": 29.11066700471565,
+      "retrieved_ids": [
+        "e09838c3-7a6b-4606-b1e2-e0be7fbcd8aa",
+        "1bd4bc09-9c7b-47e4-b5c9-9049208d0ec9",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5",
+        "e508d450-64fa-4d48-9e0c-06a44b106853",
+        "956a810f-5332-4276-90db-495c36cd700f"
+      ]
+    },
+    {
+      "id": "EVAL-120",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5962874293327332,
+        0.5544474124908447,
+        0.4915388822555542,
+        0.4489634037017822,
+        0.43926477432250977
+      ],
+      "latency_ms": 16.025541990529746,
+      "retrieved_ids": [
+        "694498fb-0727-4362-a752-0ecb98dded01",
+        "2325e5b0-e050-429c-b183-cb388f301338",
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "47619f78-eca8-4771-a397-7941f3683b10",
+        "3bd4650f-ffad-404c-a191-dac5b4ed9d38"
+      ]
+    },
+    {
+      "id": "EVAL-121",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6932499408721924,
+        0.5646334290504456,
+        0.5496933460235596,
+        0.5457921028137207,
+        0.5445342063903809
+      ],
+      "latency_ms": 18.07912503136322,
+      "retrieved_ids": [
+        "5d1b7a25-9616-49a1-8936-f176f90a2538",
+        "47619f78-eca8-4771-a397-7941f3683b10",
+        "085bf008-5ede-4431-9010-a1d6ced58321",
+        "929bb72b-c07b-49c1-abb5-2b45c4bb7a99",
+        "6c9c5271-84c6-4354-9df1-3f1fb80caa19"
+      ]
+    },
+    {
+      "id": "EVAL-122",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6414039731025696,
+        0.6038697361946106,
+        0.595959484577179,
+        0.5868003964424133,
+        0.5867392420768738
+      ],
+      "latency_ms": 20.115334016736597,
+      "retrieved_ids": [
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "f3a5cb46-a679-4567-b710-4354244c40ea",
+        "557e14fb-6855-4608-8ecf-2f574fea05c5",
+        "19e8bf4b-8249-4122-889a-a26f622ee20d"
+      ]
+    },
+    {
+      "id": "EVAL-123",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5674605965614319,
+        0.4775271415710449,
+        0.45083993673324585,
+        0.4503612518310547,
+        0.4487096071243286
+      ],
+      "latency_ms": 13.356707990169525,
+      "retrieved_ids": [
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "d95b16a1-74fe-4261-b825-9bf648b11981",
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe",
+        "1354c871-3c84-4ab3-8608-5764fd6840ec",
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f"
+      ]
+    },
+    {
+      "id": "EVAL-124",
+      "hit": true,
+      "rank": 4,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5142425894737244,
+        0.5116801857948303,
+        0.49906033277511597,
+        0.47105318307876587,
+        0.44368863105773926
+      ],
+      "latency_ms": 17.33454200439155,
+      "retrieved_ids": [
+        "0c181f54-94f2-4cf7-b53d-9a307fcd9236",
+        "f6242dc8-626e-4adc-bc26-e7bbbea5e795",
+        "551669f6-8321-44dd-8419-9181a78dc284",
+        "c436096a-b29a-4742-be81-3bbe494df9f5",
+        "d95b16a1-74fe-4261-b825-9bf648b11981"
+      ]
+    },
+    {
+      "id": "EVAL-125",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5467361211776733,
+        0.5413565635681152,
+        0.5202919244766235,
+        0.5185980796813965,
+        0.5078105330467224
+      ],
+      "latency_ms": 16.7101250262931,
+      "retrieved_ids": [
+        "b108fcd6-dd5f-4c1f-8b2f-4730969b6d71",
+        "51763ff0-0a1e-4172-aa5a-3d0c56c8024f",
+        "b61292d4-7e7d-409d-87b1-ab9c73dc413b",
+        "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+        "d3dda88a-b270-4099-929e-508995329418"
+      ]
+    },
+    {
+      "id": "EVAL-126",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.7548526525497437,
+        0.6632862091064453,
+        0.6603004932403564,
+        0.4837796688079834,
+        0.4565922021865845
+      ],
+      "latency_ms": 16.5455830283463,
+      "retrieved_ids": [
+        "e8194a47-144e-4b40-bab7-4f70255d51dd",
+        "929cd763-35d5-4c08-ae71-cf7e764d25fd",
+        "59dff85b-8d38-4ee3-b346-fd6581a0d05c",
+        "d2dccc3d-34b4-4ee6-8581-e84b1820e26a",
+        "a5b19afe-a5c7-477a-952a-cd5f56a6434a"
+      ]
+    },
+    {
+      "id": "EVAL-127",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5709068775177002,
+        0.5072950720787048,
+        0.5059615969657898,
+        0.48162680864334106,
+        0.4776686429977417
+      ],
+      "latency_ms": 17.29679200798273,
+      "retrieved_ids": [
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "f8a40af1-f5fb-4f2d-85d2-c088a75dd514",
+        "27fcdb28-fbe8-44c6-ab35-382fd8856b3a",
+        "f3a5cb46-a679-4567-b710-4354244c40ea",
+        "19e8bf4b-8249-4122-889a-a26f622ee20d"
+      ]
+    },
+    {
+      "id": "EVAL-128",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6891493201255798,
+        0.6795670390129089,
+        0.6592416167259216,
+        0.6505546569824219,
+        0.5840145945549011
+      ],
+      "latency_ms": 14.46120801847428,
+      "retrieved_ids": [
+        "568c8ac5-7b5a-4f04-848e-4aa08dd56fcc",
+        "e0540beb-eff4-4e50-ab0f-5c16a3ab55fe",
+        "c5d9f844-1868-4b7d-aeda-99da2f25493d",
+        "a7f286a3-645f-4815-8286-b3b300aab1d9",
+        "a71acd9a-f7b7-4a79-8aa3-f47d7fd18fe7"
+      ]
+    },
+    {
+      "id": "EVAL-129",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5550423264503479,
+        0.5538317561149597,
+        0.5203965902328491,
+        0.5135630965232849,
+        0.512345552444458
+      ],
+      "latency_ms": 15.066458960063756,
+      "retrieved_ids": [
+        "3736fe5c-c4f0-4cae-8bc5-ab2cd822f86c",
+        "c49a9745-8456-410a-a923-2be518247c5d",
+        "9f359620-8648-4e79-8b72-997c0ba83bbe",
+        "956a810f-5332-4276-90db-495c36cd700f",
+        "23999cae-a37f-4af9-877d-dfcc6ea82a0d"
+      ]
+    },
+    {
+      "id": "EVAL-130",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.38868486881256104,
+        0.360465943813324,
+        0.3423954248428345,
+        0.3285003900527954,
+        0.3251059055328369
+      ],
+      "latency_ms": 10.768250038381666,
+      "retrieved_ids": [
+        "ab79d5cd-b071-4795-86a9-4c4cbc6a45e7",
+        "551669f6-8321-44dd-8419-9181a78dc284",
+        "24ead004-c82b-4865-9ad0-7e48a16292d3",
+        "f6242dc8-626e-4adc-bc26-e7bbbea5e795",
+        "0ad28d51-6786-4b6b-b5e7-91fface8aabe"
+      ]
+    },
+    {
+      "id": "EVAL-131",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5711875557899475,
+        0.5479593276977539,
+        0.5115536451339722,
+        0.4837760925292969,
+        0.47462230920791626
+      ],
+      "latency_ms": 10.142958024516702,
+      "retrieved_ids": [
+        "47619f78-eca8-4771-a397-7941f3683b10",
+        "b5a598bb-5660-43be-8e46-0393d6e5dac6",
+        "0efd1060-6841-4136-93cd-b5da227a7a50",
+        "dbaacec4-ac69-4aa2-b92e-20d42a0b4674",
+        "6c9c5271-84c6-4354-9df1-3f1fb80caa19"
+      ]
+    },
+    {
+      "id": "EVAL-132",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6578729748725891,
+        0.6439414024353027,
+        0.6411831974983215,
+        0.6138389110565186,
+        0.608439028263092
+      ],
+      "latency_ms": 14.664874994195998,
+      "retrieved_ids": [
+        "7ccf4b8f-e8cf-4032-b9d2-caf60552b70c",
+        "1c143d2c-39fd-498d-9c33-f6928451e886",
+        "f2fc8fcc-b66f-4e6d-a3bb-e92759c5457f",
+        "4613648f-80e1-4622-b6a3-2a8433bdddea",
+        "d4c5456f-cc9d-4119-9aa3-d131e34498cf"
+      ]
+    },
+    {
+      "id": "EVAL-133",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6017785668373108,
+        0.5825321078300476,
+        0.5818614959716797,
+        0.5480552315711975,
+        0.5398353338241577
+      ],
+      "latency_ms": 12.374791025649756,
+      "retrieved_ids": [
+        "be1224b8-4657-4899-a798-9c11a5eb0b3c",
+        "9ccd446d-b1fa-4f83-a0a5-ee02dd1f7a3b",
+        "84557a5f-a122-4639-ba7e-660d3aad7080",
+        "457725e3-b33b-47af-ad7d-1bb3342ea923",
+        "23999cae-a37f-4af9-877d-dfcc6ea82a0d"
+      ]
+    },
+    {
+      "id": "EVAL-134",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5788280963897705,
+        0.5389615893363953,
+        0.5317695140838623,
+        0.53094482421875,
+        0.5262818336486816
+      ],
+      "latency_ms": 14.907042030245066,
+      "retrieved_ids": [
+        "15d0cfb6-e3d5-4c40-8c8b-d898e35fc44f",
+        "d10f71ed-1ad8-4f66-a366-6d3625cd56b8",
+        "1a5f12ef-785f-44c2-9523-86ee3100bf1d",
+        "43758276-8bca-485b-9ee4-baca615b101c",
+        "23999cae-a37f-4af9-877d-dfcc6ea82a0d"
+      ]
+    },
+    {
+      "id": "EVAL-135",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5150316953659058,
+        0.511940598487854,
+        0.4944198727607727,
+        0.4769076108932495,
+        0.4478621482849121
+      ],
+      "latency_ms": 11.623875005170703,
+      "retrieved_ids": [
+        "f52d9ff3-d059-4a3a-bb09-652db89fb314",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+        "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2",
+        "fb1e5522-64b3-4e70-85dd-8a651ffc0ed3"
+      ]
+    },
+    {
+      "id": "EVAL-136",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5276481509208679,
+        0.5218949317932129,
+        0.5109860301017761,
+        0.5048506259918213,
+        0.504290759563446
+      ],
+      "latency_ms": 12.784624996129423,
+      "retrieved_ids": [
+        "2934c68a-42a6-4c5b-813e-d815eb65feb7",
+        "731cb8d5-e812-4074-bebd-f0977f05b676",
+        "c49944b6-dc69-4d54-94da-8eac158fb887",
+        "f4dd58c5-2cc7-46dd-af91-8255399b2816",
+        "32072713-4686-4df9-a901-cd1b880882ae"
+      ]
+    },
+    {
+      "id": "EVAL-137",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.5798377394676208,
+        0.5772009491920471,
+        0.5611636638641357,
+        0.5427337288856506,
+        0.5419652462005615
+      ],
+      "latency_ms": 25.63299995381385,
+      "retrieved_ids": [
+        "d36a6da2-4879-40ac-a002-5a8515f96d88",
+        "712bf55d-9008-479d-8ac5-06373444fbf1",
+        "436e76df-c553-4ea1-ad40-7738b55ae857",
+        "627dc269-cc80-4b41-af21-4fcf39423d26",
+        "46ff933d-688a-425b-bc5c-e97fa8cce212"
+      ]
+    },
+    {
+      "id": "EVAL-138",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.44118309020996094,
+        0.4360579252243042,
+        0.4331756830215454,
+        0.40982866287231445,
+        0.40471088886260986
+      ],
+      "latency_ms": 111.83558299671859,
+      "retrieved_ids": [
+        "e0540beb-eff4-4e50-ab0f-5c16a3ab55fe",
+        "c5320ecb-e5ed-4fc1-8bd7-861f5a0f5ac0",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5",
+        "568c8ac5-7b5a-4f04-848e-4aa08dd56fcc",
+        "d53f82ca-8881-4c1d-a400-82ef8c14b950"
+      ]
+    },
+    {
+      "id": "EVAL-139",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.665973424911499,
+        0.6611995697021484,
+        0.641129195690155,
+        0.5719916820526123,
+        0.5546593070030212
+      ],
+      "latency_ms": 41.4607499842532,
+      "retrieved_ids": [
+        "e5f9e379-aa85-4340-8c07-42ae4fd397cb",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19",
+        "286984d9-4c3a-4493-a88e-62caaac75868",
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "a4018a94-2ef0-47de-b920-38be8d5bd97e"
+      ]
+    },
+    {
+      "id": "EVAL-140",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.7196609973907471,
+        0.5306395888328552,
+        0.5299267172813416,
+        0.5244501829147339,
+        0.5122503638267517
+      ],
+      "latency_ms": 13.02812498761341,
+      "retrieved_ids": [
+        "2c2cb9a4-325e-4f99-9891-7a7ff951938c",
+        "81a2687e-157a-412c-9ae8-dad40c9d5862",
+        "20b8193b-8c53-4ea4-be2b-1746c78c1a01",
+        "94bba8ff-a0f6-4709-b831-388fa2b79cc7",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5"
+      ]
+    },
+    {
+      "id": "EVAL-141",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5998044610023499,
+        0.520521342754364,
+        0.5040081143379211,
+        0.5028784275054932,
+        0.5027098655700684
+      ],
+      "latency_ms": 19.024208013433963,
+      "retrieved_ids": [
+        "578348a9-0861-48e4-b370-b13c8f6e1ba2",
+        "85a4dc25-2666-400f-a1e0-8d8ea0630360",
+        "7cc680cf-11b4-473e-83b0-fcf1dd9d71ab",
+        "e6c68b85-1283-4ce4-b07a-1a217d29984b",
+        "41eb4d4f-7f38-4ca8-a1be-80b9d85c7774"
+      ]
+    },
+    {
+      "id": "EVAL-142",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.49916887283325195,
+        0.43841975927352905,
+        0.43015551567077637,
+        0.4273144006729126,
+        0.4250251054763794
+      ],
+      "latency_ms": 15.520333021413535,
+      "retrieved_ids": [
+        "fd68f904-3311-4fb9-8c2d-035410f3598a",
+        "9a62cd6f-0996-4ad6-a27a-d0867d8a7364",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9",
+        "87929480-5535-4d33-917b-90838eef6fe4",
+        "63c3ef31-b385-4c01-919e-76d86cac3e1b"
+      ]
+    },
+    {
+      "id": "EVAL-143",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5088071227073669,
+        0.4657062888145447,
+        0.46073710918426514,
+        0.4590996503829956,
+        0.45827555656433105
+      ],
+      "latency_ms": 17.88316702004522,
+      "retrieved_ids": [
+        "c8ec855f-b39a-46d1-80ec-a5056398f87a",
+        "b108fcd6-dd5f-4c1f-8b2f-4730969b6d71",
+        "ebc94f96-0b40-4cbe-961e-b2686e2ddc1e",
+        "2d98ce33-9afa-4ca9-9a34-5511172a2dbc",
+        "d4332487-5786-433d-aeb7-c88eab6f5fe8"
+      ]
+    },
+    {
+      "id": "EVAL-144",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5526696443557739,
+        0.5266793370246887,
+        0.5252625942230225,
+        0.5068028569221497,
+        0.4970879554748535
+      ],
+      "latency_ms": 12.05841702176258,
+      "retrieved_ids": [
+        "ea6aac52-0f0f-4c4b-834a-7da497c5c13f",
+        "8eda759e-9917-49c9-8c42-ca361a4c08c5",
+        "0acbd170-85fb-45d6-947b-dff5a7a09b36",
+        "c745a578-cbd6-4746-9481-68c762aae843",
+        "128d33d9-1209-4ca6-9263-07895cc70d86"
+      ]
+    },
+    {
+      "id": "EVAL-145",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.6639795899391174,
+        0.5909780263900757,
+        0.5720354318618774,
+        0.5473412871360779,
+        0.5443452000617981
+      ],
+      "latency_ms": 10.997582983691245,
+      "retrieved_ids": [
+        "9691e504-cae0-4d0c-9dd5-a3a73050c1dd",
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a",
+        "30948180-ac1d-4fb5-882d-1d72badc9447",
+        "a4018a94-2ef0-47de-b920-38be8d5bd97e",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19"
+      ]
+    },
+    {
+      "id": "EVAL-146",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.4635772705078125,
+        0.4337266683578491,
+        0.4168606996536255,
+        0.4053840637207031,
+        0.4051511287689209
+      ],
+      "latency_ms": 12.406499998178333,
+      "retrieved_ids": [
+        "3c0bd751-bd23-4c5b-b25a-9e1c665954bf",
+        "9fbb2766-e034-43e7-8daf-05030a007446",
+        "21da0b61-74ba-41d4-93f3-3a928a70f269",
+        "7ccc9b6c-0a7e-4ecf-9381-afb41e1f0786",
+        "2b595ed9-f26e-4b4b-8b93-921bbca01343"
+      ]
+    },
+    {
+      "id": "EVAL-147",
+      "hit": true,
+      "rank": 2,
+      "difficulty_tier": "easy",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5785501599311829,
+        0.5753007531166077,
+        0.5717816352844238,
+        0.5295303463935852,
+        0.5281035900115967
+      ],
+      "latency_ms": 15.090250002685934,
+      "retrieved_ids": [
+        "286984d9-4c3a-4493-a88e-62caaac75868",
+        "e5f9e379-aa85-4340-8c07-42ae4fd397cb",
+        "f85eac83-05a5-46e0-a8c3-c5b96e160c19",
+        "7497b4d6-c797-483a-a3dc-0801793d0fa9",
+        "600e035f-3830-4d29-8f0a-e50ac1876f8a"
+      ]
+    },
+    {
+      "id": "EVAL-148",
+      "hit": false,
+      "rank": null,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.55301833152771,
+        0.5198054313659668,
+        0.500160276889801,
+        0.47046124935150146,
+        0.4691562056541443
+      ],
+      "latency_ms": 14.459375001024455,
+      "retrieved_ids": [
+        "7a4893b0-2f88-418e-8962-8c68d4da0cc2",
+        "7598902c-9aba-4093-8933-f445743ba533",
+        "2becf6bc-063e-43b3-9813-c13dd2c7a944",
+        "96d9e2da-8d77-4d81-aa5c-6b9062e1b7b7",
+        "ec1aec5d-da8b-42b0-95d8-738659dcfae9"
+      ]
+    },
+    {
+      "id": "EVAL-149",
+      "hit": true,
+      "rank": 3,
+      "difficulty_tier": "medium",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "SC10000AMM",
+      "cosine_scores": [
+        0.5997647643089294,
+        0.576805055141449,
+        0.5313674211502075,
+        0.5230597257614136,
+        0.5201459527015686
+      ],
+      "latency_ms": 10.290834004990757,
+      "retrieved_ids": [
+        "6ca6b3e7-db3b-4e63-a1f5-3abef78b9658",
+        "624f97ae-f95e-4629-934e-bf453dd0c69d",
+        "81a2687e-157a-412c-9ae8-dad40c9d5862",
+        "f89cfdc2-f44a-4e57-82db-e68e49277a30",
+        "2c2cb9a4-325e-4f99-9891-7a7ff951938c"
+      ]
+    },
+    {
+      "id": "EVAL-150",
+      "hit": true,
+      "rank": 1,
+      "difficulty_tier": "hard",
+      "origin": "table",
+      "observation_type": "part_replacement",
+      "manual_source": "AS-AMM-01-000",
+      "cosine_scores": [
+        0.6099397540092468,
+        0.566581666469574,
+        0.5438364148139954,
+        0.5426672697067261,
+        0.49303168058395386
+      ],
+      "latency_ms": 16.489166009705514,
+      "retrieved_ids": [
+        "f4162b3a-5ff0-486d-92aa-4b04d6752b93",
+        "5679c582-44f4-4eea-b198-5f3138e46263",
+        "b3dc4083-6cf4-41f9-ac49-ca07dd0fb399",
+        "e12177ed-5696-42cd-acfd-b4cf31797b65",
+        "049298a5-14c4-4a3a-8373-1ac53b8bf176"
+      ]
+    }
+  ]
+}
