@@ -1,104 +1,51 @@
 import json
 import logging
+import re
 import time
 
-from google import genai
-from google.genai import types
-
-from src.config import (
-    GOOGLE_CLOUD_LOCATION,
-    GOOGLE_CLOUD_PROJECT,
-    MODEL_FLASH,
-)
+from src.flat_rag import _get_model
 
 logger = logging.getLogger(__name__)
 
-_client: genai.Client | None = None
 
-
-def _get_genai_client() -> genai.Client:
-    global _client
-    if _client is None:
-        _client = genai.Client(
-            vertexai=True,
-            project=GOOGLE_CLOUD_PROJECT,
-            location=GOOGLE_CLOUD_LOCATION,
-        )
-    return _client
-
-
-def generate_with_retry(
-    prompt: str,
-    model: str = MODEL_FLASH,
-    temperature: float = 0.0,
-    response_mime_type: str = "application/json",
-    max_retries: int = 3,
-) -> str | None:
-    client = _get_genai_client()
-    for attempt in range(max_retries):
-        try:
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type=response_mime_type,
-                    temperature=temperature,
-                ),
-            )
-            return response.text
-        except Exception as e:
-            err_str = str(e).lower()
-            is_quota = "429" in err_str or "quota" in err_str or "resource" in err_str
-            if attempt < max_retries - 1 and is_quota:
-                wait = min(2 ** (attempt + 1), 60)
-                logger.warning(f"LLM 429, backing off {wait}s (attempt {attempt + 1})")
-                time.sleep(wait)
-                continue
-            if attempt < max_retries - 1:
-                wait = 2 ** (attempt + 1)
-                logger.warning(f"LLM error: {e}, retrying in {wait}s")
-                time.sleep(wait)
-                continue
-            logger.error(f"LLM call failed after {max_retries} attempts: {e}")
-            return None
+def _extract_sentences(text: str) -> list[str]:
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    return [s.strip() for s in sentences if len(s.strip()) > 20]
 
 
 def generate_repair_plan(
     observation: str,
     context: str,
     equipment_type: str = "heavy_industrial",
-) -> dict | None:
-    prompt = f"""You are an expert industrial maintenance diagnostician. Based on the technician's observation and the retrieved maintenance manual context, generate a structured repair plan.
+) -> dict:
+    """Generate a repair plan by extracting relevant sentences from context.
 
-<Observation>
-{observation}
-</Observation>
+    Uses embedding similarity to select the most relevant sentences
+    from the retrieved context as repair steps.
+    """
+    model = _get_model()
+    obs_emb = model.encode(observation, normalize_embeddings=True)
 
-<RetrievedContext>
-{context}
-</RetrievedContext>
+    sentences = _extract_sentences(context)
+    if not sentences:
+        return {"repair_steps": [], "root_cause": "no_context", "confidence": 0.0}
 
-Equipment type: {equipment_type}
+    sent_embs = model.encode(sentences, normalize_embeddings=True)
+    scores = (sent_embs @ obs_emb).tolist()
 
-Generate a JSON response with:
-{{
-  "root_cause": "Most likely root cause based on the context",
-  "repair_steps": [
-    {{"step_id": "s-0", "text": "Step description grounded in the manual context"}},
-    {{"step_id": "s-1", "text": "Next step..."}}
-  ],
-  "confidence": 0.0-1.0
-}}
+    ranked = sorted(zip(scores, sentences), reverse=True)
+    top_sentences = ranked[:min(6, len(ranked))]
 
-Rules:
-- Ground every step in the retrieved context. Do not invent procedures.
-- If context is insufficient, say so rather than guessing.
-- Include specific part numbers, measurements, and tool references from the context.
-"""
-    result = generate_with_retry(prompt)
-    if result:
-        try:
-            return json.loads(result)
-        except json.JSONDecodeError:
-            logger.error(f"Failed to parse repair plan JSON: {result[:200]}")
-    return None
+    steps = []
+    for i, (score, sent) in enumerate(top_sentences):
+        clean = re.sub(r'\[CHUNK-ID: [^\]]+\]', '', sent).strip()
+        if len(clean) > 15:
+            steps.append({"step_id": f"s-{i}", "text": clean, "score": score})
+
+    root_cause = steps[0]["text"][:100] if steps else "unknown"
+
+    return {
+        "repair_steps": steps,
+        "root_cause": root_cause,
+        "confidence": top_sentences[0][0] if top_sentences else 0.0,
+    }

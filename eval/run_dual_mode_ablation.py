@@ -309,7 +309,7 @@ def run():
         "records": results,
     }
     with open(RESULTS_DIR / "dual_mode_ablation.json", "w") as f:
-        json.dump(output, f, indent=2)
+        json.dump(output, f, indent=2, default=str)
     console.print(f"[dim]Results saved to {RESULTS_DIR / 'dual_mode_ablation.json'}[/dim]")
 
     return output

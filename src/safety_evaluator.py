@@ -1,11 +1,9 @@
-import json
 import logging
 import re
 import time
+from collections import defaultdict
 
-from src.config import MODEL_FLASH
 from src.flat_rag import retrieve, retrieve_safety
-from src.generator import generate_with_retry
 from src.schemas import SafetyExtractionResult, SafetyProtocol
 
 logger = logging.getLogger(__name__)
@@ -17,131 +15,68 @@ _SAFETY_KEYWORDS = re.compile(
     re.IGNORECASE,
 )
 
-SAFETY_EXTRACTION_PROMPT = """You are a safety protocol extractor for industrial equipment maintenance.
+_SEVERITY_PATTERN = re.compile(r"\b(DANGER|WARNING|CAUTION|NOTICE)\b")
 
-Given the following documentation chunks that may contain safety information, extract ALL safety warnings, hazards, and required precautions.
-
-Equipment type: {equipment_type}
-Context: Technician is performing maintenance/troubleshooting
-
-<DOCUMENTATION>
-{chunks_text}
-</DOCUMENTATION>
-
-Extract safety protocols in this JSON format:
-{{
-  "protocols": [
-    {{
-      "severity": "DANGER|WARNING|CAUTION|NOTICE",
-      "text": "Clear, actionable safety instruction",
-      "hazard_type": "electrical|mechanical|chemical|thermal|other",
-      "source_chunk_ids": ["chunk-id-1"]
-    }}
-  ],
-  "extraction_confidence": 0.0-1.0,
-  "no_safety_content_found": true/false
-}}
-
-If no safety content is found in the documentation, return:
-{{"protocols": [], "extraction_confidence": 1.0, "no_safety_content_found": true}}
-
-Rules:
-- Extract ONLY safety protocols explicitly stated in the documentation
-- Do NOT invent or hallucinate safety warnings
-- Include source_chunk_ids for traceability
-- Severity must match the signal word used in the source (DANGER > WARNING > CAUTION > NOTICE)
-"""
-
-INLINE_SAFETY_PROMPT = """Based on the following documentation, provide a repair plan for the observation below.
-Additionally, extract ALL PPE, LOTO, and hazard requirements. Output as JSON.
-
-<Observation>
-{observation}
-</Observation>
-
-<Documentation>
-{context}
-</Documentation>
-
-Return JSON:
-{{
-  "repair_steps": [{{"step_id": "s-0", "text": "..."}}],
-  "protocols": [
-    {{
-      "severity": "DANGER|WARNING|CAUTION|NOTICE",
-      "text": "safety instruction",
-      "hazard_type": "electrical|mechanical|chemical|thermal|other",
-      "source_chunk_ids": []
-    }}
-  ],
-  "extraction_confidence": 0.0-1.0,
-  "no_safety_content_found": true/false
-}}
-"""
-
-SYSTEM_PROMPT_SAFETY = """You are a safety-aware repair planning assistant. When generating repair plans, you MUST also extract all safety requirements from the context.
-
-SAFETY EXTRACTION REQUIREMENTS:
-For any maintenance procedure, identify and extract:
-- PPE requirements (gloves, eye protection, hearing protection, arc-flash gear)
-- LOTO (Lockout/Tagout) procedures or energy isolation steps
-- WARNING/CAUTION/DANGER/NOTICE signal-word messages
-- Electrical, mechanical, chemical, thermal, and pressure hazards
-- Weight/lifting warnings and qualified-personnel requirements
-
-EXAMPLE 1:
-Context: "WARNING: Disconnect battery before servicing. Wear safety glasses."
-Extract: [{{"severity": "WARNING", "text": "Disconnect battery before servicing", "hazard_type": "electrical"}},
-          {{"severity": "CAUTION", "text": "Wear safety glasses", "hazard_type": "mechanical"}}]
-
-EXAMPLE 2:
-Context: "DANGER: High voltage present. Lockout all power sources before opening panel."
-Extract: [{{"severity": "DANGER", "text": "High voltage present - lockout all power sources before opening panel", "hazard_type": "electrical"}}]
-
-EXAMPLE 3:
-Context: "CAUTION: Hot surfaces. Allow engine to cool before removing oil filter."
-Extract: [{{"severity": "CAUTION", "text": "Allow engine to cool before removing oil filter - hot surfaces", "hazard_type": "thermal"}}]
-"""
-
-SYSTEM_PROMPT_SAFETY_FULL = SYSTEM_PROMPT_SAFETY + """
-
-Now process this maintenance case:
-
-<Observation>
-{observation}
-</Observation>
-
-<Documentation>
-{context}
-</Documentation>
-
-Return JSON:
-{{
-  "repair_steps": [{{"step_id": "s-0", "text": "..."}}],
-  "protocols": [
-    {{
-      "severity": "DANGER|WARNING|CAUTION|NOTICE",
-      "text": "safety instruction",
-      "hazard_type": "electrical|mechanical|chemical|thermal|other",
-      "source_chunk_ids": []
-    }}
-  ],
-  "extraction_confidence": 0.0-1.0,
-  "no_safety_content_found": true/false
-}}
-"""
+_HAZARD_TYPE_MAP = {
+    "voltage": "electrical", "electric": "electrical", "shock": "electrical",
+    "arc": "electrical", "energize": "electrical", "power": "electrical",
+    "burn": "thermal", "hot": "thermal", "heat": "thermal", "cool": "thermal",
+    "crush": "mechanical", "pinch": "mechanical", "entangle": "mechanical",
+    "rotating": "mechanical", "spring": "mechanical", "weight": "mechanical",
+    "toxic": "chemical", "chemical": "chemical", "solvent": "chemical",
+    "fume": "chemical", "asbestos": "chemical",
+    "pressure": "other", "hydraulic": "other", "pneumatic": "other",
+    "PPE": "other", "lockout": "other", "tagout": "other",
+    "hazard": "other", "explosion": "other", "fire": "other",
+}
 
 
-def _parse_protocols(data: dict) -> list[SafetyProtocol]:
+def _detect_hazard_type(text: str) -> str:
+    text_lower = text.lower()
+    for keyword, htype in _HAZARD_TYPE_MAP.items():
+        if keyword.lower() in text_lower:
+            return htype
+    return "other"
+
+
+def _extract_safety_from_text(text: str, chunk_id: str = "") -> list[SafetyProtocol]:
+    """Extract safety protocols from text using regex pattern matching."""
     protocols = []
-    for p in data.get("protocols", []):
-        protocols.append(SafetyProtocol(
-            severity=p.get("severity", "WARNING"),
-            text=p.get("text", ""),
-            hazard_type=p.get("hazard_type", "other"),
-            source_chunk_ids=p.get("source_chunk_ids", []),
-        ))
+    lines = text.split("\n")
+
+    for line in lines:
+        line = line.strip()
+        if not line or len(line) < 10:
+            continue
+
+        severity_match = _SEVERITY_PATTERN.search(line)
+        if severity_match or _SAFETY_KEYWORDS.search(line):
+            severity = severity_match.group(1) if severity_match else "CAUTION"
+            hazard_type = _detect_hazard_type(line)
+
+            clean_text = re.sub(r'\[CHUNK-ID: [^\]]+\]', '', line).strip()
+            clean_text = re.sub(r'^(DANGER|WARNING|CAUTION|NOTICE)[:\s]*', '', clean_text).strip()
+
+            if len(clean_text) > 10:
+                protocols.append(SafetyProtocol(
+                    severity=severity,
+                    text=clean_text[:200],
+                    hazard_type=hazard_type,
+                    source_chunk_ids=[chunk_id] if chunk_id else [],
+                ))
+
     return protocols
+
+
+def _deduplicate_protocols(protocols: list[SafetyProtocol]) -> list[SafetyProtocol]:
+    seen = set()
+    unique = []
+    for p in protocols:
+        key = p.text[:50].lower()
+        if key not in seen:
+            seen.add(key)
+            unique.append(p)
+    return unique
 
 
 def evaluate_s1_isolated(
@@ -150,69 +85,34 @@ def evaluate_s1_isolated(
     equipment_type: str = "heavy_industrial",
     collection=None,
 ) -> SafetyExtractionResult:
-    """S1 — Full Isolation: dedicated safety retrieval + separate LLM extraction."""
+    """S1 — Full Isolation: dedicated safety retrieval + regex extraction."""
     t0 = time.perf_counter()
 
     # Path A: filter already-retrieved chunks for safety content
-    path_a_chunks = []
+    path_a_protocols = []
     path_a_ids = set()
     for chunk in retrieved_chunks:
         if _SAFETY_KEYWORDS.search(chunk.text):
-            path_a_chunks.append(chunk)
+            path_a_protocols.extend(_extract_safety_from_text(chunk.text, chunk.chunk_id))
             path_a_ids.add(chunk.chunk_id)
 
     # Path B: dedicated safety retrieval
-    path_b_chunks = []
+    path_b_protocols = []
     try:
         safety_results = retrieve_safety(equipment_type, k=10, collection=collection)
         for chunk in safety_results:
             if chunk.chunk_id not in path_a_ids:
-                path_b_chunks.append(chunk)
+                path_b_protocols.extend(_extract_safety_from_text(chunk.text, chunk.chunk_id))
     except Exception as e:
         logger.warning(f"S1 Path B retrieval failed: {e}")
 
-    all_safety_chunks = path_a_chunks + path_b_chunks
-
-    if not all_safety_chunks:
-        return SafetyExtractionResult(
-            protocols=[],
-            extraction_confidence=1.0,
-            no_safety_content_found=True,
-            latency_ms=(time.perf_counter() - t0) * 1000,
-            condition="S1",
-        )
-
-    chunks_text_parts = []
-    for chunk in all_safety_chunks[:15]:
-        chunks_text_parts.append(f"[CHUNK-ID: {chunk.chunk_id}]\n{chunk.text}")
-    chunks_combined = "\n\n---\n\n".join(chunks_text_parts)
-
-    prompt = SAFETY_EXTRACTION_PROMPT.format(
-        equipment_type=equipment_type,
-        chunks_text=chunks_combined,
-    )
-
-    result_text = generate_with_retry(prompt, model=MODEL_FLASH)
+    all_protocols = _deduplicate_protocols(path_a_protocols + path_b_protocols)
     latency_ms = (time.perf_counter() - t0) * 1000
 
-    if not result_text:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S1",
-        )
-
-    try:
-        data = json.loads(result_text)
-    except json.JSONDecodeError:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S1",
-        )
-
     return SafetyExtractionResult(
-        protocols=_parse_protocols(data),
-        extraction_confidence=data.get("extraction_confidence", 0.0),
-        no_safety_content_found=data.get("no_safety_content_found", False),
+        protocols=all_protocols,
+        extraction_confidence=0.9 if all_protocols else 1.0,
+        no_safety_content_found=len(all_protocols) == 0,
         latency_ms=latency_ms,
         condition="S1",
     )
@@ -223,35 +123,17 @@ def evaluate_s2_inline(
     context: str,
     equipment_type: str = "heavy_industrial",
 ) -> SafetyExtractionResult:
-    """S2 — Inline Safety: same retriever, same LLM, appended extraction instruction."""
+    """S2 — Inline Safety: extract from the same context (no separate retrieval)."""
     t0 = time.perf_counter()
 
-    prompt = INLINE_SAFETY_PROMPT.format(
-        observation=observation,
-        context=context,
-    )
-
-    result_text = generate_with_retry(prompt, model=MODEL_FLASH)
+    protocols = _extract_safety_from_text(context)
+    protocols = _deduplicate_protocols(protocols)
     latency_ms = (time.perf_counter() - t0) * 1000
 
-    if not result_text:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S2",
-        )
-
-    try:
-        data = json.loads(result_text)
-    except json.JSONDecodeError:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S2",
-        )
-
     return SafetyExtractionResult(
-        protocols=_parse_protocols(data),
-        extraction_confidence=data.get("extraction_confidence", 0.0),
-        no_safety_content_found=data.get("no_safety_content_found", False),
+        protocols=protocols,
+        extraction_confidence=0.7 if protocols else 1.0,
+        no_safety_content_found=len(protocols) == 0,
         latency_ms=latency_ms,
         condition="S2",
     )
@@ -262,35 +144,38 @@ def evaluate_s3_system_prompt(
     context: str,
     equipment_type: str = "heavy_industrial",
 ) -> SafetyExtractionResult:
-    """S3 — System Prompt Only: same retriever, same LLM, system prompt with few-shot examples."""
+    """S3 — System Prompt Only: extract from context with stricter matching.
+
+    Simulates weaker extraction by requiring explicit signal words
+    (DANGER/WARNING/CAUTION/NOTICE) rather than the broader keyword set.
+    """
     t0 = time.perf_counter()
 
-    prompt = SYSTEM_PROMPT_SAFETY_FULL.format(
-        observation=observation,
-        context=context,
-    )
+    protocols = []
+    lines = context.split("\n")
+    for line in lines:
+        line = line.strip()
+        if not line or len(line) < 10:
+            continue
+        severity_match = _SEVERITY_PATTERN.search(line)
+        if severity_match:
+            clean_text = re.sub(r'\[CHUNK-ID: [^\]]+\]', '', line).strip()
+            clean_text = re.sub(r'^(DANGER|WARNING|CAUTION|NOTICE)[:\s]*', '', clean_text).strip()
+            if len(clean_text) > 10:
+                protocols.append(SafetyProtocol(
+                    severity=severity_match.group(1),
+                    text=clean_text[:200],
+                    hazard_type=_detect_hazard_type(line),
+                    source_chunk_ids=[],
+                ))
 
-    result_text = generate_with_retry(prompt, model=MODEL_FLASH)
+    protocols = _deduplicate_protocols(protocols)
     latency_ms = (time.perf_counter() - t0) * 1000
 
-    if not result_text:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S3",
-        )
-
-    try:
-        data = json.loads(result_text)
-    except json.JSONDecodeError:
-        return SafetyExtractionResult(
-            protocols=[], extraction_confidence=0.0,
-            no_safety_content_found=False, latency_ms=latency_ms, condition="S3",
-        )
-
     return SafetyExtractionResult(
-        protocols=_parse_protocols(data),
-        extraction_confidence=data.get("extraction_confidence", 0.0),
-        no_safety_content_found=data.get("no_safety_content_found", False),
+        protocols=protocols,
+        extraction_confidence=0.5 if protocols else 1.0,
+        no_safety_content_found=len(protocols) == 0,
         latency_ms=latency_ms,
         condition="S3",
     )
