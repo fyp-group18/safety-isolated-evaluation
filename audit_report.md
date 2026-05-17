@@ -82,19 +82,20 @@
 - **Model**: `gemini-2.5-flash` for all metrics
 - **Budget**: 180s total, 90s per-call timeout, 3 attempts with exponential backoff
 
-### Metrics (3 phases, sequential + parallel)
-Faithfulness and answer relevance are already computed by the sync gate — removed from async to avoid redundancy.
+### Metrics (2 phases)
+Faithfulness, answer relevance, and per-step faithfulness cross-validation are already
+computed by the sync gate — removed from async to avoid redundancy. The async eval's
+value lies in metrics the sync gate does not compute at all.
 
-1. **Phase 1**: Context relevance + Completeness (parallel) — `PROMPT_ASYNC_CONTEXT_RELEVANCE`, `PROMPT_ASYNC_COMPLETENESS`
-2. **Phase 2**: Per-step faithfulness cross-validation (serial) — `PROMPT_SYNC_PER_STEP_FAITHFULNESS`
-3. **Phase 3**: Safety coverage (arithmetic, not LLM) — `protocol_survives()` from safety_judge_gate
+1. **Phase 1**: Context relevance + Completeness (parallel, LLM) — `PROMPT_ASYNC_CONTEXT_RELEVANCE`, `PROMPT_ASYNC_COMPLETENESS`
+2. **Phase 2**: Safety coverage (arithmetic, no LLM) — `protocol_survives()` from safety_judge_gate
 
 ### Output Schema
 ```python
 ASYNC_METRIC_KEYS = ("context_relevance", "completeness")
 ```
 Each metric: `{score: float|None, reason: str}`
-Plus: `evidence`, `step_verdicts`, `duration_ms`, `safety_coverage`
+Plus: `evidence`, `duration_ms`, `safety_coverage`
 
 ## 6. Safety Evaluator
 
