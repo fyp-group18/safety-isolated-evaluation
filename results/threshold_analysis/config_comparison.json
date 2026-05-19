@@ -1,0 +1,254 @@
+{
+  "f1_optimal": {
+    "verdicts": {
+      "D1": true,
+      "D2": true,
+      "D3": true,
+      "D4": true,
+      "D5": false,
+      "D6": false,
+      "D7": true,
+      "D8": true,
+      "D9": false
+    },
+    "pass_count": 6,
+    "metrics": {
+      "sync_recall": 0.8827,
+      "async_recall": 0.7151,
+      "dual_recall": 0.9497,
+      "sync_precision": 0.6054,
+      "async_precision": 0.5926,
+      "dual_precision": 0.6007,
+      "sync_p95_ms": 2886.3,
+      "kappa": 0.1202,
+      "cell_a": 17,
+      "cell_b": 22,
+      "cell_c": 67,
+      "cell_d": 194,
+      "only_sync": 42,
+      "only_async": 12,
+      "both_caught": 116,
+      "sync_unique_pct": 0.2471,
+      "async_unique_pct": 0.0706,
+      "dual_sync_gap_pp": 6.7,
+      "sync_flags": 261,
+      "async_flags": 216,
+      "dual_flags": 283
+    },
+    "tier_details": {
+      "easy": {
+        "sync": 0.8333333333333334,
+        "async": 0.5714285714285714,
+        "dual": 0.9285714285714286,
+        "pass": true
+      },
+      "medium": {
+        "sync": 0.8452380952380952,
+        "async": 0.6904761904761905,
+        "dual": 0.9404761904761905,
+        "pass": true
+      },
+      "hard": {
+        "sync": 0.9811320754716981,
+        "async": 0.8679245283018868,
+        "dual": 0.9811320754716981,
+        "pass": false
+      }
+    },
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevance": 1.0,
+      "context_relevance": 0.75,
+      "completeness": 0.75
+    }
+  },
+  "asymmetric_cost": {
+    "verdicts": {
+      "D1": true,
+      "D2": true,
+      "D3": true,
+      "D4": true,
+      "D5": false,
+      "D6": false,
+      "D7": true,
+      "D8": true,
+      "D9": false
+    },
+    "pass_count": 6,
+    "metrics": {
+      "sync_recall": 0.8827,
+      "async_recall": 0.7151,
+      "dual_recall": 0.9497,
+      "sync_precision": 0.6054,
+      "async_precision": 0.5926,
+      "dual_precision": 0.6007,
+      "sync_p95_ms": 2886.3,
+      "kappa": 0.1202,
+      "cell_a": 17,
+      "cell_b": 22,
+      "cell_c": 67,
+      "cell_d": 194,
+      "only_sync": 42,
+      "only_async": 12,
+      "both_caught": 116,
+      "sync_unique_pct": 0.2471,
+      "async_unique_pct": 0.0706,
+      "dual_sync_gap_pp": 6.7,
+      "sync_flags": 261,
+      "async_flags": 216,
+      "dual_flags": 283
+    },
+    "tier_details": {
+      "easy": {
+        "sync": 0.8333333333333334,
+        "async": 0.5714285714285714,
+        "dual": 0.9285714285714286,
+        "pass": true
+      },
+      "medium": {
+        "sync": 0.8452380952380952,
+        "async": 0.6904761904761905,
+        "dual": 0.9404761904761905,
+        "pass": true
+      },
+      "hard": {
+        "sync": 0.9811320754716981,
+        "async": 0.8679245283018868,
+        "dual": 0.9811320754716981,
+        "pass": false
+      }
+    },
+    "thresholds": {
+      "faithfulness": 0.9,
+      "answer_relevance": 1.0,
+      "context_relevance": 0.75,
+      "completeness": 0.75
+    }
+  },
+  "production": {
+    "verdicts": {
+      "D1": false,
+      "D2": false,
+      "D3": true,
+      "D4": true,
+      "D5": false,
+      "D6": true,
+      "D7": false,
+      "D8": true,
+      "D9": false
+    },
+    "pass_count": 4,
+    "metrics": {
+      "sync_recall": 0.0056,
+      "async_recall": 0.0279,
+      "dual_recall": 0.0335,
+      "sync_precision": 0.5,
+      "async_precision": 0.7143,
+      "dual_precision": 0.75,
+      "sync_p95_ms": 2886.3,
+      "kappa": 0.2141,
+      "cell_a": 292,
+      "cell_b": 6,
+      "cell_c": 1,
+      "cell_d": 1,
+      "only_sync": 1,
+      "only_async": 5,
+      "both_caught": 0,
+      "sync_unique_pct": 0.1667,
+      "async_unique_pct": 0.8333,
+      "dual_sync_gap_pp": 2.8,
+      "sync_flags": 2,
+      "async_flags": 7,
+      "dual_flags": 8
+    },
+    "tier_details": {
+      "easy": {
+        "sync": 0.0,
+        "async": 0.0,
+        "dual": 0.0,
+        "pass": false
+      },
+      "medium": {
+        "sync": 0.011904761904761904,
+        "async": 0.0,
+        "dual": 0.011904761904761904,
+        "pass": false
+      },
+      "hard": {
+        "sync": 0.0,
+        "async": 0.09433962264150944,
+        "dual": 0.09433962264150944,
+        "pass": true
+      }
+    },
+    "thresholds": {
+      "faithfulness": 0.3,
+      "answer_relevance": 0.15,
+      "context_relevance": 0.3,
+      "completeness": 0.4
+    }
+  },
+  "eval_current": {
+    "verdicts": {
+      "D1": false,
+      "D2": false,
+      "D3": true,
+      "D4": true,
+      "D5": false,
+      "D6": true,
+      "D7": true,
+      "D8": true,
+      "D9": true
+    },
+    "pass_count": 6,
+    "metrics": {
+      "sync_recall": 0.0782,
+      "async_recall": 0.1061,
+      "dual_recall": 0.162,
+      "sync_precision": 0.5833,
+      "async_precision": 0.8636,
+      "dual_precision": 0.725,
+      "sync_p95_ms": 2886.3,
+      "kappa": 0.1996,
+      "cell_a": 260,
+      "cell_b": 16,
+      "cell_c": 18,
+      "cell_d": 6,
+      "only_sync": 10,
+      "only_async": 15,
+      "both_caught": 4,
+      "sync_unique_pct": 0.3448,
+      "async_unique_pct": 0.5172,
+      "dual_sync_gap_pp": 8.4,
+      "sync_flags": 24,
+      "async_flags": 22,
+      "dual_flags": 40
+    },
+    "tier_details": {
+      "easy": {
+        "sync": 0.047619047619047616,
+        "async": 0.047619047619047616,
+        "dual": 0.09523809523809523,
+        "pass": true
+      },
+      "medium": {
+        "sync": 0.09523809523809523,
+        "async": 0.10714285714285714,
+        "dual": 0.16666666666666666,
+        "pass": true
+      },
+      "hard": {
+        "sync": 0.07547169811320754,
+        "async": 0.1509433962264151,
+        "dual": 0.20754716981132076,
+        "pass": true
+      }
+    },
+    "thresholds": {
+      "faithfulness": 0.4,
+      "answer_relevance": 0.3,
+      "context_relevance": 0.5,
+      "completeness": 0.5
+    }
+  }
+}

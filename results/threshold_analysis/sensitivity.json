@@ -1,0 +1,172 @@
+{
+  "per_metric": {
+    "faithfulness": [
+      {
+        "delta": -0.1,
+        "threshold": 0.8,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": -0.05,
+        "threshold": 0.85,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.05,
+        "threshold": 0.95,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.1,
+        "threshold": 1.0,
+        "pass_count": 6,
+        "flipped_goals": []
+      }
+    ],
+    "answer_relevance": [
+      {
+        "delta": -0.1,
+        "threshold": 0.9,
+        "pass_count": 6,
+        "flipped_goals": [
+          {
+            "goal": "D1",
+            "direction": "PASS\u2192FAIL"
+          },
+          {
+            "goal": "D9",
+            "direction": "FAIL\u2192PASS"
+          }
+        ]
+      },
+      {
+        "delta": -0.05,
+        "threshold": 0.95,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.05,
+        "threshold": 1.0,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.1,
+        "threshold": 1.0,
+        "pass_count": 6,
+        "flipped_goals": []
+      }
+    ],
+    "context_relevance": [
+      {
+        "delta": -0.1,
+        "threshold": 0.65,
+        "pass_count": 5,
+        "flipped_goals": [
+          {
+            "goal": "D7",
+            "direction": "PASS\u2192FAIL"
+          }
+        ]
+      },
+      {
+        "delta": -0.05,
+        "threshold": 0.7,
+        "pass_count": 5,
+        "flipped_goals": [
+          {
+            "goal": "D7",
+            "direction": "PASS\u2192FAIL"
+          }
+        ]
+      },
+      {
+        "delta": 0.05,
+        "threshold": 0.8,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.1,
+        "threshold": 0.85,
+        "pass_count": 6,
+        "flipped_goals": []
+      }
+    ],
+    "completeness": [
+      {
+        "delta": -0.1,
+        "threshold": 0.65,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": -0.05,
+        "threshold": 0.7,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.05,
+        "threshold": 0.8,
+        "pass_count": 6,
+        "flipped_goals": []
+      },
+      {
+        "delta": 0.1,
+        "threshold": 0.85,
+        "pass_count": 6,
+        "flipped_goals": []
+      }
+    ]
+  },
+  "goal_robustness": {
+    "D1": {
+      "robust": false,
+      "flips_at": [
+        "answer_relevance -0.1"
+      ]
+    },
+    "D2": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D3": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D4": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D5": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D6": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D7": {
+      "robust": false,
+      "flips_at": [
+        "context_relevance -0.05",
+        "context_relevance -0.1"
+      ]
+    },
+    "D8": {
+      "robust": true,
+      "flips_at": []
+    },
+    "D9": {
+      "robust": false,
+      "flips_at": [
+        "answer_relevance -0.1"
+      ]
+    }
+  }
+}
