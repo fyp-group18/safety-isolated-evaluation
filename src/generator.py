@@ -1,16 +1,39 @@
 import json
 import logging
-import re
 import time
 
-from src.flat_rag import _get_model
+from src.config import MODEL_FLASH
+from src.llm import generate_with_retry
 
 logger = logging.getLogger(__name__)
 
+_PLAN_PROMPT = """\
+You are an aircraft maintenance repair planner. Given a technician's observation and retrieved manual context, generate a detailed repair plan.
 
-def _extract_sentences(text: str) -> list[str]:
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    return [s.strip() for s in sentences if len(s.strip()) > 20]
+OBSERVATION:
+{observation}
+
+RETRIEVED CONTEXT:
+{context}
+
+Generate a JSON repair plan with the following structure:
+{{
+  "repair_steps": [
+    {{"step_id": "s-0", "text": "Detailed actionable repair step..."}},
+    {{"step_id": "s-1", "text": "..."}},
+    ...
+  ],
+  "root_cause": "One-line description of the most likely root cause",
+  "confidence": 0.0
+}}
+
+Rules:
+- Generate 3-8 actionable repair steps based on the context
+- Each step must be grounded in the retrieved context but written in your own words
+- Include specific part numbers, torque values, tools, and procedures from the context where available
+- Steps should be in logical execution order
+- confidence: how well the context supports this plan (0.0-1.0)
+- If the context is insufficient, still provide the best plan possible but set confidence low"""
 
 
 def generate_repair_plan(
@@ -18,34 +41,34 @@ def generate_repair_plan(
     context: str,
     equipment_type: str = "heavy_industrial",
 ) -> dict:
-    """Generate a repair plan by extracting relevant sentences from context.
+    t0 = time.perf_counter()
 
-    Uses embedding similarity to select the most relevant sentences
-    from the retrieved context as repair steps.
-    """
-    model = _get_model()
-    obs_emb = model.encode(observation, normalize_embeddings=True)
+    prompt = _PLAN_PROMPT.format(observation=observation, context=context)
+    raw = generate_with_retry(
+        prompt=prompt,
+        model=MODEL_FLASH,
+        temperature=0.1,
+        response_mime_type="application/json",
+    )
 
-    sentences = _extract_sentences(context)
-    if not sentences:
-        return {"repair_steps": [], "root_cause": "no_context", "confidence": 0.0}
+    if not raw:
+        logger.warning("Plan generation returned None")
+        return {"repair_steps": [], "root_cause": "generation_failed", "confidence": 0.0}
 
-    sent_embs = model.encode(sentences, normalize_embeddings=True)
-    scores = (sent_embs @ obs_emb).tolist()
+    try:
+        plan = json.loads(raw)
+    except json.JSONDecodeError:
+        logger.warning(f"Failed to parse plan JSON: {raw[:200]}")
+        return {"repair_steps": [], "root_cause": "json_parse_failed", "confidence": 0.0}
 
-    ranked = sorted(zip(scores, sentences), reverse=True)
-    top_sentences = ranked[:min(6, len(ranked))]
+    if "repair_steps" not in plan:
+        plan["repair_steps"] = []
+    if "root_cause" not in plan:
+        plan["root_cause"] = "unknown"
+    if "confidence" not in plan:
+        plan["confidence"] = 0.5
 
-    steps = []
-    for i, (score, sent) in enumerate(top_sentences):
-        clean = re.sub(r'\[CHUNK-ID: [^\]]+\]', '', sent).strip()
-        if len(clean) > 15:
-            steps.append({"step_id": f"s-{i}", "text": clean, "score": score})
+    latency_ms = (time.perf_counter() - t0) * 1000
+    logger.debug(f"Plan generated in {latency_ms:.0f}ms with {len(plan['repair_steps'])} steps")
 
-    root_cause = steps[0]["text"][:100] if steps else "unknown"
-
-    return {
-        "repair_steps": steps,
-        "root_cause": root_cause,
-        "confidence": top_sentences[0][0] if top_sentences else 0.0,
-    }
+    return plan

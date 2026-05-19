@@ -1,85 +1,59 @@
 {
-  "n_safety": 43,
-  "n_no_safety": 107,
-  "mean_s1_coverage": 0.5116279069767442,
-  "mean_s2_coverage": 0.3372093023255814,
-  "mean_s3_coverage": 0.06976744186046512,
-  "mean_s1_precision": 0.33925411114193604,
-  "mean_s3_precision": 0.1511627906976744,
-  "mean_s1_recall": 0.8852713178294574,
-  "mean_s2_recall": 0.3810077519379845,
-  "mean_s3_recall": 0.11627906976744186,
-  "s3_extraction_miss": 40,
-  "s3_retrieval_miss": 36,
+  "n_safety": 55,
+  "n_total": 300,
+  "mean_s1_coverage": 0.23636363636363636,
+  "mean_s2_coverage": 0.2636363636363636,
+  "mean_s3_coverage": 0.26666666666666666,
+  "mean_s1_precision": 0.4416225749559083,
+  "mean_s2_precision": 0.3730770464103797,
+  "mean_s3_precision": 0.37243386243386245,
+  "mean_s1_recall": 0.7907407407407407,
+  "mean_s2_recall": 0.4222222222222222,
+  "mean_s3_recall": 0.3703703703703704,
+  "mean_s1_f1": 0.5667305373351885,
+  "mean_s2_f1": 0.39613118182876783,
+  "mean_s3_f1": 0.37139925023677434,
+  "mean_s1_protocols": 5.545454545454546,
+  "mean_s2_protocols": 2.3636363636363638,
+  "mean_s3_protocols": 1.1454545454545455,
+  "s1_ci": [
+    0.23636363636363636,
+    0.12727272727272726,
+    0.34545454545454546
+  ],
+  "s2_ci": [
+    0.2636363636363636,
+    0.15454545454545454,
+    0.3818181818181818
+  ],
+  "s3_ci": [
+    0.26666666666666666,
+    0.1575757575757576,
+    0.38181818181818183
+  ],
   "verdicts": {
     "S1": true,
     "S2": true,
-    "S3": false,
-    "S4": true,
-    "S5": true
+    "S3": false
   },
   "records": [
     {
-      "id": "EVAL-001",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
+      "id": "EVAL-022",
+      "difficulty_tier": "easy",
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 654.4550000107847,
-      "s2_latency_ms": 0.16191700706258416,
-      "s3_latency_ms": 0.03324996214359999,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 15
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 1.0,
-            "recall": 0.5333333333333333,
-            "f1": 0.6956521739130436,
-            "extracted": 8,
-            "gt": 15
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 15
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 15
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-008",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 49.6569579700008,
-      "s2_latency_ms": 0.11249998351559043,
-      "s3_latency_ms": 0.03045896301046014,
+      "s1_latency_ms": 26243.055875005666,
+      "s2_latency_ms": 5078.552041028161,
+      "s3_latency_ms": 3377.831000019796,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 6
+        "HAZARD_WARNING": 3
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
@@ -87,22 +61,22 @@
             "precision": 0.75,
             "recall": 1.0,
             "f1": 0.8571428571428571,
-            "extracted": 8,
-            "gt": 6
+            "extracted": 4,
+            "gt": 3
           },
           "S2": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 6
+            "gt": 3
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 6
+            "gt": 3
           }
         }
       }
@@ -110,116 +84,28 @@
     {
       "id": "EVAL-010",
       "difficulty_tier": "easy",
-      "s1_protocols": 8,
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
+      "s3_confidence": 0.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 66.82495900895447,
-      "s2_latency_ms": 0.11141702998429537,
-      "s3_latency_ms": 0.027375004719942808,
+      "s1_latency_ms": 27021.825750009157,
+      "s2_latency_ms": 5527.82662503887,
+      "s3_latency_ms": 3105.1768750185147,
       "gt_safety_categories": {
         "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.25,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-016",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 30.678040988277644,
-      "s2_latency_ms": 0.4273329977877438,
-      "s3_latency_ms": 0.10687502799555659,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.125,
-            "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-022",
-      "difficulty_tier": "easy",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.465917001478374,
-      "s2_latency_ms": 0.4041669890284538,
-      "s3_latency_ms": 0.09208399569615722,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.125,
-            "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
+            "f1": 0.4,
+            "extracted": 4,
             "gt": 1
           },
           "S2": {
@@ -242,43 +128,87 @@
     {
       "id": "EVAL-023",
       "difficulty_tier": "medium",
-      "s1_protocols": 10,
-      "s2_protocols": 2,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 23.891584016382694,
-      "s2_latency_ms": 0.16245798906311393,
-      "s3_latency_ms": 0.045833003241568804,
+      "s1_latency_ms": 28147.733582998626,
+      "s2_latency_ms": 5118.59920801362,
+      "s3_latency_ms": 4012.4088750453666,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 1
+        "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.1,
-            "recall": 1.0,
-            "f1": 0.18181818181818182,
-            "extracted": 10,
-            "gt": 1
-          },
-          "S2": {
             "precision": 0.5,
             "recall": 1.0,
             "f1": 0.6666666666666666,
-            "extracted": 2,
-            "gt": 1
+            "extracted": 4,
+            "gt": 2
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-008",
+      "difficulty_tier": "medium",
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 28540.49824998947,
+      "s2_latency_ms": 6359.44416699931,
+      "s3_latency_ms": 5609.016667003743,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 2
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 4,
+            "gt": 2
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
           }
         }
       }
@@ -286,131 +216,87 @@
     {
       "id": "EVAL-025",
       "difficulty_tier": "easy",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
+      "s1_protocols": 4,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.5,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.461958007421345,
-      "s2_latency_ms": 0.1407500240020454,
-      "s3_latency_ms": 0.03404199378564954,
+      "s1_latency_ms": 39313.6392920278,
+      "s2_latency_ms": 14851.638250052929,
+      "s3_latency_ms": 3478.471207956318,
       "gt_safety_categories": {
-        "LOTO": 2
+        "LOTO": 1
       },
       "cat_metrics": {
         "LOTO": {
           "S1": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           },
           "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           }
         }
       }
     },
     {
-      "id": "EVAL-030",
+      "id": "EVAL-016",
       "difficulty_tier": "medium",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 32.232416968327016,
-      "s2_latency_ms": 0.14629197539761662,
-      "s3_latency_ms": 0.03083399496972561,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 2
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.2222222222222222,
-            "recall": 1.0,
-            "f1": 0.3636363636363636,
-            "extracted": 9,
-            "gt": 2
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 2
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-031",
-      "difficulty_tier": "easy",
-      "s1_protocols": 15,
+      "s1_protocols": 7,
       "s2_protocols": 7,
-      "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 1.0,
-      "s1_latency_ms": 20.90787497581914,
-      "s2_latency_ms": 0.23083295673131943,
-      "s3_latency_ms": 0.06391701754182577,
+      "s3_protocols": 2,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 26035.098457999993,
+      "s2_latency_ms": 17468.67170796031,
+      "s3_latency_ms": 15704.153375001624,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.13333333333333333,
+            "precision": 0.16666666666666666,
             "recall": 1.0,
-            "f1": 0.23529411764705882,
-            "extracted": 15,
-            "gt": 2
+            "f1": 0.2857142857142857,
+            "extracted": 6,
+            "gt": 1
           },
           "S2": {
-            "precision": 0.2857142857142857,
+            "precision": 0.14285714285714285,
             "recall": 1.0,
-            "f1": 0.4444444444444445,
+            "f1": 0.25,
             "extracted": 7,
-            "gt": 2
+            "gt": 1
           },
           "S3": {
-            "precision": 1.0,
-            "recall": 0.5,
+            "precision": 0.5,
+            "recall": 1.0,
             "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "extracted": 2,
+            "gt": 1
           }
         }
       }
@@ -418,43 +304,43 @@
     {
       "id": "EVAL-033",
       "difficulty_tier": "easy",
-      "s1_protocols": 11,
-      "s2_protocols": 3,
+      "s1_protocols": 4,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 20.999458036385477,
-      "s2_latency_ms": 0.30991696985438466,
-      "s3_latency_ms": 0.08295796578750014,
+      "s1_latency_ms": 20236.63066700101,
+      "s2_latency_ms": 4781.363375019282,
+      "s3_latency_ms": 3850.2372080110945,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 6
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.18181818181818182,
-            "recall": 1.0,
-            "f1": 0.3076923076923077,
-            "extracted": 11,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 3,
+            "gt": 6
           },
           "S2": {
-            "precision": 0.6666666666666666,
-            "recall": 1.0,
-            "f1": 0.8,
-            "extracted": 3,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 6
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 6
           }
         }
       }
@@ -462,43 +348,43 @@
     {
       "id": "EVAL-035",
       "difficulty_tier": "medium",
-      "s1_protocols": 9,
+      "s1_protocols": 6,
       "s2_protocols": 1,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.5,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 22.9122499586083,
-      "s2_latency_ms": 0.18337502842769027,
-      "s3_latency_ms": 0.047208042815327644,
+      "s1_latency_ms": 22066.605583007913,
+      "s2_latency_ms": 6230.619207955897,
+      "s3_latency_ms": 8483.912500028964,
       "gt_safety_categories": {
-        "LOTO": 2
+        "LOTO": 1
       },
       "cat_metrics": {
         "LOTO": {
           "S1": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           },
           "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           }
         }
       }
@@ -506,131 +392,43 @@
     {
       "id": "EVAL-037",
       "difficulty_tier": "hard",
-      "s1_protocols": 12,
-      "s2_protocols": 4,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.129124972503632,
-      "s2_latency_ms": 0.1930830185301602,
-      "s3_latency_ms": 0.04033296136185527,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 4
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.3333333333333333,
-            "recall": 1.0,
-            "f1": 0.5,
-            "extracted": 12,
-            "gt": 4
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 4,
-            "gt": 4
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 4
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-048",
-      "difficulty_tier": "hard",
-      "s1_protocols": 8,
+      "s1_protocols": 6,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.84204204240814,
-      "s2_latency_ms": 0.2639580052345991,
-      "s3_latency_ms": 0.0702079851180315,
+      "s1_latency_ms": 23061.620499996934,
+      "s2_latency_ms": 6348.635542031843,
+      "s3_latency_ms": 3077.510082977824,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 8
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.25,
-            "recall": 1.0,
-            "f1": 0.4,
-            "extracted": 8,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 4,
+            "gt": 8
           },
           "S2": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 8
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-053",
-      "difficulty_tier": "easy",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.5,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 20.668791024945676,
-      "s2_latency_ms": 0.1279159914702177,
-      "s3_latency_ms": 0.03245798870921135,
-      "gt_safety_categories": {
-        "LOTO": 2
-      },
-      "cat_metrics": {
-        "LOTO": {
-          "S1": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 2
+            "gt": 8
           }
         }
       }
@@ -638,43 +436,43 @@
     {
       "id": "EVAL-056",
       "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 20.844832994043827,
-      "s2_latency_ms": 0.13204198330640793,
-      "s3_latency_ms": 0.03129197284579277,
+      "s1_latency_ms": 19190.462916973047,
+      "s2_latency_ms": 3676.9014159799553,
+      "s3_latency_ms": 3383.149333007168,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 1
+        "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.5,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
-            "gt": 1
+            "f1": 0.6666666666666666,
+            "extracted": 4,
+            "gt": 2
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
           }
         }
       }
@@ -682,35 +480,35 @@
     {
       "id": "EVAL-057",
       "difficulty_tier": "hard",
-      "s1_protocols": 13,
-      "s2_protocols": 5,
+      "s1_protocols": 3,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.444792044349015,
-      "s2_latency_ms": 0.18616701709106565,
-      "s3_latency_ms": 0.041207997128367424,
+      "s1_latency_ms": 17847.942458000034,
+      "s2_latency_ms": 3337.061583995819,
+      "s3_latency_ms": 3687.608124979306,
       "gt_safety_categories": {
         "HAZARD_WARNING": 6
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.46153846153846156,
-            "recall": 1.0,
-            "f1": 0.631578947368421,
-            "extracted": 13,
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "extracted": 2,
             "gt": 6
           },
           "S2": {
-            "precision": 1.0,
-            "recall": 0.8333333333333334,
-            "f1": 0.9090909090909091,
-            "extracted": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
             "gt": 6
           },
           "S3": {
@@ -719,6 +517,94 @@
             "f1": 0.0,
             "extracted": 0,
             "gt": 6
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-031",
+      "difficulty_tier": "easy",
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.3333333333333333,
+      "s3_coverage": 0.3333333333333333,
+      "s1_latency_ms": 25889.123291999567,
+      "s2_latency_ms": 11880.643000011332,
+      "s3_latency_ms": 19257.30574998306,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 3
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "extracted": 4,
+            "gt": 3
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "extracted": 1,
+            "gt": 3
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "extracted": 1,
+            "gt": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-053",
+      "difficulty_tier": "easy",
+      "s1_protocols": 6,
+      "s2_protocols": 0,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 23189.335624978412,
+      "s2_latency_ms": 5598.31137501169,
+      "s3_latency_ms": 8634.682292002253,
+      "gt_safety_categories": {
+        "LOTO": 1
+      },
+      "cat_metrics": {
+        "LOTO": {
+          "S1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           }
         }
       }
@@ -726,87 +612,43 @@
     {
       "id": "EVAL-061",
       "difficulty_tier": "medium",
-      "s1_protocols": 13,
-      "s2_protocols": 5,
+      "s1_protocols": 4,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.680124977137893,
-      "s2_latency_ms": 0.1931660226546228,
-      "s3_latency_ms": 0.040082959458231926,
+      "s1_latency_ms": 19545.634416048415,
+      "s2_latency_ms": 4807.985417020973,
+      "s3_latency_ms": 2869.8795000091195,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 1
+        "HAZARD_WARNING": 8
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.07692307692307693,
-            "recall": 1.0,
-            "f1": 0.14285714285714288,
-            "extracted": 13,
-            "gt": 1
+            "precision": 1.0,
+            "recall": 0.375,
+            "f1": 0.5454545454545454,
+            "extracted": 3,
+            "gt": 8
           },
           "S2": {
-            "precision": 0.2,
-            "recall": 1.0,
-            "f1": 0.33333333333333337,
-            "extracted": 5,
-            "gt": 1
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 8
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-063",
-      "difficulty_tier": "easy",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 22.21845800522715,
-      "s2_latency_ms": 0.19816699204966426,
-      "s3_latency_ms": 0.05766696995124221,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.1111111111111111,
-            "recall": 1.0,
-            "f1": 0.19999999999999998,
-            "extracted": 9,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 1,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 1,
-            "gt": 1
+            "gt": 8
           }
         }
       }
@@ -814,43 +656,131 @@
     {
       "id": "EVAL-065",
       "difficulty_tier": "medium",
-      "s1_protocols": 12,
-      "s2_protocols": 4,
+      "s1_protocols": 4,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.689167013391852,
-      "s2_latency_ms": 0.16541697550565004,
-      "s3_latency_ms": 0.037375022657215595,
+      "s1_latency_ms": 27290.20300001139,
+      "s2_latency_ms": 3924.110333027784,
+      "s3_latency_ms": 7067.0467499876395,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 4
+        "HAZARD_WARNING": 6
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.3333333333333333,
-            "recall": 1.0,
-            "f1": 0.5,
-            "extracted": 12,
-            "gt": 4
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 3,
+            "gt": 6
           },
           "S2": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 4,
-            "gt": 4
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 6
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 4
+            "gt": 6
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-063",
+      "difficulty_tier": "easy",
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 24866.77287501516,
+      "s2_latency_ms": 7285.834250040352,
+      "s3_latency_ms": 19231.440208037384,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-093",
+      "difficulty_tier": "hard",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 24845.32462497009,
+      "s2_latency_ms": 4171.970833966043,
+      "s3_latency_ms": 2940.9837090061046,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
           }
         }
       }
@@ -859,42 +789,42 @@
       "id": "EVAL-090",
       "difficulty_tier": "medium",
       "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.691792004276067,
-      "s2_latency_ms": 0.14399999054148793,
-      "s3_latency_ms": 0.030959025025367737,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 23974.74154102383,
+      "s2_latency_ms": 8244.653458998073,
+      "s3_latency_ms": 5036.395250004716,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 5
+        "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.625,
+            "precision": 0.14285714285714285,
             "recall": 1.0,
-            "f1": 0.7692307692307693,
-            "extracted": 8,
-            "gt": 5
+            "f1": 0.25,
+            "extracted": 7,
+            "gt": 1
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 5
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 5
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
           }
         }
       }
@@ -902,87 +832,43 @@
     {
       "id": "EVAL-092",
       "difficulty_tier": "medium",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_protocols": 8,
+      "s2_protocols": 2,
+      "s3_protocols": 2,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.5,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.056832978501916,
-      "s2_latency_ms": 0.12445898028090596,
-      "s3_latency_ms": 0.02962502185255289,
+      "s1_latency_ms": 32297.434834006708,
+      "s2_latency_ms": 7513.931124994997,
+      "s3_latency_ms": 6298.8119589863345,
       "gt_safety_categories": {
         "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.2222222222222222,
+            "precision": 0.2857142857142857,
             "recall": 1.0,
-            "f1": 0.3636363636363636,
-            "extracted": 9,
+            "f1": 0.4444444444444445,
+            "extracted": 7,
             "gt": 2
           },
           "S2": {
             "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 2
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-093",
-      "difficulty_tier": "hard",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 20.934792002663016,
-      "s2_latency_ms": 0.12337497901171446,
-      "s3_latency_ms": 0.02724997466430068,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 4
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.5,
             "recall": 1.0,
-            "f1": 0.6666666666666666,
-            "extracted": 8,
-            "gt": 4
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 4
+            "f1": 1.0,
+            "extracted": 2,
+            "gt": 2
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 4
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 2,
+            "gt": 2
           }
         }
       }
@@ -990,35 +876,35 @@
     {
       "id": "EVAL-094",
       "difficulty_tier": "hard",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
+      "s1_protocols": 4,
+      "s2_protocols": 10,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.379749989137053,
-      "s2_latency_ms": 0.13158295769244432,
-      "s3_latency_ms": 0.030875031370669603,
+      "s1_latency_ms": 31120.724375010468,
+      "s2_latency_ms": 14061.00362498546,
+      "s3_latency_ms": 5803.261165972799,
       "gt_safety_categories": {
         "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.25,
+            "precision": 0.6666666666666666,
             "recall": 1.0,
-            "f1": 0.4,
-            "extracted": 8,
+            "f1": 0.8,
+            "extracted": 3,
             "gt": 2
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337,
+            "extracted": 10,
             "gt": 2
           },
           "S3": {
@@ -1034,20 +920,20 @@
     {
       "id": "EVAL-095",
       "difficulty_tier": "easy",
-      "s1_protocols": 8,
+      "s1_protocols": 4,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.00645797327161,
-      "s2_latency_ms": 0.30275003518909216,
-      "s3_latency_ms": 0.07300003198906779,
+      "s1_latency_ms": 21039.070042024832,
+      "s2_latency_ms": 3708.0310419551097,
+      "s3_latency_ms": 3844.8904589749873,
       "gt_safety_categories": {
-        "LOTO": 2
+        "LOTO": 1
       },
       "cat_metrics": {
         "LOTO": {
@@ -1056,21 +942,21 @@
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           },
           "S2": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           }
         }
       }
@@ -1078,64 +964,20 @@
     {
       "id": "EVAL-096",
       "difficulty_tier": "medium",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.5,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.825040981639177,
-      "s2_latency_ms": 0.1332910032942891,
-      "s3_latency_ms": 0.03158301115036011,
-      "gt_safety_categories": {
-        "LOTO": 2
-      },
-      "cat_metrics": {
-        "LOTO": {
-          "S1": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 2
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-098",
-      "difficulty_tier": "easy",
-      "s1_protocols": 8,
+      "s1_protocols": 6,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 0.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.6262920293957,
-      "s2_latency_ms": 0.3940000315196812,
-      "s3_latency_ms": 0.09895797120407224,
+      "s1_latency_ms": 22535.0655419752,
+      "s2_latency_ms": 7230.433541990351,
+      "s3_latency_ms": 4197.89591699373,
       "gt_safety_categories": {
-        "LOTO": 2
+        "LOTO": 1
       },
       "cat_metrics": {
         "LOTO": {
@@ -1144,21 +986,21 @@
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           },
           "S2": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 1
           }
         }
       }
@@ -1166,28 +1008,72 @@
     {
       "id": "EVAL-103",
       "difficulty_tier": "hard",
-      "s1_protocols": 8,
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.465874975547194,
-      "s2_latency_ms": 0.11379201896488667,
-      "s3_latency_ms": 0.026833033189177513,
+      "s1_latency_ms": 25913.72562502511,
+      "s2_latency_ms": 2028.8827089825645,
+      "s3_latency_ms": 3550.1949999597855,
       "gt_safety_categories": {
         "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.25,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-098",
+      "difficulty_tier": "easy",
+      "s1_protocols": 5,
+      "s2_protocols": 2,
+      "s3_protocols": 2,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 0.9,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 26210.365875042044,
+      "s2_latency_ms": 5865.556875010952,
+      "s3_latency_ms": 7120.911082951352,
+      "gt_safety_categories": {
+        "LOTO": 1
+      },
+      "cat_metrics": {
+        "LOTO": {
+          "S1": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
             "gt": 1
           },
           "S2": {
@@ -1210,43 +1096,43 @@
     {
       "id": "EVAL-104",
       "difficulty_tier": "medium",
-      "s1_protocols": 16,
-      "s2_protocols": 8,
-      "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 1.0,
-      "s1_latency_ms": 32.65604097396135,
-      "s2_latency_ms": 0.26175001403316855,
-      "s3_latency_ms": 0.0659169745631516,
+      "s1_protocols": 4,
+      "s2_protocols": 1,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.3333333333333333,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 23062.89724999806,
+      "s2_latency_ms": 9272.526040964294,
+      "s3_latency_ms": 13516.198124969378,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 3
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 1.0,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 16,
-            "gt": 2
+            "f1": 1.0,
+            "extracted": 3,
+            "gt": 3
           },
           "S2": {
-            "precision": 0.25,
-            "recall": 1.0,
-            "f1": 0.4,
-            "extracted": 8,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "extracted": 1,
+            "gt": 3
           },
           "S3": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 3
           }
         }
       }
@@ -1254,43 +1140,43 @@
     {
       "id": "EVAL-105",
       "difficulty_tier": "easy",
-      "s1_protocols": 17,
-      "s2_protocols": 9,
+      "s1_protocols": 3,
+      "s2_protocols": 1,
       "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 1.0,
-      "s1_latency_ms": 21.86625002650544,
-      "s2_latency_ms": 0.2537919790484011,
-      "s3_latency_ms": 0.06249995203688741,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.3333333333333333,
+      "s3_coverage": 0.3333333333333333,
+      "s1_latency_ms": 19936.473208013922,
+      "s2_latency_ms": 7262.598833010998,
+      "s3_latency_ms": 7164.181915984955,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 3
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.11764705882352941,
-            "recall": 1.0,
-            "f1": 0.21052631578947367,
-            "extracted": 17,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "extracted": 2,
+            "gt": 3
           },
           "S2": {
-            "precision": 0.2222222222222222,
-            "recall": 1.0,
-            "f1": 0.3636363636363636,
-            "extracted": 9,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "extracted": 1,
+            "gt": 3
           },
           "S3": {
             "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
             "extracted": 1,
-            "gt": 2
+            "gt": 3
           }
         }
       }
@@ -1298,175 +1184,43 @@
     {
       "id": "EVAL-106",
       "difficulty_tier": "hard",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
+      "s1_protocols": 8,
+      "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
+      "s1_confidence": 0.0,
+      "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.06408402323723,
-      "s2_latency_ms": 0.22070796694606543,
-      "s3_latency_ms": 0.05662499461323023,
+      "s1_latency_ms": 32530.699290975463,
+      "s2_latency_ms": 4311.400290986057,
+      "s3_latency_ms": 3030.4043750511482,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 4
+        "HAZARD_WARNING": 8
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.4444444444444444,
-            "recall": 1.0,
-            "f1": 0.6153846153846153,
-            "extracted": 9,
-            "gt": 4
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "extracted": 7,
+            "gt": 8
           },
           "S2": {
-            "precision": 1.0,
-            "recall": 0.25,
-            "f1": 0.4,
-            "extracted": 1,
-            "gt": 4
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 8
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 4
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-114",
-      "difficulty_tier": "hard",
-      "s1_protocols": 12,
-      "s2_protocols": 4,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 1.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.89816697500646,
-      "s2_latency_ms": 0.3231249866075814,
-      "s3_latency_ms": 0.06637501064687967,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 5
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.4166666666666667,
-            "recall": 1.0,
-            "f1": 0.5882352941176471,
-            "extracted": 12,
-            "gt": 5
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 0.8,
-            "f1": 0.888888888888889,
-            "extracted": 4,
-            "gt": 5
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 5
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-115",
-      "difficulty_tier": "hard",
-      "s1_protocols": 10,
-      "s2_protocols": 2,
-      "s3_protocols": 2,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.580375032499433,
-      "s2_latency_ms": 0.26545801665633917,
-      "s3_latency_ms": 0.07504102541133761,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.1,
-            "recall": 1.0,
-            "f1": 0.18181818181818182,
-            "extracted": 10,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 0.5,
-            "recall": 1.0,
-            "f1": 0.6666666666666666,
-            "extracted": 2,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 0.5,
-            "recall": 1.0,
-            "f1": 0.6666666666666666,
-            "extracted": 2,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-118",
-      "difficulty_tier": "medium",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.1672080331482,
-      "s2_latency_ms": 0.19795895786955953,
-      "s3_latency_ms": 0.0511660473421216,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 2
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.2222222222222222,
-            "recall": 1.0,
-            "f1": 0.3636363636363636,
-            "extracted": 9,
-            "gt": 2
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
-          },
-          "S3": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "f1": 0.6666666666666666,
-            "extracted": 1,
-            "gt": 2
+            "gt": 8
           }
         }
       }
@@ -1474,131 +1228,131 @@
     {
       "id": "EVAL-122",
       "difficulty_tier": "hard",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.194125001784414,
-      "s2_latency_ms": 0.12462498852983117,
-      "s3_latency_ms": 0.03004202153533697,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 18314.793917001225,
+      "s2_latency_ms": 3556.9027919555083,
+      "s3_latency_ms": 3789.7981249843724,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 5
+        "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.625,
+            "precision": 0.25,
             "recall": 1.0,
-            "f1": 0.7692307692307693,
-            "extracted": 8,
-            "gt": 5
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 5
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 5
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
           }
         }
       }
     },
     {
-      "id": "EVAL-123",
+      "id": "EVAL-115",
       "difficulty_tier": "hard",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_protocols": 7,
+      "s2_protocols": 2,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.49783301865682,
-      "s2_latency_ms": 0.1267909538000822,
-      "s3_latency_ms": 0.02962502185255289,
+      "s1_latency_ms": 32160.32450000057,
+      "s2_latency_ms": 5238.991625024937,
+      "s3_latency_ms": 2444.811249966733,
       "gt_safety_categories": {
         "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.25,
+            "precision": 0.4,
             "recall": 1.0,
-            "f1": 0.4,
-            "extracted": 8,
+            "f1": 0.5714285714285715,
+            "extracted": 5,
             "gt": 2
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 2,
             "gt": 2
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
             "gt": 2
           }
         }
       }
     },
     {
-      "id": "EVAL-124",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
+      "id": "EVAL-114",
+      "difficulty_tier": "hard",
+      "s1_protocols": 6,
+      "s2_protocols": 3,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 0.9,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
+      "s2_coverage": 0.5,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.767458005342633,
-      "s2_latency_ms": 0.24533300893381238,
-      "s3_latency_ms": 0.058125006034970284,
+      "s1_latency_ms": 25847.267417004332,
+      "s2_latency_ms": 12003.474208002444,
+      "s3_latency_ms": 5205.658792052418,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 2
+        "HAZARD_WARNING": 6
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.25,
-            "recall": 1.0,
-            "f1": 0.4,
-            "extracted": 8,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091,
+            "extracted": 5,
+            "gt": 6
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 2
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 3,
+            "gt": 6
           },
           "S3": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
             "extracted": 0,
-            "gt": 2
+            "gt": 6
           }
         }
       }
@@ -1606,152 +1360,20 @@
     {
       "id": "EVAL-125",
       "difficulty_tier": "medium",
-      "s1_protocols": 8,
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.49945800192654,
-      "s2_latency_ms": 0.137166993226856,
-      "s3_latency_ms": 0.028499984182417393,
+      "s1_latency_ms": 24668.465665949043,
+      "s2_latency_ms": 1712.3501250171103,
+      "s3_latency_ms": 2483.063374995254,
       "gt_safety_categories": {
         "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.125,
-            "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-127",
-      "difficulty_tier": "hard",
-      "s1_protocols": 9,
-      "s2_protocols": 1,
-      "s3_protocols": 1,
-      "s1_confidence": 0.9,
-      "s2_confidence": 0.7,
-      "s3_confidence": 0.5,
-      "s1_coverage": 0.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.1494590039365,
-      "s2_latency_ms": 0.13329199282452464,
-      "s3_latency_ms": 0.04683295264840126,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 1
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 0.1111111111111111,
-            "recall": 1.0,
-            "f1": 0.19999999999999998,
-            "extracted": 9,
-            "gt": 1
-          },
-          "S2": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 1,
-            "gt": 1
-          },
-          "S3": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1": 1.0,
-            "extracted": 1,
-            "gt": 1
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-130",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.69708302244544,
-      "s2_latency_ms": 0.2532079815864563,
-      "s3_latency_ms": 0.0594580196775496,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 15
-      },
-      "cat_metrics": {
-        "HAZARD_WARNING": {
-          "S1": {
-            "precision": 1.0,
-            "recall": 0.5333333333333333,
-            "f1": 0.6956521739130436,
-            "extracted": 8,
-            "gt": 15
-          },
-          "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 15
-          },
-          "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 15
-          }
-        }
-      }
-    },
-    {
-      "id": "EVAL-138",
-      "difficulty_tier": "hard",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
-      "s2_confidence": 1.0,
-      "s3_confidence": 1.0,
-      "s1_coverage": 0.5,
-      "s2_coverage": 0.0,
-      "s3_coverage": 0.0,
-      "s1_latency_ms": 21.457209018990397,
-      "s2_latency_ms": 0.11837499914690852,
-      "s3_latency_ms": 0.029708025977015495,
-      "gt_safety_categories": {
-        "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
@@ -1759,7 +1381,51 @@
             "precision": 0.25,
             "recall": 1.0,
             "f1": 0.4,
-            "extracted": 8,
+            "extracted": 4,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-123",
+      "difficulty_tier": "hard",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 25335.90741700027,
+      "s2_latency_ms": 3213.4530839975923,
+      "s3_latency_ms": 2384.6014169976115,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 2
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 4,
             "gt": 2
           },
           "S2": {
@@ -1780,45 +1446,89 @@
       }
     },
     {
-      "id": "EVAL-142",
-      "difficulty_tier": "medium",
-      "s1_protocols": 8,
-      "s2_protocols": 0,
-      "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "id": "EVAL-138",
+      "difficulty_tier": "hard",
+      "s1_protocols": 4,
+      "s2_protocols": 3,
+      "s3_protocols": 1,
+      "s1_confidence": 0.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.780374983791262,
-      "s2_latency_ms": 0.30016701202839613,
-      "s3_latency_ms": 0.07695803651586175,
+      "s1_latency_ms": 18721.742291992996,
+      "s2_latency_ms": 11366.336625011172,
+      "s3_latency_ms": 4712.002209038474,
       "gt_safety_categories": {
-        "HAZARD_WARNING": 1
+        "HAZARD_WARNING": 2
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.6666666666666666,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
-            "gt": 1
+            "f1": 0.8,
+            "extracted": 3,
+            "gt": 2
           },
           "S2": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "extracted": 3,
+            "gt": 2
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
-            "gt": 1
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-127",
+      "difficulty_tier": "hard",
+      "s1_protocols": 7,
+      "s2_protocols": 2,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 28105.471040995326,
+      "s2_latency_ms": 7990.616708993912,
+      "s3_latency_ms": 4821.133208984975,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 2
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "extracted": 6,
+            "gt": 2
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 2,
+            "gt": 2
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "extracted": 1,
+            "gt": 2
           }
         }
       }
@@ -1826,28 +1536,28 @@
     {
       "id": "EVAL-143",
       "difficulty_tier": "hard",
-      "s1_protocols": 8,
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
       "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.536124986596406,
-      "s2_latency_ms": 0.10658300016075373,
-      "s3_latency_ms": 0.025166955310851336,
+      "s1_latency_ms": 23587.599624996074,
+      "s2_latency_ms": 3208.058791991789,
+      "s3_latency_ms": 3485.007375013083,
       "gt_safety_categories": {
         "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.25,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
+            "f1": 0.4,
+            "extracted": 4,
             "gt": 1
           },
           "S2": {
@@ -1870,28 +1580,302 @@
     {
       "id": "EVAL-145",
       "difficulty_tier": "medium",
-      "s1_protocols": 8,
+      "s1_protocols": 5,
       "s2_protocols": 0,
       "s3_protocols": 0,
-      "s1_confidence": 0.9,
+      "s1_confidence": 1.0,
       "s2_confidence": 1.0,
       "s3_confidence": 1.0,
-      "s1_coverage": 1.0,
+      "s1_coverage": 0.0,
       "s2_coverage": 0.0,
       "s3_coverage": 0.0,
-      "s1_latency_ms": 21.30883402423933,
-      "s2_latency_ms": 0.19749999046325684,
-      "s3_latency_ms": 0.05220796447247267,
+      "s1_latency_ms": 24818.794166028965,
+      "s2_latency_ms": 4552.047749981284,
+      "s3_latency_ms": 3791.18204198312,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 3
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571,
+            "extracted": 4,
+            "gt": 3
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 3
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-142",
+      "difficulty_tier": "medium",
+      "s1_protocols": 7,
+      "s2_protocols": 9,
+      "s3_protocols": 3,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 23135.5174590135,
+      "s2_latency_ms": 14946.883749973495,
+      "s3_latency_ms": 13105.263959034346,
       "gt_safety_categories": {
         "HAZARD_WARNING": 1
       },
       "cat_metrics": {
         "HAZARD_WARNING": {
           "S1": {
-            "precision": 0.125,
+            "precision": 0.2,
             "recall": 1.0,
-            "f1": 0.2222222222222222,
-            "extracted": 8,
+            "f1": 0.33333333333333337,
+            "extracted": 5,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.1111111111111111,
+            "recall": 1.0,
+            "f1": 0.19999999999999998,
+            "extracted": 9,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "extracted": 3,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-029",
+      "difficulty_tier": "medium",
+      "s1_protocols": 7,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 18208.68799998425,
+      "s2_latency_ms": 4661.827665986493,
+      "s3_latency_ms": 5067.767540982459,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-007",
+      "difficulty_tier": "medium",
+      "s1_protocols": 6,
+      "s2_protocols": 11,
+      "s3_protocols": 5,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 23406.593874969985,
+      "s2_latency_ms": 19453.045708010904,
+      "s3_latency_ms": 13027.299750014208,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337,
+            "extracted": 5,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.09090909090909091,
+            "recall": 1.0,
+            "f1": 0.16666666666666669,
+            "extracted": 11,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337,
+            "extracted": 5,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-039",
+      "difficulty_tier": "medium",
+      "s1_protocols": 5,
+      "s2_protocols": 9,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 22769.191208004486,
+      "s2_latency_ms": 14658.477082964964,
+      "s3_latency_ms": 7152.215833019,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-032",
+      "difficulty_tier": "medium",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 24907.89750003023,
+      "s2_latency_ms": 3670.512208947912,
+      "s3_latency_ms": 26699.437666975427,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-071",
+      "difficulty_tier": "easy",
+      "s1_protocols": 7,
+      "s2_protocols": 2,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 24218.08579203207,
+      "s2_latency_ms": 6489.054707984906,
+      "s3_latency_ms": 4200.167917006183,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337,
+            "extracted": 5,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 2,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-042",
+      "difficulty_tier": "medium",
+      "s1_protocols": 5,
+      "s2_protocols": 1,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 0.9,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 24072.69137498224,
+      "s2_latency_ms": 4695.075750001706,
+      "s3_latency_ms": 16074.40233399393,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-052",
+      "difficulty_tier": "medium",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 1,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 22724.436666001566,
+      "s2_latency_ms": 4100.607124972157,
+      "s3_latency_ms": 17379.359040991403,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "extracted": 4,
             "gt": 1
           },
           "S2": {
@@ -1902,14 +1886,316 @@
             "gt": 1
           },
           "S3": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0,
-            "extracted": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "extracted": 1,
             "gt": 1
           }
         }
       }
+    },
+    {
+      "id": "EVAL-PROSE-113",
+      "difficulty_tier": "hard",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 24053.977625037078,
+      "s2_latency_ms": 3684.3292079865932,
+      "s3_latency_ms": 3620.1957499724813,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 2
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 4,
+            "gt": 2
+          },
+          "S2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 2
+          },
+          "S3": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "extracted": 0,
+            "gt": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-111",
+      "difficulty_tier": "hard",
+      "s1_protocols": 4,
+      "s2_protocols": 2,
+      "s3_protocols": 5,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 25071.033000014722,
+      "s2_latency_ms": 5627.2646660218015,
+      "s3_latency_ms": 19977.056249976158,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "extracted": 3,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 2,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "extracted": 4,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-129",
+      "difficulty_tier": "medium",
+      "s1_protocols": 9,
+      "s2_protocols": 6,
+      "s3_protocols": 6,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 25039.669874997344,
+      "s2_latency_ms": 12398.333707998972,
+      "s3_latency_ms": 12393.42375000706,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-133",
+      "difficulty_tier": "medium",
+      "s1_protocols": 7,
+      "s2_protocols": 2,
+      "s3_protocols": 3,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 0.0,
+      "s2_coverage": 0.0,
+      "s3_coverage": 0.0,
+      "s1_latency_ms": 22127.60737503413,
+      "s2_latency_ms": 6227.440124959685,
+      "s3_latency_ms": 17717.375875043217,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857,
+            "extracted": 6,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "extracted": 2,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "extracted": 3,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-131",
+      "difficulty_tier": "easy",
+      "s1_protocols": 6,
+      "s2_protocols": 12,
+      "s3_protocols": 5,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 25453.69374996517,
+      "s2_latency_ms": 11977.495459024794,
+      "s3_latency_ms": 15976.473541988526,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-139",
+      "difficulty_tier": "easy",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 24457.672916993033,
+      "s2_latency_ms": 7505.15879195882,
+      "s3_latency_ms": 3723.890624998603,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-136",
+      "difficulty_tier": "medium",
+      "s1_protocols": 7,
+      "s2_protocols": 16,
+      "s3_protocols": 4,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 19877.753250009846,
+      "s2_latency_ms": 27998.546125018038,
+      "s3_latency_ms": 13106.640292040538,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-145",
+      "difficulty_tier": "hard",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 23777.050458011217,
+      "s2_latency_ms": 4943.302500003483,
+      "s3_latency_ms": 6721.625874983147,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-147",
+      "difficulty_tier": "hard",
+      "s1_protocols": 5,
+      "s2_protocols": 0,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 23704.150500008836,
+      "s2_latency_ms": 3523.679332982283,
+      "s3_latency_ms": 3172.2588330158032,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
+    },
+    {
+      "id": "EVAL-PROSE-146",
+      "difficulty_tier": "easy",
+      "s1_protocols": 10,
+      "s2_protocols": 13,
+      "s3_protocols": 7,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 1.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 33580.19133401103,
+      "s2_latency_ms": 20594.536707969382,
+      "s3_latency_ms": 26203.35216698004,
+      "gt_safety_categories": {
+        "HAZARD_WARNING": 1
+      },
+      "cat_metrics": {
+        "HAZARD_WARNING": {
+          "S1": {
+            "precision": 0.1111111111111111,
+            "recall": 1.0,
+            "f1": 0.19999999999999998,
+            "extracted": 9,
+            "gt": 1
+          },
+          "S2": {
+            "precision": 0.07692307692307693,
+            "recall": 1.0,
+            "f1": 0.14285714285714288,
+            "extracted": 13,
+            "gt": 1
+          },
+          "S3": {
+            "precision": 0.14285714285714285,
+            "recall": 1.0,
+            "f1": 0.25,
+            "extracted": 7,
+            "gt": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "EVAL-PROSE-126",
+      "difficulty_tier": "easy",
+      "s1_protocols": 7,
+      "s2_protocols": 5,
+      "s3_protocols": 0,
+      "s1_confidence": 1.0,
+      "s2_confidence": 1.0,
+      "s3_confidence": 0.0,
+      "s1_coverage": 1.0,
+      "s2_coverage": 1.0,
+      "s3_coverage": 1.0,
+      "s1_latency_ms": 23160.70754203247,
+      "s2_latency_ms": 13384.812083968427,
+      "s3_latency_ms": 252154.00758298347,
+      "gt_safety_categories": {},
+      "cat_metrics": {}
     }
   ]
 }
