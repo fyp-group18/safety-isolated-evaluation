@@ -1,8 +1,9 @@
+import json
 import logging
-import re
 import time
 
-from src.flat_rag import _get_model
+from src.config import MODEL_FLASH_LITE
+from src.llm import generate_with_retry
 from src.schemas import StepVerdict, SyncGateResult
 
 logger = logging.getLogger(__name__)
@@ -13,37 +14,31 @@ BADGE_THRESHOLDS = {
     "max_unfaithful_step_pct": 0.3,
 }
 
+_SYNC_EVAL_PROMPT = """\
+Evaluate this repair plan for faithfulness to the source context and relevance to the question.
 
-def _normalize(text: str) -> str:
-    return re.sub(r"[^\w\s]", " ", text.lower())
+QUESTION: {question}
 
+SOURCE CONTEXT:
+{context}
 
-def _ngram_overlap(text_a: str, text_b: str, n: int = 3) -> float:
-    """Compute n-gram overlap ratio between two texts."""
-    words_a = _normalize(text_a).split()
-    words_b = _normalize(text_b).split()
-    if len(words_a) < n or len(words_b) < n:
-        word_set_a = set(words_a)
-        word_set_b = set(words_b)
-        if not word_set_a:
-            return 0.0
-        return len(word_set_a & word_set_b) / len(word_set_a)
+REPAIR PLAN STEPS:
+{steps}
 
-    ngrams_a = set(tuple(words_a[i:i+n]) for i in range(len(words_a) - n + 1))
-    ngrams_b = set(tuple(words_b[i:i+n]) for i in range(len(words_b) - n + 1))
-    if not ngrams_a:
-        return 0.0
-    return len(ngrams_a & ngrams_b) / len(ngrams_a)
+For EACH step, determine:
+1. faithful: Can this step be verified from the source context? (true/false)
+2. grounding_label: One of "verbatim" (exact or near-exact match), "paraphrased" (same meaning, different wording), "synthesized" (reasonable inference from context), "ungrounded" (not supported by context)
+3. reason: Brief explanation (one sentence)
 
+Also rate overall answer_relevance: How well does this repair plan address the original question? (0.0-1.0)
 
-def _classify_grounding(overlap: float) -> str:
-    if overlap >= 0.6:
-        return "verbatim"
-    elif overlap >= 0.3:
-        return "paraphrased"
-    elif overlap >= 0.1:
-        return "synthesized"
-    return "ungrounded"
+Return JSON:
+{{
+  "step_verdicts": [
+    {{"step_id": "s-0", "faithful": true, "grounding_label": "paraphrased", "reason": "Step matches procedure in context paragraph 2"}}
+  ],
+  "answer_relevance": 0.85
+}}"""
 
 
 def compute_quality_badge(
@@ -84,47 +79,71 @@ def evaluate_sync(
     context: str,
     chunk_ids: list[str] | None = None,
 ) -> SyncGateResult:
-    """Evaluate sync gate using n-gram overlap and embedding similarity.
-
-    Faithfulness: n-gram overlap between each step and the context.
-    Answer relevance: cosine similarity between question and plan text.
-    """
     t0 = time.perf_counter()
-    model = _get_model()
 
     steps = repair_plan.get("repair_steps", [])
+    if not steps:
+        latency_ms = (time.perf_counter() - t0) * 1000
+        return SyncGateResult(
+            passed=False,
+            faithfulness_score=0.0,
+            answer_relevance_score=0.0,
+            badge="red",
+            step_verdicts=[],
+            latency_ms=latency_ms,
+            reasoning="no_steps",
+        )
+
+    steps_formatted = "\n".join(
+        f"  {s.get('step_id', f's-{i}')}: {s.get('text', str(s))}"
+        for i, s in enumerate(steps)
+    )
+
+    prompt = _SYNC_EVAL_PROMPT.format(
+        question=question,
+        context=context,
+        steps=steps_formatted,
+    )
+
+    raw = generate_with_retry(
+        prompt=prompt,
+        model=MODEL_FLASH_LITE,
+        temperature=0.0,
+        response_mime_type="application/json",
+    )
+
     step_verdicts = []
+    answer_relevance_score = None
 
-    for s in steps:
-        step_text = s.get("text", "") if isinstance(s, dict) else str(s)
-        sid = s.get("step_id", "") if isinstance(s, dict) else ""
+    if raw:
+        try:
+            result = json.loads(raw)
+            answer_relevance_score = float(result.get("answer_relevance", 0.5))
 
-        overlap = _ngram_overlap(step_text, context)
-        faithful = overlap >= 0.1
-        label = _classify_grounding(overlap)
+            for v in result.get("step_verdicts", []):
+                step_verdicts.append(StepVerdict(
+                    step_id=v.get("step_id", ""),
+                    faithful=bool(v.get("faithful", False)),
+                    reason=v.get("reason", ""),
+                    source_chunk_ids=[],
+                    grounding_label=v.get("grounding_label", "ungrounded"),
+                ))
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            logger.warning(f"Sync gate JSON parse error: {e}")
 
-        step_verdicts.append(StepVerdict(
-            step_id=sid,
-            faithful=faithful,
-            reason=f"ngram_overlap={overlap:.2f}",
-            source_chunk_ids=[],
-            grounding_label=label,
-        ))
+    if not step_verdicts:
+        for i, s in enumerate(steps):
+            step_verdicts.append(StepVerdict(
+                step_id=s.get("step_id", f"s-{i}") if isinstance(s, dict) else f"s-{i}",
+                faithful=False,
+                reason="llm_parse_failed",
+                source_chunk_ids=[],
+                grounding_label="ungrounded",
+            ))
 
     total_steps = len(step_verdicts)
     faithful_steps = sum(1 for v in step_verdicts if v.faithful)
-    faithfulness_score = faithful_steps / total_steps if total_steps > 0 else None
-
-    # Answer relevance via embedding cosine similarity
-    plan_text = " ".join(
-        s.get("text", str(s)) if isinstance(s, dict) else str(s)
-        for s in steps
-    )
-    if plan_text and question:
-        embs = model.encode([question, plan_text], normalize_embeddings=True)
-        answer_relevance_score = float(embs[0] @ embs[1])
-    else:
-        answer_relevance_score = None
+    faithfulness_score = faithful_steps / total_steps if total_steps > 0 else 0.0
 
     badge = compute_quality_badge(
         faithfulness_score,
@@ -142,5 +161,5 @@ def evaluate_sync(
         badge=badge,
         step_verdicts=step_verdicts,
         latency_ms=latency_ms,
-        reasoning=f"ngram_faithfulness={faithfulness_score}, emb_relevance={answer_relevance_score}",
+        reasoning=f"llm_faithfulness={faithfulness_score:.2f}, llm_relevance={answer_relevance_score}",
     )

@@ -9,7 +9,7 @@
     "rationale": "Technician describes repeated failure to crank with no engine response. This maps to SC10000AMM 6.3.10 'Engine does not start'. Multiple probable causes from the table could apply \u2014 the technician suspects battery despite overnight charging, but fouled spark plugs, incorrect starter adjustment, or insufficient fuel are also candidates from the same troubleshooting entry.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "f87c946a-899b-4ff1-90c5-0741e822df9f",
+    "ground_truth_chunk_id": "59094173-d746-40b9-9df0-d1cf1da59a9c",
     "origin": "table"
   },
   {
@@ -22,7 +22,7 @@
     "rationale": "Zero RPM display with engine running maps directly to AS-AMM Ch 77 'No RPM indication' with probable cause 'Defective RPM indicator'. Mention of SkyView is consistent with the Dynon SV-D1000 EMS system described in Ch 77.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "d5806f35-c989-4fc3-a227-632cb131c6ac",
     "origin": "table"
   },
   {
@@ -35,7 +35,7 @@
     "rationale": "Single position light failure with breaker confirmed set matches AS-AMM Ch 33 'One position light does not operate'. Since breaker is confirmed OK, probable cause narrows to defective wiring",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "ee92ccae-31f3-4202-96cb-26ed6415d3e5",
     "origin": "table"
   },
   {
@@ -52,7 +52,7 @@
       "Insufficient fuel flow",
       "No fuel flow to the engine fuel pump"
     ],
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "208efff0-b245-4388-8157-a975169abe36",
     "origin": "table"
   },
   {
@@ -65,7 +65,7 @@
     "rationale": "Lateral tail oscillation during taxi is a textbook shimmy. SC10000AMM 6.3.7 lists 'Tail Wheel Shimmies' with causes including weakened steering springs, worn tire, and loose tail wheel assembly. Progressive worsening suggests mechanical wear.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "origin": "table"
   },
   {
@@ -78,7 +78,7 @@
     "rationale": "Burning smell correlating with heating system activation directly maps to AS-AMM Ch 21 'Burning smell in the cockpit' with probable cause 'Exhaust heat-exchanger cracked'. This is a safety-critical finding as exhaust gases may be entering the cockpit.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+    "ground_truth_chunk_id": "a0fe309d-ec2a-41da-8647-5a9d058e9789",
     "origin": "table"
   },
   {
@@ -94,7 +94,7 @@
     "ambiguous_alternatives": [
       "Engine idles rough after warm-up period, smoky exhaust emission"
     ],
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "origin": "table"
   },
   {
@@ -107,7 +107,7 @@
     "rationale": "Voltage reading of 15.2V exceeds normal charging range (~13.8V) and maps to SC10000AMM 6.3.17 'High Voltage' with probable cause 'Bad regulator'.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
+    "ground_truth_chunk_id": "74c0abbe-e7ae-44b2-817d-aac7956a0721",
     "origin": "table"
   },
   {
@@ -120,7 +120,7 @@
     "rationale": "Single click with no engine rotation and good panel lights matches SC10000AMM 6.3.17 'When the starter is engaged, there is a click and the engine does not turn'. Good battery indication rules out low charge, pointing to starter solenoid defective or voltage not reaching starter.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+    "ground_truth_chunk_id": "27e71605-c40f-48d0-8999-380ea5b96f7f",
     "origin": "table"
   },
   {
@@ -133,7 +133,7 @@
     "rationale": "Spongy pedals with excessive travel directly matches SC10000AMM 6.3.7 'Unable to obtain sufficient hydraulic brake pressure, excessive toe pedal travel, or spongy pedal'. Most likely cause is air in hydraulic system.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
     "origin": "table"
   },
   {
@@ -149,7 +149,7 @@
     "ambiguous_alternatives": [
       "High oil temperature indication"
     ],
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "02edd04c-7fe2-4be8-8fd0-e63512ec87e1",
     "origin": "table"
   },
   {
@@ -166,7 +166,7 @@
       "Fuel quantity indicator reading incorrect",
       "Erratic fuel quantity indicator readings"
     ],
-    "ground_truth_chunk_id": "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
+    "ground_truth_chunk_id": "d9fc20fd-555a-4213-b5d7-444dd714cef3",
     "origin": "table"
   },
   {
@@ -179,7 +179,7 @@
     "rationale": "Free play in control stick before aileron response is 'Lost motion in control sticks' per SC10000AMM 6.3.6. Causes include loose control cables, broken pulley, or worn holes in control stick stub/torque tube.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "dc552490-9caf-42cf-9b71-4b99010a19b9",
     "origin": "table"
   },
   {
@@ -192,7 +192,7 @@
     "rationale": "Metal grinding on starter engagement matches SC10000AMM 6.3.17 'When starter engages, it makes a loud grinding noise'. The mention of a previous engine kickback directly correlates with the listed probable cause 'Starter damaged by engine kicking back'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+    "ground_truth_chunk_id": "81ef2e97-2be3-40ee-8913-19930de97003",
     "origin": "table"
   },
   {
@@ -205,7 +205,7 @@
     "rationale": "Soot streaks on cowling indicating exhaust gas leakage directly maps to AS-AMM Ch 78 'Indication of exhaust gas leaks on the engine cowling' with probable cause 'Defective exhaust tube gaskets'.",
     "difficulty_tier": "hard",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
     "origin": "table"
   },
   {
@@ -218,7 +218,7 @@
     "rationale": "Aircraft rolling despite parking brake being set is 'Parking brake inoperative' per SC10000AMM 6.3.7. Probable causes include defective master cylinder, leaky brake line connections, or parking brake valve defective.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
     "origin": "table"
   },
   {
@@ -231,7 +231,7 @@
     "rationale": "ASI reading zero with functional altimeter and VSI isolates the fault to the total (pitot) pressure line only, matching AS-AMM Ch 34 'Low or sluggish airspeed indication. Normal altimeter and vertical speed indication'. Wasp observation suggests obstruction in total line, a listed probable cause.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "e7a2343b-7998-4cae-a117-6ef4d12a352e",
     "origin": "table"
   },
   {
@@ -244,7 +244,7 @@
     "rationale": "Symmetrical low gear strut position matches SC10000AMM 6.3.7 'Landing Gear Sags' with cause 'Bungees are no longer strong enough to return the landing gear to its stops'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "61090d96-724f-4912-8024-7e6b38acbb4f",
     "origin": "table"
   },
   {
@@ -261,7 +261,7 @@
       "Starting speed low",
       "Starter turns engine slowly when cold"
     ],
-    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
+    "ground_truth_chunk_id": "62957b04-2111-48fb-b32c-1d84c5a74a5e",
     "origin": "table"
   },
   {
@@ -277,7 +277,7 @@
     "ambiguous_alternatives": [
       "Burning smell in the cockpit"
     ],
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "cea72be0-dc56-4865-b0a4-f42302d04235",
     "origin": "table"
   },
   {
@@ -290,7 +290,7 @@
     "rationale": "Compass card oscillation in smooth conditions matches AS-AMM Ch 34 'Excessive card oscillation' with causes including insufficient fluid, weak card magnet, or excessive pivot friction/broken jewel.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+    "ground_truth_chunk_id": "37dace3e-4f2a-4ae9-9faa-4452a3c56871",
     "origin": "table"
   },
   {
@@ -303,7 +303,7 @@
     "rationale": "Flaps not holding detent positions maps directly to SC10000AMM 6.3.6 'Flaps won't stay in position at second or third notch' with cause 'Flap handle lock has been bent'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+    "ground_truth_chunk_id": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
     "origin": "table"
   },
   {
@@ -316,7 +316,7 @@
     "rationale": "Zero alternator output with ammeter showing discharge at 2000 RPM, fuses visually intact. Per SC10000AMM 6.3.17 alternator troubleshooting table, 'No Operation' is the matching PROBLEM entry. The 2000 RPM check excludes 'Engine speed too low'. Visual fuse check does not conclusively exclude 'Blown fuse(s)'. Remaining probable causes per manual: Blown fuse(s) (visual check inconclusive), Bad Wire Connections, Shear coupling broken, Regulator Faulty, Alternator Faulty.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+    "ground_truth_chunk_id": "9014f701-4dcf-4961-9ef5-db9100cfd292",
     "origin": "table"
   },
   {
@@ -329,7 +329,7 @@
     "rationale": "Knocking under load with MOGAS usage directly matches AS-AMM Ch 71 'Knocking under load' with probable cause 'Octane rating of fuel too low'. MOGAS may have insufficient octane for the Rotax 912.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
+    "ground_truth_chunk_id": "9fb93f03-c77f-4632-bdc6-3dc17fda70fb",
     "origin": "table"
   },
   {
@@ -342,7 +342,7 @@
     "rationale": "GNC 255A dark with popped breaker matches AS-AMM Ch 23 'GNC 255A does not power on' with probable cause 'No power to the GNC 255A'. The tripped breaker explains the power loss.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "72980066-0c23-48ec-8339-03869d83d304",
     "origin": "table"
   },
   {
@@ -358,7 +358,7 @@
     "ambiguous_alternatives": [
       "Low oil pressure"
     ],
-    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
+    "ground_truth_chunk_id": "1e875927-7645-4493-97c8-fa821d1e8a74",
     "origin": "table"
   },
   {
@@ -371,7 +371,7 @@
     "rationale": "Motor running without stabilizer movement with confirmed wiring maps to SC10000AMM 6.3.6 'Stabilizer does not move up or down when actuating the trim switch'. Since the motor runs (eliminating loose wiring and broken switch), the probable cause is 'Inoperative electric servo' \u2014 the motor may have a mechanical disconnect from the jackscrew.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
     "origin": "table"
   },
   {
@@ -384,7 +384,7 @@
     "rationale": "Increased exhaust noise correlating with RPM matches AS-AMM Ch 78 'The exhaust system makes too much noise' with cause 'A damaged muffler'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "af010050-f2df-4a06-999b-45eb47aad806",
     "origin": "table"
   },
   {
@@ -401,7 +401,7 @@
       "Irregular idling",
       "Cannot control the engine"
     ],
-    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
+    "ground_truth_chunk_id": "fa03e605-7997-46b4-99a7-9d5889a28c59",
     "origin": "table"
   },
   {
@@ -414,7 +414,7 @@
     "rationale": "Unilateral brake drag causing taxi pull with thermal indication (warm wheel) maps to SC10000AMM 6.3.7 'Brakes drag'. Probable causes include pressure build up, foreign matter, pistons cocked in cylinder, or warped disc. The thermal signature confirms friction is present on the affected side.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
     "origin": "table"
   },
   {
@@ -427,7 +427,7 @@
     "rationale": "Complete absence of stall warning activation during stall maneuvers maps to SC10000AMM 6.3.6 'Stall warning does not work' with probable cause 'Problem in the electric circuit, switches or horn'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+    "ground_truth_chunk_id": "fc2acb6b-0f34-477b-b5dd-005c1d655960",
     "origin": "table"
   },
   {
@@ -443,7 +443,7 @@
     "ambiguous_alternatives": [
       "Insufficient fuel pressure"
     ],
-    "ground_truth_chunk_id": "cbec64af-1300-4646-aff7-7f75ee66709f",
+    "ground_truth_chunk_id": "f18e0c6f-5ebf-405a-bee0-0960e7f8b2a4",
     "origin": "table"
   },
   {
@@ -456,7 +456,7 @@
     "rationale": "Hobbs meter not advancing with engine running directly maps to AS-AMM Ch 31 'Hobbs meter does not operate'. Probable causes: defective Hobbs meter or defective wiring.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+    "ground_truth_chunk_id": "fc9ea881-1df2-4daa-8a4e-0053a3b7d5da",
     "origin": "table"
   },
   {
@@ -472,7 +472,7 @@
     "ambiguous_alternatives": [
       "Rough running"
     ],
-    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "origin": "table"
   },
   {
@@ -485,7 +485,7 @@
     "rationale": "Receive-only capability with no transmit maps to AS-AMM Ch 23 'GNC 255A does not transmit'. Good receive rules out total power loss. Probable causes: no power to Com or mic key connection issue.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "92ad880c-ced5-4240-b55f-460ea6c48049",
     "origin": "table"
   },
   {
@@ -498,7 +498,7 @@
     "rationale": "Full gear compression on landing maps to SC10000AMM 6.3.7 'Shocks Bottom on Landing' with probable cause 'Inspect for weak bungee cords'. The hard landing may have been exacerbated by already-weak bungees.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "cdffc282-877c-47c7-ab16-de15ef29632c",
     "origin": "table"
   },
   {
@@ -511,7 +511,7 @@
     "rationale": "Stick shaker inoperative with other stall warning components functional narrows the fault to the shaker unit itself or its wiring, matching AS-AMM Ch 31 'Control stick shaker (stall warning system) does not operate'. Since ACI stall warner and lamp are working, the ACI is not the primary cause \u2014 defective control stick shaker or defective wiring to it are the probable causes.",
     "difficulty_tier": "hard",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
+    "ground_truth_chunk_id": "b81bb2c8-146a-4b93-ac91-08429d9792e1",
     "origin": "table"
   },
   {
@@ -527,7 +527,7 @@
     "ambiguous_alternatives": [
       "Engine does not start"
     ],
-    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+    "ground_truth_chunk_id": "62b2762e-5e02-4c6d-8fb5-06f241029a71",
     "origin": "table"
   },
   {
@@ -540,7 +540,7 @@
     "rationale": "High oil consumption without external leaks plus blue exhaust (oil burning) maps to AS-AMM Ch 71 'Excessive oil consumption'. Blue exhaust indicates oil passing into combustion chamber, suggesting worn/broken piston rings or worn valve guides \u2014 both listed probable causes.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
+    "ground_truth_chunk_id": "e1820de0-4dce-4677-82ec-3b24e3ecd901",
     "origin": "table"
   },
   {
@@ -553,7 +553,7 @@
     "rationale": "Ground-only steering failure with functional airborne rudder isolates the fault to the tail wheel steering mechanism, matching SC10000AMM 6.3.7 'Tail Wheel does not respond to rudder pedal'. Probable causes: broken steering chains, links or springs.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "5f453921-1b14-4fc5-b457-2c468b4d434b",
     "origin": "table"
   },
   {
@@ -566,7 +566,7 @@
     "rationale": "VSI showing a fixed non-zero reading on the ground maps to AS-AMM Ch 34 'Pointer does not set on zero' (vertical speed indicator). Probable cause: leaking or ruptured diaphragm.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "9739819d-0aea-4f72-ab6f-bfade7f9fda5",
     "origin": "table"
   },
   {
@@ -579,7 +579,7 @@
     "rationale": "Vibration with spinner wobble maps to AS-AMM Ch 61 'Engine vibration'. Spinner wobble suggests propeller mounting bolts are loose or blade tracking not correct. The buzz-frequency vibration is characteristic of propeller imbalance or misalignment.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "origin": "table"
   },
   {
@@ -596,7 +596,7 @@
       "Low power",
       "Cannot control the engine"
     ],
-    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
+    "ground_truth_chunk_id": "724d37e4-c9c8-4928-86a5-a919f08bec09",
     "origin": "table"
   },
   {
@@ -609,7 +609,7 @@
     "rationale": "Cold air through vents despite OFF setting maps to AS-AMM Ch 21 'Ventilating system supplies cold air when set to OFF' with probable cause 'Control cable out of adjustment'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+    "ground_truth_chunk_id": "fd79ab2b-6f1d-4212-b504-0b7196f56a5d",
     "origin": "table"
   },
   {
@@ -622,7 +622,7 @@
     "rationale": "Poor braking after lining replacement maps to SC10000AMM 6.3.7 'Brakes will not hold'. Post-replacement context suggests 'New lining installed with old disc, lining not seated in wear track creating partial contact with disc' or 'Brake lining plate installed backwards'.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "b436f789-ee6a-4c86-9337-545280a3a536",
+    "ground_truth_chunk_id": "38a87f39-73e8-4756-bc67-736563ecc0b9",
     "origin": "table"
   },
   {
@@ -635,7 +635,7 @@
     "rationale": "Zero coolant temp with functional EGT maps to AS-AMM Ch 77 'No coolant temperature indication'. Since both use the same display system (Dynon SV-D1000), the fault is isolated to the coolant-specific components: defective coolant sensor or defective electrical cable to the sensor.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "25614b96-3eb5-45fa-a891-d797c43cab3c",
     "origin": "table"
   },
   {
@@ -651,7 +651,7 @@
     "ambiguous_alternatives": [
       "Filler Cap Leaks"
     ],
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "537610bf-a527-4458-8392-9fcf542ede63",
     "origin": "table"
   },
   {
@@ -667,7 +667,7 @@
     "ambiguous_alternatives": [
       "Engine vibration"
     ],
-    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+    "ground_truth_chunk_id": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
     "origin": "table"
   },
   {
@@ -680,7 +680,7 @@
     "rationale": "Stick offset with ailerons neutral directly matches SC10000AMM 6.3.6 'Control sticks are displaced when ailerons are in neutral' with probable cause 'Control cables improperly rigged'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "42f45ec7-465b-4069-95f5-66b67cf2717a",
     "origin": "table"
   },
   {
@@ -693,7 +693,7 @@
     "rationale": "Engine continuing to run with ignition switched off is a classic hot-running / dieseling condition matching AS-AMM Ch 71 'Engine keeps running with ignition off'. Probable causes: overheating of engine or defective ignition switch (switch not actually grounding the mags).",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "30ebd95f-7dbf-4cf7-993e-93038e6884ab",
     "origin": "table"
   },
   {
@@ -706,7 +706,7 @@
     "rationale": "Restricted elevator travel matches SC10000AMM 6.3.6 'Full elevator travel cannot be achieved' with probable cause 'Pulleys binding'. The one-direction-only limitation suggests a pulley is seizing at a specific cable wrap angle.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "2e1acdc2-7201-46ef-891f-74838d803601",
     "origin": "table"
   },
   {
@@ -719,7 +719,7 @@
     "rationale": "All EGT readings dropping simultaneously to zero with engine running normally maps to AS-AMM Ch 77 'No exhaust gas temperature indication'. All channels failing together suggests a common point failure \u2014 defective electrical cable or connector to the EMS module rather than individual sensor failures.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "91b0cad2-0b40-4978-80a1-46e4e8217353",
     "origin": "table"
   },
   {
@@ -732,7 +732,7 @@
     "rationale": "Intercom failure with functional radio maps to AS-AMM Ch 23 'Intercom does not work'. The intercom can be enabled/disabled via remote switch or menu \u2014 probable cause is configuration or connection issue.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
     "origin": "table"
   },
   {
@@ -745,7 +745,7 @@
     "rationale": "Disagreement between standby fuel pressure indicator and Dynon display maps to AS-AMM Ch 73 'Insufficient fuel pressure' \u2014 one instrument is reading incorrectly. Probable causes include defective fuel pressure sensor or defective fuel pressure indicator. Since the engine runs normally, actual fuel pressure is likely adequate and one sensor/indicator is faulty.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "cbec64af-1300-4646-aff7-7f75ee66709f",
+    "ground_truth_chunk_id": "12e7aac5-ca6d-40a0-b582-31e474ef72ba",
     "origin": "table"
   },
   {
@@ -758,7 +758,7 @@
     "rationale": "Landing light failure with breaker and switch confirmed OK maps to AS-AMM Ch 33 'Landing light not operate'. Remaining probable causes: defective wiring or loose connector next to the light.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
     "origin": "table"
   },
   {
@@ -771,7 +771,7 @@
     "rationale": "Hesitation on rapid throttle advance maps to SC10000AMM 6.3.10 'Poor acceleration'. The fact it occurs when warm rules out 'engine not warm enough'. Probable causes include idling mixture too lean, plugged air filter, or water in fuel.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
+    "ground_truth_chunk_id": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
     "origin": "table"
   },
   {
@@ -784,7 +784,7 @@
     "rationale": "Stall warning lamp not activating during actual stall conditions despite functional buzzer maps to AS-AMM Ch 31 'Warning lamp (stall warning system) does not operate'. The lamp illuminating during self-test but not during actual warnings suggests defective wiring in the warning activation circuit (self-test may use a different path) or the lamp is intermittently defective.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+    "ground_truth_chunk_id": "2653a782-8452-41e2-a220-27e55d93ed9e",
     "origin": "table"
   },
   {
@@ -800,7 +800,7 @@
     "ambiguous_alternatives": [
       "Excessive card error"
     ],
-    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+    "ground_truth_chunk_id": "767c4416-eda2-4e62-99e5-f7d7a812eff3",
     "origin": "table"
   },
   {
@@ -813,7 +813,7 @@
     "rationale": "Asymmetric flap deployment causing roll maps to SC10000AMM 6.3.6 'Flaps do not move in unison'. Probable causes: flap actuator tube bent/misrigged or flap actuator tube rod end broken.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
     "origin": "table"
   },
   {
@@ -829,7 +829,7 @@
     "ambiguous_alternatives": [
       "Leak in Fuel Line"
     ],
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "ce9fc82f-8dd7-4fad-8c1a-355e18528f5e",
     "origin": "table"
   },
   {
@@ -842,7 +842,7 @@
     "rationale": "Post-replacement ACI failure maps to Ch 31 'ACI stall warner does not operate'. Both downstream devices dead and test button fails \u2014 ACI unit itself or its wiring is root cause.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
+    "ground_truth_chunk_id": "be2c5b70-aa7b-44f3-b8e7-d564b3624784",
     "origin": "table"
   },
   {
@@ -855,7 +855,7 @@
     "rationale": "All position lights failing simultaneously with tripped breaker maps to Ch 33 'Both position lights do not operate' with cause 'Circuit-breaker not set or defective'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "a813fea8-e63a-4a77-8a45-3de1328055b9",
     "origin": "table"
   },
   {
@@ -868,7 +868,7 @@
     "rationale": "Complete brake failure with empty fluid reservoir maps to SC10000AMM 6.3.7 'Brakes inoperative' with cause 'Brake fluid level low'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
     "origin": "table"
   },
   {
@@ -881,7 +881,7 @@
     "rationale": "Light failure persisting after bulb replacement maps to SC10000AMM 6.3.19 'Bulb does not light up'. With new bulb and good breaker, remaining cause is 'Loose wiring'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "dbf09be5-4651-436e-acea-8947c4367582",
+    "ground_truth_chunk_id": "9d326e3c-ec77-43b8-bf8c-8a6accff82eb",
     "origin": "table"
   },
   {
@@ -894,7 +894,7 @@
     "rationale": "Buzzer-only failure with lamp and shaker functional isolates fault to the buzzer or its wiring, matching Ch 31 'Buzzer (stall warning system) does not operate'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+    "ground_truth_chunk_id": "0785ea13-d669-43bd-be6b-3b7798a3ca90",
     "origin": "table"
   },
   {
@@ -907,7 +907,7 @@
     "rationale": "Throttle movement with zero RPM response maps to Ch 76 'Cannot control the engine'. Free lever movement strongly suggests 'Broken throttle bowden cable'.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
+    "ground_truth_chunk_id": "a51bfe69-a2fa-4446-aab6-21aff4fe50c1",
     "origin": "table"
   },
   {
@@ -920,7 +920,7 @@
     "rationale": "Non-rotating compass card with cloudy fluid maps to Ch 34 'Card sticks'. Cloudy fluid suggests collapsed altitude compensating diaphragm.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+    "ground_truth_chunk_id": "f9b19eb6-e042-4ea2-92d4-e3e63ee39ee2",
     "origin": "table"
   },
   {
@@ -933,7 +933,7 @@
     "rationale": "Milky/foggy light lens reducing transmission matches Ch 33 'Decrease of light transmission (milky appearance)' \u2014 'Degradation of light cover surface'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "56cc0ba3-8232-4279-9396-271ad21ced27",
     "origin": "table"
   },
   {
@@ -946,7 +946,7 @@
     "rationale": "Rough warm idle with smoky exhaust matches Ch 71 'Engine idles rough after warm-up period, smoky exhaust emission'. Probable causes: CHOKE activated, carburettors inadequately synchronized.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "3d8075a1-ab15-4aef-a242-8a69d5612f7c",
     "origin": "table"
   },
   {
@@ -959,7 +959,7 @@
     "rationale": "Intermittent misfire after ignition component replacement maps to Ch 74 'Engine runs irregularly or misfires'. Post-replacement context suggests incorrect spark plug gap or a lead not fully seated.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "origin": "table"
   },
   {
@@ -972,7 +972,7 @@
     "rationale": "No-start with dry plugs despite fuel ON maps to Ch 76 'Engine will not start' \u2014 choke control not correctly adjusted or fuel delivery path fault.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
+    "ground_truth_chunk_id": "2acac2c6-728f-46f1-b6fc-78ba264ded77",
     "origin": "table"
   },
   {
@@ -985,7 +985,7 @@
     "rationale": "Randomly fluctuating fuel quantity with no correlation to flight condition matches Ch 28 'Erratic fuel quantity indicator readings'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "b44ee2df-cc92-4961-8ce8-d9d2006691b6",
+    "ground_truth_chunk_id": "826b2876-56f5-462c-b877-a1f406d9cbc7",
     "origin": "table"
   },
   {
@@ -998,7 +998,7 @@
     "rationale": "Consistent 15-degree compass error on all headings maps to Ch 34 'Excessive card error'. Probable cause: compass not properly compensated or external magnetic interference.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "720ffbc4-1c40-49ce-9f57-e9bc44aff4d8",
+    "ground_truth_chunk_id": "ce053436-5a16-451f-bddf-c883ccd52b6d",
     "origin": "table"
   },
   {
@@ -1011,7 +1011,7 @@
     "rationale": "High stick forces maps to SC10000AMM 6.3.6 'Excessive resistance to movement of control sticks'. Causes: control cables too taut or pulleys binding.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "38f39db8-58f6-412c-9f5f-06d556e23e8b",
     "origin": "table"
   },
   {
@@ -1024,7 +1024,7 @@
     "rationale": "Fuel leak at cap despite correct seating maps to SC10000AMM 6.3.15 'Filler Cap Leaks'. Probable cause: 'Deteriorated Seal'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
     "origin": "table"
   },
   {
@@ -1037,7 +1037,7 @@
     "rationale": "Mechanically locked flap handle maps to SC10000AMM 6.3.6 'Flap control arm cannot be actuated' \u2014 'Flap control arm release button not working properly'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "cfc64172-75fd-4c45-9fe0-a3bf060d65f2",
     "origin": "table"
   },
   {
@@ -1050,7 +1050,7 @@
     "rationale": "No flap response with disconnected pushrod visible maps to SC10000AMM 6.3.6 'Flaps do not move when flap control arm is actuated' \u2014 'Flap actuator tubes broken/disconnected'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "64c9c975-80b4-447e-ab94-58298b90d44a",
     "origin": "table"
   },
   {
@@ -1063,7 +1063,7 @@
     "rationale": "Consistent over-reading after sensor replacement maps to Ch 28 'Fuel quantity indicator reading incorrect' \u2014 'Incorrectly adjusted fuel sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "6548c637-39ab-497f-8120-94ea278af1a1",
     "origin": "table"
   },
   {
@@ -1076,7 +1076,7 @@
     "rationale": "Heating output despite OFF setting maps to Ch 21 'Heating system supplies warm air when set to OFF' \u2014 'Control cable out of adjustment'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "5bb8ccc4-bd41-49d8-bbe3-0b4dd8b34f1c",
+    "ground_truth_chunk_id": "5a97f78a-e1b9-48f3-89e1-220d9e0d58a6",
     "origin": "table"
   },
   {
@@ -1089,7 +1089,7 @@
     "rationale": "Single-cylinder high temperature indication maps to Ch 77 'High coolant temperature indication'. One-cylinder-only pattern could be defective engine condition or defective sensor for that channel.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "001c5d45-354b-460a-8aa0-337efb11d225",
     "origin": "table"
   },
   {
@@ -1102,7 +1102,7 @@
     "rationale": "Elevated EGT on specific cylinders maps to Ch 77 'High exhaust gas temperature indication'. Could be defective engine or defective EGT indicators.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "df888e8f-e0cb-4795-bbab-118f5b423109",
     "origin": "table"
   },
   {
@@ -1115,7 +1115,7 @@
     "rationale": "Oil pressure spike at cold start maps to Ch 71 'High oil pressure'. Probable causes: 'Too cold oil' or 'Wrong viscosity of oil'.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "76fe6522-28e5-4fb8-b352-34202475039d",
+    "ground_truth_chunk_id": "2c8655fd-0376-4318-bc70-fed15d5ff034",
     "origin": "table"
   },
   {
@@ -1128,7 +1128,7 @@
     "rationale": "High oil temperature with low oil level maps to SC10000AMM 6.3.10 'High oil temperature' \u2014 'Low oil supply'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
+    "ground_truth_chunk_id": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
     "origin": "table"
   },
   {
@@ -1141,7 +1141,7 @@
     "rationale": "False high reading after sensor replacement that drops to zero when disconnected maps to Ch 79 'High oil temperature indication' \u2014 'Malfunctioning sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
+    "ground_truth_chunk_id": "773a99dc-e7b2-48d8-9473-1ee531e3c022",
     "origin": "table"
   },
   {
@@ -1154,7 +1154,7 @@
     "rationale": "Asymmetric aileron deflection measured at 12 vs spec 18 matches SC10000AMM 6.3.6 'Improper aileron travel'. Causes: cables improperly rigged or torque tube incorrectly adjusted.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "025ba8c4-2300-478a-bc52-63760039bfdb",
     "origin": "table"
   },
   {
@@ -1167,7 +1167,7 @@
     "rationale": "Consistent RPM over-reading compared to known-good reference maps to Ch 77 'Incorrect RPM indication' \u2014 'Defective RPM indicator'.",
     "difficulty_tier": "medium",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "9669a2ac-29a4-49c4-9148-e951c57230d3",
+    "ground_truth_chunk_id": "394ef76f-b630-4d68-b0cf-38cc027a4d0d",
     "origin": "table"
   },
   {
@@ -1180,7 +1180,7 @@
     "rationale": "ASI oscillation in stable air with minor VSI swing maps to Ch 34 'Incorrect indication or pointer oscillates' (airspeed). Probable cause: leaking or ruptured diaphragm.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "7ff185e9-6199-4862-ab44-2e96dbdb8260",
     "origin": "table"
   },
   {
@@ -1193,7 +1193,7 @@
     "rationale": "Sluggish altimeter and VSI together map to Ch 34 'Incorrect or sluggish response on all three pitot-static instruments' \u2014 'Leaks or obstruction in static line'.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "384aeb06-cd2a-422f-89c5-21b17950459d",
     "origin": "table"
   },
   {
@@ -1206,7 +1206,7 @@
     "rationale": "Post-maintenance fuel leak at a fitting can reduce delivered fuel and maps to Ch 28 'Insufficient fuel flow'. Probable cause is cracked fuel line or improperly tightened connector.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "63c4ed67-4c78-49c8-a750-fe584cc87b50",
     "origin": "table"
   },
   {
@@ -1219,7 +1219,7 @@
     "rationale": "Idle RPM hunting maps to SC10000AMM 6.3.10 'Irregular idling'. Causes: incorrect idle mixture adjustment, air induction leak, or carburetor idle air bleed plugged.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+    "ground_truth_chunk_id": "85c39b19-143c-4438-83e8-7d615d83df30",
     "origin": "table"
   },
   {
@@ -1232,7 +1232,7 @@
     "rationale": "Cracked fuel line causing a drip matches SC10000AMM 6.3.15 'Leak in Fuel Line' \u2014 cause 'Chaffing'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "dc0cbc1a-d81f-4566-85d0-fa7445e574c5",
+    "ground_truth_chunk_id": "120a1b4d-0c98-4d7f-aecb-47b014d6efb0",
     "origin": "table"
   },
   {
@@ -1245,7 +1245,7 @@
     "rationale": "In-flight discharge with dimming under load maps to SC10000AMM 6.3.17 'Low Voltage'. Causes: engine speed too low, load exceeds alternator output, or bad battery.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
+    "ground_truth_chunk_id": "dd139b15-6a84-4756-b4be-179bb7767e47",
     "origin": "table"
   },
   {
@@ -1258,7 +1258,7 @@
     "rationale": "Progressive oil pressure drop with correct level and grade maps to SC10000AMM 6.3.10 'Low oil pressure'. Narrows to plugged oil screen, relief valve issues, worn bearings, or defective gauge.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "aa9fb3e0-a373-4ed8-89dd-1675528fe8a0",
+    "ground_truth_chunk_id": "47cf4f9f-8124-4d3e-ad0c-71fff5abe30b",
     "origin": "table"
   },
   {
@@ -1271,7 +1271,7 @@
     "rationale": "Significant power loss evident from reduced climb rate maps to SC10000AMM 6.3.10 'Low power'. Many possible causes including throttle not fully open, plugged filter, restricted fuel flow.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
+    "ground_truth_chunk_id": "aeab3589-5415-4371-84f6-754139a111bb",
     "origin": "table"
   },
   {
@@ -1284,7 +1284,7 @@
     "rationale": "Nav audio absent with functional Com audio maps to Ch 23 'No Nav audio' \u2014 'Output disabled or set to a low level'.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "92ba45b8-63c1-42d0-acb0-ece2e2e5d4f4",
     "origin": "table"
   },
   {
@@ -1297,7 +1297,7 @@
     "rationale": "Single-radio audio loss persisting after headset swap maps to Ch 23 'No audio in Com'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "2555579f-d222-48e7-a18f-96ee67169447",
     "origin": "table"
   },
   {
@@ -1310,7 +1310,7 @@
     "rationale": "Engine dying without electric pump assist indicates no fuel reaching the engine-driven pump, matching Ch 28 'No fuel flow to the engine fuel pump'. Causes: defective selector valve or plugged line.",
     "difficulty_tier": "hard",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "9b31eb9e-3499-4b9c-8ca0-a25492121699",
     "origin": "table"
   },
   {
@@ -1323,7 +1323,7 @@
     "rationale": "High VOX threshold despite squelch adjustment maps to Ch 23 'No voice activation, or must talk too loud'.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "1bdd7a9e-71f8-49fc-ba54-358253b378b0",
+    "ground_truth_chunk_id": "3e401823-e76e-4ead-b7d8-5bde135f4aec",
     "origin": "table"
   },
   {
@@ -1336,7 +1336,7 @@
     "rationale": "Pistons failing to retract during brake work maps to SC10000AMM 6.3.7 'Piston Does Not Retract'. Causes: back pressure from master cylinder/parking valve, or water/ice in hydraulic system.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "74b78b47-89bc-483f-945c-a770306952d9",
     "origin": "table"
   },
   {
@@ -1349,7 +1349,7 @@
     "rationale": "VSI showing zero in all flight conditions with other instruments working maps to Ch 34 'Pointer fails to respond' (VSI). Causes: obstruction/leaks in static line or defective instrument.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "5d74dbfe-5085-40b0-bcfc-cf25d09ffea8",
     "origin": "table"
   },
   {
@@ -1362,7 +1362,7 @@
     "rationale": "ASI failure after replacement maps to Ch 34 'Pointer fails to respond or indicates improperly'. Post-installation zero reading suggests line left disconnected or kinked.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "c48d99af-80c6-40d9-bd30-cf091a820907",
     "origin": "table"
   },
   {
@@ -1375,7 +1375,7 @@
     "rationale": "VSI oscillation in smooth air maps to Ch 34 'Pointer oscillates or fails to respond'. Causes: excessive vibration from loose mounting bolts or tube vibration.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "23cf9b0d-9ba7-42bb-8f4e-a31bf743f4b9",
+    "ground_truth_chunk_id": "2a3a0900-75cc-4767-b517-228277c1b73f",
     "origin": "table"
   },
   {
@@ -1388,7 +1388,7 @@
     "rationale": "Accelerated lining wear after refurbishment maps to SC10000AMM 6.3.7 'Rapid disc and lining wear'. Uneven pad wear suggests back plate deflection from bent/over-torqued bolts.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "a726a072-16d7-4a7c-9744-ffc8f08f6eb7",
     "origin": "table"
   },
   {
@@ -1401,7 +1401,7 @@
     "rationale": "Premature stall warning well above stall speed maps to SC10000AMM 6.3.6 'Stall warning comes on well above stalling speed' \u2014 vane not calibrated properly. Wing work may have displaced it.",
     "difficulty_tier": "medium",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+    "ground_truth_chunk_id": "ac7d93a8-d11a-4707-b008-02fa5487f917",
     "origin": "table"
   },
   {
@@ -1414,7 +1414,7 @@
     "rationale": "Stall horn activation less than 6 mph above stall matches SC10000AMM 6.3.6 verbatim. Cause: stall warning vane not calibrated properly.",
     "difficulty_tier": "easy",
     "observation_type": "operational_anomaly",
-    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+    "ground_truth_chunk_id": "1374a7b9-88c6-449b-88dc-d09fb1f12d50",
     "origin": "table"
   },
   {
@@ -1427,7 +1427,7 @@
     "rationale": "Self-test pass but operational failure maps exactly to Ch 31 'Stall warning transducer does not operate (Test button activates the system)'. Self-test bypasses the transducer; causes: defective transducer, defective wiring, defective pitot-static hoses, or wrong Dynon setting.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "b9aa5087-52d1-4415-a7f5-740f053f788f",
+    "ground_truth_chunk_id": "9b6dc942-a01e-412c-9889-a798547c3008",
     "origin": "table"
   },
   {
@@ -1440,7 +1440,7 @@
     "rationale": "Delayed starter disengagement after button release matches SC10000AMM 6.3.17 verbatim.",
     "difficulty_tier": "easy",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+    "ground_truth_chunk_id": "5e43cbbd-1200-419d-a19b-b65a8aafac0d",
     "origin": "table"
   },
   {
@@ -1453,7 +1453,7 @@
     "rationale": "Slow cranking in cold with confirmed charged battery maps to SC10000AMM 6.3.17 'Starter turns engine slowly when cold'. Cold reduces CCA output \u2014 cause is still 'Weak battery'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+    "ground_truth_chunk_id": "c99907c8-aa9f-4cbd-9c68-296824a10ae4",
     "origin": "table"
   },
   {
@@ -1466,7 +1466,7 @@
     "rationale": "Hot-soak cranking difficulty after normal cold-start maps to SC10000AMM 6.3.17 'Starter turns engine slowly when hot' \u2014 'Bad connection, cable, or solenoid'.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "13e818f0-86e9-46c6-a97f-db3d7a3f0728",
+    "ground_truth_chunk_id": "fee1da7b-a8b0-45e6-a4c3-0568ba46e8ea",
     "origin": "table"
   },
   {
@@ -1482,7 +1482,7 @@
     "ambiguous_alternatives": [
       "Engine does not start"
     ],
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "f22801e8-4123-4485-8a57-fe2505ff620a",
     "origin": "table"
   },
   {
@@ -1495,7 +1495,7 @@
     "rationale": "Seized tail wheel fork maps to SC10000AMM 6.3.7 'Tail Wheel does not Swivel' \u2014 'Fork binds in bracket because of dirt or lack of lubricant'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "068de687-c636-4d21-8488-c6f01431a063",
     "origin": "table"
   },
   {
@@ -1508,7 +1508,7 @@
     "rationale": "No shock absorption with cracked leaf spring maps to SC10000AMM 6.3.7 'Tail Wheel does not absorb shock' \u2014 'Broken leaf spring'.",
     "difficulty_tier": "easy",
     "observation_type": "inspection_finding",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
     "origin": "table"
   },
   {
@@ -1521,7 +1521,7 @@
     "rationale": "Exhaust-specific vibration felt through rudder pedals maps to Ch 78 'Too much vibration' \u2014 'Cracks in the exhaust tube'. Internal cracks may not be externally visible.",
     "difficulty_tier": "hard",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "fce9171d-a0b0-48a4-86f8-7cd35a643431",
     "origin": "table"
   },
   {
@@ -1537,7 +1537,7 @@
     "ambiguous_alternatives": [
       "Insufficient fuel pressure"
     ],
-    "ground_truth_chunk_id": "7c9f34d9-fb19-474c-9c4c-f3d478508504",
+    "ground_truth_chunk_id": "6fc97800-d46a-425a-8bd0-a3a0c154da9c",
     "origin": "table"
   },
   {
@@ -1550,7 +1550,7 @@
     "rationale": "Zero output after regulator replacement maps to SC10000AMM 6.3.17 'No Operation'. Post-replacement context suggests bad connections or the original problem was actually the alternator.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bc6aff2d-bb19-4ee3-b1d7-183031514835",
+    "ground_truth_chunk_id": "9014f701-4dcf-4961-9ef5-db9100cfd292",
     "origin": "table"
   },
   {
@@ -1563,7 +1563,7 @@
     "rationale": "Pressure-dependent cap leak maps to SC10000AMM 6.3.15 'Filler Cap Leaks' \u2014 seal fails under full-tank hydrostatic head.",
     "difficulty_tier": "medium",
     "observation_type": "symptom_report",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "e346c531-2bef-4feb-b7e1-c98658b01f2a",
     "origin": "table"
   },
   {
@@ -1576,7 +1576,7 @@
     "rationale": "Post-pad-replacement failure maps to SC10000AMM 6.3.7 'Brakes will not hold' \u2014 'Brake lining plate installed backwards' or new lining not seated.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "b436f789-ee6a-4c86-9337-545280a3a536",
+    "ground_truth_chunk_id": "38a87f39-73e8-4756-bc67-736563ecc0b9",
     "origin": "table"
   },
   {
@@ -1589,7 +1589,7 @@
     "rationale": "Post-caliper-rebuild drag maps to SC10000AMM 6.3.7 'Brakes drag' \u2014 'Pistons cocked in cylinder' during reassembly.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "aedcc55b-f7f2-4875-bcc7-3a9c0f6e80f3",
     "origin": "table"
   },
   {
@@ -1602,7 +1602,7 @@
     "rationale": "Persistent asymmetric sag after bungee replacement corresponds to the SC10000AMM 6.3.7 entry \u201cLanding Gear Sags,\u201d where the stated probable cause is that the bungees are no longer strong enough to return the landing gear to its stops. Since the symptom remains after replacement, the fault remains consistent with insufficient effective bungee return force on the affected side, as defined by the manual.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "61090d96-724f-4912-8024-7e6b38acbb4f",
     "origin": "table"
   },
   {
@@ -1615,7 +1615,7 @@
     "rationale": "consistent with SC10000AMM 6.3.6 \u2018Tail Wheel does not respond to rudder pedal\u2019, where probable causes include broken or disconnected steering chains, links, or springs.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "5f453921-1b14-4fc5-b457-2c468b4d434b",
     "origin": "table"
   },
   {
@@ -1628,7 +1628,7 @@
     "rationale": "Poor shock absorption after spring replacement maps to SC10000AMM 6.3.7 'Tail Wheel does not absorb shock'. Check tire inflation \u2014 may have been overinflated during maintenance.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "22d3ad35-dcca-4822-bfc2-d15294010dc8",
     "origin": "table"
   },
   {
@@ -1641,7 +1641,7 @@
     "rationale": "Post-overhaul rough idle with blue smoke maps to SC10000AMM 6.3.10 'Irregular idling'. Oil burning during break-in or magneto timing needing adjustment.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ed8aa62b-91c2-4f24-92b4-c019aa4cf0cf",
+    "ground_truth_chunk_id": "85c39b19-143c-4438-83e8-7d615d83df30",
     "origin": "table"
   },
   {
@@ -1654,7 +1654,7 @@
     "rationale": "RPM-limited power with normal ignition and fuel maps to SC10000AMM 6.3.10 'Low power'. Post-filter-work suggests carb heat valve may have been disturbed.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
+    "ground_truth_chunk_id": "aeab3589-5415-4371-84f6-754139a111bb",
     "origin": "table"
   },
   {
@@ -1667,7 +1667,7 @@
     "rationale": "Post-plug-install misfire isolated to one mag maps to SC10000AMM 6.3.10 'Rough running'. Suggests defective cable on left magneto circuit or incorrect gap.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "7a24e7e7-d8df-4799-8535-96206c77dcb6",
+    "ground_truth_chunk_id": "c97c33fc-ec0a-42a1-ab15-8512762776e5",
     "origin": "table"
   },
   {
@@ -1680,7 +1680,7 @@
     "rationale": "Zero brake pressure after master cylinder replacement despite bleeding maps to SC10000AMM 6.3.7 'Brakes inoperative'. Probable: defective new master cylinder.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "3bf565e6-2b88-4939-a8ce-2f9a98b33d28",
     "origin": "table"
   },
   {
@@ -1693,7 +1693,7 @@
     "rationale": "Post-servo replacement with motor running but no movement maps to SC10000AMM 6.3.6 'Stabilizer does not move up or down when actuating the trim switch'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "b47bcd44-f4dc-44fc-8f74-e98127af8d67",
     "origin": "table"
   },
   {
@@ -1706,7 +1706,7 @@
     "rationale": "Transition flat spot after carb overhaul maps to SC10000AMM 6.3.10 'Poor acceleration'. Post-carb-work points to idle mixture adjustment or accelerator pump issue.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "339135c2-c999-437e-baab-f836c10b2edb",
+    "ground_truth_chunk_id": "8d50f3a0-b315-4d7b-9cef-ff02560e9f20",
     "origin": "table"
   },
   {
@@ -1719,7 +1719,7 @@
     "rationale": "Intermittent RPM drops after lead replacement maps to Ch 71 'Engine runs irregularly or misfires occasionally'. Post-replacement suggests spark discharge over cables if poorly routed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "c61aa36d-30bc-4db6-82c6-fb59c20f4723",
+    "ground_truth_chunk_id": "47f087cb-8616-4ff5-9ed2-7e50dccf14d0",
     "origin": "table"
   },
   {
@@ -1732,7 +1732,7 @@
     "rationale": "Persistent failure after switch replacement with switch testing good maps to Ch 33 'Both position lights do not operate' \u2014 remaining cause is defective wiring.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "a813fea8-e63a-4a77-8a45-3de1328055b9",
     "origin": "table"
   },
   {
@@ -1745,7 +1745,7 @@
     "rationale": "No-start after mag overhaul maps to SC10000AMM 6.3.10 'Engine does not start'. Cause: 'Magnetos incorrectly timed internally or to engine'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "f87c946a-899b-4ff1-90c5-0741e822df9f",
+    "ground_truth_chunk_id": "59094173-d746-40b9-9df0-d1cf1da59a9c",
     "origin": "table"
   },
   {
@@ -1758,7 +1758,7 @@
     "rationale": "Persistent shimmy after spring replacement with thin tire maps to SC10000AMM 6.3.7 'Tail Wheel Shimmies' \u2014 'Tire worn'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "origin": "table"
   },
   {
@@ -1771,7 +1771,7 @@
     "rationale": "Zero reading after sensor replacement with adequate oil flow maps to Ch 79 'Low oil pressure indication' \u2014 'Malfunctioning sensor'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
+    "ground_truth_chunk_id": "1e875927-7645-4493-97c8-fa821d1e8a74",
     "origin": "table"
   },
   {
@@ -1784,7 +1784,7 @@
     "rationale": "Light failure resolved by finding disconnected connector maps to Ch 33 'Landing light not operate' \u2014 'Loose connector next to the light'.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "1051a566-3502-4fff-9962-c6b5fdfd862f",
+    "ground_truth_chunk_id": "5b1d24b6-57dd-4212-9390-0c7c9f93fe50",
     "origin": "table"
   },
   {
@@ -1797,7 +1797,7 @@
     "rationale": "High idle after cable replacement maps to Ch 76 'Engine does not get to idle' \u2014 'Throttle control not adjusted correctly'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "b456fdc9-a271-403e-85c6-66f287e34cac",
+    "ground_truth_chunk_id": "fa03e605-7997-46b4-99a7-9d5889a28c59",
     "origin": "table"
   },
   {
@@ -1810,7 +1810,7 @@
     "rationale": "New vibration at specific RPM after balancing maps to Ch 61 'Engine vibration'. Spinner bolts may have been disturbed or blade tracking is off.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "de90a9c1-150f-49e7-a4cb-83e32f8f24b0",
+    "ground_truth_chunk_id": "526a859e-292f-450a-9a20-66cdee7b7f35",
     "origin": "table"
   },
   {
@@ -1823,7 +1823,7 @@
     "rationale": "Higher temps after oil grade change maps to SC10000AMM 6.3.10 'High oil temperature'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bc685804-f191-4df6-b23c-90f7b889235b",
+    "ground_truth_chunk_id": "1738bf30-2d8e-40e5-b436-90c9b284acbe",
     "origin": "table"
   },
   {
@@ -1836,7 +1836,7 @@
     "rationale": "Incorrect single-tank reading after sensor work maps to Ch 28 'Fuel quantity indicator reading incorrect' \u2014 incorrectly adjusted sensor.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "d48a862b-fadd-48ac-85de-19be5152f0b6",
+    "ground_truth_chunk_id": "6548c637-39ab-497f-8120-94ea278af1a1",
     "origin": "table"
   },
   {
@@ -1849,7 +1849,7 @@
     "rationale": "Post-belt-replacement low voltage maps to SC10000AMM 6.3.17 'Low Voltage'. Belt may be wrong profile or alternator damaged during change.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "c5f8691c-01ba-4567-8fcd-44c1dd8c68a9",
+    "ground_truth_chunk_id": "dd139b15-6a84-4756-b4be-179bb7767e47",
     "origin": "table"
   },
   {
@@ -1862,7 +1862,7 @@
     "rationale": "Asymmetric flap deployment after rod end replacement maps to SC10000AMM 6.3.6 'Flaps do not move in unison' \u2014 re-rigging needed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
     "origin": "table"
   },
   {
@@ -1875,7 +1875,7 @@
     "rationale": "Post-turnbuckle-replacement stick offset maps to SC10000AMM 6.3.6 'Control sticks are displaced when ailerons are in neutral' \u2014 cables improperly rigged.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "42f45ec7-465b-4069-95f5-66b67cf2717a",
     "origin": "table"
   },
   {
@@ -1888,7 +1888,7 @@
     "rationale": "Restricted elevator down travel after cable replacement maps to SC10000AMM 6.3.6 'Full elevator travel cannot be achieved'.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "2e1acdc2-7201-46ef-891f-74838d803601",
     "origin": "table"
   },
   {
@@ -1901,7 +1901,7 @@
     "rationale": "Parking brake failure after valve rebuild maps to SC10000AMM 6.3.7 'Parking brake inoperative' \u2014 valve not properly sealed.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "0e58cfce-8f0d-41f2-b738-e74300f4ece3",
     "origin": "table"
   },
   {
@@ -1914,7 +1914,7 @@
     "rationale": "Leak at new line fitting will reintroduce air and reduce pressure, mapping to SC10000AMM 6.3.7 'Unable to obtain sufficient hydraulic brake pressure, excessive toe pedal travel, or spongy pedal'.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "2b7f07a5-b2ed-4bbe-9163-eff2a3b1e382",
+    "ground_truth_chunk_id": "efbad69a-c880-47d0-bd43-9ce5bdf8533e",
     "origin": "table"
   },
   {
@@ -1927,7 +1927,7 @@
     "rationale": "Post-pulley-replacement stick play maps to SC10000AMM 6.3.6 'Lost motion in control sticks'. Cable tension needs readjustment.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "dc552490-9caf-42cf-9b71-4b99010a19b9",
     "origin": "table"
   },
   {
@@ -1940,7 +1940,7 @@
     "rationale": "Post-lock-replacement detent failure maps to SC10000AMM 6.3.6 'Flaps won't stay in position at second or third notch'. New lock may need adjustment or was bent during installation.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "32bc7ee5-5ff8-495f-806d-9dd4c08a7ec6",
+    "ground_truth_chunk_id": "8009cb8f-f5df-4ae7-9a0e-26a2a53df3d1",
     "origin": "table"
   },
   {
@@ -1953,7 +1953,7 @@
     "rationale": "Persistent soot after gasket replacement maps to Ch 78 'Indication of exhaust gas leaks on the engine cowling'. Exhaust nuts may need torquing to 12-20 Nm.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "a9c7716f-c123-45c1-a596-0aa2cb42e031",
     "origin": "table"
   },
   {
@@ -1966,7 +1966,7 @@
     "rationale": "Asymmetric deployment after actuator tube replacement maps to SC10000AMM 6.3.6 'Flaps do not move in unison' \u2014 misrigged.",
     "difficulty_tier": "easy",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "f8a262e8-6063-4332-901d-6110987fa207",
     "origin": "table"
   },
   {
@@ -1979,7 +1979,7 @@
     "rationale": "Post-maintenance onset of vibration during taxi maps to SC10000AMM 6.3.7 \u2018Tail Wheel Shimmies\u2019. Since the symptom began immediately after tire replacement, likely causes include incorrect tail wheel assembly, looseness in the assembly, or improper spring/chain tension.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "59e4f278-b248-4712-8a2e-0804c7c7ca85",
+    "ground_truth_chunk_id": "868ddb50-0fab-45fe-aac5-c7b566a41b5b",
     "origin": "table"
   },
   {
@@ -1992,7 +1992,7 @@
     "rationale": "Post-cable-installation asymmetric travel maps to SC10000AMM 6.3.6 'Improper aileron travel' \u2014 cables improperly rigged.",
     "difficulty_tier": "medium",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "ff391b18-5179-4e91-912b-2ad2fbe05dec",
+    "ground_truth_chunk_id": "025ba8c4-2300-478a-bc52-63760039bfdb",
     "origin": "table"
   },
   {
@@ -2005,13 +2005,13 @@
     "rationale": "Persistent cockpit exhaust after muffler replacement maps to Ch 78 'Exhaust gas leaks into the cockpit'. Heat exchanger on the muffler may also have cracks.",
     "difficulty_tier": "hard",
     "observation_type": "part_replacement",
-    "ground_truth_chunk_id": "bd606e79-f8a7-4a0d-a273-defb6b2375fb",
+    "ground_truth_chunk_id": "cea72be0-dc56-4865-b0a4-f42302d04235",
     "origin": "table"
   },
   {
     "id": "EVAL-PROSE-001",
     "observation": "During the engine run-up, the primary electrical bus voltage was steadily dropping. On closer inspection, the main power wire leading from the gear-driven generator assembly showed signs of arcing at its terminal, indicating a poor connection and intermittent power output.",
-    "ground_truth_chunk_id": "2887ee0e-5402-43a4-926f-c734e84244da",
+    "ground_truth_chunk_id": "ca4aef6a-3d2a-40d5-ba3d-b6b096abec92",
     "ground_truth_fault_code": "Low Voltage",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2024,7 +2024,7 @@
   {
     "id": "EVAL-PROSE-002",
     "observation": "During ground ops, the tailwheel assembly feels stiff and won't freely pivot beyond a few degrees with full rudder deflection. It's fighting me hard during turns, making tight maneuvering impossible and causing a noticeable drag. Looks like the castering mechanism isn't working as designed.",
-    "ground_truth_chunk_id": "cbd623f9-cf8e-4cb6-adb4-00028a27fb6f",
+    "ground_truth_chunk_id": "48e7a154-09ed-45ee-aa32-fdb65104d4ec",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -2037,7 +2037,7 @@
   {
     "id": "EVAL-PROSE-003",
     "observation": "Need to replace a cracked wing spar. This looks like a big repair, and I'm not sure if my LSA cert lets me sign off on something this extensive or if it needs to go back to the manufacturer.",
-    "ground_truth_chunk_id": "9dc1f567-6248-4c66-a04f-c38e3d1293b9",
+    "ground_truth_chunk_id": "16dc8f0a-c892-4fe4-a459-c204d43a11b6",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Corrective Maintenance",
@@ -2050,7 +2050,7 @@
   {
     "id": "EVAL-PROSE-004",
     "observation": "Swapped out the wheel bearings; they were dry as a bone and felt rough turning by hand. Heard a nasty grinding sound every time that wheel spun, like sand was in there or somethin'.",
-    "ground_truth_chunk_id": "10c988bd-7c4f-46f4-938a-d7d3ac9834cc",
+    "ground_truth_chunk_id": "ab2666af-715d-4e06-a96b-520f5d7222c7",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wheel & Brake",
@@ -2063,7 +2063,7 @@
   {
     "id": "EVAL-PROSE-005",
     "observation": "Customer brought in their light sport plane, says they're using it for flight instruction now. They're unsure if it needs the commercial operations inspection or just a yearly check. Also asked where to find the specific aviation rules for this type of use.",
-    "ground_truth_chunk_id": "fa17fdff-2d80-46c5-a2bd-0127acff0c52",
+    "ground_truth_chunk_id": "798fdf0a-4093-4769-97e6-1a07def4065a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Corrective Maintenance",
@@ -2076,7 +2076,7 @@
   {
     "id": "EVAL-PROSE-006",
     "observation": "Got a nasty buzz coming from the prop-engine combo, especially noticeable at cruise power. Feels like the whole airframe's shakin' more than usual. Suspect the prop's mounting bolts might be outta spec, or maybe the blade track's off again.",
-    "ground_truth_chunk_id": "9afebb14-df63-4fcf-9c54-02dc508aa1ea",
+    "ground_truth_chunk_id": "45b6d17a-72ec-40ac-b3fe-2045d6201c2a",
     "ground_truth_fault_code": "Rough running",
     "manual_source": "SC10000AMM",
     "section_system": "Propeller",
@@ -2089,7 +2089,7 @@
   {
     "id": "EVAL-PROSE-007",
     "observation": "During pre-flight, noticed the landing gear strut was weeping fluid, a definite red flag. This issue isn't covered in the current maintenance guidance we're using, which makes me think our service bulletin records might be out of date. Need to check the revision service section for updates ASAP.",
-    "ground_truth_chunk_id": "fb026748-8456-4732-917d-04ecbed9abf2",
+    "ground_truth_chunk_id": "48bc25b4-9824-4bbb-b102-2e4e0a9fdd3d",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Manual Format & Guidance",
@@ -2102,7 +2102,7 @@
   {
     "id": "EVAL-PROSE-008",
     "observation": "The maintenance documentation we have for this bird seems a bit out of date. I need to figure out the process for getting the latest revisions or subscribing for updates from Cub Crafters.",
-    "ground_truth_chunk_id": "c32683da-d205-4464-9928-625847daa236",
+    "ground_truth_chunk_id": "a72b2d19-93d1-4118-ac61-89639734fec6",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Manual Format & Guidance",
@@ -2115,7 +2115,7 @@
   {
     "id": "EVAL-PROSE-009",
     "observation": "Doing the pre-flight check and noticed some fasteners felt a little loose. Need to quickly find the correct tightening values for these, and how to properly use the wrench on them.",
-    "ground_truth_chunk_id": "72b3af99-580d-4146-b529-bae2811aee98",
+    "ground_truth_chunk_id": "58266bd0-e779-4819-b0f9-99b888bee9f5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Specifications & Data",
@@ -2128,7 +2128,7 @@
   {
     "id": "EVAL-PROSE-010",
     "observation": "Inventory is running low on our standard service items like spark plugs and oil filters. Need to find the vendor info for reordering these parts we use up regularly.",
-    "ground_truth_chunk_id": "b90ddeec-2449-4704-812e-466624a4a99e",
+    "ground_truth_chunk_id": "3caae33a-c767-464c-8bee-929c0a7e5017",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Specifications & Data",
@@ -2141,7 +2141,7 @@
   {
     "id": "EVAL-PROSE-011",
     "observation": "Heard a weird clunking sound near the main gear on taxi out, then saw that access panel vibrating like crazy. Looks like somethin's not snug down there, it's really rattling around.",
-    "ground_truth_chunk_id": "cb713df9-7594-40b7-b839-d973d16f527e",
+    "ground_truth_chunk_id": "58266bd0-e779-4819-b0f9-99b888bee9f5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "General Torque Values",
@@ -2154,7 +2154,7 @@
   {
     "id": "EVAL-PROSE-012",
     "observation": "Almost had a close call near the prop today. Forgot the master switch was on while moving it by hand, and it could've been bad. Need to pay better attention to basic safety stuff.",
-    "ground_truth_chunk_id": "32a5de6b-6722-48d0-9dff-544e25d26a53",
+    "ground_truth_chunk_id": "34de5545-140b-4207-a2c9-0838482671cb",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "General Torque Values",
@@ -2167,7 +2167,7 @@
   {
     "id": "EVAL-PROSE-013",
     "observation": "Customer is asking about the scope of the annual plane service. Gotta verify the required inspection items and procedures.",
-    "ground_truth_chunk_id": "7ef22510-7b42-4218-be28-6a421bf26689",
+    "ground_truth_chunk_id": "abade48b-39e0-42de-8c3a-294ae32568ab",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2180,7 +2180,7 @@
   {
     "id": "EVAL-PROSE-014",
     "observation": "During run-up, saw the fabric near the left wingtip lookin' kinda wavy. When the wind hit it right, it seemed to puff out a little, like it wasn't glued down tight anymore. Heard a soft kinda crinkle sound too, like old paper.",
-    "ground_truth_chunk_id": "e2f0c651-f93f-45d8-b1db-044568bf5eba",
+    "ground_truth_chunk_id": "9de07571-454f-49b8-a757-9bcfa26b634c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2193,7 +2193,7 @@
   {
     "id": "EVAL-PROSE-015",
     "observation": "Aircraft felt squirrely during the functional ground run. This taildragger is a real handful to control while moving it around, almost got away from me.",
-    "ground_truth_chunk_id": "6591f321-399d-4775-8ba1-32bc3b13fbb3",
+    "ground_truth_chunk_id": "285555e3-0821-44ab-b9a4-34413219326a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2210,7 +2210,7 @@
   {
     "id": "EVAL-PROSE-016",
     "observation": "Owner called about his light sport he uses for instruction. He's coming up on the 100-hour mark and wants to know the rules for the inspection, especially if he can stretch it a few hours to get to our shop.",
-    "ground_truth_chunk_id": "10785650-2e74-42fb-bf41-865c5b87a116",
+    "ground_truth_chunk_id": "1e8fe09b-65f6-43d5-97ec-073b55eef838",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2223,7 +2223,7 @@
   {
     "id": "EVAL-PROSE-017",
     "observation": "The big fan up front sounds like it's eating rocks when I cut the power, real clunky. Got a weird burning oil smell too, and it just doesn't feel like it's pulling right on takeoff.",
-    "ground_truth_chunk_id": "4dc8cbac-3e44-4e34-8dfb-7e3cf73e5f54",
+    "ground_truth_chunk_id": "45b6d17a-72ec-40ac-b3fe-2045d6201c2a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Engine",
@@ -2236,7 +2236,7 @@
   {
     "id": "EVAL-PROSE-018",
     "observation": "Customer wants to add an extra fuel tank to the aircraft. I need to check the manual to see if this kind of modification is allowed or if we need special factory approval for it.",
-    "ground_truth_chunk_id": "459b1d69-1f0b-4159-bc45-f88e393738e0",
+    "ground_truth_chunk_id": "b0a6c130-3b6d-4ce5-b4ce-c0f5855b96a7",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Fuel System",
@@ -2249,7 +2249,7 @@
   {
     "id": "EVAL-PROSE-019",
     "observation": "Got a busted EFIS display and thinking about swapping it for a different brand. Need to check if that kind of instrument alteration is even allowed or if I need to get it approved by the factory.",
-    "ground_truth_chunk_id": "f422446d-e383-4c6e-a887-d33b7ea36b69",
+    "ground_truth_chunk_id": "afc3db2e-3132-42b2-b055-737c174df531",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Instruments & Avionics",
@@ -2262,7 +2262,7 @@
   {
     "id": "EVAL-PROSE-020",
     "observation": "Customer reports the transponder isn't displaying any traffic info on its screen. It's supposed to show nearby aircraft, but the display is blank where that data usually appears.",
-    "ground_truth_chunk_id": "d1426cf8-d179-46da-bed4-f97984c6c800",
+    "ground_truth_chunk_id": "065f0f29-a2be-4ce5-ac8d-25b0f4b4a90d",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Instruments & Avionics",
@@ -2275,7 +2275,7 @@
   {
     "id": "EVAL-PROSE-021",
     "observation": "The main instrument panel display is failing to show engine parameters and primary flight data. It's the unit that combines both.",
-    "ground_truth_chunk_id": "5ac81300-fd6a-4764-aefc-d7d163f64e05",
+    "ground_truth_chunk_id": "37cec733-eebc-45ad-8e5e-e25c754dfdfe",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Instruments & Avionics",
@@ -2288,7 +2288,7 @@
   {
     "id": "EVAL-PROSE-022",
     "observation": "Checked the left wing's landing lamp, it's dead. Also, the anti-collision lights on both wingtips aren't flashing anymore.",
-    "ground_truth_chunk_id": "7175697d-ff91-4168-bc0a-8416fd7133a7",
+    "ground_truth_chunk_id": "c943ae09-084b-4add-867f-16d8ff45a625",
     "ground_truth_fault_code": "Bulb does not light up",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2301,7 +2301,7 @@
   {
     "id": "EVAL-PROSE-023",
     "observation": "When trying to get the aft seat crossbar stowed, that securing pin was seized up in the base connector. Couldn't get the locking tab to rotate, felt like the screw was jammed or bent. Had to really wrestle with it, almost stripped the head trying to free it up.",
-    "ground_truth_chunk_id": "397132f3-b267-4633-9b47-cb5c493558b4",
+    "ground_truth_chunk_id": "599e4631-dd83-43d4-9703-4cffe531128c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2314,7 +2314,7 @@
   {
     "id": "EVAL-PROSE-024",
     "observation": "The rear passenger seat feels really loose and keeps coming out of its mountings. The top straps look like they're routed incorrectly around the airframe tube, and I can't get them to stay tight.",
-    "ground_truth_chunk_id": "97dbaae7-934c-498b-94ed-3080f2b250f5",
+    "ground_truth_chunk_id": "ff1dbd8b-c1bd-468b-b5be-47e486808c20",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2327,7 +2327,7 @@
   {
     "id": "EVAL-PROSE-025",
     "observation": "That patch job on the wing looks like it's starting to crinkle up when we hit some chop, and I'm hearin' a new kinda creakin' sound from that area too. Feels kinda spongy when I lean on it now.",
-    "ground_truth_chunk_id": "d8f467b6-6959-4902-8cd4-e3c557c26bcf",
+    "ground_truth_chunk_id": "b424bcf4-174b-4a5f-9f4c-4fcb74f9dffd",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Structural Repairs",
@@ -2340,7 +2340,7 @@
   {
     "id": "EVAL-PROSE-026",
     "observation": "New to working on this light sport aircraft model. I need to find the correct manuals and general guidance for its upkeep, repairs, or any alterations. What documents cover this?",
-    "ground_truth_chunk_id": "e851c22d-c72e-4576-8655-7c623d469a41",
+    "ground_truth_chunk_id": "58e5f17b-6033-4793-b516-4532a29b30c9",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2353,7 +2353,7 @@
   {
     "id": "EVAL-PROSE-027",
     "observation": "Customer asking if this WT9 Dynamic is approved for night flights. Also, noticed the propeller looks different than what I recall for a plane of this type.",
-    "ground_truth_chunk_id": "aa4f9b57-2823-4aae-b3e0-f8d0b7e7f91a",
+    "ground_truth_chunk_id": "9f95534b-998f-4d7c-afcc-283c2e916e11",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2366,7 +2366,7 @@
   {
     "id": "EVAL-PROSE-028",
     "observation": "I was looking for a replacement part for the landing gear in this manual, but couldn't find any actual part numbers listed anywhere. Is this the wrong manual for ordering parts?",
-    "ground_truth_chunk_id": "158fddf8-121c-45da-8b98-cf6dd8312941",
+    "ground_truth_chunk_id": "4e5453d5-40c3-4a1b-bd92-e2f065d7c954",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2379,7 +2379,7 @@
   {
     "id": "EVAL-PROSE-029",
     "observation": "Engine's running rough after the last service, especially noticeable during ground run-up \u2013 getting some weird vibrations and a slight drop in RPM at higher power settings. Suspect whoever did the last inspection didn't properly follow the operating procedure for the fuel system check, or maybe they just didn't grasp the manual's specifics.",
-    "ground_truth_chunk_id": "2fd64e67-1963-4372-abc2-e71a6dd60a04",
+    "ground_truth_chunk_id": "6c27a938-b78c-48f3-b63e-1e61ff279f76",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Fuel System",
@@ -2392,7 +2392,7 @@
   {
     "id": "EVAL-PROSE-030",
     "observation": "Got a real bad whistle up front when we hit cruise, sounds like wind sneakin' in. Can even feel a cold draft along the top edge of the plexiglass. Somethin's loose or not sealed right up there.",
-    "ground_truth_chunk_id": "903538eb-d579-4b96-849a-f4a8ea672b77",
+    "ground_truth_chunk_id": "d18e38f4-e0d7-4152-9d4e-6c04e1a11888",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Windows",
@@ -2405,7 +2405,7 @@
   {
     "id": "EVAL-PROSE-031",
     "observation": "Noticed a small crack near the rear fuselage skin panel. It's just forward of the horizontal stabilizer attachment point.",
-    "ground_truth_chunk_id": "fa9faa91-cf90-4761-96d3-45978b8f77c6",
+    "ground_truth_chunk_id": "192d1823-8f39-41df-9a90-404293cf1251",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Fuselage",
@@ -2418,7 +2418,7 @@
   {
     "id": "EVAL-PROSE-032",
     "observation": "Tried to verify the torque value for the main landing gear bolts, but the associated diagram on page 55 looked off. There was no solid bar on the margin to indicate a change, yet the part numbers didn't match my last work order. Ended up cross-referencing with the revision log to make sure I wasn't using outdated info.",
-    "ground_truth_chunk_id": "a9c497ba-e3c2-43fe-bfa3-e5edd6f626fb",
+    "ground_truth_chunk_id": "d96c1c6a-6bd0-4eb8-b32a-9b74cd504981",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2431,7 +2431,7 @@
   {
     "id": "EVAL-PROSE-033",
     "observation": "Got a plane coming in for its 100-hour. Need to figure out which components are due for replacement or a mandatory inspection based on their service life.",
-    "ground_truth_chunk_id": "f65100f2-5d6c-482a-8702-0ebb8b756826",
+    "ground_truth_chunk_id": "8b835194-1352-4dce-b9c9-bd8a59778b5c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2444,7 +2444,7 @@
   {
     "id": "EVAL-PROSE-034",
     "observation": "Got a question about the airframe's overall lifespan. Does the main structure have a specific retirement limit, or is it condition-based?",
-    "ground_truth_chunk_id": "9f6fffc9-bf64-494d-96cb-8c74a818263a",
+    "ground_truth_chunk_id": "a16e87aa-cbaf-4d6b-8201-90eafa6d5930",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "General",
@@ -2457,7 +2457,7 @@
   {
     "id": "EVAL-PROSE-035",
     "observation": "Found some paint flaking on the wingtip and a small ding on the leading edge. Gotta check the procedures for surface restoration and minor structural fixes before we sign off on this bird.",
-    "ground_truth_chunk_id": "e0f24e9a-326c-486b-bba8-537d6639a090",
+    "ground_truth_chunk_id": "efad5c96-8fd6-4644-8e16-c5ff70f2d205",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Panels & Enclosures",
@@ -2470,7 +2470,7 @@
   {
     "id": "EVAL-PROSE-036",
     "observation": "Pulled the old exhaust manifold; it was totally toast, rendering it unusable for its purpose. Heavy pitting and material breakdown from years of heat and moisture attack made it look like Swiss cheese, sounded like a tractor.",
-    "ground_truth_chunk_id": "a6a4fe2e-f62c-4d5a-93e8-0a53715c3592",
+    "ground_truth_chunk_id": "b1955e2f-340b-4fef-9175-5712dc5150e3",
     "ground_truth_fault_code": "The exhaust system makes too much noise",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Exhaust System",
@@ -2483,7 +2483,7 @@
   {
     "id": "EVAL-PROSE-037",
     "observation": "Pulled the old fan off the front. That thing was all chewed up, had a nasty split runnin' right down the middle of one of the choppers.",
-    "ground_truth_chunk_id": "9afebb14-df63-4fcf-9c54-02dc508aa1ea",
+    "ground_truth_chunk_id": "ccb76c74-9c99-46b4-975a-f2b3ddd0f6fe",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Propeller",
@@ -2496,7 +2496,7 @@
   {
     "id": "EVAL-PROSE-038",
     "observation": "Customer's confused about when the next big inspection is due on their WT9; they haven't put many hours on it this year, but it's been a while since the last one. Need to figure out if it's based on flight time or just the calendar.",
-    "ground_truth_chunk_id": "3e7f368b-8786-41a2-9918-46c11ff9858d",
+    "ground_truth_chunk_id": "1d0057f2-0d47-43b2-a50c-15063278fd08",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2509,7 +2509,7 @@
   {
     "id": "EVAL-PROSE-039",
     "observation": "Pulled the old oil filter and cut it open; found a significant amount of metal flake and some larger chunks embedded in the filter media. That's a bad sign, so we're draining the oil pan to check the magnetic plug for more debris before we put a new filter on.",
-    "ground_truth_chunk_id": "e4f69108-1041-47b0-bb4f-9d73058e4da8",
+    "ground_truth_chunk_id": "c9b3e608-c9f2-4485-95e9-dcf60740442f",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Servicing",
@@ -2522,7 +2522,7 @@
   {
     "id": "EVAL-PROSE-040",
     "observation": "Engine temp gauge shot way up during the ground run, then I smelled that sweet kinda stink from the bay. Popped the cowling and saw a misty haze, looks like we're low on juice.",
-    "ground_truth_chunk_id": "b3f9006c-8d49-41a0-b258-19f7a538942e",
+    "ground_truth_chunk_id": "32d3953e-8fbb-4fbf-8c86-f40adfae3e90",
     "ground_truth_fault_code": "High coolant temperature indication",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Engine Air & Cooling",
@@ -2535,7 +2535,7 @@
   {
     "id": "EVAL-PROSE-041",
     "observation": "Owner is asking if this new inspection task from the factory is a mandatory airworthiness item or just a recommendation for improved operation. Need to check the bulletin type.",
-    "ground_truth_chunk_id": "077fc336-402a-49a2-ba01-1d5ca9ce499e",
+    "ground_truth_chunk_id": "df8840ef-3f19-4b82-8b1c-9471e44d295e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2548,7 +2548,7 @@
   {
     "id": "EVAL-PROSE-042",
     "observation": "Side window on the canopy looks a bit off. There's a visible space along the edge where it meets the fuselage, like it's not quite following the aircraft's curve.",
-    "ground_truth_chunk_id": "a03e7dcd-0f22-44d2-a219-85d01ba0851f",
+    "ground_truth_chunk_id": "875fa153-3663-4879-a96a-90a3d73f2627",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Windows",
@@ -2561,7 +2561,7 @@
   {
     "id": "EVAL-PROSE-043",
     "observation": "Left flap felt real sloppy durin' pre-flight, like somethin's loose in the hinge area. Heard a weird rattle when I gave it a good wiggle. Gotta check the pins and nuts, feels like it's gonna fall off.",
-    "ground_truth_chunk_id": "37b2d08e-636a-48f5-8501-49bd585c31ac",
+    "ground_truth_chunk_id": "92f1b4a2-8780-4c9a-8ae4-d69e6f9c109b",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -2574,7 +2574,7 @@
   {
     "id": "EVAL-PROSE-044",
     "observation": "Saw a puddle of red stuff under the wing, and when I poked the hydraulic brake line running back to the main wheel caliper, it was all crusty and leaking bad. That old line's gotta go, it's squirting fluid everywhere.",
-    "ground_truth_chunk_id": "e1a3775b-33ea-40ec-8ad2-0f52d5632aff",
+    "ground_truth_chunk_id": "5c0aa7c7-cb44-4ecd-b2a9-7911be971da8",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2587,7 +2587,7 @@
   {
     "id": "EVAL-PROSE-045",
     "observation": "The hobbs meter is nearing the 100-hour mark since the last routine service. I need to pull up the maintenance schedule to see what's due next for this LSA.",
-    "ground_truth_chunk_id": "3d06065d-d6a3-40e2-a977-19d952265dc6",
+    "ground_truth_chunk_id": "ea03ec36-ec88-4e0b-aef4-2c6fc35d24f6",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2600,7 +2600,7 @@
   {
     "id": "EVAL-PROSE-046",
     "observation": "Rudder pedals felt all mushy, like there was no connection when I pushed 'em. Had to really stomp to get any kinda steerin' on the ground, almost ran off the taxiway. Pulled the inspection panel and found the dang cable all frayed out, ready to snap.",
-    "ground_truth_chunk_id": "e4c1b818-0997-4cba-9105-8ae3fb6fd604",
+    "ground_truth_chunk_id": "f456ac86-7177-4cd2-abc6-b4ac192c31cf",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Equipment & Furnishings",
@@ -2613,7 +2613,7 @@
   {
     "id": "EVAL-PROSE-047",
     "observation": "Noticed a retaining washer's tabs broke right off, causing some gouging nearby. Looks like someone used a sharp tool to bend them during assembly.",
-    "ground_truth_chunk_id": "332ec008-0250-41ff-aa05-c895d9f3e70a",
+    "ground_truth_chunk_id": "2c3fd64d-bd8a-4226-b16a-b6b3bad5d2a1",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Standard Practices - Airframe",
@@ -2626,7 +2626,7 @@
   {
     "id": "EVAL-PROSE-048",
     "observation": "That left main strut was leaking fluid everywhere, made a nasty puddle when we pulled it in. Felt spongy as hell on the last landing, kinda thumped hard. Swapped out the whole damn thing, the seals were totally blown.",
-    "ground_truth_chunk_id": "90dfed2f-f0cb-4e06-abb9-73c86d36fd1b",
+    "ground_truth_chunk_id": "192d1823-8f39-41df-9a90-404293cf1251",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Landing Gear",
@@ -2639,7 +2639,7 @@
   {
     "id": "EVAL-PROSE-049",
     "observation": "Pilot reported a heavy arrival on the last flight, felt like the gear took a significant jolt. We need to inspect for any airframe stress.",
-    "ground_truth_chunk_id": "16765b43-3fa4-4da4-9b76-8c0fa450d6b6",
+    "ground_truth_chunk_id": "8418bf1a-d1c5-4617-9534-c9b49aaf810e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2652,7 +2652,7 @@
   {
     "id": "EVAL-PROSE-050",
     "observation": "Pilot reports the elevator feels unusually heavy and sticky when moving the stick. I noticed some slop and a grindy feel when inspecting the control path near the central tunnel.",
-    "ground_truth_chunk_id": "1f44655a-ac11-457b-b08e-848bcdf7ab18",
+    "ground_truth_chunk_id": "54e6ed72-d525-49e1-b50b-34ac3594bd4b",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Equipment & Furnishings",
@@ -2665,7 +2665,7 @@
   {
     "id": "EVAL-PROSE-051",
     "observation": "That tail wheel was all over the place, like a wet noodle. Found the steering spring snapped clean off, just dangling there. Swapped that sucker out, now it tracks straight again.",
-    "ground_truth_chunk_id": "3bd4650f-ffad-404c-a191-dac5b4ed9d38",
+    "ground_truth_chunk_id": "3f6c4d25-bb94-4532-b5cf-71e856fa847f",
     "ground_truth_fault_code": "Tail Wheel does not respond to rudder pedal",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -2678,7 +2678,7 @@
   {
     "id": "EVAL-PROSE-052",
     "observation": "During pre-flight, the yoke felt unusually stiff when trying to command roll, almost like something was binding up. The plane wanted to dutch roll on takeoff instead of banking smoothly, making it a real fight to keep wings level.",
-    "ground_truth_chunk_id": "d1fa0972-1d1e-40ae-a2ef-b360957fe304",
+    "ground_truth_chunk_id": "ac2783f5-581f-4bb0-9b22-ebd0ee547ffc",
     "ground_truth_fault_code": "Excessive resistance to movement of control sticks",
     "manual_source": "SC10000AMM",
     "section_system": "Wings",
@@ -2691,7 +2691,7 @@
   {
     "id": "EVAL-PROSE-053",
     "observation": "Pilot reports no XM weather showing up on his Garmin 560 display. Subscription appears to be current, but he's not getting any data.",
-    "ground_truth_chunk_id": "5eb69beb-e191-4409-949a-ecbc2c8b5b0b",
+    "ground_truth_chunk_id": "3d26678c-4953-407f-86f1-3a6f6322c062",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Instruments & Avionics",
@@ -2704,7 +2704,7 @@
   {
     "id": "EVAL-PROSE-054",
     "observation": "Found significant damage to the main wing structure. This looks like a big fix, and I'm unsure about the approval process for such extensive work.",
-    "ground_truth_chunk_id": "ad683bb7-b738-4351-959a-7c2b196dbf40",
+    "ground_truth_chunk_id": "7711e115-01eb-4be6-b0a5-5ef57ed3b39a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2717,7 +2717,7 @@
   {
     "id": "EVAL-PROSE-055",
     "observation": "Pilot reports the Garmin comm's display is super dim, can't make out the active frequency when flying in direct sunlight. Makes it tough to confirm what's tuned.",
-    "ground_truth_chunk_id": "d538fcfa-2753-4b7b-b095-269fbb6b0e12",
+    "ground_truth_chunk_id": "9cb02c5f-283f-486b-a4ed-7fa4861b2b8e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Instruments & Avionics",
@@ -2730,7 +2730,7 @@
   {
     "id": "EVAL-PROSE-056",
     "observation": "After that rough landing yesterday, did a quick eyeball on the main gear. The strut's lookin' a bit off-kilter, clearly not fulfillin' its design purpose. Might be some internal wear from the impact.",
-    "ground_truth_chunk_id": "35e28cda-4382-435f-b89e-f38e247b820a",
+    "ground_truth_chunk_id": "02fdbf80-26d0-4788-839d-d519f3e5f070",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -2743,7 +2743,7 @@
   {
     "id": "EVAL-PROSE-057",
     "observation": "The old carb was spitting fuel like crazy, smelled rich as heck and the engine was coughing bad, losing power. Had to pull it and send it to the factory guys; ain't nobody else got the parts or know-how to properly fix those things.",
-    "ground_truth_chunk_id": "fa17fdff-2d80-46c5-a2bd-0127acff0c52",
+    "ground_truth_chunk_id": "c1bfb865-9e49-4f60-a756-32f956c419bd",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Corrective Maintenance",
@@ -2756,7 +2756,7 @@
   {
     "id": "EVAL-PROSE-058",
     "observation": "Was working on the batt terminal, heard a quick snap, then saw smoke rising from the wiring harness near the main bus bar. Smelled like burnt plastic, and now the avionics ain't powering up.",
-    "ground_truth_chunk_id": "32a5de6b-6722-48d0-9dff-544e25d26a53",
+    "ground_truth_chunk_id": "1a9d0e25-c565-41cb-8b52-bbde37962c2b",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Electrical",
@@ -2769,7 +2769,7 @@
   {
     "id": "EVAL-PROSE-059",
     "observation": "Pulled the main landing gear strut. That thing was weeping fluid somethin' fierce, smelled like old oil burnin' on the brakes. The chrome was all scored up too, no wonder it wouldn't hold pressure.",
-    "ground_truth_chunk_id": "e2f0c651-f93f-45d8-b1db-044568bf5eba",
+    "ground_truth_chunk_id": "d2dbf2e0-8912-48e0-8529-c0659db83614",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2782,7 +2782,7 @@
   {
     "id": "EVAL-PROSE-060",
     "observation": "That main gear feels real squishy when I taxied, like the plane's sittin' too low. Looked underneath and those rubber bands holding it up are all frayed and stretched out, seen a few snapped ones too. Gotta replace those shock cords.",
-    "ground_truth_chunk_id": "e508d450-64fa-4d48-9e0c-06a44b106853",
+    "ground_truth_chunk_id": "019476b7-8323-48a2-98e2-2f9cf0872872",
     "ground_truth_fault_code": "Landing Gear Sags",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -2795,7 +2795,7 @@
   {
     "id": "EVAL-PROSE-061",
     "observation": "Got a weird whistling sound coming from the starboard wing when we hit cruise, sounds like it's right around the trim component. Also noticed some odd vibration near the inspection point for the leading edge. Need to check if that access hatch is fully secured or if something's come loose.",
-    "ground_truth_chunk_id": "10785650-2e74-42fb-bf41-865c5b87a116",
+    "ground_truth_chunk_id": "7a4186ef-7978-4584-b64c-d378b4177e50",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Periodic Inspection Requirements",
@@ -2808,7 +2808,7 @@
   {
     "id": "EVAL-PROSE-062",
     "observation": "Found a nasty crack running clean through the main wing support beam, right near the fuselage attachment point. That ain't no quick fix, gotta get the factory involved for this kinda structural damage. Looks like we're gonna need a big-time fix, not just a simple swap.",
-    "ground_truth_chunk_id": "1b706ca0-64c4-4e4e-869c-233177c2f5a2",
+    "ground_truth_chunk_id": "52cdd6d3-a64a-4585-946c-b97dbd56b801",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Line Maintenance & Repairs",
@@ -2821,7 +2821,7 @@
   {
     "id": "EVAL-PROSE-063",
     "observation": "Had to call the boss on this one, found a main longeron tube in the fuselage looking all rusty and flaky under the paint. That thing was getting paper thin, no way I could just patch it up. Had to pull the whole section out and wait for a new piece to get welded in.",
-    "ground_truth_chunk_id": "2e50c5c8-f04f-4764-aeae-642da7a6b575",
+    "ground_truth_chunk_id": "35a02782-9b1d-4d5c-af2a-692de9fd0646",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Fuselage",
@@ -2834,7 +2834,7 @@
   {
     "id": "EVAL-PROSE-064",
     "observation": "Found a significant crack on the main wing spar. I need to understand the procedure for undertaking a structural repair of this size.",
-    "ground_truth_chunk_id": "116fc942-dace-48de-88c3-19f98e466edf",
+    "ground_truth_chunk_id": "d8875774-d2fd-4cbf-af76-1b5968ef96bd",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Structural Repairs",
@@ -2847,7 +2847,7 @@
   {
     "id": "EVAL-PROSE-065",
     "observation": "Topcoat finish is uneven, and the paint feels a bit off after baking. Suspect issues with application pressure or the curing process.",
-    "ground_truth_chunk_id": "50be364b-f29f-40ca-bdd3-e2e69da2feaa",
+    "ground_truth_chunk_id": "d1678ad1-0397-4a77-8b28-cae33a2d3c32",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -2860,7 +2860,7 @@
   {
     "id": "EVAL-PROSE-066",
     "observation": "Found a real mess under the wing, like a puddle of that red stuff, stunk somethin' fierce. The old hydraulic brake line running to the main wheel caliper was just pourin' out, gotta swap it for a new one. That thing was toast.",
-    "ground_truth_chunk_id": "4aca912a-ea0e-41c7-b7e2-87a9ddeab655",
+    "ground_truth_chunk_id": "62d8444e-9ac0-4a0a-aadf-53b023dbcb12",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -2873,7 +2873,7 @@
   {
     "id": "EVAL-PROSE-067",
     "observation": "Had to pull the exhaust manifold off the right engine; that sucker was cracked wide open at the flange, spewing hot gases and making a racket. No wonder the pilot reported a weird cabin smell. Swapped in a fresh component, job done.",
-    "ground_truth_chunk_id": "357522ff-5b0d-4a1b-b6cd-02b933077f39",
+    "ground_truth_chunk_id": "6107e14c-7aff-43cb-bf7d-cedab7ba2ae3",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -2886,7 +2886,7 @@
   {
     "id": "EVAL-PROSE-068",
     "observation": "Got a question from the owner about doing some basic upkeep tasks. Need to confirm what minor work they're legally allowed to handle on their plane without needing a certified mechanic.",
-    "ground_truth_chunk_id": "a7aed662-8b30-4e37-909d-6dd1451cb56b",
+    "ground_truth_chunk_id": "d305fe70-e9cc-4a36-9719-6988464c2b36",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance General",
@@ -2899,7 +2899,7 @@
   {
     "id": "EVAL-PROSE-069",
     "observation": "After they swapped out that old box in the back, the tail felt super heavy during taxi, like it wanted to drag the ground. Had to put in way too much forward trim just to keep the nose down on takeoff, something ain't right with the balance.",
-    "ground_truth_chunk_id": "aa86e914-a4f0-40ba-89e0-af119d7ac37b",
+    "ground_truth_chunk_id": "3d579c82-c212-4e14-a750-caec1162af3e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Leveling & Weighing",
@@ -2912,7 +2912,7 @@
   {
     "id": "EVAL-PROSE-070",
     "observation": "Had a pilot-owner call asking about signing off a basic oil change. He wanted to know what maintenance he's allowed to perform on his LSA.",
-    "ground_truth_chunk_id": "0123b3f4-9e12-4e42-800d-9f4bfe93d598",
+    "ground_truth_chunk_id": "e31c82be-e4a6-43b0-8ebb-ab565368e2e3",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance General",
@@ -2925,7 +2925,7 @@
   {
     "id": "EVAL-PROSE-071",
     "observation": "Engine's got about 35 hours on the Hobbs. Need to confirm the correct oil spec to use for the next oil change, now that it's out of initial break-in.",
-    "ground_truth_chunk_id": "eac5aad7-feeb-4b41-b47b-c4c45190a6c7",
+    "ground_truth_chunk_id": "4a6f2a59-2f95-4141-9881-70da5f4d94e4",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance General",
@@ -2938,7 +2938,7 @@
   {
     "id": "EVAL-PROSE-072",
     "observation": "Got a persistent fuel leak near the tank. Looks like a hose or fitting is compromised and needs to be swapped out.",
-    "ground_truth_chunk_id": "ec078e94-23da-4030-b408-988ac8757eac",
+    "ground_truth_chunk_id": "cb6bad03-c7a1-4b1f-95f5-de01feb17df4",
     "ground_truth_fault_code": "Leak in Fuel Line",
     "manual_source": "SC10000AMM",
     "section_system": "Component Removal & Replacement",
@@ -2951,7 +2951,7 @@
   {
     "id": "EVAL-PROSE-073",
     "observation": "Brakes feel real mushy, like they ain't grabbin' good. Heard a nasty grindin' sound comin' from the gear on touchdown. Pretty sure those brake pads are completely shot.",
-    "ground_truth_chunk_id": "aea0ac26-41b9-4c23-94d3-0f39d3d76bad",
+    "ground_truth_chunk_id": "8f9dd92c-8ff9-433b-89b9-18e5ff6625dd",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wheel & Brake",
@@ -2964,7 +2964,7 @@
   {
     "id": "EVAL-PROSE-074",
     "observation": "Noticed some skin buckling on the main airframe behind the wing attachment point during the pre-flight. Looks like it might need a closer look.",
-    "ground_truth_chunk_id": "25782822-6c9b-4847-895d-e770be70e036",
+    "ground_truth_chunk_id": "6749901a-fffd-489a-b8f7-55740c0e0494",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Fuselage",
@@ -2977,7 +2977,7 @@
   {
     "id": "EVAL-PROSE-075",
     "observation": "During pre-flight, noticed the aircraft's left wing looked like it had a different dihedral angle compared to the right. Also, a couple of vortex generators are missing from the top surface.",
-    "ground_truth_chunk_id": "04bfd79e-5c6b-412a-9013-448b4f6c5dbd",
+    "ground_truth_chunk_id": "5382f4d0-2ab3-46f9-b02c-e6e6a78aa6e3",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wings",
@@ -2990,7 +2990,7 @@
   {
     "id": "EVAL-PROSE-076",
     "observation": "The main plane's got a bit too much play where it connects to the body, feels kinda loose when you push on it. Looks like some of the pins are worn thin and the holes are ovaled out, definitely not right.",
-    "ground_truth_chunk_id": "ed1f2126-9fdc-448d-ae6f-792d7ab274b5",
+    "ground_truth_chunk_id": "6a1ed582-6ae8-40b0-b4fd-d1b4a09972eb",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wings",
@@ -3003,7 +3003,7 @@
   {
     "id": "EVAL-PROSE-077",
     "observation": "Just swapped the aft strut's adjusting fork on the port wing. We couldn't get the wing's twist right; had to expose way too many threads, pushing past the fifteen-thread limit to even get close. The old part was completely seized and worn out.",
-    "ground_truth_chunk_id": "422d96ee-7460-4688-849d-fbab40694f3f",
+    "ground_truth_chunk_id": "4f0b5adc-993d-4ce4-a0f2-1cbf8b2b0669",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wings",
@@ -3016,7 +3016,7 @@
   {
     "id": "EVAL-PROSE-078",
     "observation": "During pre-flight, I noticed a couple of the small aero tabs were missing from the top of the left wing. One other felt a bit loose and might need attention.",
-    "ground_truth_chunk_id": "12811381-8113-4a6e-bddd-0a8caa103ba4",
+    "ground_truth_chunk_id": "9b25e858-5de9-448d-92ec-6d9a5609fbe4",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Wings",
@@ -3029,7 +3029,7 @@
   {
     "id": "EVAL-PROSE-079",
     "observation": "Just replaced the aft bracing wires. One of 'em was seriously frayed, almost snapped, and the whole empennage felt kinda wobbly during the pre-flight check. Heard a faint 'twang' sound last time it landed, too.",
-    "ground_truth_chunk_id": "7167bb18-6b87-4832-a210-688399116066",
+    "ground_truth_chunk_id": "d5fc26b7-8d78-4b51-bd7d-0ab3abd7b351",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3042,7 +3042,7 @@
   {
     "id": "EVAL-PROSE-080",
     "observation": "Found some surface rust on a metal fitting for a flight control wire in the tail section. Also noted a small tear in the fabric skin near one of the stabilizer's trailing edges.",
-    "ground_truth_chunk_id": "04827455-0c30-4c82-b6b2-d6996d395e1f",
+    "ground_truth_chunk_id": "0533b342-a325-4c3e-ae4d-17e15ca0d36a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3055,7 +3055,7 @@
   {
     "id": "EVAL-PROSE-081",
     "observation": "Rudder feels a bit off-center, and I'm not getting full throw to the left. Seems like the control cable attachment point at the horn might need tweaking, or maybe a hinge is dry.",
-    "ground_truth_chunk_id": "1783b8e6-f5e1-44f6-a443-723f42405275",
+    "ground_truth_chunk_id": "1802e3a9-b38c-4f71-8079-16d54db4d26d",
     "ground_truth_fault_code": "Tail Wheel does not respond to rudder pedal",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3068,7 +3068,7 @@
   {
     "id": "EVAL-PROSE-082",
     "observation": "Stick felt super sloppy, like a wet noodle. Pulled that horn thing off the elevator, the pinhole was all egg-shaped and wallowed out. Swapped it for a new one, feels tight now.",
-    "ground_truth_chunk_id": "914369f0-298a-4aad-a638-cbee0ced6dd7",
+    "ground_truth_chunk_id": "9b25fb0d-5f0d-44ea-b3c8-dc05703fc081",
     "ground_truth_fault_code": "Lost motion in control sticks",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3081,7 +3081,7 @@
   {
     "id": "EVAL-PROSE-083",
     "observation": "During the taxi check, the whole back end felt kinda loose, almost like a shimmy. Heard a faint rattling sound from the right side of the tail when we hit a little bump. Pretty sure that bolt holding the front of the right horizontal wing thingy isn't snugged down right.",
-    "ground_truth_chunk_id": "7bb44954-7937-4f65-99a8-add09bb4981e",
+    "ground_truth_chunk_id": "528b5f9b-0734-4f17-b1a0-ae81ac1548c0",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3094,7 +3094,7 @@
   {
     "id": "EVAL-PROSE-084",
     "observation": "Pulled the old tail string 'cause it was all wobbly. Found some jackass drilled right through the mounting bracket, made the whole thing useless. Gotta swap out that whole piece of junk and get a solid connection.",
-    "ground_truth_chunk_id": "65fc25d9-1360-4af2-9159-3ce59886ca2f",
+    "ground_truth_chunk_id": "bd622db9-48c6-49bb-a9e6-326a626cd1fd",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3107,7 +3107,7 @@
   {
     "id": "EVAL-PROSE-085",
     "observation": "Having trouble getting the elevator horn assembly to sit correctly. Need a diagram for the component connections.",
-    "ground_truth_chunk_id": "7d658dc3-0f9f-48a0-ba49-b57405621f51",
+    "ground_truth_chunk_id": "8842ec5f-3361-4984-ad5c-3f94fa4b2c9b",
     "ground_truth_fault_code": "Full elevator travel cannot be achieved",
     "manual_source": "SC10000AMM",
     "section_system": "Empennage",
@@ -3120,7 +3120,7 @@
   {
     "id": "EVAL-PROSE-086",
     "observation": "During the post-maintenance flight, the aircraft exhibited a persistent yaw to the right, even with neutral rudder pedal input. On inspection, the vertical stabilizer's control linkage was found to be improperly adjusted, causing the rudder to be slightly deflected to port. This mis-rigging of the rear flight controls is likely contributing to the unexpected directional pull.",
-    "ground_truth_chunk_id": "23081af5-58c5-4a58-a9d7-d21d7acc4be3",
+    "ground_truth_chunk_id": "bc29d5c7-d1e4-48a1-a385-3ef57f7a4f24",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3133,7 +3133,7 @@
   {
     "id": "EVAL-PROSE-087",
     "observation": "The flap lever isn't staying in its selected position. I suspect the locking pin or latch mechanism is worn out and needs to be swapped.",
-    "ground_truth_chunk_id": "a5b5d3cd-3643-4575-8c87-f5dacbdc10d2",
+    "ground_truth_chunk_id": "d363189e-281e-472a-a351-32da87c9b619",
     "ground_truth_fault_code": "Flaps won't stay in position at second or third notch",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3146,7 +3146,7 @@
   {
     "id": "EVAL-PROSE-088",
     "observation": "Elevator control stick feels like it's binding or not allowing full up deflection. Checked cable tension and it was below recommended limits, and the stick barely cleared the dash when pushed forward.",
-    "ground_truth_chunk_id": "578348a9-0861-48e4-b370-b13c8f6e1ba2",
+    "ground_truth_chunk_id": "28817dd3-ff6e-4080-b0af-1f83b79181b9",
     "ground_truth_fault_code": "Full elevator travel cannot be achieved",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3162,7 +3162,7 @@
   {
     "id": "EVAL-PROSE-089",
     "observation": "Swapped out the whole rear cable fitting cause the holes were totally wallowed out; couldn't get the damn rudder travel to hold for nothin', felt all sloppy.",
-    "ground_truth_chunk_id": "9d94d316-eac4-45af-a6a7-cc094d4237a1",
+    "ground_truth_chunk_id": "bc29d5c7-d1e4-48a1-a385-3ef57f7a4f24",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3175,7 +3175,7 @@
   {
     "id": "EVAL-PROSE-090",
     "observation": "Flap's acting real sticky when I try to drop it, feels like it's binding up. Gotta really yank the handle to get it moving, and it don't go down all the way. Heard a weird groan from that side too.",
-    "ground_truth_chunk_id": "d784f43f-7642-4639-98f0-243def544340",
+    "ground_truth_chunk_id": "03e2d7ca-f003-4bcc-b291-d9c4f1281e02",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3188,7 +3188,7 @@
   {
     "id": "EVAL-PROSE-091",
     "observation": "Pilot reported the flap selector feels gritty and sometimes doesn't hold its position. It's tough to move through all the settings.",
-    "ground_truth_chunk_id": "30948180-ac1d-4fb5-882d-1d72badc9447",
+    "ground_truth_chunk_id": "c234aeac-d05d-4aea-b994-01e7fe025eb6",
     "ground_truth_fault_code": "Flaps won't stay in position at second or third notch",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3201,7 +3201,7 @@
   {
     "id": "EVAL-PROSE-092",
     "observation": "Checked the aileron hookup and noticed the cotter pin securing the cable fork to the horn was gone. The castle nut also felt a little loose.",
-    "ground_truth_chunk_id": "94bba8ff-a0f6-4709-b831-388fa2b79cc7",
+    "ground_truth_chunk_id": "1e4f39ef-4023-4a48-868b-347140040f53",
     "ground_truth_fault_code": "Lost motion in control sticks",
     "manual_source": "SC10000AMM",
     "section_system": "Flight Controls",
@@ -3217,7 +3217,7 @@
   {
     "id": "EVAL-PROSE-093",
     "observation": "Got a new squawk come in; the bird's acting up. Need to figure out what's wrong and how to fix it.",
-    "ground_truth_chunk_id": "14aa0711-58ff-4e0c-8a8b-9742fba26f98",
+    "ground_truth_chunk_id": "7528436a-c0bc-4dc2-afb9-c426f04cff5b",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -3230,7 +3230,7 @@
   {
     "id": "EVAL-PROSE-094",
     "observation": "During reassembly of the main gear, I noticed a slight gap where the leg meets the airframe mount. It looks like it needs some shimming to fit correctly.",
-    "ground_truth_chunk_id": "cc70b68d-e906-4b02-bf56-aec923ecfc26",
+    "ground_truth_chunk_id": "4e56eb77-4617-455f-b576-43d204c40cc2",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -3243,7 +3243,7 @@
   {
     "id": "EVAL-PROSE-095",
     "observation": "Had to swap out that main bushing connecting the springs to the tail wheel. It was completely chewed up, causing a ton of slop and making the steerable wheel feel super vague on the ground. Definitely needed the replacement to get rid of that clunky movement.",
-    "ground_truth_chunk_id": "b9157ba8-80d5-4a8f-bb0e-ec99d65868df",
+    "ground_truth_chunk_id": "c68eabe4-10e0-455a-9cfa-9ac1173d2b91",
     "ground_truth_fault_code": "Tail Wheel does not respond to rudder pedal",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -3256,7 +3256,7 @@
   {
     "id": "EVAL-PROSE-096",
     "observation": "That whole tail wheel was kinda cockeyed, like the plane was limping. The springy bits were all twisted up, so we had to swap 'em out for a fresh set.",
-    "ground_truth_chunk_id": "6c9c5271-84c6-4354-9df1-3f1fb80caa19",
+    "ground_truth_chunk_id": "70f58374-c837-497d-b48c-36fa0f243ec2",
     "ground_truth_fault_code": "Tail Wheel does not absorb shock",
     "manual_source": "SC10000AMM",
     "section_system": "Landing Gear",
@@ -3269,7 +3269,7 @@
   {
     "id": "EVAL-PROSE-097",
     "observation": "Just finished a long flight, the prop blades are caked with bugs and dirt. The cockpit displays are dusty, and the seats could use a good wipe-down and some covers before the next trip.",
-    "ground_truth_chunk_id": "238c03a2-27d6-4d64-8d7e-32b08639073c",
+    "ground_truth_chunk_id": "793929a0-a3d8-41d3-827f-5bfba6486fc1",
     "ground_truth_fault_code": "NONE",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance Practices",
@@ -3282,7 +3282,7 @@
   {
     "id": "EVAL-PROSE-098",
     "observation": "Just swapped out the main tail wheel bearing. The inner and outer races were severely galled and pitted, felt like sandpaper when I spun it. Definitely beyond serviceable limits, causing excessive play.",
-    "ground_truth_chunk_id": "4544de0e-1939-402b-abf9-c02b0cee87e2",
+    "ground_truth_chunk_id": "ac9ed553-80ba-4910-830e-33d360cded77",
     "ground_truth_fault_code": "Tail Wheel Shimmies",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance Practices",
@@ -3295,7 +3295,7 @@
   {
     "id": "EVAL-PROSE-099",
     "observation": "Tail wheel's got a nasty wobble goin' on, feels like it's gonna shake itself right off the back. Heard a metal-on-metal clunking sound when I tried to taxi it slow; bet somethin's loose down there where it bolts up.",
-    "ground_truth_chunk_id": "929bb72b-c07b-49c1-abb5-2b45c4bb7a99",
+    "ground_truth_chunk_id": "12174618-571a-4d9d-87cf-8de313ff9fb0",
     "ground_truth_fault_code": "Tail Wheel Shimmies",
     "manual_source": "SC10000AMM",
     "section_system": "Maintenance Practices",
@@ -3308,7 +3308,7 @@
   {
     "id": "EVAL-PROSE-100",
     "observation": "The left main brake pedal goes almost to the floor before engaging. Saw a small fluid weep around the brake caliper assembly when inspecting.",
-    "ground_truth_chunk_id": "b59f737a-793a-4c7c-ab77-be39d8cb24b6",
+    "ground_truth_chunk_id": "8f9dd92c-8ff9-433b-89b9-18e5ff6625dd",
     "ground_truth_fault_code": "Unable to obtain sufficient hydraulic brake pressure, excessive toe pedal travel, or spongy pedal",
     "manual_source": "SC10000AMM",
     "section_system": "Wheel & Brake",
@@ -3321,7 +3321,7 @@
   {
     "id": "EVAL-PROSE-101",
     "observation": "Felt a real bad shimmy coming from the front during run-up, like that big fan ain't spinnin' right. Heard a kinda rhythmic thudding too, felt it right through the floorboards. Definitely ain't normal, somethin's off with that thing up front.",
-    "ground_truth_chunk_id": "e851c22d-c72e-4576-8655-7c623d469a41",
+    "ground_truth_chunk_id": "cc1b461f-8ff8-480a-b878-d8a0e1f1afd2",
     "ground_truth_fault_code": "Engine vibration",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Powerplant",
@@ -3334,7 +3334,7 @@
   {
     "id": "EVAL-PROSE-102",
     "observation": "We're putting in the new traffic awareness antennas on the WT9's instrument board. Need to confirm the mounting steps.",
-    "ground_truth_chunk_id": "ffb1a399-7e7e-4a20-9e67-df65c7275fd5",
+    "ground_truth_chunk_id": "31ebf3e9-c4bc-47f4-a98a-7d2ec48dca3e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Navigation",
@@ -3347,7 +3347,7 @@
   {
     "id": "EVAL-PROSE-103",
     "observation": "Pilot reported scratchy comms on the WT9. Found the VHF antenna looking pretty worn out, probably needs to be replaced.",
-    "ground_truth_chunk_id": "0b4cc775-5397-48d2-afe7-d84b3e66f570",
+    "ground_truth_chunk_id": "75bfee4e-fb86-4547-97b4-76e6354c866c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Communications",
@@ -3360,7 +3360,7 @@
   {
     "id": "EVAL-PROSE-104",
     "observation": "Pilot reported the flaps are tough to move, feels like a mechanical hang-up. Found excessive play in the actuating rods connecting to the wing's main cross tube.",
-    "ground_truth_chunk_id": "cb602640-918d-4011-9446-72e892b2725f",
+    "ground_truth_chunk_id": "f8d48aa0-18d3-4444-9f61-a0889b10014f",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Equipment & Furnishings",
@@ -3373,7 +3373,7 @@
   {
     "id": "EVAL-PROSE-105",
     "observation": "Engine was spitting and sputtering like crazy on the last run-up, almost crapped out. Pulled the fuel filter and holy cow, that thing was totally plugged with crud, looked like nasty sludge. Swapped the old clogged one for a fresh can, she's running smooth now.",
-    "ground_truth_chunk_id": "ab413834-a2d9-41c4-9cab-a2bd1e2c9958",
+    "ground_truth_chunk_id": "1947fce6-a93b-4462-b619-30d6c703fa55",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Fuel System",
@@ -3386,7 +3386,7 @@
   {
     "id": "EVAL-PROSE-106",
     "observation": "During pre-flight, the aileron felt unusually stiff, almost gritty, when moving the stick. This bird's been operating in coastal regions a lot, so I'm thinking some accelerated degradation in the control linkages is the culprit. We need to pull the covers and inspect it before it flies again.",
-    "ground_truth_chunk_id": "a6a4fe2e-f62c-4d5a-93e8-0a53715c3592",
+    "ground_truth_chunk_id": "f8415447-ebc2-4417-bbf8-7ffe95fff50d",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -3399,7 +3399,7 @@
   {
     "id": "EVAL-PROSE-107",
     "observation": "During pre-flight ground run, the engine RPM was erratic, fluctuating wildly outside normal operating parameters. There was a distinct sputtering sound and a faint smell of unburnt fuel, indicating an issue with combustion. This degradation wasn't noted in previous logs and suggests a potential component performance deviation not covered by standard operational guidelines.",
-    "ground_truth_chunk_id": "dff61b0d-ea53-4dbf-b373-ab34a5dec4fb",
+    "ground_truth_chunk_id": "6c27a938-b78c-48f3-b63e-1e61ff279f76",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Fuel System",
@@ -3412,7 +3412,7 @@
   {
     "id": "EVAL-PROSE-108",
     "observation": "The pilot landed pretty hard after that crosswind gust. Gotta do a thorough look-over for anything bent or cracked before it flies again.",
-    "ground_truth_chunk_id": "3e7f368b-8786-41a2-9918-46c11ff9858d",
+    "ground_truth_chunk_id": "6dc5671d-5edb-4930-bcba-481a0ae143a5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -3425,7 +3425,7 @@
   {
     "id": "EVAL-PROSE-109",
     "observation": "Heard a gnarly metal-on-metal racket from the nose wheel area during brake check. Found the braking plate on the nose landing gear leg was loose, probably due to some failed blind rivets, causing intermittent drag and a noticeable pull to the right.",
-    "ground_truth_chunk_id": "949c12a2-4e72-4552-b27c-4126207474f6",
+    "ground_truth_chunk_id": "d66e63e9-2fb6-442d-b86d-e4fae74b2ef8",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Landing Gear",
@@ -3438,7 +3438,7 @@
   {
     "id": "EVAL-PROSE-110",
     "observation": "Engine oil pressure sensor M101 givin' erratic readings, jumpin' all over the place during ground run. Suspect a loose connection or bad insulation at the sensor harness near the pump, probably a faulty shrink tube. Seein' some oil residue there too.",
-    "ground_truth_chunk_id": "046d97a4-ef82-4e12-9e69-f695468989fb",
+    "ground_truth_chunk_id": "f057d9cb-33d1-47d9-9357-7f4f00893fc1",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Powerplant",
@@ -3451,7 +3451,7 @@
   {
     "id": "EVAL-PROSE-111",
     "observation": "That little Klixon for the stick trim kept poppin' out; it was hot to the touch and smelled kinda fried. Swapped the bad breaker, now the nose trim works again.",
-    "ground_truth_chunk_id": "d1f86627-eff2-4c27-b0cf-21e7a59f9903",
+    "ground_truth_chunk_id": "535e8da8-06c4-4b4c-9b1b-81b70da6fceb",
     "ground_truth_fault_code": "Burning smell in the cockpit",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Electrical Power",
@@ -3464,7 +3464,7 @@
   {
     "id": "EVAL-PROSE-112",
     "observation": "Swapped out the aileron trim tab actuator. It was totally shot, making a grinding sound whenever the trim was adjusted, not just a little play. Looks like the last scheduled maint. didn't comply with that specific service bulletin about the wear limits.",
-    "ground_truth_chunk_id": "077fc336-402a-49a2-ba01-1d5ca9ce499e",
+    "ground_truth_chunk_id": "6f9e3106-0883-42dc-916d-cdbc368411ae",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Flight Controls",
@@ -3477,7 +3477,7 @@
   {
     "id": "EVAL-PROSE-113",
     "observation": "Got a wet spot under the main gear, like brake juice is seepin' out. Pedal feels real mushy now, gotta pump it a few times to get anything.",
-    "ground_truth_chunk_id": "de823813-5be0-4721-be1e-7680f993553a",
+    "ground_truth_chunk_id": "bfa94027-3f39-4fe2-9a36-712625c917a5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Landing Gear",
@@ -3490,7 +3490,7 @@
   {
     "id": "EVAL-PROSE-114",
     "observation": "During the pre-flight check, I noticed the elevator surface wasn't reaching its expected travel limits, particularly on the down side. It seems like the connecting rod assemblies or their pivot points might be out of adjustment, preventing full control input.",
-    "ground_truth_chunk_id": "00c416c6-330e-4cb8-bf10-599926469b8a",
+    "ground_truth_chunk_id": "36c9bd37-71b8-4076-bad6-2c104f573027",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Equipment & Furnishings",
@@ -3503,7 +3503,7 @@
   {
     "id": "EVAL-PROSE-115",
     "observation": "During the 100-hour, I found a section of the main wire harness exhibiting significant thermal stress near the hydraulic pump. The outer sheathing feels brittle to the touch and shows clear signs of melting, almost smelling burnt. That insulation is compromised, definitely a potential for a short.",
-    "ground_truth_chunk_id": "e1a3775b-33ea-40ec-8ad2-0f52d5632aff",
+    "ground_truth_chunk_id": "39494945-d301-4ca2-a2e3-6ed92e22fbd0",
     "ground_truth_fault_code": "Burning smell in the cockpit",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -3516,7 +3516,7 @@
   {
     "id": "EVAL-PROSE-116",
     "observation": "Was doing a quick check and saw that big plastic box where the engine gulps air was all cracked up near the hose. Heard a weird hiss when the motor was running, like it's sucking air from someplace it shouldn't. Gonna need to swap that whole air intake housing out, it's letting junk in.",
-    "ground_truth_chunk_id": "1633c022-a56e-4ea3-89f3-eba176d0f9a8",
+    "ground_truth_chunk_id": "c19b6868-d45b-4ece-8e13-ca71790e8238",
     "ground_truth_fault_code": "Engine runs irregularly or misfires occasionally",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Powerplant",
@@ -3529,7 +3529,7 @@
   {
     "id": "EVAL-PROSE-117",
     "observation": "Pulled the main chute deployment cartridge; had a fault code for an open circuit on the igniter, and it was already past its shelf life anyway. Not taking chances with the whole emergency recovery system, so we're installing a fresh unit. Gonna run a full system test after the new one's in.",
-    "ground_truth_chunk_id": "e6695e9f-bf09-46a9-aa3b-204cd71358ff",
+    "ground_truth_chunk_id": "1381e31e-b9ec-4a0d-a94f-94521c98e1a1",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Equipment & Furnishings",
@@ -3542,7 +3542,7 @@
   {
     "id": "EVAL-PROSE-118",
     "observation": "Time to look up the routine checks for the WT9. I need the full list of scheduled items for this light sport aircraft.",
-    "ground_truth_chunk_id": "0c112d9b-9ea0-4a0e-96d7-2f1c724649aa",
+    "ground_truth_chunk_id": "bd9ddc3b-731f-4520-83d9-e87d92d21eec",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Time Limits & Maintenance Checks",
@@ -3555,7 +3555,7 @@
   {
     "id": "EVAL-PROSE-119",
     "observation": "Post-assembly, the cabin heat lever won't move to the full open position. It feels like something is binding up when trying to operate it.",
-    "ground_truth_chunk_id": "3a36188f-8ab2-40c2-93c4-814674b9e52e",
+    "ground_truth_chunk_id": "a875182a-50af-4036-8e08-daf8e3ed3930",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Air Conditioning & Heating",
@@ -3568,7 +3568,7 @@
   {
     "id": "EVAL-PROSE-120",
     "observation": "Popped the little access door by the wing root, and sure enough, that cable was all frayed and binding up. Swapped the whole damn thing, now the flap lever actually moves without grinding and sticking.",
-    "ground_truth_chunk_id": "3211f0c1-8a35-4425-8ccf-608e96e531c8",
+    "ground_truth_chunk_id": "c5d2a900-1624-49be-b15c-bf42f3ea7603",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Flight Controls",
@@ -3581,7 +3581,7 @@
   {
     "id": "EVAL-PROSE-121",
     "observation": "Need to get this bird up for a gear swing check, but it's pretty windy out here. Also, wondering if we need to drain the gas before we lift it.",
-    "ground_truth_chunk_id": "f6d88c9b-79f8-4ee0-8027-182c36ce9ca3",
+    "ground_truth_chunk_id": "5ba2c123-212d-4219-8ecf-9e7298796ea3",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Lifting & Shoring",
@@ -3594,7 +3594,7 @@
   {
     "id": "EVAL-PROSE-122",
     "observation": "Man, that front lift point was a mess, fluid all over the concrete and the jack just kept sinking. Had to yank that leaky thing outta there, smelled like old hydraulic juice.",
-    "ground_truth_chunk_id": "55390a9a-4a88-4ffe-812b-f9690602b270",
+    "ground_truth_chunk_id": "a90ad8fb-f735-432a-b284-a22aab3b0b41",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Lifting & Shoring",
@@ -3607,7 +3607,7 @@
   {
     "id": "EVAL-PROSE-123",
     "observation": "Heard a weird, faint groaning sound coming from up front when we were doing the walk-around, right near where the lift points are. Looked closer and saw a fresh nasty crease in the metal, just behind that 'LIFT HERE' sticker. Looks like someone put the jack in the wrong spot or something slipped.",
-    "ground_truth_chunk_id": "77ef1d6d-4bab-4aac-8ef0-3a70800acb04",
+    "ground_truth_chunk_id": "a90ad8fb-f735-432a-b284-a22aab3b0b41",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Lifting & Shoring",
@@ -3620,7 +3620,7 @@
   {
     "id": "EVAL-PROSE-124",
     "observation": "That front strut was totally blown, oil splattered all over the pavement. She was sitting way low on that side, couldn't get her level for the weigh-in no matter what. Just swapped it out, now she sits right.",
-    "ground_truth_chunk_id": "3cd04a8c-3c0c-44fa-a2cc-0494e1cf220e",
+    "ground_truth_chunk_id": "9af84c13-cea6-4677-be89-7deb96a2904e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Leveling & Weighing",
@@ -3633,7 +3633,7 @@
   {
     "id": "EVAL-PROSE-125",
     "observation": "After the recent jack-up for gear work, the airframe clearly isn't sitting right; when eyeballing the canopy frame, it's pitched nose-down more than expected, suggesting the longitudinal axis is off. That spirit bubble must've been way out of whack when they finished up.",
-    "ground_truth_chunk_id": "4c9b8b27-70fc-430f-a766-94ce496b4661",
+    "ground_truth_chunk_id": "f6ea3439-d7c0-45a0-9d12-9e5b7aa63864",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Leveling & Weighing",
@@ -3646,7 +3646,7 @@
   {
     "id": "EVAL-PROSE-126",
     "observation": "Just replaced the right main gear wheel. Its sidewall was severely deformed, making it impossible to adjust for proper aircraft leveling. Kept losing air pressure, totally shot.",
-    "ground_truth_chunk_id": "e8a7617d-3ad3-4580-8723-21428e295fe0",
+    "ground_truth_chunk_id": "f07cf8c6-7978-41f3-8fe1-e3b0387634f6",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Leveling & Weighing",
@@ -3659,7 +3659,7 @@
   {
     "id": "EVAL-PROSE-127",
     "observation": "Swapped out the old aux power unit for a new model; that heavy sucker was throwing off the longitudinal axis balance, making the bird feel squirrely on rotation. Had to re-do the basic empty weight and moment calc after the install, as the reference datum measurement shifted big time.",
-    "ground_truth_chunk_id": "c7f1a67e-098e-4a90-91e3-d7deac74f552",
+    "ground_truth_chunk_id": "b46b7edc-78b8-4ffd-a811-2589286fffb7",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Leveling & Weighing",
@@ -3672,7 +3672,7 @@
   {
     "id": "EVAL-PROSE-128",
     "observation": "During the ground run, noticed the rudder wasn't responding cleanly; felt super sloppy with excessive play in the pedals. There's a subtle grinding noise coming from the tail during full deflection, likely pointing to an issue with the control components or bearings. We'll need to get in there and check the rudder attachment points and linkages.",
-    "ground_truth_chunk_id": "500be52e-1cc2-44b3-84d2-177abfe972b1",
+    "ground_truth_chunk_id": "dde3df35-a035-4e45-b9e9-7dab27272d10",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Stabilizers",
@@ -3685,7 +3685,7 @@
   {
     "id": "EVAL-PROSE-129",
     "observation": "Customer called saying he couldn't get the tow bar pins to fully seat into the nose gear, and he was worried it might come off while moving the plane. He tried forcing it but no luck.",
-    "ground_truth_chunk_id": "b4cc0e33-0355-4d93-a8c6-c4fccd61e5fa",
+    "ground_truth_chunk_id": "4985fea3-2218-4d6c-b871-55791163c79e",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Towing & Taxiing",
@@ -3698,7 +3698,7 @@
   {
     "id": "EVAL-PROSE-130",
     "observation": "Can't seem to get the LSA to budge. Tow bar is on, but I think I'm missing a step before moving it, or maybe the brakes are still set?",
-    "ground_truth_chunk_id": "9a62cd6f-0996-4ad6-a27a-d0867d8a7364",
+    "ground_truth_chunk_id": "f069f9da-ecb5-4e1a-9160-0b6ccded9e5a",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Towing & Taxiing",
@@ -3711,7 +3711,7 @@
   {
     "id": "EVAL-PROSE-131",
     "observation": "Owner asked about procedures for moving the aircraft under its own power from the hangar to the tie-down spot, and who is authorized to do so. They seemed a bit unsure about safe ground operations.",
-    "ground_truth_chunk_id": "f2494bd0-0008-4ed8-b86b-2b3922611f23",
+    "ground_truth_chunk_id": "e1917204-55d7-49fe-b6ee-2f62fc3bc406",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Towing & Taxiing",
@@ -3724,7 +3724,7 @@
   {
     "id": "EVAL-PROSE-132",
     "observation": "Need to tie down the bird better, forecast says high winds coming in. Where's the info on securing it for bad weather?",
-    "ground_truth_chunk_id": "a5f9ec65-ae71-4515-86a0-a2dea4e30867",
+    "ground_truth_chunk_id": "d323bbd3-3f1d-4a5f-8a82-44b4ee8efac3",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3737,7 +3737,7 @@
   {
     "id": "EVAL-PROSE-133",
     "observation": "Just replaced the pitot-static inlet shield; the old one was totally shot, sun-baked and cracking right off the probe. Was barely protecting the sensor, so we tossed it. New cover is on tight now, good to go.",
-    "ground_truth_chunk_id": "236c5801-0150-4787-8db0-a84e7d83cb86",
+    "ground_truth_chunk_id": "f06d6477-d563-49c3-af58-0cb5e4275031",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3750,7 +3750,7 @@
   {
     "id": "EVAL-PROSE-134",
     "observation": "Owner wants to park the bird for a couple of months. Need to prep the motor and protect the prop blades from corrosion, especially since it'll be sitting by the water.",
-    "ground_truth_chunk_id": "a79fcf6a-570f-4e3e-9ae0-a25878afc74b",
+    "ground_truth_chunk_id": "1889fef1-df8e-4670-bc65-67bd9e688e50",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3763,7 +3763,7 @@
   {
     "id": "EVAL-PROSE-135",
     "observation": "After pulling the aircraft from its lengthy storage period, the powerplant is exhibiting some serious issues. It's running extremely rough, especially at idle, and there's a distinct whiff of old fuel around the exhaust. The fuel pressure gauge is bouncing all over the place, not holding a steady reading at all.",
-    "ground_truth_chunk_id": "a8b932c0-433f-4d68-88f0-44711846756a",
+    "ground_truth_chunk_id": "0727bdb5-f0dc-4742-85aa-ed5ad671b01c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3776,7 +3776,7 @@
   {
     "id": "EVAL-PROSE-136",
     "observation": "Found some minor gouging on a fuselage stiffener near the tail after that gusty weather; looks like someone tried to secure the bird there. Need to review proper tie-down points.",
-    "ground_truth_chunk_id": "a1ef57da-1a57-4d16-9dbc-da27b98e70ff",
+    "ground_truth_chunk_id": "35602448-c40c-448b-85cd-30b770d9e8bb",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3789,7 +3789,7 @@
   {
     "id": "EVAL-PROSE-137",
     "observation": "Gotta secure this bird for the weekend. Need to get the tie-downs and chocks squared away, and cover the prop.",
-    "ground_truth_chunk_id": "ad6b7377-df13-4aa1-8d58-e27295d3b9b6",
+    "ground_truth_chunk_id": "88bd0f6f-84a3-4f46-8853-54fae0314be9",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3802,7 +3802,7 @@
   {
     "id": "EVAL-PROSE-138",
     "observation": "That old battery was toast, barely got a click outta the starter, no juice at all. Saw some crusties on the terminals too, so I just binned it. New one spun the engine right up, no sweat.",
-    "ground_truth_chunk_id": "2e381947-77e3-4ee4-9bc4-02c5556db19f",
+    "ground_truth_chunk_id": "0727bdb5-f0dc-4742-85aa-ed5ad671b01c",
     "ground_truth_fault_code": "Engine does not start",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Parking & Mooring",
@@ -3818,7 +3818,7 @@
   {
     "id": "EVAL-PROSE-139",
     "observation": "Found several internal instruction decals in the cockpit are faded and peeling, making them illegible. Needs to be swapped out.",
-    "ground_truth_chunk_id": "014909de-70ef-4f08-935f-0576d54c27fe",
+    "ground_truth_chunk_id": "d15502bc-5213-4a8e-831e-021146856ce1",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Placards & Markings",
@@ -3831,7 +3831,7 @@
   {
     "id": "EVAL-PROSE-140",
     "observation": "Just replaced that exterior placard on the wing root, the one detailing max weight. It was so sun-bleached and cracked, you could barely make out the numbers \u2013 completely unreadable, which is a safety issue. Old one practically crumbled off in my hand.",
-    "ground_truth_chunk_id": "32fb8e0c-8a69-4316-a6bc-fabc92cb0353",
+    "ground_truth_chunk_id": "20c9ebe4-f05a-4784-be7f-d2fec4a529e5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Placards & Markings",
@@ -3844,7 +3844,7 @@
   {
     "id": "EVAL-PROSE-141",
     "observation": "Engine was sputtering like a dog, barely turnin' over. Found the number three plug was totally toast, all black and wet with fuel.",
-    "ground_truth_chunk_id": "ea00e6c8-26f5-4301-803d-ee5da63af192",
+    "ground_truth_chunk_id": "843b7f55-40a5-4333-8c9a-410b9dda1b85",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Powerplant",
@@ -3857,7 +3857,7 @@
   {
     "id": "EVAL-PROSE-142",
     "observation": "Engine was coughin' and sputterin' somethin' fierce, felt like it was chokin' on somethin'. Pulled the main fuel strainer and it was packed solid with gritty brown sludge, smelled like pure ass. Swapped that thing out quick, she's runnin' smooth now.",
-    "ground_truth_chunk_id": "d21ec31d-779d-45df-b8d0-64ff3088710e",
+    "ground_truth_chunk_id": "88fb472e-bd62-4075-8394-b796c10eebb9",
     "ground_truth_fault_code": "Engine runs irregularly or misfires occasionally",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Servicing",
@@ -3874,7 +3874,7 @@
   {
     "id": "EVAL-PROSE-143",
     "observation": "Found a protective panel loose near the forward tow attachment point. The fasteners holding it in place look incorrect or are missing.",
-    "ground_truth_chunk_id": "8fab6257-6975-45f1-8b01-44ba4a1b963b",
+    "ground_truth_chunk_id": "c81841b0-bbef-41bb-97f0-3a753a0f87b5",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Miscellaneous",
@@ -3887,7 +3887,7 @@
   {
     "id": "EVAL-PROSE-144",
     "observation": "Pilot reported the control stick feels a bit stiff. Noticed some increased resistance in the flap hinges, especially after the last pressure wash. Suspect these areas need fresh lubrication.",
-    "ground_truth_chunk_id": "5fc14f13-7f85-4e37-aa8f-4f2e3638aefa",
+    "ground_truth_chunk_id": "39672589-8f78-48fb-b52a-1aea9ed651f8",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Servicing",
@@ -3900,7 +3900,7 @@
   {
     "id": "EVAL-PROSE-145",
     "observation": "Did a ground run after the bird got a bath, and the airspeed gauge was totally whack. Pitot tube must be plugged up with something, speedo's acting crazy.",
-    "ground_truth_chunk_id": "93bbff8c-26c7-4b24-9f48-4eb0cceb6874",
+    "ground_truth_chunk_id": "864e9847-85d1-4fc3-aa42-a909813acf51",
     "ground_truth_fault_code": "Low or sluggish airspeed indication. Normal altimeter and vertical speed indication",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Servicing",
@@ -3917,7 +3917,7 @@
   {
     "id": "EVAL-PROSE-146",
     "observation": "Pilot reported the main display is hazy and has smudges that won't come off with a dry cloth. Suspect the anti-glare coating is messed up from improper cleaning.",
-    "ground_truth_chunk_id": "ca2aab13-e6fb-4555-ad82-ad766a73ffb5",
+    "ground_truth_chunk_id": "b864f422-17fa-4969-87a7-1b5faae9e52e",
     "ground_truth_fault_code": "Decrease of light transmission (milky appearance)",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Servicing",
@@ -3930,7 +3930,7 @@
   {
     "id": "EVAL-PROSE-147",
     "observation": "Engine's acting real twitchy, like it's got a short somewhere; heard some crackling and then it just sputtered out. Smells kinda funky, too, like burnt plastic near the plugs.",
-    "ground_truth_chunk_id": "cdd3cfbe-d6da-4797-9e87-061cef05c906",
+    "ground_truth_chunk_id": "d5ca293c-1642-4be2-b8d2-dd34ef966986",
     "ground_truth_fault_code": "Engine runs irregularly or misfires occasionally",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Powerplant",
@@ -3943,7 +3943,7 @@
   {
     "id": "EVAL-PROSE-148",
     "observation": "Got a few loose fasteners during the pre-flight check. Need to find the standard procedure for properly tightening them down.",
-    "ground_truth_chunk_id": "ce497583-fb37-41ff-b58c-a33ac3599438",
+    "ground_truth_chunk_id": "54288fe3-9c6d-485e-abf1-c564f76a9cba",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Standard Practices - Airframe",
@@ -3956,7 +3956,7 @@
   {
     "id": "EVAL-PROSE-149",
     "observation": "Trying to get this castellated nut on the main gear axle to line up for the safety pin. It feels like I'm either under-torquing or going way over the limit to get the holes to align.",
-    "ground_truth_chunk_id": "8d6e1b2b-70d0-41cb-b9fb-e87667104394",
+    "ground_truth_chunk_id": "355d2f3e-8a74-471e-9389-e5359b40a21c",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Standard Practices - Airframe",
@@ -3969,7 +3969,7 @@
   {
     "id": "EVAL-PROSE-150",
     "observation": "Heard a real nasty clunking comin' from the engine bay during run-up, like somethin's rattlin' loose. Felt a weird shimmy too, checked a few panels and they're kinda jiggly. Gotta be a bolt backing out or somethin' ain't cinched down tight.",
-    "ground_truth_chunk_id": "d8d4f10b-7df0-4f4c-aa84-4e848c1edc79",
+    "ground_truth_chunk_id": "59356558-2b14-48c6-9388-8454841800eb",
     "ground_truth_fault_code": "NONE",
     "manual_source": "AS-AMM-01-000",
     "section_system": "Standard Practices - Airframe",

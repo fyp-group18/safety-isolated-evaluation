@@ -5,37 +5,25 @@ from pathlib import Path
 import chromadb
 from tqdm import tqdm
 
-from src.config import (
-    CHUNKS_PATH,
-    MODEL_EMBEDDING,
-    TOP_K,
-    VECTOR_STORE_DIR,
-)
+from src.config import CHUNKS_PATH, TOP_K, VECTOR_STORE_DIR
+from src.llm import embed_with_retry
 from src.schemas import RetrievedChunk
 
 logger = logging.getLogger(__name__)
 
-_model = None
-
-
-def _get_model():
-    global _model
-    if _model is None:
-        from sentence_transformers import SentenceTransformer
-        _model = SentenceTransformer(MODEL_EMBEDDING)
-        logger.info(f"Loaded embedding model: {MODEL_EMBEDDING}")
-    return _model
+EMBED_BATCH_SIZE = 20
 
 
 def _embed_single(text: str) -> list[float]:
-    model = _get_model()
-    return model.encode(text, normalize_embeddings=True).tolist()
+    return embed_with_retry(text)[0]
 
 
 def _embed_batch(texts: list[str]) -> list[list[float]]:
-    model = _get_model()
-    embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
-    return embeddings.tolist()
+    all_embeddings = []
+    for i in range(0, len(texts), EMBED_BATCH_SIZE):
+        batch = texts[i : i + EMBED_BATCH_SIZE]
+        all_embeddings.extend(embed_with_retry(batch))
+    return all_embeddings
 
 
 def _load_chunks() -> list[dict]:
@@ -43,26 +31,27 @@ def _load_chunks() -> list[dict]:
         return json.load(f)
 
 
-def build_index(batch_size: int = 256) -> chromadb.Collection:
+def build_index(force_rebuild: bool = False, batch_size: int = 256) -> chromadb.Collection:
     VECTOR_STORE_DIR.mkdir(parents=True, exist_ok=True)
     client = chromadb.PersistentClient(path=str(VECTOR_STORE_DIR))
 
-    existing = client.list_collections()
-    existing_names = [c.name if hasattr(c, 'name') else c for c in existing]
-    if "flat_rag" in existing_names:
-        coll = client.get_collection("flat_rag")
-        count = coll.count()
-        if count > 0:
-            logger.info(f"Index already exists with {count} chunks, skipping rebuild")
-            return coll
-
-    chunks = _load_chunks()
-    logger.info(f"Building index for {len(chunks)} chunks using {MODEL_EMBEDDING}")
+    if not force_rebuild:
+        existing = client.list_collections()
+        existing_names = [c.name if hasattr(c, "name") else c for c in existing]
+        if "flat_rag" in existing_names:
+            coll = client.get_collection("flat_rag")
+            count = coll.count()
+            if count > 0:
+                logger.info(f"Index already exists with {count} chunks, skipping rebuild")
+                return coll
 
     try:
         client.delete_collection("flat_rag")
     except Exception:
         pass
+
+    chunks = _load_chunks()
+    logger.info(f"Building index for {len(chunks)} chunks using Gemini embeddings")
 
     coll = client.create_collection(
         name="flat_rag",
