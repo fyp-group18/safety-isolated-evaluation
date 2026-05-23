@@ -1,0 +1,13 @@
+.env
+credentials.json
+__pycache__/
+*.pyc
+data/vector_store/
+results/*
+!results/.gitkeep
+audit_report.md
+.idea/
+.venv/
+*.egg-info/
+dist/
+build/
